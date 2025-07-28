@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f2c596d00f47221016bd69d530d1b256" extends="sys_import_set_row" label="Team Import" max_length="40" name="x_snc_defect_bucke_team_import" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=First Name" label="First Name" max_length="40" name="u_first_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Last Name" label="Last Name" max_length="40" name="u_last_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=User ID" label="User ID" max_length="40" name="u_user_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Email" label="Email" max_length="40" name="u_email" type="string"/>
+    </element>
+</database>

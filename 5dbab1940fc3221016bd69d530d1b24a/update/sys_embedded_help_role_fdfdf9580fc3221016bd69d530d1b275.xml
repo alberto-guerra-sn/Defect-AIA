@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_snc_defect_bucke.gaic_defects_user" name="x_snc_defect_bucke.gaic_defects_user">75fdf9580fc3221016bd69d530d1b274</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-26 03:47:11</sys_created_on>
+        <sys_id>fdfdf9580fc3221016bd69d530d1b275</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>75fdf9580fc3221016bd69d530d1b274</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sys_embedded_help_role_fdfdf9580fc3221016bd69d530d1b275</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-26 03:47:11</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

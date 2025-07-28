@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_gen_ai_skill">
     <sys_gen_ai_skill action="INSERT_OR_UPDATE">
         <enable_followup>false</enable_followup>
-        <skill_description/>
+        <skill_description>When triggered the this workflow fetches details from the records in the x_snc_defect_bucke_gaic_defects table and predicts the values for its corresponding fields based off keywords. The workflow will attempt to update the corresponding bucket field. It aides in classifying defects.</skill_description>
         <skill_document>a0575b490f4b221016bd69d530d1b2c9</skill_document>
-        <skill_name/>
+        <skill_name>Defect Classifier</skill_name>
         <skill_table>sn_aia_skill_metadata</skill_table>
         <sys_class_name>sys_gen_ai_skill</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
