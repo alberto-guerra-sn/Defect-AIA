@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Classify Defect via GenAI</description>
+        <input_schema>[]</input_schema>
+        <name>Classify Defect via GenAI</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[undefined]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 15:28:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>329172410fc7221016bd69d530d1b254</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Classify Defect via GenAI</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_tool_329172410fc7221016bd69d530d1b254</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 15:28:14</sys_updated_on>
+        <target_document>b18ed9850f43221016bd69d530d1b25f</target_document>
+        <target_document_table>sys_hub_flow</target_document_table>
+        <type>subflow</type>
+    </sn_aia_tool>
+</record_update>

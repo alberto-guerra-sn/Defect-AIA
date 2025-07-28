@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="859713890f4b221016bd69d530d1b2ab" sys_domain="global" table="x_snc_defect_bucke_gaic_defects" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 18:14:09</sys_created_on>
+            <sys_id>899713890f4b221016bd69d530d1b2b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_defect_bucke_gaic_defects" sys_domain="global" view="Default view">859713890f4b221016bd69d530d1b2ab</sys_ui_section>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 18:14:09</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>1</position>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 18:14:09</sys_created_on>
+            <sys_id>099713890f4b221016bd69d530d1b2b4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_defect_bucke_gaic_defects" sys_domain="global" view="Default view">859713890f4b221016bd69d530d1b2ab</sys_ui_section>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 18:14:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>2</position>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 18:14:09</sys_created_on>
+            <sys_id>019713890f4b221016bd69d530d1b2b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_defect_bucke_gaic_defects" sys_domain="global" view="Default view">859713890f4b221016bd69d530d1b2ab</sys_ui_section>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 18:14:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 18:14:09</sys_created_on>
+            <sys_id>099713890f4b221016bd69d530d1b2b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_defect_bucke_gaic_defects" sys_domain="global" view="Default view">859713890f4b221016bd69d530d1b2ab</sys_ui_section>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 18:14:09</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>4</position>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 18:14:09</sys_created_on>
+            <sys_id>019713890f4b221016bd69d530d1b2b6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_defect_bucke_gaic_defects" sys_domain="global" view="Default view">859713890f4b221016bd69d530d1b2ab</sys_ui_section>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 18:14:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>created</element>
+            <position>5</position>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 18:14:09</sys_created_on>
+            <sys_id>099713890f4b221016bd69d530d1b2b6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_defect_bucke_gaic_defects" sys_domain="global" view="Default view">859713890f4b221016bd69d530d1b2ab</sys_ui_section>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 18:14:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>6</position>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 18:14:09</sys_created_on>
+            <sys_id>019713890f4b221016bd69d530d1b2b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_defect_bucke_gaic_defects" sys_domain="global" view="Default view">859713890f4b221016bd69d530d1b2ab</sys_ui_section>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 18:14:09</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>7</position>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 18:14:09</sys_created_on>
+            <sys_id>099713890f4b221016bd69d530d1b2b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_defect_bucke_gaic_defects" sys_domain="global" view="Default view">859713890f4b221016bd69d530d1b2ab</sys_ui_section>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 18:14:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>8</position>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 18:14:09</sys_created_on>
+            <sys_id>019713890f4b221016bd69d530d1b2b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_defect_bucke_gaic_defects" sys_domain="global" view="Default view">859713890f4b221016bd69d530d1b2ab</sys_ui_section>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 18:14:09</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>priority</element>
+            <position>9</position>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 18:14:09</sys_created_on>
+            <sys_id>099713890f4b221016bd69d530d1b2b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_defect_bucke_gaic_defects" sys_domain="global" view="Default view">859713890f4b221016bd69d530d1b2ab</sys_ui_section>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 18:14:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>10</position>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 18:14:09</sys_created_on>
+            <sys_id>019713890f4b221016bd69d530d1b2b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_defect_bucke_gaic_defects" sys_domain="global" view="Default view">859713890f4b221016bd69d530d1b2ab</sys_ui_section>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 18:14:09</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>product_service</element>
+            <position>11</position>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 18:14:09</sys_created_on>
+            <sys_id>099713890f4b221016bd69d530d1b2b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_defect_bucke_gaic_defects" sys_domain="global" view="Default view">859713890f4b221016bd69d530d1b2ab</sys_ui_section>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 18:14:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>12</position>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 18:14:09</sys_created_on>
+            <sys_id>019713890f4b221016bd69d530d1b2ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_defect_bucke_gaic_defects" sys_domain="global" view="Default view">859713890f4b221016bd69d530d1b2ab</sys_ui_section>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 18:14:09</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>steps_to_reproduce</element>
+            <position>13</position>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 18:14:09</sys_created_on>
+            <sys_id>099713890f4b221016bd69d530d1b2ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_defect_bucke_gaic_defects" sys_domain="global" view="Default view">859713890f4b221016bd69d530d1b2ab</sys_ui_section>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 18:14:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>engineering_details</element>
+            <position>14</position>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 18:14:09</sys_created_on>
+            <sys_id>019713890f4b221016bd69d530d1b2bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_defect_bucke_gaic_defects" sys_domain="global" view="Default view">859713890f4b221016bd69d530d1b2ab</sys_ui_section>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 18:14:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_notes</element>
+            <position>15</position>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 18:14:09</sys_created_on>
+            <sys_id>099713890f4b221016bd69d530d1b2bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_defect_bucke_gaic_defects" sys_domain="global" view="Default view">859713890f4b221016bd69d530d1b2ab</sys_ui_section>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 18:14:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>resolution_details</element>
+            <position>16</position>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 18:14:09</sys_created_on>
+            <sys_id>019713890f4b221016bd69d530d1b2bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_defect_bucke_gaic_defects" sys_domain="global" view="Default view">859713890f4b221016bd69d530d1b2ab</sys_ui_section>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 18:14:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>full_defect_context</element>
+            <position>17</position>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 18:14:09</sys_created_on>
+            <sys_id>099713890f4b221016bd69d530d1b2bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_defect_bucke_gaic_defects" sys_domain="global" view="Default view">859713890f4b221016bd69d530d1b2ab</sys_ui_section>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 18:14:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>summary</element>
+            <position>18</position>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 18:14:09</sys_created_on>
+            <sys_id>019713890f4b221016bd69d530d1b2bd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_defect_bucke_gaic_defects" sys_domain="global" view="Default view">859713890f4b221016bd69d530d1b2ab</sys_ui_section>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 18:14:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>recommendation</element>
+            <position>19</position>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 18:14:09</sys_created_on>
+            <sys_id>099713890f4b221016bd69d530d1b2bd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_defect_bucke_gaic_defects" sys_domain="global" view="Default view">859713890f4b221016bd69d530d1b2ab</sys_ui_section>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 18:14:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>bucket</element>
+            <position>20</position>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 18:14:09</sys_created_on>
+            <sys_id>019713890f4b221016bd69d530d1b2be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_defect_bucke_gaic_defects" sys_domain="global" view="Default view">859713890f4b221016bd69d530d1b2ab</sys_ui_section>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 18:14:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 18:14:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>859713890f4b221016bd69d530d1b2ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_defect_bucke_gaic_defects</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+            <sys_update_name>sys_ui_section_859713890f4b221016bd69d530d1b2ab</sys_update_name>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 18:14:09</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

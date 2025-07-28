@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="priority" table="x_snc_defect_bucke_gaic_defects" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>priority</element>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:32</sys_created_on>
+            <sys_id>af095e940f47221016bd69d530d1b291</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>priority</sys_name>
+            <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+            <sys_update_name>sys_choice_x_snc_defect_bucke_gaic_defects_priority</sys_update_name>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:32</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>priority</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1 - High</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>27095e940f47221016bd69d530d1b2a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:33</sys_updated_on>
+            <value>1 - High</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>priority</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2 - Moderate</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ab095e940f47221016bd69d530d1b29b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:32</sys_updated_on>
+            <value>2 - Moderate</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>priority</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>3 - Low</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2b095e940f47221016bd69d530d1b291</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:32</sys_updated_on>
+            <value>3 - Low</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>priority</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>5 - Planning</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>44195e940f47221016bd69d530d1b2ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:34</sys_updated_on>
+            <value>5 - Planning</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

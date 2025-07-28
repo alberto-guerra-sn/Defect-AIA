@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="product_service" table="x_snc_defect_bucke_gaic_defects" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>product_service</element>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:32</sys_created_on>
+            <sys_id>eb095e940f47221016bd69d530d1b28e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>product_service</sys_name>
+            <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+            <sys_update_name>sys_choice_x_snc_defect_bucke_gaic_defects_product_service</sys_update_name>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:32</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>product_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>AI Agents</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7b095e940f47221016bd69d530d1b2a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:33</sys_updated_on>
+            <value>AI Agents</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>product_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>AI Chat Summarization</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>80199e940f47221016bd69d530d1b219</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:35</sys_updated_on>
+            <value>AI Chat Summarization</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>product_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>AI Search</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>04195e940f47221016bd69d530d1b2f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:34</sys_updated_on>
+            <value>AI Search</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>product_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Alert Analysis</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e7095e940f47221016bd69d530d1b2a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:33</sys_updated_on>
+            <value>Alert Analysis</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>product_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Generative AI Controller</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2b095e940f47221016bd69d530d1b298</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:32</sys_updated_on>
+            <value>Generative AI Controller</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>product_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Generative AI Core LLM</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>08199e940f47221016bd69d530d1b206</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:35</sys_updated_on>
+            <value>Generative AI Core LLM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>product_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Now Assist Data Kit</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>40195e940f47221016bd69d530d1b2fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:34</sys_updated_on>
+            <value>Now Assist Data Kit</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>product_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Now Assist for Configuration Management Database (CMDB)</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5c199e940f47221016bd69d530d1b22f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:35</sys_updated_on>
+            <value>Now Assist for Configuration Management Database (CMDB)</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>product_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Now Assist in AI Search</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>58199e940f47221016bd69d530d1b228</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:35</sys_updated_on>
+            <value>Now Assist in AI Search</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>product_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Now Assist in Conversational Catalog Request</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7f095e940f47221016bd69d530d1b2ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:34</sys_updated_on>
+            <value>Now Assist in Conversational Catalog Request</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>product_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Now Assist in Knowledge Management</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ec199e940f47221016bd69d530d1b24e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:36</sys_updated_on>
+            <value>Now Assist in Knowledge Management</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>product_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Now Assist in Virtual Agent</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>84195e940f47221016bd69d530d1b2e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:34</sys_updated_on>
+            <value>Now Assist in Virtual Agent</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>product_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Now Assist Skill Discovery &amp; Execution</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>67095e940f47221016bd69d530d1b28e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:32</sys_updated_on>
+            <value>Now Assist Skill Discovery &amp; Execution</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>product_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Now Assist Skill Kit</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fb095e940f47221016bd69d530d1b2ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:33</sys_updated_on>
+            <value>Now Assist Skill Kit</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>product_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>OneExtend</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>73095e940f47221016bd69d530d1b2b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:33</sys_updated_on>
+            <value>OneExtend</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>product_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Outbound REST Web Service</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dc199e940f47221016bd69d530d1b232</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:35</sys_updated_on>
+            <value>Outbound REST Web Service</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>product_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Platform Record Summarization and Resolution</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bb095e940f47221016bd69d530d1b2b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:33</sys_updated_on>
+            <value>Platform Record Summarization and Resolution</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>product_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TrustBuilder</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>50199e940f47221016bd69d530d1b238</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:35</sys_updated_on>
+            <value>TrustBuilder</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>product_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Virtual Agent</label>
+            <language>en</language>
+            <name>x_snc_defect_bucke_gaic_defects</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-26 05:45:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f3095e940f47221016bd69d530d1b2b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-26 05:45:33</sys_updated_on>
+            <value>Virtual Agent</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
