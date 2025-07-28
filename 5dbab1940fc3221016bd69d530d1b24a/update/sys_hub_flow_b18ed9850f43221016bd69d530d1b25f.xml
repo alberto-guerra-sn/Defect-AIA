@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=26005000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This subflow is to classify a defect that doesn't meet the threshold for a confident classification of their bucket via the keyword classifier.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>classify_defect_via_genai</internal_name>
+        <label_cache>[{"name":"subflow.full_context","label":"Input➛full_context","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"77ba1db1-0aec-4b2a-9110-2b7c0073bb0f":["prompt"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"0135c491-a1d7-487e-b798-760f72514f21","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"77ba1db1-0aec-4b2a-9110-2b7c0073bb0f.response","label":"1 - Generic Prompt➛response","reference_display":"response","type":"string","base_type":"string","usedInstances":{"2d5f9c1d-a063-4b3f-876a-eaa6b3f76131":["condition"],"bb082d8e-524f-40e4-9314-e90a765e6fa8":["prompt_bucket-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7ace8998-d367-4871-becc-d6ae9c315c03"}}]</label_cache>
+        <master_snapshot>661da1490f83221016bd69d530d1b2b4</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Classify Defect via GenAI</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 09:25:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b18ed9850f43221016bd69d530d1b25f</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Classify Defect via GenAI</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sys_hub_flow_b18ed9850f43221016bd69d530d1b25f</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 16:38:45</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=b18ed9850f43221016bd69d530d1b25f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b18ed9850f43221016bd69d530d1b25f"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_b18ed9850f43221016bd69d530d1b25f^id=b18ed9850f43221016bd69d530d1b25f"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=b18ed9850f43221016bd69d530d1b25f"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b18ed9850f43221016bd69d530d1b25f^sys_idNOT IN0a8ed9850f43221016bd69d530d1b261"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b18ed9850f43221016bd69d530d1b25f</id>
+        <name>Classify Defect via GenAI</name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 09:25:17</sys_created_on>
+        <sys_id>0a8ed9850f43221016bd69d530d1b261</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 09:25:17</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=0a8ed9850f43221016bd69d530d1b261"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=b18ed9850f43221016bd69d530d1b25f^sys_idNOT IN537f91090f43221016bd69d530d1b26b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=0135c491-a1d7-487e-b798-760f72514f21</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>full_context</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>full_context</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Classify Defect via GenAI">b18ed9850f43221016bd69d530d1b25f</model>
+        <model_id>b18ed9850f43221016bd69d530d1b25f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b18ed9850f43221016bd69d530d1b25f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 09:29:28</sys_created_on>
+        <sys_id>537f91090f43221016bd69d530d1b26b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 09:29:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=537f91090f43221016bd69d530d1b26b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=b18ed9850f43221016bd69d530d1b25f^sys_idNOT IN3a618b410f0b221016bd69d530d1b2bd"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=80dc8f8c-77ba-48a3-adac-2ca0ea30bcd0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field>bucket</choice_field>
+        <choice_table>x_snc_defect_bucke_gaic_defects</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>prompt_bucket</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>prompt_bucket</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Classify Defect via GenAI">b18ed9850f43221016bd69d530d1b25f</model>
+        <model_id>b18ed9850f43221016bd69d530d1b25f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_b18ed9850f43221016bd69d530d1b25f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 16:37:20</sys_created_on>
+        <sys_id>3a618b410f0b221016bd69d530d1b2bd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 16:37:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3a618b410f0b221016bd69d530d1b2bd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b18ed9850f43221016bd69d530d1b25f"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=b18ed9850f43221016bd69d530d1b25f"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=b18ed9850f43221016bd69d530d1b25f^sys_idNOT IN5cc625410f83221016bd69d530d1b2f7"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Generic Prompt">c513254d0f43221016bd69d530d1b259</action_type>
+        <action_type_parent display_value="Generic Prompt">8ff2614d0f43221016bd69d530d1b212</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Classify Defect via GenAI">b18ed9850f43221016bd69d530d1b25f</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 10:01:12</sys_created_on>
+        <sys_id>5cc625410f83221016bd69d530d1b2f7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 10:02:29</sys_updated_on>
+        <ui_id>77ba1db1-0aec-4b2a-9110-2b7c0073bb0f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Ty27bMBD8FYJnWZAt+Xlrm6YI0NZB7OYSBAJFrmQCFKnw4cQ1/O9ZSrYPPvUDehJ2uDs7O7t6OVIp6IoupuN8Mi1EVhf5ZDLOxrNKzJZimmdiXE1mS5pQzVrAzM6atvMY75kKEfjKHAhiNPE7ILVRyrxL3RABNXCPH8et7Lw0OiFcMedkfSDSE6m9wSogpr6p5MxDY6wEtyI/ArNCMqz9ZrRGQuQhD84F6JFaNsGygXwrWzDBJ2QDPnQJeVShkTqGPFjpDwlZd4DJxpLv1hqbkidMtBpFqEMvobEmdCTOmZK7Qf4WPvyKHI8uVDXKS+ugVMmN9oifTuiCkK5T7PD83ww0g++kEhY0Xb28JrRjFqs9WLo63jz5QwelYhUo9GzjLU6K5f96iZfCx8sp3p5mpMfYXYiNFVHFOKGoFLQAbFQz5SChLdMi2nCgK2/RSGqBiTWacM3Y4XKQjMbcDyf/IvMiy7KYWQNOxGF4vYbl+SYGmO+M5LDulz4gnlXqXMONCq3+PciP1wQ1C8pfrgmR4JAPuig6yjhrqjc78/50aXgvdT/f+VEZztQ1Yh5dqIIHF9cQ5PbGmwH5ebsLUNBix7JlXYdIid7uZd8FRbdpozBI4xWgOicbnbL+HFM0k6X3iN/18DOzMo77C2mwOLb7o+VbgIe4a1gu56JYTkZ5kRWjYjbPR4vxgo2y2XyRL6oJB+D01FtbvoU41GDS2Y5ycBQTht/qC0rYw3ny0+snldWIddwEAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5cc625410f83221016bd69d530d1b2f7"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=b18ed9850f43221016bd69d530d1b25f"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=b18ed9850f43221016bd69d530d1b25f^sys_idNOT IN5ba04f010f0b221016bd69d530d1b27e"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9fa04f010f0b221016bd69d530d1b27c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Classify Defect via GenAI">b18ed9850f43221016bd69d530d1b25f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned>prompt_bucket</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 16:34:05</sys_created_on>
+        <sys_id>5ba04f010f0b221016bd69d530d1b27e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 16:38:42</sys_updated_on>
+        <ui_id>bb082d8e-524f-40e4-9314-e90a765e6fa8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/7VVW2/TMBT+K1Oem5JL13Z7mwZDk4AhVvaCUHR8SWvNsTNftpUq/53jJO3SAoIKePTn79x9Pm8i7V3tnV3oC2vFUkXnXzaRYNF5lMM0nZNJmpQJybI0SaeETc/YaZ6wlGSERaNIQcWRWRtd1a4gnt5zh/AjSB/wzWY2I5AyksYJcBpPSAbxWZomcUZmNElmOSFJOTbc1lpZ3jRoy4StJazv/sIFXQnJDA+lfB1FNRjM0nETnW8Orty65oUEwiVGulxpQTma/2nxW8PD6n/RlBAMYboNow0LOaWjiD87rhjHsCVIy0dRBYqB02a9QwwHdqPkC7ASyqG3KJCfrfiGrvMs8EqO5VHe3e2ORd/WDu5ysO2od+VrVYqlN+CEVq9uam5CBidvjNFmMNLf0Pqikma051lxGvgn19Z6jLvn7oe7bWOGPt56MEyAGpgOoN4iG1p8lH4phvwd0LPzIfuWU2+EWw/4A6i3mOxbOF/v0btzzz0dchei4rhmA/YL0vOnDb5Hxkvw0l3+7/Gk/2A82dHjyY8az+To8ZweMZ7pkeOZhfF0a3NTh34EiQhLDUQGg+fCKlrg/LBb3coXSxBbJLSNaukr9aHThp0o9BPfqh0i3uKy8joIQtjwft3L25V++rTd5iuh2qz6S6kpyN0JnDOCeBce0CbyYnGgOx3y7lD1uOQVRiwqqGuhlgXK16Noo2Dq1Xgp8TAupX7C7MI/MYb2XYxRqGB8hfjrFr4DI0JP3qMbbtpwn5V48Pw6qOo8YXRezmkcRD2ezCGPgQGNMwoJhzwhlCVR0+pW8eBDUVHbpL4dRdv3QLDUiNpdYAqPfFd5B4aq97UXgZ/wmybMVKjw+XXfwWOfe39knAqLJS4Cdj3gsTVKvKBD6Emb+9CcF6z5Ds4T1LtaBwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b18ed9850f43221016bd69d530d1b25f"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=b18ed9850f43221016bd69d530d1b25f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>full_context</element>
+        <help/>
+        <hint/>
+        <label>full_context</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b18ed9850f43221016bd69d530d1b25f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 09:29:29</sys_created_on>
+        <sys_id>277fd1090f43221016bd69d530d1b287</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 09:29:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b18ed9850f43221016bd69d530d1b25f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>prompt_bucket</element>
+        <help/>
+        <hint/>
+        <label>prompt_bucket</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_b18ed9850f43221016bd69d530d1b25f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 16:37:20</sys_created_on>
+        <sys_id>4f618b410f0b221016bd69d530d1b2c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 16:37:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b18ed9850f43221016bd69d530d1b25f^sys_idNOT IN32b103810f0b221016bd69d530d1b215,36b103810f0b221016bd69d530d1b216,3eb103810f0b221016bd69d530d1b213,b6b103810f0b221016bd69d530d1b214,bab103810f0b221016bd69d530d1b215,beb103810f0b221016bd69d530d1b216,fab1cf410f0b221016bd69d530d1b2e0"/>
+    <sys_choice field="prompt_bucket" table="var__m_sys_hub_flow_output_b18ed9850f43221016bd69d530d1b25f">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>prompt_bucket</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Plugin</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_b18ed9850f43221016bd69d530d1b25f</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 16:38:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>32b103810f0b221016bd69d530d1b215</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 16:38:42</sys_updated_on>
+            <value>Plugin</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>prompt_bucket</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Setup</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_b18ed9850f43221016bd69d530d1b25f</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 16:38:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>36b103810f0b221016bd69d530d1b216</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 16:38:42</sys_updated_on>
+            <value>Setup</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>prompt_bucket</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Connection Issues</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_b18ed9850f43221016bd69d530d1b25f</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 16:38:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3eb103810f0b221016bd69d530d1b213</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 16:38:42</sys_updated_on>
+            <value>Connection Issues</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>prompt_bucket</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Guardian</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_b18ed9850f43221016bd69d530d1b25f</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 16:38:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b6b103810f0b221016bd69d530d1b214</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 16:38:42</sys_updated_on>
+            <value>Guardian</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>prompt_bucket</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Security</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_b18ed9850f43221016bd69d530d1b25f</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 16:38:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bab103810f0b221016bd69d530d1b215</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 16:38:42</sys_updated_on>
+            <value>Security</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>prompt_bucket</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Timeout</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_b18ed9850f43221016bd69d530d1b25f</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 16:38:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>beb103810f0b221016bd69d530d1b216</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 16:38:42</sys_updated_on>
+            <value>Timeout</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>prompt_bucket</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Configuration/Operator Error</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_b18ed9850f43221016bd69d530d1b25f</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 16:38:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fab1cf410f0b221016bd69d530d1b2e0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 16:38:42</sys_updated_on>
+            <value>Configuration/Operator Error</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This subflow is to classify a defect that doesn't meet the threshold for a confident classification of their bucket via the keyword classifier.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>classify_defect_via_genai</internal_name>
+        <label_cache>[{"name":"subflow.full_context","label":"Input➛full_context","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"77ba1db1-0aec-4b2a-9110-2b7c0073bb0f":["prompt"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"0135c491-a1d7-487e-b798-760f72514f21","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"77ba1db1-0aec-4b2a-9110-2b7c0073bb0f.response","label":"1 - Generic Prompt➛response","reference_display":"response","type":"string","base_type":"string","usedInstances":{"2d5f9c1d-a063-4b3f-876a-eaa6b3f76131":["condition"],"bb082d8e-524f-40e4-9314-e90a765e6fa8":["prompt_bucket-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7ace8998-d367-4871-becc-d6ae9c315c03"}}]</label_cache>
+        <master>true</master>
+        <name>Classify Defect via GenAI</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Classify Defect via GenAI">b18ed9850f43221016bd69d530d1b25f</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 10:28:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>661da1490f83221016bd69d530d1b2b4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 16:38:44</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=661da1490f83221016bd69d530d1b2b4"/>
+    <sys_variable_value action="delete_multiple" query="document_key=661da1490f83221016bd69d530d1b2b4"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_661da1490f83221016bd69d530d1b2b4^id=661da1490f83221016bd69d530d1b2b4"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=661da1490f83221016bd69d530d1b2b4"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=661da1490f83221016bd69d530d1b2b4^sys_idNOT IN221da1490f83221016bd69d530d1b2b5"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>661da1490f83221016bd69d530d1b2b4</id>
+        <name>Classify Defect via GenAI</name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 10:28:57</sys_created_on>
+        <sys_id>221da1490f83221016bd69d530d1b2b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 10:28:57</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=221da1490f83221016bd69d530d1b2b5"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=661da1490f83221016bd69d530d1b2b4^sys_idNOT INa21da1490f83221016bd69d530d1b2b6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=0135c491-a1d7-487e-b798-760f72514f21</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>full_context</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>full_context</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Classify Defect via GenAI">661da1490f83221016bd69d530d1b2b4</model>
+        <model_id>661da1490f83221016bd69d530d1b2b4</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_661da1490f83221016bd69d530d1b2b4</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 10:28:57</sys_created_on>
+        <sys_id>a21da1490f83221016bd69d530d1b2b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 10:28:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a21da1490f83221016bd69d530d1b2b6"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=661da1490f83221016bd69d530d1b2b4^sys_idNOT IN1bb103810f0b221016bd69d530d1b25d"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=80dc8f8c-77ba-48a3-adac-2ca0ea30bcd0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field>bucket</choice_field>
+        <choice_table>x_snc_defect_bucke_gaic_defects</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>prompt_bucket</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>prompt_bucket</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Classify Defect via GenAI">661da1490f83221016bd69d530d1b2b4</model>
+        <model_id>661da1490f83221016bd69d530d1b2b4</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_661da1490f83221016bd69d530d1b2b4</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 16:38:43</sys_created_on>
+        <sys_id>1bb103810f0b221016bd69d530d1b25d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 16:38:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1bb103810f0b221016bd69d530d1b25d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=661da1490f83221016bd69d530d1b2b4"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=661da1490f83221016bd69d530d1b2b4"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=661da1490f83221016bd69d530d1b2b4^sys_idNOT INb61da1490f83221016bd69d530d1b2cc"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Generic Prompt">c513254d0f43221016bd69d530d1b259</action_type>
+        <action_type_parent display_value="Generic Prompt">8ff2614d0f43221016bd69d530d1b212</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c513254d0f43221016bd69d530d1b259</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Classify Defect via GenAI">661da1490f83221016bd69d530d1b2b4</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 10:28:58</sys_created_on>
+        <sys_id>b61da1490f83221016bd69d530d1b2cc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 10:28:58</sys_updated_on>
+        <ui_id>77ba1db1-0aec-4b2a-9110-2b7c0073bb0f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TyW7bMBD9FYJnWZD35dbGTRGgrYM4zSUIDIocyQQoUuHiRDX87xlKslu4l35AT8I8zvLmzdPzkUpBV3QxHY5H04nIisl4NBpmw1kuZksxHWdimI9mS5pQzSrAzNqaqvYYH5gKEfjMHAhiNPF7IIVRyrxJXRIBBXCPH8etrL00OiFcMedk0RDpidTeYBUQU1xVcuahNFaCW5GvgVkhGdbeGK2xIfYhd84FaJFClsGyrvmjrMAEn5At+FAn5F6FUuoY8mClbxKyqQGTjSVfrDU2JQ+YaDWSUE1LobQm1CTumZJ1R/8R3v2KHI8u5AXSS4ug1I4b7RE/nVAFIV2tWPP0XwwUg++lEhY0XT2/JLRmFqs9WLo6Xj39q+cUy0Fh6v3ZdNcm9E0dY+ctitXH3/qi7Rk0VkQSw4QiUdACcHrBlIOEVkyLqEJDV96ijtQCExvU4JKxx9tgMxpz3538heMWWZbFzAJwIQ7d6yXc9Zbo4GLNPEMmgaO8fSrfG8nBdVKgNVhQ/uZPrEvYtEbpSjzL1bnaqFDpH50Q9NLg7EBEgkMSUMdNI/d+kWK7N28PZ5a3Urei9I/KcKYuEfMoXR585HOkQT5eqdwhf+kMCiqcuKtYXSOywysdZDsFSVdpqTBIo3OQnZOlTllr4RQvwNJbxNct/MSsjOt+xzZYHMf91PI1wF10DSyXczFZjgbjSTYZTGbz8WAxXLBBNpsvxot8xAE4PSXUNe4m/mG/hcIL7V5DXLOTrRdo12kcS9qf8xOSOkCvxenlA/MHhT0iBQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b61da1490f83221016bd69d530d1b2cc"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=661da1490f83221016bd69d530d1b2b4"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=661da1490f83221016bd69d530d1b2b4^sys_idNOT IN13b103810f0b221016bd69d530d1b27f"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9fa04f010f0b221016bd69d530d1b27c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Classify Defect via GenAI">661da1490f83221016bd69d530d1b2b4</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned>prompt_bucket</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 16:38:44</sys_created_on>
+        <sys_id>13b103810f0b221016bd69d530d1b27f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 16:38:44</sys_updated_on>
+        <ui_id>bb082d8e-524f-40e4-9314-e90a765e6fa8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/7VVXW/TMBT9K8jPTclH13Z7mzqGJg2GWNkLQtH1R1prjpP5o1up8t+xE6dL2RBUwFt8cu71vefaxztUWVNbo5fVudZ8JdHZ1x3iFJ2hDKbJHE+SuIhxmiZxMsV0ekpPspgmOMUUjZCEkjlmraqyNjm25J4ZB29AWI/vdrMZhoTiJIqBkWiCU4hOkySOUjwjcTzLMI6LsWK6rqRmTeNiKde1gO3dX6Qgay6oYr6VbyNUg3JVGqbQmWtMug8J4prLe5f9BflPGxeAmXil818IYra1h8m64oSF9XVIsejBSlFfZDJC7MkwSZmrpQCh2QiVICmYSm33iGJAb6R4Btauta6jEp40/+72y1LPK5jrjrDu336ZB507uLgAA7dGWWKsYr0wvi7dnoe+3UUlC76yCgyv5Nubmilf1Zt3SlVqMPff0EKjcTM6yCwZ8fw3V1pbt+9Buhf/erGGOd5bUJSDHIQOoBCRDiM+CbviQ/4eCOxsyL5lxCputgP+AAoRk8MIY+sDercO3JMhd8lL5u7igP2MBP60cUeUsgKsMIv/PZ7kH4wnPXo82VHjmRw9npMjxjM9cjwzP57u2tzUXg/vJf62AxY+4CnXkuRufk6tzhvyFfAe8bKRSthSfuxMZO8eYeK9JTrEaneBWe1Nwt/6YAHF7bp6/Nzf8Esu26rCT1EREPsVGKM4tsYfoB2yfPmTQXXIC4tigpVux7yEuuZylTuf2/B2F1d6OV4JtxgXonp01fnHZAztuRg784LxpcMvWvgOFPeafHBpmGq3+yL5g2VX3n7nMSXzYk4i7/zRZA5ZBBRIlBKIGWQxJjRGzQjprV4I0DrI1blb/mB9m6iVLQiUt5NoQ4jitTl3RW3YXosO9Doc2rYDXuE3jZ8yl/7N7N6MTegmLCkjXLumlx67GvDo1r0OnAyhx0rde7meseYHtgxrL5EHAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=661da1490f83221016bd69d530d1b2b4"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=661da1490f83221016bd69d530d1b2b4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>full_context</element>
+        <help/>
+        <hint/>
+        <label>full_context</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_661da1490f83221016bd69d530d1b2b4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 10:28:57</sys_created_on>
+        <sys_id>fe1da1490f83221016bd69d530d1b2bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 10:28:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_661da1490f83221016bd69d530d1b2b4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>prompt_bucket</element>
+        <help/>
+        <hint/>
+        <label>prompt_bucket</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_661da1490f83221016bd69d530d1b2b4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 16:38:44</sys_created_on>
+        <sys_id>1fb103810f0b221016bd69d530d1b278</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 16:38:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_661da1490f83221016bd69d530d1b2b4^sys_idNOT IN17b103810f0b221016bd69d530d1b264,53b103810f0b221016bd69d530d1b265,9bb103810f0b221016bd69d530d1b262,9fb103810f0b221016bd69d530d1b265,d7b103810f0b221016bd69d530d1b263,dbb103810f0b221016bd69d530d1b266,dfb103810f0b221016bd69d530d1b260"/>
+    <sys_choice field="prompt_bucket" table="var__m_sys_hub_flow_output_661da1490f83221016bd69d530d1b2b4">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>prompt_bucket</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Plugin</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_661da1490f83221016bd69d530d1b2b4</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 16:38:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>17b103810f0b221016bd69d530d1b264</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 16:38:44</sys_updated_on>
+            <value>Plugin</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>prompt_bucket</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Security</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_661da1490f83221016bd69d530d1b2b4</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 16:38:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>53b103810f0b221016bd69d530d1b265</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 16:38:44</sys_updated_on>
+            <value>Security</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>prompt_bucket</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Connection Issues</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_661da1490f83221016bd69d530d1b2b4</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 16:38:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9bb103810f0b221016bd69d530d1b262</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 16:38:44</sys_updated_on>
+            <value>Connection Issues</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>prompt_bucket</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Setup</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_661da1490f83221016bd69d530d1b2b4</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 16:38:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9fb103810f0b221016bd69d530d1b265</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 16:38:44</sys_updated_on>
+            <value>Setup</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>prompt_bucket</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Guardian</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_661da1490f83221016bd69d530d1b2b4</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 16:38:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d7b103810f0b221016bd69d530d1b263</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 16:38:44</sys_updated_on>
+            <value>Guardian</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>prompt_bucket</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Timeout</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_661da1490f83221016bd69d530d1b2b4</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 16:38:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dbb103810f0b221016bd69d530d1b266</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 16:38:44</sys_updated_on>
+            <value>Timeout</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>prompt_bucket</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Configuration/Operator Error</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_661da1490f83221016bd69d530d1b2b4</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>alberto.guerra@snc</sys_created_by>
+            <sys_created_on>2025-07-28 16:38:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dfb103810f0b221016bd69d530d1b260</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+            <sys_updated_on>2025-07-28 16:38:44</sys_updated_on>
+            <value>Configuration/Operator Error</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>b18ed9850f43221016bd69d530d1b25f</sys_id>
+        <latest_snapshot>661da1490f83221016bd69d530d1b2b4</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=b18ed9850f43221016bd69d530d1b25f"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=b18ed9850f43221016bd69d530d1b25f^sys_idNOT IN321da1490f83221016bd69d530d1b2d5"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@205aa155</plan>
+        <plan_id display_value="Classify Defect via GenAI">b18ed9850f43221016bd69d530d1b25f</plan_id>
+        <snapshot>661da1490f83221016bd69d530d1b2b4</snapshot>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 10:28:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>321da1490f83221016bd69d530d1b2d5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 16:38:45</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

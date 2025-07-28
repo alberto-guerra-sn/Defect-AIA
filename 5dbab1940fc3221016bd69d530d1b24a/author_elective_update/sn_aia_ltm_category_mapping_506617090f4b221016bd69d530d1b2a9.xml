@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_ltm_category_mapping">
+    <sn_aia_ltm_category_mapping action="DELETE">
+        <category display_value="Workplace">5c446eae43db52107c4d14020ab8f218</category>
+        <entity_id>8da6feb40f4b621016bd69d530d1b26b</entity_id>
+        <entity_table>sn_aia_agent</entity_table>
+        <sys_class_name>sn_aia_ltm_category_mapping</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 18:08:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>506617090f4b221016bd69d530d1b2a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_ltm_category_mapping_506617090f4b221016bd69d530d1b2a9</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 18:08:54</sys_updated_on>
+    </sn_aia_ltm_category_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</application>
+        <file_path/>
+        <instance_id>a122a77e477e629c6f9ce676706d4381</instance_id>
+        <instance_name>empaguerra2</instance_name>
+        <name>sn_aia_ltm_category_mapping_506617090f4b221016bd69d530d1b2a9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_ltm_category_mapping"><sn_aia_ltm_category_mapping action="INSERT_OR_UPDATE"><category display_value="Workplace">5c446eae43db52107c4d14020ab8f218</category><entity_id>8da6feb40f4b621016bd69d530d1b26b</entity_id><entity_table>sn_aia_agent</entity_table><sys_class_name>sn_aia_ltm_category_mapping</sys_class_name><sys_created_by>alberto.guerra@snc</sys_created_by><sys_created_on>2025-07-28 18:08:54</sys_created_on><sys_domain>global</sys_domain><sys_id>506617090f4b221016bd69d530d1b2a9</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package><sys_policy/><sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope><sys_update_name>sn_aia_ltm_category_mapping_506617090f4b221016bd69d530d1b2a9</sys_update_name><sys_updated_by>alberto.guerra@snc</sys_updated_by><sys_updated_on>2025-07-28 18:08:54</sys_updated_on></sn_aia_ltm_category_mapping></record_update>]]></payload>
+        <payload_hash>-596794288</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>d5baf9940fc3221016bd69d530d1b24c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 18:08:54</sys_created_on>
+        <sys_id>946617090f4b221016bd69d530d1b2ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19852392a7b0000001</sys_recorded_at>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 18:08:54</sys_updated_on>
+        <type>AI Agent Category Mappings</type>
+        <update_guid>986617094d4b221004a25bd646fee7ab</update_guid>
+        <update_guid_history>986617094d4b221004a25bd646fee7ab:-596794288</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">d7a69b090f4b221016bd69d530d1b253</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 18:10:12</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_ltm_category_mapping">sn_aia_ltm_category_mapping</sys_db_object>
+        <sys_id>005db8623fab41d480004b8757265290</sys_id>
+        <sys_metadata>506617090f4b221016bd69d530d1b2a9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_scope_delete display_value="">385cdcb5ab8e4f60953bdcc583c2cac4</sys_scope_delete>
+        <sys_update_name>sn_aia_ltm_category_mapping_506617090f4b221016bd69d530d1b2a9</sys_update_name>
+        <sys_update_version display_value="sn_aia_ltm_category_mapping_506617090f4b221016bd69d530d1b2a9">946617090f4b221016bd69d530d1b2ac</sys_update_version>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 18:10:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
