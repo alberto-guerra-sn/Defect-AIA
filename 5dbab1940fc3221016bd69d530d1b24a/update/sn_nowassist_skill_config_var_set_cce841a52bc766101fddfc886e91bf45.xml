@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_nowassist_skill_config_var_set">
+    <sn_nowassist_skill_config_var_set action="INSERT_OR_UPDATE">
+        <config_type display_value="Skill builder View Trigger step">b89b1f0b7f821210076726d6ac86650e</config_type>
+        <description/>
+        <hide_step>false</hide_step>
+        <name>View trigger</name>
+        <order>100</order>
+        <parent/>
+        <screen_id/>
+        <screen_table>sys_ux_macroponent</screen_table>
+        <skill_config display_value="Defect Classifier">47e001e92b8766101fddfc886e91bfe0</skill_config>
+        <sys_class_name>sn_nowassist_skill_config_var_set</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-29 21:07:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>cce841a52bc766101fddfc886e91bf45</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>View trigger</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_nowassist_skill_config_var_set_cce841a52bc766101fddfc886e91bf45</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-29 21:10:10</sys_updated_on>
+        <title/>
+        <vars/>
+    </sn_nowassist_skill_config_var_set>
+    <sys_translated_text action="delete_multiple" query="documentkey=cce841a52bc766101fddfc886e91bf45"/>
+    <sys_variable_value action="delete_multiple" query="document_key=cce841a52bc766101fddfc886e91bf45"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sn_nowassist_skill_config_var_set</document>
+        <document_key>cce841a52bc766101fddfc886e91bf45</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-29 21:07:38</sys_created_on>
+        <sys_id>84e841a52bc766101fddfc886e91bf46</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-29 21:10:10</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Enable Workflow Trigger">5c5623df7f025210076726d6ac8665f9</variable>
+    </sys_variable_value>
+</record_update>
