@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Categorize ITSM incident AI agent (Copy)">5920e5d92b8326101fddfc886e91bf50</agent>
+        <description>Update incident with category, subcategory and configuration item (CI) and add work notes</description>
+        <display_output>false</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[{"name":"incident_number","value":"","description":"Incident number"},{"name":"updateJSON","value":"","description":"A JSON object to update the incident record. The JSON should have the following structure: {category: {\"recommend\": &lt;recommend&gt;,“recommendFieldValue”: &lt;field_value&gt;}, subcategory: {\"recommend\": &lt;recommend&gt;,“recommendFieldValue”: &lt;field_value&gt;}, cmdb_ci: {“recommendName”: &lt;recommend_name&gt;,“ recommendCISysID”: &lt;recommend_cmdb_ci_sys_id&gt;}}"}]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Update incident</name>
+        <output_transformation_strategy>paraphrase</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message>Updating incident details</pre_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-29 04:10:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>2520e5d92b8326101fddfc886e91bf6d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update incident</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_2520e5d92b8326101fddfc886e91bf6d</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-29 04:10:50</sys_updated_on>
+        <tool display_value="Update incident">4a26328433d7d250d39ae3570e5c7b9b</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</application>
+        <file_path/>
+        <instance_id>a6f5898a33ffd6107c42c7bb9d5c7b62</instance_id>
+        <instance_name>aiagentujjawal3</instance_name>
+        <name>sn_aia_agent_tool_m2m_2520e5d92b8326101fddfc886e91bf6d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Categorize ITSM incident AI agent (Copy)">5920e5d92b8326101fddfc886e91bf50</agent><description>Update incident with category, subcategory and configuration item (CI) and add work notes</description><display_output>false</display_output><document_status/><execution_mode>autopilot</execution_mode><inputs>[{"name":"incident_number","value":"","description":"Incident number"},{"name":"updateJSON","value":"","description":"A JSON object to update the incident record. The JSON should have the following structure: {category: {\"recommend\": &lt;recommend&gt;,“recommendFieldValue”: &lt;field_value&gt;}, subcategory: {\"recommend\": &lt;recommend&gt;,“recommendFieldValue”: &lt;field_value&gt;}, cmdb_ci: {“recommendName”: &lt;recommend_name&gt;,“ recommendCISysID”: &lt;recommend_cmdb_ci_sys_id&gt;}}"}]</inputs><max_auto_executions>10</max_auto_executions><name>Update incident</name><output_transformation_strategy>paraphrase</output_transformation_strategy><post_processing_script/><pre_message>Updating incident details</pre_message><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>alberto.guerra@snc</sys_created_by><sys_created_on>2025-07-29 04:10:50</sys_created_on><sys_domain>global</sys_domain><sys_id>2520e5d92b8326101fddfc886e91bf6d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Update incident</sys_name><sys_overrides/><sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package><sys_policy/><sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_2520e5d92b8326101fddfc886e91bf6d</sys_update_name><sys_updated_by>alberto.guerra@snc</sys_updated_by><sys_updated_on>2025-07-29 04:10:50</sys_updated_on><tool display_value="Update incident">4a26328433d7d250d39ae3570e5c7b9b</tool><tool_attributes>{}</tool_attributes><transformation_instructions/></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>2034249215</payload_hash>
+        <record_name>Update incident</record_name>
+        <reverted_from/>
+        <source>690d19d12b8326101fddfc886e91bfa1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-29 04:10:50</sys_created_on>
+        <sys_id>e920e5d92b8326101fddfc886e91bf70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19854603f3c0000001</sys_recorded_at>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-29 04:10:50</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>ed20e5d9178326108f707d489ac29e6f</update_guid>
+        <update_guid_history>ed20e5d9178326108f707d489ac29e6f:2034249215</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Update incident">80a20ed92b4726101fddfc886e91bf1d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-29 06:41:28</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>d8928d5eb0994a9ca47f658841acc491</sys_id>
+        <sys_metadata>2520e5d92b8326101fddfc886e91bf6d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update incident</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_scope_delete display_value="">385cdcb5ab8e4f60953bdcc583c2cac4</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_2520e5d92b8326101fddfc886e91bf6d</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_2520e5d92b8326101fddfc886e91bf6d">e920e5d92b8326101fddfc886e91bf70</sys_update_version>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-29 06:41:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
