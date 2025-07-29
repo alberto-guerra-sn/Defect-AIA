@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This flow is to classify bulk gaic defects to their appropriate buckets</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>gaicdefectbucketflow</internal_name>
+        <label_cache>[{"name":"ed41f71b-132b-4329-9a9a-39e898a606cd.Records","label":"1 - Look Up Records➛GAIC Defects Records","reference":"x_snc_defect_bucke_gaic_defects","reference_display":"GAIC Defects Records","type":"records","base_type":"records","usedInstances":{"3a47942e-62c4-4686-b960-9e49eff9b71d":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3a47942e-62c4-4686-b960-9e49eff9b71d.item","label":"2 - For Each➛GAIC Defects Record","reference":"x_snc_defect_bucke_gaic_defects","reference_display":"GAIC Defects","type":"reference","base_type":"reference","usedInstances":{"a1328fb9-cad6-4f89-b3ed-e3336447a977":["gaic_defects"],"1ea0b331-27e2-492b-a722-83cb1dfac2df":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"a1328fb9-cad6-4f89-b3ed-e3336447a977.output.response","label":"3 - Execute Skill➛output➛response","type":"string","base_type":"string","usedInstances":{"1ea0b331-27e2-492b-a722-83cb1dfac2df":["bucket"]}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>GaicDefectBucketFlow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-29 21:16:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2fda01692bc766101fddfc886e91bfe9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>GaicDefectBucketFlow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sys_hub_flow_2fda01692bc766101fddfc886e91bfe9</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-29 21:34:31</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=2fda01692bc766101fddfc886e91bfe9"/>
+    <sys_variable_value action="delete_multiple" query="document_key=2fda01692bc766101fddfc886e91bfe9"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=2fda01692bc766101fddfc886e91bfe9"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=2fda01692bc766101fddfc886e91bfe9^sys_idNOT INafda01692bc766101fddfc886e91bfea"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>2fda01692bc766101fddfc886e91bfe9</id>
+        <name>GaicDefectBucketFlow</name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-29 21:16:20</sys_created_on>
+        <sys_id>afda01692bc766101fddfc886e91bfea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-29 21:16:20</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=afda01692bc766101fddfc886e91bfea"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=2fda01692bc766101fddfc886e91bfe9"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=2fda01692bc766101fddfc886e91bfe9"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2fda01692bc766101fddfc886e91bfe9"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=2fda01692bc766101fddfc886e91bfe9^sys_idNOT INb10f45ed2bc766101fddfc886e91bfa2"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="GaicDefectBucketFlow">2fda01692bc766101fddfc886e91bfe9</flow>
+        <generation_source/>
+        <name>Daily</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-29 21:34:31</sys_created_on>
+        <sys_id>b10f45ed2bc766101fddfc886e91bfa2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-29 21:34:31</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/21Sy27bMBD8lYJnV6DspA/dAgQGemgCNEYuQSCsyJVNYPkoRTlRg/x7lxJjtE4EXji7Ozsz4sOLIOiQRCN2xqJYCeMSRge0mwIyuiejsU1LzYLTkHycRJPiiCvRR293aANB4uYeaGDQR41RNLWUK3EEGvFuGn5o5mIGBzazFr65ytf6+1f5WdZ8Psm6kZIPV9XBkI7oRPPwuBIBIs+mzPxyVkostT23kRduQF+gVlJt1vxJuf52UXdfNl291htAvOS+s7H/9aUPMvjXHT4ndBr1yfq7gCKCvnU0nToOnO8ShYXnwfzBQhWxRzakcCmerq02A8c7LbA6eKPwNiTj3YIk6KjMKE+jdTeLA75r7GGkdF9CZmQcmA9D1pxVFEn93cE//XpbuDVuNliK5BXQ6QYpRdONCYf8F5DQMlFrIQTj9m2I/mjmYdZiqzm2qif/xEsHs3cVqCy84oig2jJ+PcP3EE128ZNpePh1dt/+HvPexUdR3C6muaGEsjVI5WENKpqQrnjB8e0lvj7+BSU+CU7eAgAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=2fda01692bc766101fddfc886e91bfe9^sys_idNOT IN3d0f45ed2bc766101fddfc886e91bfa3,bd0f45ed2bc766101fddfc886e91bfa7,bd0f45ed2bc766101fddfc886e91bfa8"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="GaicDefectBucketFlow">2fda01692bc766101fddfc886e91bfe9</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-29 21:34:31</sys_created_on>
+        <sys_id>3d0f45ed2bc766101fddfc886e91bfa3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-29 21:34:31</sys_updated_on>
+        <ui_id>ed41f71b-132b-4329-9a9a-39e898a606cd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VX207jMBD9lSrPUZWQUljeECwrHoAVIKQVQpbjOK2F62RtpxcQ/77j2E5LG6CUioVHz/XM+MzEuX0MWBYcBPt5L4pwvLu/F0VJEkX9fkJwnKZJn6RR2kuDMBB4RMFS45RTOI4xr8x5ipQgKKM5JRqlFbmnaICZlyiwzJgqOZ7dOIdfh6dHneNGS4aMZ5KK4OD2LgxKLCGNpjI4eFxS6VlJEccp5RDk2qDonBtI4doVPHNercgk8EckbOhCZgZLFAZ0qqnIKKTKMVc0DEZYZFgXctZIJMXZheBzwZAJDREDYzxV7AHC70fGLqdQFqFW1xyR65QVk2HBCL0oNSuElVigVlnwaiTObQGmxzTHFde+xyCpFMSjpcFsQDhE+dWwmFz6hCdM1OU5JS8I5s0Jay1ZWmmqzF1QTkcQCI1wWTIxQKUsxqx2Biyj7oDDoZvzYgJJFRuILiYGeBdahLsnID+uxTdYMlPFGYQBZwDEONw2sk1XRSXrrowR4ZWqFRILZWMFT3Wv0N/KoLRVu/qQbREYKCJZqQ/BYUxdKU/hWiTfjeaUIIXImMmpFphek1ufXv08+339Z5XXy+rNiH20mHld1K3ObaU4ij+TOYrHW6M4wP1PJNey+nocf4u1tuA3qEv2XiXB7vy+VSE1sp1b4O4qXTdm6AmjPHu2etcA550vDNk66ewlvI6gucmxtIN3vv0O/iA98wzZvjDBmag/VRAQ0nxh3kavL68fSzyor3/O2lqGFVllL+7oovOw+Zat79Xzdw2Q3vEKEHWuLcoW4H6/+vCOusnWqJvsvI+6QJzbxwZ907WWBvuXjrk6b/9g7PGyPZBowSF+umuof7RZzvi9OXdMzqXZTN41nIvMsprjFwi25XfUJw9xaBIOwdXlQ3ZY0YRlA6rn2b1VVugJ5vdteseuZobq8j78Juu9Onv9eD5nMANIUgVXtfgoi+Gxsboe4tCKN9sOp0LTQd28dSF6zzM87Vw2GFuBuxXBmhyO070tvr8+4/PmG986Pb7/3+InZFMK3/0DQQYsJD0PAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3d0f45ed2bc766101fddfc886e91bfa3"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Execute Skill">30468d977f921210f465c3b76d8665c1</action_type>
+        <action_type_parent display_value="Execute Skill">d88205df7f521210f465c3b76d866563</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="GaicDefectBucketFlow">2fda01692bc766101fddfc886e91bfe9</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>3a47942e-62c4-4686-b960-9e49eff9b71d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-29 21:34:31</sys_created_on>
+        <sys_id>bd0f45ed2bc766101fddfc886e91bfa7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-29 21:34:31</sys_updated_on>
+        <ui_id>a1328fb9-cad6-4f89-b3ed-e3336447a977</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bd0f45ed2bc766101fddfc886e91bfa7"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="GaicDefectBucketFlow">2fda01692bc766101fddfc886e91bfe9</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>3a47942e-62c4-4686-b960-9e49eff9b71d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-29 21:34:31</sys_created_on>
+        <sys_id>bd0f45ed2bc766101fddfc886e91bfa8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-29 21:34:31</sys_updated_on>
+        <ui_id>1ea0b331-27e2-492b-a722-83cb1dfac2df</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UTW/bMAz9K4HPseGvOnFuxYIMPawFuqGXrjBkiU6EybIny2myIP99lC2nadd1QRFgGDDfSInke0/PvN85nDkzJwbmB2mQ0CiIotD3w2kc5EmUByGLCEDgjB1JSsCbCmilGMZrIlqT2O0iEk/SOAQ3CWnsxsk0cfM08d0U4hSKIs0nAfO4hnK/xzrGm1qQ7Z0txwxdccEUSGd2/zB2aqJwkgblzHYvjvS2hkyQHAQWzivaliD16GqOPU5lMVTfDjRe0jIzMGa2e8ZNEo8MnsAfO7DRIBnguIKIBsZOSSQjulJbZ6ZViwkFhN1IsT3cWHGpe6Yl2TT8B/aPfXOvAKRGrQqHMLMKDeJUnMJNrXkl+4wmuRiUq0RbyuuegtEWCtIKfaRt22A/qA1kA6JHWHxeVY+3w7wFlx07i1ZUlIhDRLRWPG81NOY5QEAnSknqmstlVqtqzbtihFJ6S4GBV4jqEWc2fCk9Qg1uDwUi3gLz8y59RxQ3JD5hGyzed+Sz762Z29OwgLOOc0c46x4KrzZU8VpfYuM1WJj7sbVxfvGWAWj69N5HPZ+svMkaSRF6AVRneUu/QbYkfMg0v5r34+XVh9H8cPo+I38xUEbXPZRTaTwr/g0ta+VnOevki7M5efqXnGwR/WNW/pOB/fDNDXb00p1nmyPzdn7VX1vfj9huR4IonBZ56lLCEjcupqmbR8BciKIoieMJSScTr2p13WpPQVNXElG8sp7P1PWdfwaUiEXDqEczPlmjocGCg2DNK6INv4YdkK3tgMOiP9v/ESR+9/3f92fc9w8/ATYjTGG4CAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bd0f45ed2bc766101fddfc886e91bfa8"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=2fda01692bc766101fddfc886e91bfe9"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=2fda01692bc766101fddfc886e91bfe9^sys_idNOT INf90f45ed2bc766101fddfc886e91bfa5"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">bd0f45ed2bc766101fddfc886e91bfa4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="GaicDefectBucketFlow">2fda01692bc766101fddfc886e91bfe9</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-29 21:34:31</sys_created_on>
+        <sys_id>f90f45ed2bc766101fddfc886e91bfa5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-29 21:34:31</sys_updated_on>
+        <ui_id>3a47942e-62c4-4686-b960-9e49eff9b71d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51TTW/bMAz9Lzonhj8CN86tQFGgh7ZAV/QyFAYt0YkwWdIkOalr+L+Pip1s6KnYyeIj+fieKI/M9MH2wb+aW+/lXrPdz/cVkzpidB6ZFGzHskq0VZZWvMjLIk/TfLvJmrJoslwUgKJkK6ahQ6qUATtP4RFUH+NxRLHJ2pusWWdF3qw3RV6tK6hgXVS4rbZQpiUXyQty44SfJmoV0lsFw9v/M/CDVMLhYsaCI20BHduNX1JhsFgraFDRoIWB+r/r+dL5sJj+cgeRnUJ35aVPVJGnK4YfAbVAGtSC8rhiHWgBwbiB7YLrCXAI4lmr4VpxkDoQHYu1H15+EneWprGwRXLEcU5ew3q5yBnmByM5PtsgjZ6RAI1aerhRfaefZvlxBdhCr8JlBYT0nvjQRs1RxSKp/XEwp5fLwHupz/6WpDIc1DWCEJxs+oA+rgEVdkRUd2Ct1PvaOnOU52bS0iV7RUHSKnOiofFZJsCj8ISuCJJ7wu/O8Bs4GV08Eg01T2f39e8+zp19LIrr2TQVeO6kDbdEd8RF3PQe3+vM5OeHIZBLTwNfI/Zw+RtiYqAlS/4vdDLuV5T6F5v+AM1JJstXAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=2fda01692bc766101fddfc886e91bfe9"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=2fda01692bc766101fddfc886e91bfe9"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_2fda01692bc766101fddfc886e91bfe9"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_2fda01692bc766101fddfc886e91bfe9"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=2fda01692bc766101fddfc886e91bfe9"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=2fda01692bc766101fddfc886e91bfe9"/>
+</record_update>
