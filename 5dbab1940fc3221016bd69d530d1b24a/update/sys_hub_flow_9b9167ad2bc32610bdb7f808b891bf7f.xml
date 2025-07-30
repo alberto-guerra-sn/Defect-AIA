@@ -1,0 +1,1566 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=44000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>85287bde2b9b52108de0f216d891bf7c</copied_from>
+        <copied_from_name>Agent AI read record</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>agent_ai_read_gaic_record</internal_name>
+        <label_cache>[{"name":"subflow.table","label":"Input➛Table","reference":"x_snc_defect_bucke_gaic_defects","reference_display":"GAIC Defects","type":"reference","base_type":"reference","usedInstances":{"e7c8b616-f17a-44a8-b01f-93388897c6db":["condition"],"ad0c731a-63dc-421f-9fb2-0f8232cae3d7":["table_name-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b88fec4b-28f7-4729-ac84-6e8aa58c21ba","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"00087472-0dab-43c6-95f7-aaef2b36f648.Table","label":"1 - Look Up Record➛GAIC Defects Table","reference":"x_snc_defect_bucke_gaic_defects","reference_display":"GAIC Defects Table","type":"table_name","base_type":"table_name","usedInstances":{"693630ff-d813-4024-9ed0-3d7d36cc9e63":["table"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","filter_table_source":"v_cluster_transaction"}},{"name":"00087472-0dab-43c6-95f7-aaef2b36f648.__action_status__.code","label":"1 - Look Up Record➛Action Status➛Code","reference":"","reference_display":"Code","type":"integer","base_type":"integer","usedInstances":{"84b6f2bf-ed50-4582-bbd1-95b19753bb51":["condition"]},"attributes":{}},{"name":"flow_variable.table_name","label":"Flow Variables➛Table Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fb38d986-e6c0-44bd-9cf0-1c3615a7c09c":["condition"],"84b18395-42e7-41cb-abef-14b639b38973":["table"],"a008c48a-d969-4d51-9ff0-46775dde9b25":["table"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"fb56bb2d-957b-489c-abbb-1afe769c1c21"}},{"name":"84b18395-42e7-41cb-abef-14b639b38973.__action_status__.code","label":"2 - Look Up Record➛Action Status➛Code","reference":"","reference_display":"Code","type":"integer","base_type":"integer","usedInstances":{"94743d72-3c53-4aff-8ff7-bbb8c358c60d":["condition"]},"attributes":{}},{"name":"flow_variable.prefix","label":"Flow Variables➛prefix","type":"string","base_type":"string","usedInstances":{"be48559a-9f12-4b53-9ad1-054c75c4d259":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2525da90-53a6-446e-b834-db552786f9d6"}},{"name":"flow_variable.response","label":"Flow Variables➛response","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"827317dc-d413-4918-b40a-4267bc64ba1c":["output-0"],"1ae699ae-f057-4216-a1a7-ebb3905898ca":["output-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b8e2bb5f-698b-4835-b8ab-d1797911fc5c"}},{"name":"subflow.output_fields","label":"Input➛Output fields","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f6b0dcd9-dd78-42ef-97d7-e6e1ccdfbe5f","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.number","label":"Input➛Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"08558fb4-95f6-43bb-8de4-9dd5421b94b3":["number"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2c2ee0ed-379e-472f-9d70-22500b618e5b","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <master_snapshot>dec1abad2bc32610bdb7f808b891bf4b</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Agent AI read GAIC record</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:14:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9b9167ad2bc32610bdb7f808b891bf7f</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Agent AI read GAIC record</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sys_hub_flow_9b9167ad2bc32610bdb7f808b891bf7f</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 16:45:48</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=9b9167ad2bc32610bdb7f808b891bf7f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9b9167ad2bc32610bdb7f808b891bf7f"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_9b9167ad2bc32610bdb7f808b891bf7f^id=9b9167ad2bc32610bdb7f808b891bf7f"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9b9167ad2bc32610bdb7f808b891bf7f"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9b9167ad2bc32610bdb7f808b891bf7f^sys_idNOT INdf9167ad2bc32610bdb7f808b891bf8f"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9b9167ad2bc32610bdb7f808b891bf7f</id>
+        <name>Agent AI read GAIC record</name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:14:58</sys_created_on>
+        <sys_id>df9167ad2bc32610bdb7f808b891bf8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 08:14:58</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=df9167ad2bc32610bdb7f808b891bf8f"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9b9167ad2bc32610bdb7f808b891bf7f^sys_idNOT INe87659fd2bcfa6101fddfc886e91bfa4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=dd2d7420-25bc-4395-a7e2-f0d448087f4c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>number</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Agent AI read GAIC record">9b9167ad2bc32610bdb7f808b891bf7f</model>
+        <model_id>9b9167ad2bc32610bdb7f808b891bf7f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9b9167ad2bc32610bdb7f808b891bf7f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 16:45:24</sys_created_on>
+        <sys_id>e87659fd2bcfa6101fddfc886e91bfa4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 16:45:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e87659fd2bcfa6101fddfc886e91bfa4"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=9b9167ad2bc32610bdb7f808b891bf7f^sys_idNOT IN639167ad2bc32610bdb7f808b891bff0"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=688f62cd-5e27-41ff-bb83-e7b67e45de07</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Output</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Agent AI read GAIC record">9b9167ad2bc32610bdb7f808b891bf7f</model>
+        <model_id>9b9167ad2bc32610bdb7f808b891bf7f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_9b9167ad2bc32610bdb7f808b891bf7f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:14:59</sys_created_on>
+        <sys_id>639167ad2bc32610bdb7f808b891bff0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 08:14:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=639167ad2bc32610bdb7f808b891bff0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9b9167ad2bc32610bdb7f808b891bf7f"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=9b9167ad2bc32610bdb7f808b891bf7f"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=9b9167ad2bc32610bdb7f808b891bf7f^sys_idNOT IN651e23ed2b072610bdb7f808b891bfca"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Agent AI read GAIC record">9b9167ad2bc32610bdb7f808b891bf7f</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id>1f0c6a19-30b2-4873-a084-a4833857a4ed</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 09:09:27</sys_created_on>
+        <sys_id>651e23ed2b072610bdb7f808b891bfca</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 09:16:12</sys_updated_on>
+        <ui_id>00087472-0dab-43c6-95f7-aaef2b36f648</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VYW1PjNhT+Kxo/tWwwdhJyYR86zHJZpu0yJXTbDqEa2ZYTdR3ZSDIQGP57jyTLCSSEcNnZ3QeGkXQu3znn08mRz249lng7XtIP+mm/v93rBkGrFQSdTismYRS1OnEURKTtNTxOJhQkFYkyCstLkpV6fY0lj3FCUxorHJXxF4pHhLkdCZIJk0VGpp8rhcPdow9orz6NxyxLBOXeztl5wyuIADeKCm/n9sGRmhYUZySiGRg51SjQJw2psXYE95QXI9IO3BJzazoXicYSNDx6rShPKLhKSSZpw5sQnhCVi2m9IyhJjnk22xgzrsCip4WvJbsB871Ay6UUwoqpPauXuMqU3Y7HOYvpcaFYzu2OBWoP86yc8E82AJ1jmpIyUy7HsFNKsEcLjVmDqBClg3F+deIcHjBuwqsOszwmWb0iSgkWlYpKXQua0QkYwhNSFIyPcCHyS2aUAcvEH2Ww8NMsvwKnko24T2IN3IcUEf8A9vfM9mcimI7idzADygCIZVBtbJMu81KYrFziOCulORCES2vLuzO5whelRmmjruLDNkUgIGPBCrULCpe0CuWu4Ui+vZIi/Rkl4pwnTPuUc0xfpPKL6fth3v662JYqLwNcEfneXkXk8M2I3A6Cb0RlJcrvj8lPcdMGvEBQG4vdM5yZ1QxWq2S9rY0h39jYjWMqJdK4tnYNUKSBolJCbEiNKUoTbHby6D9ouT4aGANoAvcLCapKwRFBhuM+0haPNVMQLycR/GMS5WkqqULRFL0LEeNoX4hcoI9Amky7GFCbHgPmkrDMdObc1FqiigaoLABYIQCq1hl6/tBDJIWL4uBpdXpNJkVGdwCNQHKcCwWpjtGwhCuROEEfajkaUeHHpYDSK98I6lqZuMDre22riqy2Yjb13wm9KBkAQYe60Cc0hpuBgEI5XIk/SiqmkBQJaIE4yAEyuh4xdbBodC3+XfA8ON09OR38dXT6Ebimhp52ujUE2xxyPfhngI/28Mn+4f7fLqats2CzTzbT89tW827rvRO1V+JXOnVy87q+tv2Ty4YsI8NVxotSSd+W7Wf0C+RYTiVmCSR6Bxb2wEAa8io5tZt3Q886GnrvVhoGbe/urm6oYbKyaSWz/iR1pqy/r9NRDxjNknsDwRrgnLKlfDR9DG/VUFPt48Fk0PzhJ4Pvsp0CoATbfDMOfcYMZgD0pX32/iCwvZIaUfiAB6b8M9aaPSLjRfYSpHJ08/KpwNTV8XcNkE5xAIjQqUW5BLibB5z5irqtN6Nuq/k86gJxzm5r9HXWliTYzd+6dE7+RsuTh/K6Dc/NOXfnNfU/vMxn+FyfTe3zwd1sPetyzjPLnuw9QrA3nu4fuWyNr3m7x6Ba+cP2suIrloyomnl3Ukmurkj2Zdl5xa76DpnwXv1SCFc+JqO5lwJL8QTqxGBMwMIMExITQXGalzzB1cNlRhtdt5QJqSrhxR5yYn+bc7hydnzT0qiWfovOskZ0TvEoRS68CoNEEB4y4aE6vOcl45F+1H7Dt8lr+tEBDLEm9fAALeZqR/Xg+0hPeqJqK8q/ZsNaE1T4pqBe39GW8X1pZ3sC6w/xNeO1XSemJGo3SafbCsMgCIOkG/S63bDXidIO6bbT2UXD9qNbDpZTIAaYx44IrqrBYmuxvfHFn9yg524dVCbWxeuU93KuXxjNrkIaMNQZOcBPh1T1iyjPM0r4jJ7b36xhfC9f5Up2+jA3duu3ZUX7Wj/mJfuTs4uSHmlS9GjQ7IVJvNnrht3Ndpp0NvsJ2d4k/Wi720po3E5f/vt8/j9zISxNsBYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=651e23ed2b072610bdb7f808b891bfca"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=9b9167ad2bc32610bdb7f808b891bf7f^sys_idNOT INe91e23ed2b072610bdb7f808b891bfcd"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Agent AI read GAIC record">9b9167ad2bc32610bdb7f808b891bf7f</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>84b6f2bf-ed50-4582-bbd1-95b19753bb51</parent_ui_id>
+        <subflow display_value="Get Related Lists">19789a06eb30ea10986ff41fbad0cdc0</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/+1UXW/TMBT9K1YeR5MlbZam5WkSIJCASWzshaLIsa9bg+Nk/thWpv53rvMxoBIIISHxwFPk6/txzrnH+fAQSR6to2y1LFc0LaBepECzdFUWQuSZqClPGWfzaBZp2gBmOlorwOMtVT6cHx7SNC2X+XIep5zWcb5gRbw6E8uYUhDzelGIIi+Tq1B2OGAhl7ZTdH891mOE7aTiBnS0/vBxFnXU4CQHJlo/HF25fQeVojUoLLx0Ruotlv8ugalwYnBEKDTHo53atoYHDNksgnsHmgOOEVRZmEUN1Zy61uyjtTMeAwYov9Bq/5ixk9oN5Bp6b+UX7FyiTiFTAPJhI/XHYzXKMinSSgYXnZOtHiIDyuGyVb7Rbwf0QVAQ1Cv3naDeYj/oAugAY8QkLnft3btp4Aupe37jpWoZVY8n6lCF2juwYQleXh1pM0ReH28CFDQ4sWpo12Gk6kx7K/spCLpJtgoPiVDtHaKzcqsTygLDBMWkyQuMP+vD19TIQPcNtsHiMO69ljceXoVNl7Quijmfx2cFL+OcizIui7yIUwY1ZEtaLuY8OvTSVjc+kBpEGuWoBkUxwTIjO3eOEG5hZH6Yje+h+KWdYPHNPgYYOqWye1th5bd38dec/hvQpsJjbD+B/BPnz/87/99yfpbROi/SPIa0xh9twbOY5stFzPiqXqyyM17U4g+cPyxyiAXSP9oDA79Kj05PNvrk5JwxsJYEJqfnPTUSqBFvUQ3idkAEr/pIW38C5hJy2TcgjbeOGHDeaEJJ/3gSEjpeBBMS7ZsaP9KSVggLjtR78iQjUpPnxrSGvEQ/qjDiEgZBezC3VKogI2l7H1kyWoz4DoF1BqGGmk2UbCJCBb7ACV4oh3vadArWiMYQu2uNw+UwsvFpuuBTYoKb327BJMwbdJVL+sSw3Z4XTn0aeo3MHruE4OlGj+GpV1VUlWrbz5XvqkH9ZPwMS3gaHQ6Hj18BOTws4awHAAA=</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 09:09:27</sys_created_on>
+        <sys_id>e91e23ed2b072610bdb7f808b891bfcd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 09:09:27</sys_updated_on>
+        <ui_id>693630ff-d813-4024-9ed0-3d7d36cc9e63</ui_id>
+        <updation_source/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=9b9167ad2bc32610bdb7f808b891bf7f^sys_idNOT IN251e23ed2b072610bdb7f808b891bfcf,3791a7ad2bc32610bdb7f808b891bf04,3f91a7ad2bc32610bdb7f808b891bf36,7b91a7ad2bc32610bdb7f808b891bf35,e11e23ed2b072610bdb7f808b891bfd0,e91e23ed2b072610bdb7f808b891bfcc,e91e23ed2b072610bdb7f808b891bfd1,ed1e23ed2b072610bdb7f808b891bfd0"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6d1e23ed2b072610bdb7f808b891bfce</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Agent AI read GAIC record">9b9167ad2bc32610bdb7f808b891bf7f</flow>
+        <flow_variables_assigned>response</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>84b6f2bf-ed50-4582-bbd1-95b19753bb51</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 09:09:27</sys_created_on>
+        <sys_id>251e23ed2b072610bdb7f808b891bfcf</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 16:45:47</sys_updated_on>
+        <ui_id>ede5d965-de25-43ff-89be-e3f418a76c11</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YUW/jNgz+K5qfkiZ1k3Zt0/RhKHBX7A7bFVi7e6kDQ7blRDlZ8kly2izIfx8p2Y6Ta4ftcUCCoJEpivz4kaKJbgJV2bKy5kndGcPnMpg+z4YBlyiD9SaQtGDBNNDMlEoaFgyDFRUVimCZcVMKuv66k6QLLjLNajsl1XDcMh1MNwdbdl2yWNCECTj4aDWXczjOM3hi1zfjq2uanSfpxfnVeJRkyXU+GU2Syc04yekF6DUHO7B+BIouQGIa40pniGQ0DNirZTJj4CynwrBhUFCZUav0upVoRrMHKXaCBZfWx1jQV8P/AtOT0WiEmjmDsNKagfYxrtlpiFE8ZQ+l5Up6iaWJaFhToirkFx8B8spyWgnb4bUyYI+ViBph1Jjyx4V6+aNxeM+lC7DeFCqlon2iFmhIKssM5qLiTwfkeMlvhwlhghXgMS5oWYIkLrVacecFQBfhXMBDmAv1AuiwfkKaYoQhsEnDe5B/cOKvVHMM93cwA4fR3Z+Sf6/YJ0x4MmHnSXKZn17dTJLTnycXl6fJhCan2fj6BmphnKeXabB11MbfKwzKk1TTEXtGQcGkmpf2DiCsIDirK9bIMOi2NGD9T5rB2UkkT07u0pQZQzCIszsXFcGoSGWACGIXjORZ7CQqWbLUhuTRGSBFZSzRzFZaEkrcdQkJWnzAAiSyKhL44YaoPDfMkmRNBmPCJfmotdLkV6hFgS4emefSgVlRLpBBolwJGVJXF6kgJlJCbA5WFIRRQGgOd66Bh8fZKy1KwaaARhOzUNpCXlISVaPRRdYohpD0+ZzpMK00FJQNnSIm1sUFXm/RVh1ZawWFZ5FEy0uj5IMjozG92d76rZwzkZlG3Gtcmipx1eM7Tui7UeyVB6h8fu3/9kMIl9teFAyjoA9GUyDBkqUCLFTc71l/jjDXcKcQM+C3wJ2Bg8DOi9LfYqngGkTBrLWSqkq2kMcjkOeQiB7i5l46uq1XqccWCibndgHSwaBPNpEk8GnjbIl1us98htQWPYSNejwnvT3gIZepqIDonjvRby02Vh3iw3TFV3EslPoWV2WsWQrtLfQ/z87KLJwz+9m7+SitXvdOxw0C/Jydwb4hVIiGRQJJ1xwcUfgS3xrIywK6C2E0XbjtNRZuxgQvuGUZ1m6dpUji16/3sDdGa/QulDaZ9bGgC6yl0fW/XVZnHZ02P8tmGzJUr9PGZZukZSdJrYWdh7CszKJXH3pezrpgtrvlrrprgvfS7E3VJ7eEQdc9zGL3dfmvk4lZ/NA5WJfIAV+r/2zzHWPvBtn7Af35lf/bcX4g+qk+2z3aJ7+Qjdueeq3h3vZ072lLaqWG10jCt4Mx8q9RuMyHwbu2AtSETiHG8YAMSLel3B5Y0kxQqOlYcGPNGxbjSRwDcfGeXrj3BCbneJtzBbX9+fHhC2leOtB7wD2KQn+xeL7u7dz3EVvgyhrfLL4dgmTQNE637Z7f7pz+rYKZrPvz+65AJ9hutzMc5fxr2Y96bvh6c5I6jnzHke848h1HvuPIdxz5jiPfceQ7jnz/25EvYyk30COfkKJPzf/5cGMNfPG0K8LOiQ53su3fPTvKZTEUAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f791a7ad2bc32610bdb7f808b891bf03</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Agent AI read GAIC record">9b9167ad2bc32610bdb7f808b891bf7f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Top Level Try">e9060aa2c3013010ace8b740ad40dd51</logic_definition>
+        <order>0</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:15:00</sys_created_on>
+        <sys_id>3791a7ad2bc32610bdb7f808b891bf04</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 16:45:47</sys_updated_on>
+        <ui_id>1f0c6a19-30b2-4873-a084-a4833857a4ed</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7791a7ad2bc32610bdb7f808b891bf36</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Agent AI read GAIC record">9b9167ad2bc32610bdb7f808b891bf7f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned>output</outputs_assigned>
+        <parent_ui_id>9bd153c3-18b0-4d29-a774-8515d64e4462</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:15:00</sys_created_on>
+        <sys_id>3f91a7ad2bc32610bdb7f808b891bf36</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 16:45:48</sys_updated_on>
+        <ui_id>de49906f-2052-414a-84ea-cbf2a60a6b2e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/5VTy27bMBD8FYNnW5DsRFJ8C1AECJDUQOPkUhQCH0uLKEUqJGXHNfzvXerhBD61x519zQyXJ2K70HbBb+2992pnyPrniShB1iRf3WV5QcWS8dUyz1ImWCHLtGTlXcakTMmcGNoAVg4jMN5T3UXg1VCmYRbsbAdhFmqYOeDWiZky0rqGBmUNlgvlW02Pb//XxWulhYPI9NectNQhiQCOrE9XqXBsodKUgcbhL8Eps8P2f9U2NW4mcddi43iM/TQYmUYW2ZzARwAjABdJqj3MSUONoMG64wVxQMXG6E+gVibgNBKLP7z6g6PLNE1jpQSUxGHIXsJqdG+AeW0Vh03be9QjIZo5Jq3uGvN94B99B0k7HSbfEek8zoM2so40Rk7ypbaHH9PCB2V6gWNSW071JaIBbWBdAB/foVPbK3MG5On6MUBDgxurhrYtIlXr7F71W5B0k+w0BonU9oDs4nUmlEeFCbpJkwfEv/XwG3Uqyn3GMdgc170a9d7BY//YZSnzJReLW1gWi5tMygVj5WoBBcsLuLkVkBbk3FtbvXdR1GDSaEc1OIoFnjvVhnuksIdR+RnvTJn4gYab249MxlAAVx4JbyP2+KVOHPGcFP8KHaz7HaV+Yue/J2eUc54DAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b391a7ad2bc32610bdb7f808b891bf35</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Agent AI read GAIC record">9b9167ad2bc32610bdb7f808b891bf7f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:15:00</sys_created_on>
+        <sys_id>7b91a7ad2bc32610bdb7f808b891bf35</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 16:45:48</sys_updated_on>
+        <ui_id>9bd153c3-18b0-4d29-a774-8515d64e4462</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YX0/jOBD/KqeIR8glbUqhbwiuEqeDStcuL1cUObbTes+Ns4lTYBHf/cZ/4iZp2V3YLi9XqYqSmfHMeOY3M3afPVHJvJLlTFyUJVtk3uif+2OPZYoG789ehlbUG3lxXEokqzKOvWNvjXiliM9zb02Lkols7o3mXugHc+947mGxyjl9nCSfKZZTvKQrBHwQHnPxcEWVGVqMxlcXl7Prye10djH7NDUCWBCqVV1nki5oYdUR6h+ljHISpwhTWRrhKVNmblA+VkS97Hk+n3sVmz3l9C+UUK4+R+pR65srjfAoKCKxyPiTk0gRL6njL1kmHctRjWZHZx2lhKao4jLW4dlezVseXaqt1iyEJQQxpkUhithkxAnKotoIrlBGkBTFa36LghiHNC9srHuMOc0WcumYUaCeL/CDGK9oWaKFif1UFixb6NBb8s9G32rca/DLts43xf7G7vYXh7/37fAHLgEqA9+oDf9Iws5/KPpvCsOF3vZvU13Y+w9GxT5l7EtFr4kTGJ5HCe5HvZNzfE5OoihKTlA/7Z0QEiWnaICCcNjvJLyNJNNTnAgWsQ6NalJOptNYalnK6YpmMl6hPAfkxHkh1qyZLmhb/oIDyU8hFzHRyfBNOHzYKfI3ObpDBUOJzkD+nraSVZzvQrVo7+8N5Xw66ACqpOAiZ1+R8n8sihUyOPlzOrndbtOt/gtvR3hdv+hVn9Ea+RxlC7/RHo7WmmcNbnrIO9a/vMBcIazMOXq6O4wX9TiMl8N4OYyXw3g5jJc9jRe8ZJwUNNP3GkZgwgDR3m+Ua42bTVsabkQlLlguFaTXwNdhr4ngBzi4pdH6+zNKQSRHBaiTtABCewO6Z+r6BJQobgPQYMyOJLC5o+KAr2oNenPTue+40/W+YldmXiuzoIE5i7po+JYjdYBqzqWJeTsDsqtMg9QbhccefZQ0I5Q431yLcBRVIRMoEEdQJWGsAqhL9hV0R4GSSylsBNudu8/YHkHqbAmG6SRX8TMUqarSMgWvVtmtcV4dXkxvvNvE01Ku2qcaYFQlGKK52ozyzrqaTpfi4e/akzHL9L4tkwuMuPtCElCeVJKWJjHgf/ylUgLGrlUdG7cVOL+DFlM1HwiWsjbYwopzowuVG1dMW9UlOwotXnp7xEvwv0PMfScxpovXiQnSYQ/GaW+QhP1eEAbJaUgRvPSHZyEeRueNxP2hgGTPAJvstf5NsgkUtYm64FXU95TCs49L4X4zZcu0GZ524brENM8qQG+fUoD/2vlEd973nky8H+g9uzqF6kjWUZopdaQxJsPtm6DuP92W8tpo7GJ3Bot/HyuzNX4JGQbh2RDj/ilV+B0MBv1kGAWIRAEhBDfwu3Fvy1+L20QITlH2a4D7MbMqtcHZ3X5q7odPrZ3IuVdAMRgsTbIJxUz9STBTtOv6n2vFeIKcMdwkPYjiXwXyDe3lPyAL0ecDFwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2d1e23ed2b072610bdb7f808b891bfcf</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Agent AI read GAIC record">9b9167ad2bc32610bdb7f808b891bf7f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned>output</outputs_assigned>
+        <parent_ui_id>84b6f2bf-ed50-4582-bbd1-95b19753bb51</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 09:09:27</sys_created_on>
+        <sys_id>e11e23ed2b072610bdb7f808b891bfd0</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 16:45:47</sys_updated_on>
+        <ui_id>1ae699ae-f057-4216-a1a7-ebb3905898ca</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41Ty27bMBD8F55tQbYTS/EtQBAgQFsDiZNLUQh8LG2iFMmQlB1X0L93qYcT+JTjDpezM8NlS2wTXRPDzt6HoPaGbH63RAmyIevV3WJdULFkfLVcL3ImWCHLvGTl3YJJmZMZMbQG7BwosD5S3SSgbaW2p+pIvaJMQ+YhOGsCdB02CRWcpue37/Tyg9LCQ1L1Z0Yc9Tgwgieb9uoonh1UmjLQSPkSvTJ7vP5dH9PF7WTk2liixzpMxNaLpGIxI/ARwQjAQZLqADNSUyNotP58QTxQsTX6EzgoE5GNpOaPoP4hdZnneeqUgJY4DKeXshozG2B+sIrD1kVlzYDElNx4aHVTm1+D/pQ2SNroOKWNSBOQD1xSnWSMmuTLwZ6ep4GPyvQGx0NtOdWXikaMgTURQnqHRu2uwhmQH9ePARpqnFjV1DlEKuftUfVTUHSd7TUWWb8LAtImZpQnhxmmSbNHxB96+G1clJ9Ig5fTuFej3ht46h+7LOV6ycX8FpbF/GYh5ZyxcjWHgq0LuLkVkBek66Ot3ptkaghpjKMaEsWGwL1y8R4lHGF03uGeKZM+y7Bz08qOpQCuAgreJezpS5844zop/hU6Wf83Wf3Euv+TCd3higMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ed1e23ed2b072610bdb7f808b891bfcb</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Agent AI read GAIC record">9b9167ad2bc32610bdb7f808b891bf7f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id>1f0c6a19-30b2-4873-a084-a4833857a4ed</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 09:09:27</sys_created_on>
+        <sys_id>e91e23ed2b072610bdb7f808b891bfcc</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 16:45:47</sys_updated_on>
+        <ui_id>84b6f2bf-ed50-4582-bbd1-95b19753bb51</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VyW7bMBD9FUNnW5Al77egRYACbQMkQS5tQIzIkU2UIlWSsuMa/vcOtThG46ALcuxN82Y4894s0CEyta9q7+7NlXNyraPVl8dhJHXA6PsQaSgxWkXcaCG9NJo1wDDagqqD4xa5sWJQWXSo/WAn/YYMs5UCxUDXZY6WooV0lYL9w1894huphMWOUwWWKnvyrA6/uPy+QqYgR0W577yVek3PpSCrSKAYL/mYZ+ksS5MkXUzG+SzLx6nIACGjuP7hu17i4GODDF/VHuoR7vpKpCXQGifDCJ88alIRrQpQDodRCVqAN3Z/QiyCuNHqGdhI7SldFIKfnPxBudPpNAQWSBo5ts6TybputjDfGMnxpgoEW8RDrro33Ki61J9bHWEOWECtfD8HQmpH+bAKpAOLjlJxtzG7277gtdSNwM6pDAd1ssBTG/LaowuDQYUlJWIlVBU1h3VTtU0by3ityIgLZXZUNOxbDDwQj6lHEF8T/r6BH8DKoOITpWl2IdDMwUnOmt2kdN6ShGPTFva9DoRagZ0U1naDAhy3svJXVGeLHevj8OVin+304ZAkyWI+maejREA+mmR8NlpOi/kIAIs0z2bFbLKIGWvJM+fB146xmBuBx+PXOkkykbxc+zfL+xaXsYRpMR0n08uXMZlduowLN/H6OaS/OYcwwD+8Bmrb/3M4PwfpWLvWnbam+D9fw2NY/baCa/dGIJeOiNwH7EP/NwiOPS2A5OfQzthvQcIzdvwJRUB+wVcGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">251e23ed2b072610bdb7f808b891bfd1</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Agent AI read GAIC record">9b9167ad2bc32610bdb7f808b891bf7f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned>output</outputs_assigned>
+        <parent_ui_id>5ff068cc-19a8-469c-82c3-e31d8e888714</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 09:09:27</sys_created_on>
+        <sys_id>e91e23ed2b072610bdb7f808b891bfd1</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 16:45:47</sys_updated_on>
+        <ui_id>2282125a-de41-4e9d-b448-ee53db972860</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/5VTy27bMBD8FYNnW5DsRFJ8C1AECJDUQOPkUhQCH0uLKEUqJGXHNfzvXerhBD61x519zQyXJ2K70HbBb+2992pnyPrniShB1iRf3WV5QcWS8dUyz1ImWCHLtGTlXcakTMmcGNoAVg4jMN5T3UXg1VCmYRbsbAdhFmqYOeDWiZky0rqGBmUNlgvlW02Pb//XxWulhYPI9NectNQhiQCOrE9XqXBsodKUgcbhL8Eps8P2f9U2NW4mcddi43iM/TQYmUYW2ZzARwAjABdJqj3MSUONoMG64wVxQMXG6E+gVibgNBKLP7z6g6PLNE1jpQSUxGHIXsJqdG+AeW0Vh03be9QjIZo5Jq3uGvN94B99B0k7HSbfEek8zoM2so40Rk7ypbaHH9PCB2V6gWNSW071JaIBbWBdAB/foVPbK3MG5On6MUBDgxurhrYtIlXr7F71W5B0k+w0BonU9oDs4nUmlEeFCbpJkwfEv/XwG3Uqyn3GMdgc170a9d7BY//YZSnzJReLW1gWi5tMygVj5WoBBcsLuLkVkBbk3FtbvXdR1GDSaEc1OIoFnjvVhnuksIdR+RnvTJn4gYab249MxlAAVx4JbyP2+KVOHPGcFP8KHaz7HaV+Yue/J2eUc54DAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">291e23ed2b072610bdb7f808b891bfd0</block>
+        <comment/>
+        <connected_to>84b6f2bf-ed50-4582-bbd1-95b19753bb51</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Agent AI read GAIC record">9b9167ad2bc32610bdb7f808b891bf7f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>1f0c6a19-30b2-4873-a084-a4833857a4ed</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 09:09:27</sys_created_on>
+        <sys_id>ed1e23ed2b072610bdb7f808b891bfd0</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 16:45:47</sys_updated_on>
+        <ui_id>5ff068cc-19a8-469c-82c3-e31d8e888714</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9b9167ad2bc32610bdb7f808b891bf7f"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9b9167ad2bc32610bdb7f808b891bf7f^sys_idNOT IN979167ad2bc32610bdb7f808b891bf97,e79167ad2bc32610bdb7f808b891bfa3"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=fb56bb2d-957b-489c-abbb-1afe769c1c21</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>table_name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Agent AI read GAIC record">9b9167ad2bc32610bdb7f808b891bf7f</model>
+        <model_id>9b9167ad2bc32610bdb7f808b891bf7f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_9b9167ad2bc32610bdb7f808b891bf7f</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:14:58</sys_created_on>
+        <sys_id>979167ad2bc32610bdb7f808b891bf97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 08:14:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b8e2bb5f-698b-4835-b8ab-d1797911fc5c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Agent AI read GAIC record">9b9167ad2bc32610bdb7f808b891bf7f</model>
+        <model_id>9b9167ad2bc32610bdb7f808b891bf7f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_9b9167ad2bc32610bdb7f808b891bf7f</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:14:59</sys_created_on>
+        <sys_id>e79167ad2bc32610bdb7f808b891bfa3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 08:14:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>number</element>
+        <help/>
+        <hint/>
+        <label>number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9b9167ad2bc32610bdb7f808b891bf7f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 16:45:24</sys_created_on>
+        <sys_id>a07659fd2bcfa6101fddfc886e91bfa7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 16:45:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9b9167ad2bc32610bdb7f808b891bf7f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output</element>
+        <help/>
+        <hint/>
+        <label>Output</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_9b9167ad2bc32610bdb7f808b891bf7f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:14:59</sys_created_on>
+        <sys_id>ef9167ad2bc32610bdb7f808b891bfff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 08:14:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9b9167ad2bc32610bdb7f808b891bf7f"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=14693161000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>85287bde2b9b52108de0f216d891bf7c</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>agent_ai_read_gaic_record</internal_name>
+        <label_cache>[{"name":"subflow.number","label":"Input➛Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"08558fb4-95f6-43bb-8de4-9dd5421b94b3":["number"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2c2ee0ed-379e-472f-9d70-22500b618e5b","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.output_fields","label":"Input➛Output fields","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f6b0dcd9-dd78-42ef-97d7-e6e1ccdfbe5f","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable.response","label":"Flow Variables➛response","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"827317dc-d413-4918-b40a-4267bc64ba1c":["output-0"],"1ae699ae-f057-4216-a1a7-ebb3905898ca":["output-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b8e2bb5f-698b-4835-b8ab-d1797911fc5c"}},{"name":"flow_variable.prefix","label":"Flow Variables➛prefix","type":"string","base_type":"string","usedInstances":{"be48559a-9f12-4b53-9ad1-054c75c4d259":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2525da90-53a6-446e-b834-db552786f9d6"}},{"name":"84b18395-42e7-41cb-abef-14b639b38973.__action_status__.code","label":"2 - Look Up Record➛Action Status➛Code","reference":"","reference_display":"Code","type":"integer","base_type":"integer","usedInstances":{"94743d72-3c53-4aff-8ff7-bbb8c358c60d":["condition"]},"attributes":{}},{"name":"subflow.table","label":"Input➛Table","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"e7c8b616-f17a-44a8-b01f-93388897c6db":["condition"],"ad0c731a-63dc-421f-9fb2-0f8232cae3d7":["table_name-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b88fec4b-28f7-4729-ac84-6e8aa58c21ba","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable.table_name","label":"Flow Variables➛Table Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fb38d986-e6c0-44bd-9cf0-1c3615a7c09c":["condition"],"84b18395-42e7-41cb-abef-14b639b38973":["table"],"a008c48a-d969-4d51-9ff0-46775dde9b25":["table"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"fb56bb2d-957b-489c-abbb-1afe769c1c21"}},{"name":"00087472-0dab-43c6-95f7-aaef2b36f648.__action_status__.code","label":"1 - Look Up Record➛Action Status➛Code","reference":"","reference_display":"Code","type":"integer","base_type":"integer","usedInstances":{"84b6f2bf-ed50-4582-bbd1-95b19753bb51":["condition"]},"attributes":{}},{"name":"00087472-0dab-43c6-95f7-aaef2b36f648.Table","label":"1 - Look Up Record➛GAIC Defects Table","reference":"x_snc_defect_bucke_gaic_defects","reference_display":"GAIC Defects","type":"table_name","base_type":"table_name","usedInstances":{"693630ff-d813-4024-9ed0-3d7d36cc9e63":["table"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","filter_table_source":"v_cluster_transaction"}}]</label_cache>
+        <master>true</master>
+        <name>Agent AI read GAIC record</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Agent AI read GAIC record">9b9167ad2bc32610bdb7f808b891bf7f</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:15:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dec1abad2bc32610bdb7f808b891bf4b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 09:20:19</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=dec1abad2bc32610bdb7f808b891bf4b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=dec1abad2bc32610bdb7f808b891bf4b"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_dec1abad2bc32610bdb7f808b891bf4b^id=dec1abad2bc32610bdb7f808b891bf4b"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=dec1abad2bc32610bdb7f808b891bf4b"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=dec1abad2bc32610bdb7f808b891bf4b^sys_idNOT IN92c1abad2bc32610bdb7f808b891bf4d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>dec1abad2bc32610bdb7f808b891bf4b</id>
+        <name>Agent AI read GAIC record</name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:15:43</sys_created_on>
+        <sys_id>92c1abad2bc32610bdb7f808b891bf4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 08:15:43</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=92c1abad2bc32610bdb7f808b891bf4d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=dec1abad2bc32610bdb7f808b891bf4b^sys_idNOT IN22c1abad2bc32610bdb7f808b891bf7e,56c1abad2bc32610bdb7f808b891bf5a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2c2ee0ed-379e-472f-9d70-22500b618e5b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Number</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Agent AI read GAIC record">dec1abad2bc32610bdb7f808b891bf4b</model>
+        <model_id>dec1abad2bc32610bdb7f808b891bf4b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_dec1abad2bc32610bdb7f808b891bf4b</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:15:44</sys_created_on>
+        <sys_id>22c1abad2bc32610bdb7f808b891bf7e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 09:20:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=22c1abad2bc32610bdb7f808b891bf7e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f6b0dcd9-dd78-42ef-97d7-e6e1ccdfbe5f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>description,short_description,number,sys_id</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Output fields</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Agent AI read GAIC record">dec1abad2bc32610bdb7f808b891bf4b</model>
+        <model_id>dec1abad2bc32610bdb7f808b891bf4b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_dec1abad2bc32610bdb7f808b891bf4b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:15:43</sys_created_on>
+        <sys_id>56c1abad2bc32610bdb7f808b891bf5a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 09:20:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=56c1abad2bc32610bdb7f808b891bf5a"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=dec1abad2bc32610bdb7f808b891bf4b^sys_idNOT IN66c1abad2bc32610bdb7f808b891bfac"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=688f62cd-5e27-41ff-bb83-e7b67e45de07</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Output</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Agent AI read GAIC record">dec1abad2bc32610bdb7f808b891bf4b</model>
+        <model_id>dec1abad2bc32610bdb7f808b891bf4b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_dec1abad2bc32610bdb7f808b891bf4b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:15:44</sys_created_on>
+        <sys_id>66c1abad2bc32610bdb7f808b891bfac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 08:15:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=66c1abad2bc32610bdb7f808b891bfac"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=dec1abad2bc32610bdb7f808b891bf4b"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=dec1abad2bc32610bdb7f808b891bf4b"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=dec1abad2bc32610bdb7f808b891bf4b^sys_idNOT IN909073a12b472610bdb7f808b891bf53"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Agent AI read GAIC record">dec1abad2bc32610bdb7f808b891bf4b</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id>1f0c6a19-30b2-4873-a084-a4833857a4ed</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 09:20:18</sys_created_on>
+        <sys_id>909073a12b472610bdb7f808b891bf53</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 09:20:18</sys_updated_on>
+        <ui_id>00087472-0dab-43c6-95f7-aaef2b36f648</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYbW/bNhD+K4Q+bY2jSLbjl/TDEOStwboWi71uQ90RlETZXGVKJakkbuD/viMpyp7tODHmAC32oSh0PN499/Jcjv744LHEO/GSftBP+/3jXjcIWq0g6HRaMQmjqNWJoyAiba/hcTKloKlIlFH4vCVZqb/vseQxTmhKY4WjMv5M8ZgwJ5GgmTBZZGT2obpwdXp9hs7r03jCskRQ7p18/NTwCiLAjaLCO3lYOXouzoxENAPVYQV0BbeaFfUnNmdW9nb5GnpnD3KRaChBw6P3ivKEAoaUZJI2vCnhCVG5mNUSQUnynmcLwYRxBRY9rXwv2Vfw2wu0Xkohqpjas/oTV4my4vScKDJQooxVKSrVeJKzmEqbD0gwKTN1tiyzCu8LxXJur9iw7e08K6f8nU2HVxtwdQFJKQEELXSgGnkVRjqY5Hc3DuUl4yYn1WGWxySrv4hSgkWl0ngePJrRKRjCU1IUjI9xIfJbZi4Dlqk/zuDDT7P8DpxKNuY+iTVwH/JK/EuQnxvxByKYjuIXMAOXARDLoEOwLaHMS2FSeYvjrJTmQBAurS1v3vDkTJ5lRMpF5JBy/KXUuG0eqoixTZq+EgtWqFMwcUur4OYNR5XjrS3YX7RcnPOEaRRyiS/rhNidBE8jcCQ4W4awCVZFhzXZ200GKjqEe6NDOwi+J0KA82+PD7t3uE3BWpvb6KzMdN6i9PC1Tdc7ejXir16dxpB3iTTSo1MDHWnoqJQQLVITitIEG0ke/Q3j30cDYwBNgbdIUKgrRwQZpvhIW3yvGw7xchrBf0yiPE0lVSiaoYMQMY4uhMgFegO9l2kXA2oTZsDcEpaZWZ6b6ktUdRMqCwBWCICq74w8f+QhkgLdHDx9nd6TaZHRE0AjkJzkQkHyYzQqgXKJU/ShuuMxFX5cCmgG5RtFXT0TF3h9rW1VkdVWjFD/u6FfSgZA0JUu/Q2NgWAImioHZv1aUjGDpEhAC62EHCBz1yOmDhaNrsVfa54Hw9Ob4eD36+Eb6D418rTToxHY5pDrwZ8DfH2Oby6uLv5wMR19DA775DD99NBqzo9eO1VLkp/pzOkt3/W17R9cNmQZme5lvCiV9G3ZfkQ/QY6hQzFLINEn8GEPDKQRr5JTuzkYedbRyDvYahhue/N5PZbDZOtQTBbzT+pMWX/7ncvPgODmsm3saPYYqmosp4xmyaYt5VIfrGwpzf/nlvJNDmUAlGBbPcZhNpmVE4Dub1r/eyk53tp6UbjSZ6a9Fr1vZETG6xwgSOXo685MeAYcx4QB+EZDi2cDRLefmJZZ3U2csCJAa28EaDX3Q4CHOsw6kRty7l4ZuppO/6vWJ6v6er4v7WHzTQTbyWe4q8/mfJ3ArZ0YvNxs9uT8kZ7b83PkEUY2XnIETOBq5Q9b/uI7loypWnh3Wkmu7kj2edN51XHYFcqE9wJPm3Dr6zpaetqwFE+hcgw2EizM3iIxERSneckTXL29Fo2kK5kyIVWlvD5obuwakAMx7aaotVGtveMf4qfjcKm8TpELpPImEQSCTCCoDmS3sHcZWu09Pqb2PbQuYYU21YBndbFUTqrX7kcG1xOF3NIRz5xqzwQV7hXUfx97myiwcfw9gfW7+I1m/6MppiRqN0mn2wrDIAiDpBv0ut2w14nSDum20wVHsf1BMgfLKbQKmMeuNVydg/X5Y0fqroPmGahcC57nXL9rml2FNCyoL3KwngZeDZQozzNK+MpEGcLfiaPLCn/Vr8ff3FT5Ln6xLNlwNdNWtDHXL7U3lOw3zr6U9Fq3WI8GzV6YxIe9btg9bKdJ57CfkOND0o+Ou62Exu10n6vAp38AS96o2xIYAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=909073a12b472610bdb7f808b891bf53"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=dec1abad2bc32610bdb7f808b891bf4b^sys_idNOT IN509073a12b472610bdb7f808b891bf5f"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Agent AI read GAIC record">dec1abad2bc32610bdb7f808b891bf4b</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>84b6f2bf-ed50-4582-bbd1-95b19753bb51</parent_ui_id>
+        <subflow display_value="Get Related Lists">19789a06eb30ea10986ff41fbad0cdc0</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/+1U227bRhD9lcU+OiJNSjRFKU9GLmiBtgbiNC9RQAz3Im26XDJ7cawK+vfOkpTsOmiQAnkK8iTM4czOOWdm9P5AFadrmq+W1QqyUjSLTECerapSyiKXDfCMcTanM2qgFZjpodECwzvQIcaHQ5Zl1bJYzpOMQ5MUC1Ymqyu5TACEnDeLUpZFlb6NZccjFnLleg37d1M9ImynNLfC0PX7DzPag8VOXli6Pjz59K1UNTRCP+L6hLrf9zF03iqzneLfppLbE9hZHinkMyruvTBcYG8J2okZbcFw8J3d07W3AQErgN8YvT9n7JTxo7YW7p36G9tVaFPMlALlsEn5OawnV0ZYvgQPyCQwH+zZpE4x4UYjuJAQtH/xGBsTbnqvOjOWjHrH6k6H1vwx+kDPDzwaQnBIQvRRaeQ+CZG3u+7zmxPL18oMpkwfdcdAnyPwaF0TfORzoEG9feLyiHzhs9CixY51C32PSN3b7k4NXZB0m241BqnU3Wdk59TWpMCiwhQnAOlrxF8O8DuwKsr9HZ/B4tjuT6M+BfFr3JkKmrKc83lyVfIqKbiskqosyiRjohH5EqrFnNPjjLq9e6HBuQejcEL1pxBljrZNBtWjx7GEWdX7ayR1JyYvjrPpqsqvrqpYPKymFQwXrsb+NVY+XNd3uJdvIHG6l6cs/oPc/7mf+c/7+QHuJ8+hKcqsSETW4F98yfMEiuUiYXzVLFb5FS8b+V3uZ9yHEYs2/Hv1EPhaOr282JiLi2uGM3Ukaru8HsSSKJYEh/4QvxNE8npAuuajYD4lt8MDpA3OEytwZwwBMpxgSuKLN3GXiQltgz/KkU5KJzxp9uRZTpQhr6ztLPkF11rHFrditHggcwdKR2NJN2yWI9OmktAjsd4i1VizoemGEpB4xyd6sVzcQ9trsUY2lrhdZz2Oi5FNyLIFPyWmuAvbrbApCxb3zKdDYpz3oAu7Po9vTcrOr0TwcmMm+PRWXda17rq/6tDXo/vp9DMO4Tk9Ho8f/gEgz2y5OAgAAA==</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 09:20:18</sys_created_on>
+        <sys_id>509073a12b472610bdb7f808b891bf5f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 09:20:18</sys_updated_on>
+        <ui_id>693630ff-d813-4024-9ed0-3d7d36cc9e63</ui_id>
+        <updation_source/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=dec1abad2bc32610bdb7f808b891bf4b^sys_idNOT IN189073a12b472610bdb7f808b891bf57,26c1abad2bc32610bdb7f808b891bfe9,549073a12b472610bdb7f808b891bf56,549073a12b472610bdb7f808b891bf5a,589073a12b472610bdb7f808b891bf58,62c1abad2bc32610bdb7f808b891bfe8,6ac1abad2bc32610bdb7f808b891bfdc,d49073a12b472610bdb7f808b891bf59"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6d1e23ed2b072610bdb7f808b891bfce</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Agent AI read GAIC record">dec1abad2bc32610bdb7f808b891bf4b</flow>
+        <flow_variables_assigned>response</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>84b6f2bf-ed50-4582-bbd1-95b19753bb51</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 09:20:18</sys_created_on>
+        <sys_id>189073a12b472610bdb7f808b891bf57</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 09:20:19</sys_updated_on>
+        <ui_id>ede5d965-de25-43ff-89be-e3f418a76c11</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y30/jOBD+V3x5amkJLRxQysMJLYtuV3eLdHD7QqrISZzWXcfO2g7Qq/q/34ydpGlZVnfvrSrqjOfHN9+MJxbrQFW2rKx5VDfG8LkMpk+zYcAlymC9DngWTINgGEhaMFhpZkolDQPJMxUV85sZN6Wgq69bSbrgItOs9ldSDeaW6WC63tty/tnl1fjikmanSXp2ejEeJVlymU9Gk2RyNU5yegYOBU2Y2AXwFpJdlSgxVnM5r5//qA0fGqHSGQIZDQP2apnMGCDIqTBsGBRUZtQqvWolmtHsXoqtYMGl9SkW9NXwfyDeZDQaoWbOIKu0JqB9jGtyvDi/pZYClCq1lW65UjxlxvORsZxWwn7oyrzCfWm5kt7E0kQ01kpUhfziuQhaB51aVAZAsBJTRex1IvnDQr381aC849KxUm8KlVLRPlEL3CWVRTzroOKPezR7yRuimWAFRIwLWpYgiUutnrmLAqCLcC7gIcyFegF02HshTTHDEEpAwzuQ3zrxV6o5pvsnuAFjDPe35N8r9glbJ5mw0yQ5z48vribJ8a+Ts/PjZEKT42x8eQVdNc7T8zTYDAOzMh8ENWZLFFQo/l5hmp62mqDYc4wmqealvQFQz2ACNWONDGlo2w7WP9MMTo4ieXR0k0I5DcG0Tm5cngTzJJUBaohdMJJnsZOoZMlSG5IH54AUlbFEM2gXSShxhy4k6PEe+5jIqkjghxui8twwS5IVGYwJl+Sj1kqT36GlBYZ4YJ5dB+aZcoGcEuWaypC6SUkFOZEScnOwoiCMAkJzOLkNPDRnr7QoBZsCGk3MQmkLlUpJVI1GZ1mjGEIbzOdMh2mlocVs6BSx1C4viHqNvurMWi8oPIkkel4aJe8dGY3r9ebab+Wcicw04l4T0lSJ6yc/v0I/22KvPEDl00v/tx9Cutz2omAYBX1wmgIJliwVYKHibsf7U4S1hlOGmAG/Be4MGAI7L0p/i6WCgxEFs9ZLqirZQh6PQJ5DIXqIm3vp6LpepR5bKJic2wVIB4M+WUeSwKfNsyXW6T7xGVJb9BA26vGc9HaAh1ymogKie86i33psvDrE++WKL+JYKPUtrspYsxSmZOh/npyXWThn9rMP81FaveodjxsE+Dk5gX1DqBANiwSKrjkEovAlfliQlwXMG8JounDbK2zcjAlecMsy7N26SpHEr1/vYG+c1uhdKm0xa7OgC6yl0U3EbVVnHZ22PstmGypUr9MmZFukZadIrYdthLCszKJXGz0tZ10wm+1y2901wTtl9q5qyw1hMIf3q9h96f7nYmIVbzuGdYvs8fX8v32+4+zdJHtv0J9e+L+d4HuiX2rbrmmf/EbWbnvqtYY729Odpw2plRpeIwnfDsbIv1jhMO8n78YKUBM6hRivHmRAuiPles+TZoJCT8eCG2t+4DGexDEQF+/ohTtP4HKOpzlX0NufH+6/kOalA7MHwqMo9AeL56veNnwfsQWurfHN4schSAbN4HTb7vnHk9O/VbCS9Xx+PxToBJvNZoYXQv+iPlwcDxfHw8XxcHE8XBwPF8fDxfFwcTxcHA8Xx59eHDOWcgMz8hEp+tT87xE3VsAXT7sinJwYcCvb/Auh4RRdxRQAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7791a7ad2bc32610bdb7f808b891bf36</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Agent AI read GAIC record">dec1abad2bc32610bdb7f808b891bf4b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned>output</outputs_assigned>
+        <parent_ui_id>9bd153c3-18b0-4d29-a774-8515d64e4462</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:15:44</sys_created_on>
+        <sys_id>26c1abad2bc32610bdb7f808b891bfe9</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 09:20:19</sys_updated_on>
+        <ui_id>de49906f-2052-414a-84ea-cbf2a60a6b2e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/5VT227iMBD9FeRnQAFakvJWtapUqbtIW9qXVYUm9hisOnbqC5RF/PuOk3BR+7L7ljmeyzlnJntmY6hj8At7671aGTb7vWdKsBmbTm5G0xzEuOST8XSUlaLMZZEVZXEzKqXMWJ8ZqJAy2xYUb0DHBLwYKDX2gu2tMPTCGnsOuXWip4y0roKgrKF0oXytYff6f1V8rbRwmJi+9VkNjkgEdGxGvA19GNBPyrxTw2/J/6pLQ4maUudHYV+Fhl2dYh+cMqsufuqKno8gUU+0Rn2GnwGNQJouQXvsswqMgGDd7oQ4BDE3+gysSUyroYJPr/7QvCLLspQpkRRxbF9P4bKzs4XlPQQgKpGH6PBohlUcfeuFQAlRh7tLrE2Y143TTUlIK+mqrY6V+dk6wU4NjtsjJHoigXWSmrh3QuTz2m5/HVk+KNO40j1qy0GfIgjkXRlD4rNnUS2+2Nwi34xGjRVNXFZQ14Qsa2c3qplCpKvhSlMwlNpuiV268SHwpHBIK4DhA+H3DfwKTiW5P6gNFadxL0Z9RHxszqYo5HTMxeAax/ngaiTloCyLyQDzcprj1bXALGeHPvM7f6fB+7NRtKHlR0wyW9s6g5atx6mEO1WHWyK1wc6LQ7pWk37MdjObjttpeVx5krBI2ONFntjRqSp+CW2te0/iz9jhL3YieuT2AwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ed1e23ed2b072610bdb7f808b891bfcb</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Agent AI read GAIC record">dec1abad2bc32610bdb7f808b891bf4b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id>1f0c6a19-30b2-4873-a084-a4833857a4ed</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 09:20:18</sys_created_on>
+        <sys_id>549073a12b472610bdb7f808b891bf56</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 09:20:19</sys_updated_on>
+        <ui_id>84b6f2bf-ed50-4582-bbd1-95b19753bb51</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnWZAlv+JbkCBAgbQBkiCXNiBWJGUTpUiVjziu4X/vUpLtIHHRBs2xN3N2uTsz4sBbYoJvgnf35tw5udRk8fUxIVJHDH9viYZakAVhRnPppdG0BRLyBCrEwq1gxvJBY4UT2g/W0q/wYJ4kF3ygQ10Ki91cukbB5uFdl9hKKm5Fz6kBi5s9VhbbVyXJcWaVQTU6YyNW5NMiz7J8Ph6V06Ic5bwAAQUOVFAKha0XezGD6xZJfqvSb5qIO2+lXvbn637K3R5EKZHVKEuIePZCowiyqEA5kZAaNAdv7OaAWAH8RqsjsJLa4zgSm5+d/IkL88kkNlYCJTLRFQ9H2pvZwdUleEAqgflg+1a2MpIJ15nDRQVB+YuXWNdw00Sp3RUPpdrfNirU+kvnCDkM2H87RIJDEqKJSiP1Xkd1tzLr2z3LK6lbV/qiMgzU4QQevSuDj3y2RChR4yBaQ9Ogo7R/Cbb9IHW6VHhIK2XWuDS+0RRYJJ6isZBeIX7Zwg9gZVTxGce07yfSLMFJRtv3jOPQJkF2CXEbd6HAuaNIdJf+CJFiJ7kXRzt/4hVmZePPcfOT6HXskrfxeJGM7TbLsvlsPMuHGYdyOC7YdHg2qWZDAFHlZTGtpuN5SmknhzoPPjhKU2a42O2+hSwrePY2PB829335OoNJNRllk9P5Gk9P5etEst4ZqvwPoYpf9C8zha79D9U/h0o62kWh19Yu/8BMPcYAdTsPXjPpkNp9xD7t/5liYYOPS7KX0NrY71HUEdv9Av2OTsjjBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">251e23ed2b072610bdb7f808b891bfd1</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Agent AI read GAIC record">dec1abad2bc32610bdb7f808b891bf4b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned>output</outputs_assigned>
+        <parent_ui_id>5ff068cc-19a8-469c-82c3-e31d8e888714</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 09:20:18</sys_created_on>
+        <sys_id>549073a12b472610bdb7f808b891bf5a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 09:20:19</sys_updated_on>
+        <ui_id>2282125a-de41-4e9d-b448-ee53db972860</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/5VT227iMBD9FeRnQAFakvJWtapUqbtIW9qXVYUm9hisOnbqC5RF/PuOk3BR+7L7ljmeyzlnJntmY6hj8At7671aGTb7vWdKsBmbTm5G0xzEuOST8XSUlaLMZZEVZXEzKqXMWJ8ZqJAy2xYUb0DHBLwYKDX2gu2tMPTCGnsOuXWip4y0roKgrKF0oXytYff6f1V8rbRwmJi+9VkNjkgEdGxGvA19GNBPyrxTw2/J/6pLQ4maUudHYV+Fhl2dYh+cMqsufuqKno8gUU+0Rn2GnwGNQJouQXvsswqMgGDd7oQ4BDE3+gysSUyroYJPr/7QvCLLspQpkRRxbF9P4bKzs4XlPQQgKpGH6PBohlUcfeuFQAlRh7tLrE2Y143TTUlIK+mqrY6V+dk6wU4NjtsjJHoigXWSmrh3QuTz2m5/HVk+KNO40j1qy0GfIgjkXRlD4rNnUS2+2Nwi34xGjRVNXFZQ14Qsa2c3qplCpKvhSlMwlNpuiV268SHwpHBIK4DhA+H3DfwKTiW5P6gNFadxL0Z9RHxszqYo5HTMxeAax/ngaiTloCyLyQDzcprj1bXALGeHPvM7f6fB+7NRtKHlR0wyW9s6g5atx6mEO1WHWyK1wc6LQ7pWk37MdjObjttpeVx5krBI2ONFntjRqSp+CW2te0/iz9jhL3YieuT2AwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2d1e23ed2b072610bdb7f808b891bfcf</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Agent AI read GAIC record">dec1abad2bc32610bdb7f808b891bf4b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned>output</outputs_assigned>
+        <parent_ui_id>84b6f2bf-ed50-4582-bbd1-95b19753bb51</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 09:20:18</sys_created_on>
+        <sys_id>589073a12b472610bdb7f808b891bf58</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 09:20:19</sys_updated_on>
+        <ui_id>1ae699ae-f057-4216-a1a7-ebb3905898ca</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41TTW/iMBD9Lz5DFKAlaW9Vq0qVuou0ZXtZraJJPAarjp36A8oi/vuOcQKovfSWeZ6P995M9swE3wXvlubOObnS7PbPnknObtl8djOZF8CndTObzid5zetClHlZlzeTWoicjZiGFikztaB4AypEYL8XymyrDVgJtcLMouuMdng4UBKXrlOwe/1ObrOWiluMrP6OWAeWBnq07JY4avrQoJ6lfqM2X5K/q0FBjYpSF4OIz6L8roux81bqVR8/90UvA2gsj7QmI4YfHjVHmi5AORyxFjQHb+zuhFgEvtDqDKxJTNLQwoeT/2hemed5zBRIihpMr6ew6k1MsHgAD0QlND5YHMwwskGXvOAoICh/f4mlhEXnpdGpxEf/+2qjQqt/JifYqcGwM0KCIxLYRamRey9EvKzN9tfA8lHqoyv9ozINqFMEnryrg4989izI5SebE/LFaFTY0sSqha4jpOqs2cjjFCLdZitFQXa8KI7xnjNoosKMVgDZI+EPR/i1P7cf1IaK47jfWr4HfDqeTVmK+bTh42ucFuOriRDjui5nYyzqeYFX1xzzgh1GzO3cvQLnzkbRhqr3EGUm23qDquRxLGms7Pwdkdpg78UhXquOP2HazPArnJbXSEcSlhF7usjjOzpV2VxCW2PfovgzdvgPc7GBpuIDAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b391a7ad2bc32610bdb7f808b891bf35</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Agent AI read GAIC record">dec1abad2bc32610bdb7f808b891bf4b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:15:44</sys_created_on>
+        <sys_id>62c1abad2bc32610bdb7f808b891bfe8</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 09:20:19</sys_updated_on>
+        <ui_id>9bd153c3-18b0-4d29-a774-8515d64e4462</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Z30/jOBD+V04Rj6WXtimFviG4SpwWKl27+3JFkWM7xbuuk42dAov432/8I27SltXCFh0PkVCUzIwnM998M47pU5CVKi+VnGfnUrKlCMb/3nYCJrQM7p8CgVY0GAdxLBVSpYzjoBOsES+18GkRrGkhWSYWwXgR9LrhIugsApytck4fpslXitUM39EVAj0YT3h2f0n1a2gxnlyeX8yvpjez+fn888wa4IxQ4+pKKLqkhXNHaPcoZZSTOEWYKmmNZ0y/5hrlEy00y54Wi0VQsvljTj+hhHL9ONaXyt9Ce4RLQRGJM8EfvUWKuKRef8eE8iovtZ69nG05JTRFJVexgWd3NW9EdKFTrVQIKwAxpkWRFbGtiDdURbkxXCFBkMqKl+LOCmIDMrpebd1DzKlYqjuvjEJ9fYY/wHhFpURLi/1MFUwsDfRO/LvoO48HBV82fb4K+2uX7TvD3/85/KEvgK7AT3qje6Qg819C/1UwnJu0/5iZxj48GCX7LNj3kl4RbzA6ixI8iPrHZ/iMHEdRlByjQdo/JiRKTtAQhb3RYKvgTSbZmeJNcBYbaPSQ8jZbg6WypZyuqFDxCuU5MCfOi2zN6uWCsdVdchB1U6hFTEwxuhaOLmSKupsafUEFQ4mpQP6WsSJKzvexOmvm94p2PhluEaoxhRvjFe6O8Lq6MeT5itaoy5FYdmvdf7Q2OudvMyLesF47kBQw4+wH0oBOsmKFLHH/nk1vwAb2FcJkztHjl3Z70Zd2e2m3l3Z7abeXdns50PaC7xgnBRX1c42OGVQ5KuBZ0QLeGphpZJgP+GtBjSqwxA17WLWHy6DXLIap509JuxsbSCQuWK50i6xBYspYCeGNzx0z/QuB+CcmvtkltfDhiFayS+tUhwYGzEdlKMt3gmXEuqk0FzbzJg5qn7PdxA1xgnGvE9AHRQWhxOfg29ZLNGunQFov0DS1sQDRJPsBb4xCbZdSSA87hPxj7NCz4vQSWgVYUGJVFrRCJmOYSguMfZjmujRWrXQrOcuMlytxY3PWhbEDrVYYJ7ncqVgpIRKa62x1+C6XdHaX3f9ThTphwgDjlDzDiPsnpIC7Sal0oLrC8lFecCTlJhpIOf5e6iU2Evey2CbyvJc1zx3PZddCr6Sz7agPxmZZBdUgsw91m8vXPvMdKNQehzupOz73D8jnsGX0Wxl9u0Xgxtxuh3M7nD8kldtB2w7aD8vOW1fKMB314SDUHya9QT/shclJjyK4GYxOe3gUndVK/Zempzu9berd+B3AldyeKrZKPq2E1TjSdTpQ0U8PWXRXtYsDEuGw9XZjpA50c7B4qOvnVZA3T6qgf+mMaraYt55Og/f4lKVCv4DUfmvq7c5DMzG3B9xLXw5VBxAyCnunI4wHJ1R3wHA4HCSjKEQkCgkhuNYBmyB2onLMT7KMUyS2qD+HuP6c6Izeh/4H3I8PTf7UZb1/FFba/38evvjhuXbc9vhgpv8BPdeyq+pXUa14BE4wXBfdZ8U33Twb2fN/qUJS418dAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f791a7ad2bc32610bdb7f808b891bf03</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Agent AI read GAIC record">dec1abad2bc32610bdb7f808b891bf4b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Top Level Try">e9060aa2c3013010ace8b740ad40dd51</logic_definition>
+        <order>0</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:15:44</sys_created_on>
+        <sys_id>6ac1abad2bc32610bdb7f808b891bfdc</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 09:20:19</sys_updated_on>
+        <ui_id>1f0c6a19-30b2-4873-a084-a4833857a4ed</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">291e23ed2b072610bdb7f808b891bfd0</block>
+        <comment/>
+        <connected_to>84b6f2bf-ed50-4582-bbd1-95b19753bb51</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Agent AI read GAIC record">dec1abad2bc32610bdb7f808b891bf4b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>1f0c6a19-30b2-4873-a084-a4833857a4ed</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 09:20:18</sys_created_on>
+        <sys_id>d49073a12b472610bdb7f808b891bf59</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 09:20:19</sys_updated_on>
+        <ui_id>5ff068cc-19a8-469c-82c3-e31d8e888714</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=dec1abad2bc32610bdb7f808b891bf4b"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=dec1abad2bc32610bdb7f808b891bf4b^sys_idNOT IN22c1abad2bc32610bdb7f808b891bfbe,26c1abad2bc32610bdb7f808b891bfba"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b8e2bb5f-698b-4835-b8ab-d1797911fc5c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Agent AI read GAIC record">dec1abad2bc32610bdb7f808b891bf4b</model>
+        <model_id>dec1abad2bc32610bdb7f808b891bf4b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_dec1abad2bc32610bdb7f808b891bf4b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:15:44</sys_created_on>
+        <sys_id>22c1abad2bc32610bdb7f808b891bfbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 08:15:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=fb56bb2d-957b-489c-abbb-1afe769c1c21</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>table_name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Agent AI read GAIC record">dec1abad2bc32610bdb7f808b891bf4b</model>
+        <model_id>dec1abad2bc32610bdb7f808b891bf4b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_dec1abad2bc32610bdb7f808b891bf4b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:15:44</sys_created_on>
+        <sys_id>26c1abad2bc32610bdb7f808b891bfba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 08:15:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>number</element>
+        <help/>
+        <hint/>
+        <label>Number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_dec1abad2bc32610bdb7f808b891bf4b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:15:44</sys_created_on>
+        <sys_id>6ec1abad2bc32610bdb7f808b891bfa7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 08:15:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output_fields</element>
+        <help/>
+        <hint/>
+        <label>Output fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_dec1abad2bc32610bdb7f808b891bf4b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:15:44</sys_created_on>
+        <sys_id>e6c1abad2bc32610bdb7f808b891bf7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 08:15:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_dec1abad2bc32610bdb7f808b891bf4b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output</element>
+        <help/>
+        <hint/>
+        <label>Output</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_dec1abad2bc32610bdb7f808b891bf4b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:15:44</sys_created_on>
+        <sys_id>62c1abad2bc32610bdb7f808b891bfb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 08:15:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_dec1abad2bc32610bdb7f808b891bf4b"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>9b9167ad2bc32610bdb7f808b891bf7f</sys_id>
+        <latest_snapshot>dec1abad2bc32610bdb7f808b891bf4b</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch6-07-17-2025_07-21-2025_1847.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=9b9167ad2bc32610bdb7f808b891bf7f"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=9b9167ad2bc32610bdb7f808b891bf7f^sys_idNOT INfec1ebad2bc32610bdb7f808b891bf18"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"fec1ebad2bc32610bdb7f808b891bf18","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="Agent AI read GAIC record">9b9167ad2bc32610bdb7f808b891bf7f</plan_id>
+        <snapshot>abc4eba12b072610bdb7f808b891bffb</snapshot>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:15:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fec1ebad2bc32610bdb7f808b891bf18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 08:15:46</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

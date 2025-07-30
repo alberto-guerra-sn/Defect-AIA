@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="GAIC Next action recommendation AI agent">c5f707ad2b032610bdb7f808b891bfc0</agent>
+        <description>A GAIC Defect record is an unplanned interruption or reduction in the quality of service, i.e. something is broken or not working as expected. This tool is used to find the GAIC Defects that are similar to the given type of GAIC Defect. you will be passed table and record number as inputs.</description>
+        <display_output>false</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Get Similar GAIC Records</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message>retrieving similar GAIC Records...</pre_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:18:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>1172a7ed2bc32610bdb7f808b891bf02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Similar GAIC Records</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_1172a7ed2bc32610bdb7f808b891bf02</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 08:18:39</sys_updated_on>
+        <tool display_value="Get GAIC Defect Records">917267ed2bc32610bdb7f808b891bffe</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</application>
+        <file_path/>
+        <instance_id>a6f5898a33ffd6107c42c7bb9d5c7b62</instance_id>
+        <instance_name>aiagentujjawal3</instance_name>
+        <name>sn_aia_agent_tool_m2m_1172a7ed2bc32610bdb7f808b891bf02</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="GAIC Next action recommendation AI agent">c5f707ad2b032610bdb7f808b891bfc0</agent><description>A GAIC Defect record is an unplanned interruption or reduction in the quality of service, i.e. something is broken or not working as expected. This tool is used to find the GAIC Defects that are similar to the given type of GAIC Defect. you will be passed table and record number as inputs.</description><display_output>false</display_output><document_status/><execution_mode>autopilot</execution_mode><inputs>[]</inputs><max_auto_executions>10</max_auto_executions><name>Get Similar GAIC Records</name><output_transformation_strategy>none</output_transformation_strategy><post_processing_script/><pre_message>retrieving similar GAIC Records...</pre_message><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>alberto.guerra@snc</sys_created_by><sys_created_on>2025-07-30 08:18:39</sys_created_on><sys_domain>global</sys_domain><sys_id>1172a7ed2bc32610bdb7f808b891bf02</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Get Similar GAIC Records</sys_name><sys_overrides/><sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package><sys_policy/><sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_1172a7ed2bc32610bdb7f808b891bf02</sys_update_name><sys_updated_by>alberto.guerra@snc</sys_updated_by><sys_updated_on>2025-07-30 08:18:39</sys_updated_on><tool display_value="Get GAIC Defect Records">917267ed2bc32610bdb7f808b891bffe</tool><tool_attributes>{}</tool_attributes><transformation_instructions/></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>-877827643</payload_hash>
+        <record_name>Get Similar GAIC Records</record_name>
+        <reverted_from/>
+        <source>690d19d12b8326101fddfc886e91bfa1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 08:18:39</sys_created_on>
+        <sys_id>9d72a7ed2bc32610bdb7f808b891bf92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1985a697d230000001</sys_recorded_at>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 08:18:39</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>5172a7ed28c3261015eefe6fe5315692</update_guid>
+        <update_guid_history>5172a7ed28c3261015eefe6fe5315692:-877827643</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Get Similar GAIC Records">c82075b52b83e6101fddfc886e91bf88</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 18:37:36</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>549812cc30c24001b5bac2eeaeb14eb9</sys_id>
+        <sys_metadata>1172a7ed2bc32610bdb7f808b891bf02</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Similar GAIC Records</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_scope_delete display_value="">385cdcb5ab8e4f60953bdcc583c2cac4</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_1172a7ed2bc32610bdb7f808b891bf02</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_1172a7ed2bc32610bdb7f808b891bf02">9d72a7ed2bc32610bdb7f808b891bf92</sys_update_version>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 18:37:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
