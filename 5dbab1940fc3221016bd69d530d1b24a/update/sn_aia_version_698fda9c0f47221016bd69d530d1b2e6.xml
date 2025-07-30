@@ -7,9 +7,9 @@ Efficiently Classify defects by fetching relevant record information, predicting
 # Instructions
 
 To Classify a GAIC Defect record, ALWAYS follow this progression of steps:
-1. Use "Record management AI agent" to fetch record details of &lt;GAIC Defect number&gt;.
-2. Use the "Defect Classifier agent" to determine the appropriate Bucket field choice to the record using the GAIC Defects table's full_defect_context field as input.
-3. Update the record using record_number as input, with the above predicted fields (if values are present).
+1. Use "Categorize GAIC Defect AI agent" to fetch record details of &lt;GAIC Defect number&gt;.
+2. Use the "Categorize GAIC Defect AI agent" to determine the appropriate Bucket field choice to the record using the GAIC Defects records fields as input.
+3. Update the record with the above predicted fields (if values are present).
 
 
 ## Additional Instructions
@@ -21,7 +21,7 @@ MANDATORY: While following the steps above, never ask the user for additional in
         <sys_created_on>2025-07-26 06:13:48</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>698fda9c0f47221016bd69d530d1b2e6</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>V1</sys_name>
         <sys_overrides/>
         <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
@@ -29,7 +29,7 @@ MANDATORY: While following the steps above, never ask the user for additional in
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name>sn_aia_version_698fda9c0f47221016bd69d530d1b2e6</sys_update_name>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-07-28 18:12:44</sys_updated_on>
+        <sys_updated_on>2025-07-30 03:11:06</sys_updated_on>
         <target_id>0e1e565c0f47221016bd69d530d1b2ef</target_id>
         <target_table>sn_aia_usecase</target_table>
         <version_name>V1</version_name>
