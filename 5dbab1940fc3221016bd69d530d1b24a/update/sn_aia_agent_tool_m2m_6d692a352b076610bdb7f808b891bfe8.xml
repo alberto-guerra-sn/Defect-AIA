@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Categorize ITSM incident AI agent (Copy)">dd69e6352b076610bdb7f808b891bf7c</agent>
+        <description>Fetch possible choices for categories</description>
+        <display_output>false</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Choices for categories</name>
+        <output_transformation_strategy>paraphrase</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message/>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 22:47:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>6d692a352b076610bdb7f808b891bfe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Choices for categories</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_6d692a352b076610bdb7f808b891bfe8</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 22:47:50</sys_updated_on>
+        <tool display_value="Choices for categories">dbddf1f49f4f1210579fa9e9d90a1c2e</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+    </sn_aia_agent_tool_m2m>
+</record_update>

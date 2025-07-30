@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_trigger_configuration">
+    <sn_aia_trigger_configuration action="DELETE">
+        <active>true</active>
+        <business_rule/>
+        <channel display_value="Now Assist Panel">b023fcb3537321106167ddeeff7b12a8</channel>
+        <condition table="x_snc_defect_bucke_gaic_defects">sys_created_onONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()<item endquery="false" field="sys_created_on" goto="false" newquery="false" operator="ON" or="false" value="Today@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()"/>
+        </condition>
+        <description/>
+        <enable_discovery>false</enable_discovery>
+        <internal_name>global.x_snc_defect_bucke.GAIC Defect Categorizer Agent Trigger</internal_name>
+        <name>GAIC Defect Categorizer Agent Trigger</name>
+        <notification_script/>
+        <objective_template><![CDATA[Trigger this agent when a new record in the x_snc_defect_bucke_gaic_defects table is created]]></objective_template>
+        <portal/>
+        <profile/>
+        <run_as>assigned_to</run_as>
+        <run_as_script/>
+        <run_as_user/>
+        <run_dayofmonth/>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start/>
+        <run_time/>
+        <show_notifications>false</show_notifications>
+        <sys_class_name>sn_aia_trigger_configuration</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-29 18:11:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>7a80286d2bc366101fddfc886e91bf18</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_snc_defect_bucke_gaic_defects</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_trigger_configuration_7a80286d2bc366101fddfc886e91bf18</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 22:26:18</sys_updated_on>
+        <target_table>x_snc_defect_bucke_gaic_defects</target_table>
+        <trigger_flow display_value="GAIC Defects - AI Agent: Categorize GAIC Defect AI agent - 8380686d2bc366101fddfc886e91bf40">0780686d2bc366101fddfc886e91bf44</trigger_flow>
+        <trigger_flow_definition_type>record_create</trigger_flow_definition_type>
+        <usecase display_value="">undefined</usecase>
+        <usecase_discovery>false</usecase_discovery>
+    </sn_aia_trigger_configuration>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</application>
+        <file_path/>
+        <instance_id>a6f5898a33ffd6107c42c7bb9d5c7b62</instance_id>
+        <instance_name>aiagentujjawal3</instance_name>
+        <name>sn_aia_trigger_configuration_7a80286d2bc366101fddfc886e91bf18</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_aia_trigger_configuration"&gt;&lt;sn_aia_trigger_configuration action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;business_rule/&gt;&lt;channel display_value="Now Assist Panel"&gt;b023fcb3537321106167ddeeff7b12a8&lt;/channel&gt;&lt;condition table="x_snc_defect_bucke_gaic_defects"&gt;sys_created_onONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()&lt;item endquery="false" field="sys_created_on" goto="false" newquery="false" operator="ON" or="false" value="Today@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()"/&gt;&lt;/condition&gt;&lt;description/&gt;&lt;enable_discovery&gt;false&lt;/enable_discovery&gt;&lt;internal_name&gt;global.x_snc_defect_bucke.GAIC Defect Categorizer Agent Trigger&lt;/internal_name&gt;&lt;name&gt;GAIC Defect Categorizer Agent Trigger&lt;/name&gt;&lt;notification_script/&gt;&lt;objective_template&gt;&lt;![CDATA[Trigger this agent when a new record in the x_snc_defect_bucke_gaic_defects table is created]]&gt;&lt;/objective_template&gt;&lt;portal/&gt;&lt;profile/&gt;&lt;run_as&gt;assigned_to&lt;/run_as&gt;&lt;run_as_script/&gt;&lt;run_as_user/&gt;&lt;run_dayofmonth/&gt;&lt;run_dayofweek/&gt;&lt;run_period/&gt;&lt;run_start/&gt;&lt;run_time/&gt;&lt;show_notifications&gt;false&lt;/show_notifications&gt;&lt;sys_class_name&gt;sn_aia_trigger_configuration&lt;/sys_class_name&gt;&lt;sys_created_by&gt;alberto.guerra@snc&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-29 18:11:25&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;7a80286d2bc366101fddfc886e91bf18&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_snc_defect_bucke_gaic_defects&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Defect Bucket" source="x_snc_defect_bucke"&gt;5dbab1940fc3221016bd69d530d1b24a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Defect Bucket"&gt;5dbab1940fc3221016bd69d530d1b24a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_aia_trigger_configuration_7a80286d2bc366101fddfc886e91bf18&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;alberto.guerra@snc&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-30 22:26:18&lt;/sys_updated_on&gt;&lt;target_table&gt;x_snc_defect_bucke_gaic_defects&lt;/target_table&gt;&lt;trigger_flow display_value="GAIC Defects - AI Agent: Categorize GAIC Defect AI agent - 8380686d2bc366101fddfc886e91bf40"&gt;0780686d2bc366101fddfc886e91bf44&lt;/trigger_flow&gt;&lt;trigger_flow_definition_type&gt;record_create&lt;/trigger_flow_definition_type&gt;&lt;usecase display_value=""&gt;undefined&lt;/usecase&gt;&lt;usecase_discovery&gt;false&lt;/usecase_discovery&gt;&lt;/sn_aia_trigger_configuration&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>37293617</payload_hash>
+        <record_name>x_snc_defect_bucke_gaic_defects</record_name>
+        <reverted_from/>
+        <source>690d19d12b8326101fddfc886e91bfa1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 22:26:18</sys_created_on>
+        <sys_id>867462b92bc36610bdb7f808b891bfcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1985d7187bd0000001</sys_recorded_at>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 22:26:18</sys_updated_on>
+        <type>AIA Trigger Configuration</type>
+        <update_guid>7d7462b92dc3661084664a20e14b58ca</update_guid>
+        <update_guid_history>7d7462b92dc3661084664a20e14b58ca:37293617,8242a6f5bfc3661095405b1503b80fa0:-1450696260,3680286d68c366109a074b1e76ccc01c:236306884</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_snc_defect_bucke_gaic_defects">072a62b52b076610bdb7f808b891bfe9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 22:51:13</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_trigger_configuration">sn_aia_trigger_configuration</sys_db_object>
+        <sys_id>0f3e3c66362f419097ad7a92c5bd2091</sys_id>
+        <sys_metadata>7a80286d2bc366101fddfc886e91bf18</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_defect_bucke_gaic_defects</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_scope_delete display_value="">385cdcb5ab8e4f60953bdcc583c2cac4</sys_scope_delete>
+        <sys_update_name>sn_aia_trigger_configuration_7a80286d2bc366101fddfc886e91bf18</sys_update_name>
+        <sys_update_version display_value="sn_aia_trigger_configuration_7a80286d2bc366101fddfc886e91bf18">867462b92bc36610bdb7f808b891bfcb</sys_update_version>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 22:51:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
