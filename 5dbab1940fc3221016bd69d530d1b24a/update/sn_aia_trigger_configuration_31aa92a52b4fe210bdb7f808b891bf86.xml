@@ -3,14 +3,14 @@
         <active>true</active>
         <business_rule/>
         <channel display_value="Now Assist Panel">b023fcb3537321106167ddeeff7b12a8</channel>
-        <condition table="x_snc_defect_bucke_gaic_defects">bucket=null<item display_value="null" endquery="false" field="bucket" goto="false" newquery="false" operator="=" or="false" value="null"/>
+        <condition table="x_snc_defect_bucke_gaic_defects">sys_created_onONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()<item endquery="false" field="sys_created_on" goto="false" newquery="false" operator="ON" or="false" value="Today@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()"/>
         </condition>
         <description/>
         <enable_discovery>false</enable_discovery>
         <internal_name>global.x_snc_defect_bucke.Classify GAIC Defect on Creation Trigger</internal_name>
         <name>Classify GAIC Defect on Creation Trigger</name>
         <notification_script/>
-        <objective_template><![CDATA[Help me resolve ${number}]]></objective_template>
+        <objective_template><![CDATA[Trigger this agent when a new record in the x_snc_defect_bucke_gaic_defects table is created]]></objective_template>
         <portal/>
         <profile/>
         <run_as>assigned_to</run_as>
@@ -27,15 +27,15 @@
         <sys_created_on>2025-07-30 03:04:56</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>31aa92a52b4fe210bdb7f808b891bf86</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>x_snc_defect_bucke_gaic_defects</sys_name>
         <sys_overrides/>
         <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name>sn_aia_trigger_configuration_31aa92a52b4fe210bdb7f808b891bf86</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-07-30 03:05:02</sys_updated_on>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 22:27:19</sys_updated_on>
         <target_table>x_snc_defect_bucke_gaic_defects</target_table>
         <trigger_flow display_value="GAIC Defects - Use case: Defect Classifier - 82aa16a52b4fe210bdb7f808b891bf1e">86aa16a52b4fe210bdb7f808b891bf22</trigger_flow>
         <trigger_flow_definition_type>record_create</trigger_flow_definition_type>
