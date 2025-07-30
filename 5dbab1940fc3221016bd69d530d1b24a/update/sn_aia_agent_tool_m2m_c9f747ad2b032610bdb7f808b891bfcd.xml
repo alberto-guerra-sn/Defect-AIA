@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="GAIC Next action recommendation AI agent">c5f707ad2b032610bdb7f808b891bfc0</agent>
+        <description>Get derived plan for a given record .</description>
+        <display_output>false</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[{"name":"record_number","value":"","description":"record number of the record","mandatory":false,"invalidMessage":null},{"name":"table_name","value":"","description":"table number of the record","mandatory":false,"invalidMessage":null},{"name":"param1","value":"","description":"optional param1","mandatory":false,"invalidMessage":null},{"name":"param2","value":"","description":"optional param2","mandatory":false,"invalidMessage":null}]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Get derived plan details</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message>Running the tool to get the plan details...</pre_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 06:22:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c9f747ad2b032610bdb7f808b891bfcd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Get derived plan details</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_c9f747ad2b032610bdb7f808b891bfcd</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 08:18:39</sys_updated_on>
+        <tool display_value="Get derived plan details">77d63ad63b0a2210f286327aa5e45add</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+    </sn_aia_agent_tool_m2m>
+</record_update>
