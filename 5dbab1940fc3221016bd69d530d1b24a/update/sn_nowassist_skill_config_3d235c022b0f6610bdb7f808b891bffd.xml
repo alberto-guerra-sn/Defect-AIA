@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_nowassist_skill_config">
+    <sn_nowassist_skill_config action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <description><![CDATA[Role
+You are a resolution plan generator. Your task is to craft clear, effective resolution notes for a software defect using resolution insights from similar fixed defects.
+
+Use the bucket field of the given defect record and look at other records under the same bucket whose state is marked as fixed. Look those records resolution notes field and work notes field. Context will be taken from the subflow, bucket type of the chosen record has to be passed to the subflow.
+
+Instruction
+1. look at resolution details and work notes from the related fixed defects
+2. identify patterns, common resolution steps, and relevant insights that apply to current defect category
+3. compose a concise, helpful resolution note that explains potential resolution steps or considerations for similar issues.
+4. ensure the tone is professional and technical but understandable by future engineers
+5. focus on clarity and reusability - assume the person reading this resolution may work on a similar defect in the future
+
+output format 
+output a JSON object 
+resolution_plan_recommendation: a mark down style bulleted list (each bullet on a new line with - prefix) containing actionable steps or insights gathered from related fixed defects
+
+confidence_score: a score of 1-10 indicating confidence in the relevance of the generated plan
+]]></description>
+        <edited_in_nask>false</edited_in_nask>
+        <in_product_active>false</in_product_active>
+        <in_product_roles/>
+        <is_template>false</is_template>
+        <name>Resolution Plan Generator</name>
+        <nap_skill_applicability/>
+        <order>100</order>
+        <parent/>
+        <skill_family display_value="GAIC Defects">c8e841a52bc766101fddfc886e91bf3e</skill_family>
+        <skill_id>192314022b0f6610bdb7f808b891bf9b</skill_id>
+        <skill_table>sys_one_extend_capability</skill_table>
+        <state>1</state>
+        <success_message/>
+        <sys_class_name>sn_nowassist_skill_config</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-31 06:29:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>3d235c022b0f6610bdb7f808b891bffd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Resolution Plan Generator</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_nowassist_skill_config_3d235c022b0f6610bdb7f808b891bffd</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-31 06:59:54</sys_updated_on>
+    </sn_nowassist_skill_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=3d235c022b0f6610bdb7f808b891bffd"/>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action">
+    <sys_ux_form_action action="INSERT_OR_UPDATE">
+        <action_type>ui_action</action_type>
+        <active>true</active>
+        <declarative_action/>
+        <description/>
+        <name>Resolution Plan Generator</name>
+        <specificity>10</specificity>
+        <sys_class_name>sys_ux_form_action</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-31 06:58:19</sys_created_on>
+        <sys_id>56a9dc0a2b0f6610bdb7f808b891bfe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Resolution Plan Generator</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sys_ux_form_action_56a9dc0a2b0f6610bdb7f808b891bfe6</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-31 06:58:19</sys_updated_on>
+        <table>x_snc_defect_bucke_gaic_defects</table>
+        <ui_action display_value="Resolution Plan Generator">c2a9dc0a2b0f6610bdb7f808b891bfe1</ui_action>
+    </sys_ux_form_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=56a9dc0a2b0f6610bdb7f808b891bfe6"/>
+</record_update>
