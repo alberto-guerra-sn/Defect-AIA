@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_configurations>{"skill_config_id":"3d235c022b0f6610bdb7f808b891bffd"}</additional_configurations>
+        <ai_suggested>false</ai_suggested>
+        <definition>a5235c022b0f6610bdb7f808b891bfbe</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <max_tokens>500</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic_small</model>
+        <name>AI-generated prompt</name>
+        <parent/>
+        <prompt>## Role
+You are a resolution plan generator. Your task is to craft clear, effective resolution notes for a software defect using resolution insights from similar fixed defects.
+
+## Context
+The bucket type of the current defect record:  {{gaic_defects.bucket}} 
+The short description of the current defect record: {{gaic_defects.short_description}} 
+The engineering details of the current defect record: {{gaic_defects.engineering_details}} 
+The steps to reproduce of the current defect record:  {{gaic_defects.steps_to_reproduce}} 
+The short description, resolution details and work notes for similar records:  {{getResolutionDataForDefects.output}} 
+
+
+
+## Instructions
+1. Look at short description, resolution details and work notes from other records under the same bucket whose state is marked as fixed.
+2. Identify patterns, common resolution steps, and relevant insights that apply to the current defect category.
+3. Compose a concise, helpful resolution note that explains potential resolution steps or considerations for similar issues.
+4. Ensure the tone is professional and technical but understandable by future engineers.
+5. Focus on clarity and reusability - assume the person reading this resolution may work on a similar defect in the future.
+
+## Output
+The output should be a JSON object with the following format:
+
+{
+  "resolution_plan_recommendation": "- Actionable steps or insights gathered from related fixed defects\n- Each bullet point should be on a new line with a '-' prefix",
+  "confidence_score": "A score of 1-10 indicating confidence in the relevance of the generated plan"
+}
+
+Note: The output format should be in Markdown style for the resolution plan recommendation and a numerical value for the confidence score.</prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <request_tokens>32018</request_tokens>
+        <show_in_prompt_library>true</show_in_prompt_library>
+        <state>published</state>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-31 06:29:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>69235c022b0f6610bdb7f808b891bfd6</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>a5235c022b0f6610bdb7f808b891bfbe</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sys_generative_ai_config_69235c022b0f6610bdb7f808b891bfd6</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-31 06:55:29</sys_updated_on>
+        <temperature>0.2</temperature>
+        <thinking_tokens>0</thinking_tokens>
+        <version>1</version>
+    </sys_generative_ai_config>
+</record_update>

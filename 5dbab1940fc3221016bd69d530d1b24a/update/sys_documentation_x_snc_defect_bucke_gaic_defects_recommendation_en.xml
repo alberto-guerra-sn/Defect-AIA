@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="recommendation" label="Recommendation" language="en" table="x_snc_defect_bucke_gaic_defects">
+    <sys_documentation element="recommendation" label="Resolution Plan Recommendation" language="en" table="x_snc_defect_bucke_gaic_defects">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>recommendation</element>
             <help/>
             <hint/>
-            <label>Recommendation</label>
+            <label>Resolution Plan Recommendation</label>
             <language>en</language>
             <name>x_snc_defect_bucke_gaic_defects</name>
-            <plural>Recommendations</plural>
+            <plural>Resolution Plan Recommendations</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>alberto.guerra@snc</sys_created_by>
             <sys_created_on>2025-07-26 03:50:11</sys_created_on>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>Recommendation</sys_name>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Resolution Plan Recommendation</sys_name>
             <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
             <sys_policy/>
             <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
             <sys_update_name>sys_documentation_x_snc_defect_bucke_gaic_defects_recommendation_en</sys_update_name>
             <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-            <sys_updated_on>2025-07-26 03:50:11</sys_updated_on>
+            <sys_updated_on>2025-07-30 23:29:31</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

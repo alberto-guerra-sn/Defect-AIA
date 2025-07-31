@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="f69cf9180fc3221016bd69d530d1b289" label="GAIC Defects" max_length="40" name="x_snc_defect_bucke_gaic_defects" type="collection">
-        <element label="Created" max_length="40" name="created" type="glide_date_time"/>
-        <element label="Number" max_length="255" name="number" type="string_full_utf8"/>
         <element label="Short Description" max_length="4000" name="short_description" type="string_full_utf8"/>
-        <element label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
-        <element choice="1" label="Priority" max_length="40" name="priority" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="1 - High" sequence="0" value="1 - High"/>
-                <element inactive_on_update="false" label="3 - Low" sequence="0" value="3 - Low"/>
-                <element inactive_on_update="false" label="5 - Planning" sequence="0" value="5 - Planning"/>
-                <element inactive_on_update="false" label="2 - Moderate" sequence="0" value="2 - Moderate"/>
-            </choice>
-        </element>
         <element label="Work Notes" max_length="8000" name="work_notes" type="string_full_utf8"/>
-        <element choice="1" label="Product/Service" max_length="40" name="product_service" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="AI Search" sequence="0" value="AI Search"/>
-                <element inactive_on_update="false" label="Generative AI Core LLM" sequence="0" value="Generative AI Core LLM"/>
-                <element inactive_on_update="false" label="Generative AI Controller" sequence="0" value="Generative AI Controller"/>
-                <element inactive_on_update="false" label="Now Assist Data Kit" sequence="0" value="Now Assist Data Kit"/>
-                <element inactive_on_update="false" label="TrustBuilder" sequence="0" value="TrustBuilder"/>
-                <element inactive_on_update="false" label="Now Assist in AI Search" sequence="0" value="Now Assist in AI Search"/>
-                <element inactive_on_update="false" label="Now Assist for Configuration Management Database (CMDB)" sequence="0" value="Now Assist for Configuration Management Database (CMDB)"/>
-                <element inactive_on_update="false" label="Now Assist Skill Discovery &amp; Execution" sequence="0" value="Now Assist Skill Discovery &amp; Execution"/>
-                <element inactive_on_update="false" label="OneExtend" sequence="0" value="OneExtend"/>
-                <element inactive_on_update="false" label="AI Agents" sequence="0" value="AI Agents"/>
-                <element inactive_on_update="false" label="Now Assist in Conversational Catalog Request" sequence="0" value="Now Assist in Conversational Catalog Request"/>
-                <element inactive_on_update="false" label="AI Chat Summarization" sequence="0" value="AI Chat Summarization"/>
-                <element inactive_on_update="false" label="Now Assist in Virtual Agent" sequence="0" value="Now Assist in Virtual Agent"/>
-                <element inactive_on_update="false" label="Platform Record Summarization and Resolution" sequence="0" value="Platform Record Summarization and Resolution"/>
-                <element inactive_on_update="false" label="Outbound REST Web Service" sequence="0" value="Outbound REST Web Service"/>
-                <element inactive_on_update="false" label="Alert Analysis" sequence="0" value="Alert Analysis"/>
-                <element inactive_on_update="false" label="Now Assist in Knowledge Management" sequence="0" value="Now Assist in Knowledge Management"/>
-                <element inactive_on_update="false" label="Virtual Agent" sequence="0" value="Virtual Agent"/>
-                <element inactive_on_update="false" label="Now Assist Skill Kit" sequence="0" value="Now Assist Skill Kit"/>
-            </choice>
-        </element>
-        <element label="Resolution Details" max_length="4000" name="resolution_details" type="string_full_utf8"/>
-        <element label="Full Defect Context" max_length="8000" name="full_defect_context" type="string_full_utf8"/>
         <element label="Steps To Reproduce" max_length="255" name="steps_to_reproduce" type="string_full_utf8"/>
-        <element label="Summary" max_length="2000" name="summary" type="string_full_utf8"/>
-        <element label="Recommendation" max_length="8000" name="recommendation" type="string_full_utf8"/>
-        <element choice="1" label="Bucket" max_length="255" name="bucket" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Plugin" value="Plugin"/>
-                <element inactive_on_update="false" label="Configuration/Operator Error" value="Configuration/Operator Error"/>
-                <element inactive_on_update="false" label="Setup" value="Setup"/>
-                <element inactive_on_update="false" label="Security" value="Security"/>
-                <element inactive_on_update="false" label="Guardian" value="Guardian"/>
-                <element inactive_on_update="false" label="Connection Issues" value="Connection Issues"/>
-                <element inactive_on_update="false" label="Timeout" value="Timeout"/>
-            </choice>
-        </element>
         <element choice="1" label="State" max_length="40" name="state" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Verified in track" sequence="0" value="Verified in track"/>
                 <element inactive_on_update="false" label="Fixed" sequence="0" value="Fixed"/>
-                <element inactive_on_update="false" label="Can't Confirm" sequence="0" value="Can't Confirm"/>
-                <element inactive_on_update="false" label="Investigation" sequence="0" value="Investigation"/>
-                <element inactive_on_update="false" label="Working as Expected" sequence="0" value="Working as Expected"/>
                 <element inactive_on_update="false" label="Won't Fix" sequence="0" value="Won't Fix"/>
                 <element inactive_on_update="false" label="Duplicate" sequence="0" value="Duplicate"/>
+                <element inactive_on_update="false" label="Verified in track" sequence="0" value="Verified in track"/>
                 <element inactive_on_update="false" label="Targeted" sequence="0" value="Targeted"/>
+                <element inactive_on_update="false" label="Investigation" sequence="0" value="Investigation"/>
+                <element inactive_on_update="false" label="Working as Expected" sequence="0" value="Working as Expected"/>
+                <element inactive_on_update="false" label="Can't Confirm" sequence="0" value="Can't Confirm"/>
             </choice>
         </element>
+        <element label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element choice="1" label="Product/Service" max_length="40" name="product_service" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Alert Analysis" sequence="0" value="Alert Analysis"/>
+                <element inactive_on_update="false" label="Now Assist for Configuration Management Database (CMDB)" sequence="0" value="Now Assist for Configuration Management Database (CMDB)"/>
+                <element inactive_on_update="false" label="AI Search" sequence="0" value="AI Search"/>
+                <element inactive_on_update="false" label="Now Assist Data Kit" sequence="0" value="Now Assist Data Kit"/>
+                <element inactive_on_update="false" label="AI Chat Summarization" sequence="0" value="AI Chat Summarization"/>
+                <element inactive_on_update="false" label="Generative AI Core LLM" sequence="0" value="Generative AI Core LLM"/>
+                <element inactive_on_update="false" label="AI Agents" sequence="0" value="AI Agents"/>
+                <element inactive_on_update="false" label="Generative AI Controller" sequence="0" value="Generative AI Controller"/>
+                <element inactive_on_update="false" label="Now Assist in Virtual Agent" sequence="0" value="Now Assist in Virtual Agent"/>
+                <element inactive_on_update="false" label="Outbound REST Web Service" sequence="0" value="Outbound REST Web Service"/>
+                <element inactive_on_update="false" label="Now Assist in Knowledge Management" sequence="0" value="Now Assist in Knowledge Management"/>
+                <element inactive_on_update="false" label="OneExtend" sequence="0" value="OneExtend"/>
+                <element inactive_on_update="false" label="Virtual Agent" sequence="0" value="Virtual Agent"/>
+                <element inactive_on_update="false" label="Now Assist in Conversational Catalog Request" sequence="0" value="Now Assist in Conversational Catalog Request"/>
+                <element inactive_on_update="false" label="Now Assist Skill Kit" sequence="0" value="Now Assist Skill Kit"/>
+                <element inactive_on_update="false" label="TrustBuilder" sequence="0" value="TrustBuilder"/>
+                <element inactive_on_update="false" label="Now Assist in AI Search" sequence="0" value="Now Assist in AI Search"/>
+                <element inactive_on_update="false" label="Now Assist Skill Discovery &amp; Execution" sequence="0" value="Now Assist Skill Discovery &amp; Execution"/>
+                <element inactive_on_update="false" label="Platform Record Summarization and Resolution" sequence="0" value="Platform Record Summarization and Resolution"/>
+            </choice>
+        </element>
+        <element label="Summary" max_length="2000" name="summary" type="string_full_utf8"/>
         <element label="Engineering Details" max_length="4000" name="engineering_details" type="string_full_utf8"/>
+        <element label="Created" max_length="40" name="created" type="glide_date_time"/>
+        <element label="Resolution Details" max_length="4000" name="resolution_details" type="string_full_utf8"/>
+        <element label="Resolution Plan Recommendation" max_length="8000" name="recommendation" type="string_full_utf8"/>
+        <element label="Number" max_length="255" name="number" type="string_full_utf8"/>
+        <element choice="1" label="Bucket" max_length="255" name="bucket" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Guardian" value="Guardian"/>
+                <element inactive_on_update="false" label="Timeout" value="Timeout"/>
+                <element inactive_on_update="false" label="Connection Issues" value="Connection Issues"/>
+                <element inactive_on_update="false" label="Setup" value="Setup"/>
+                <element inactive_on_update="false" label="Configuration/Operator Error" value="Configuration/Operator Error"/>
+                <element inactive_on_update="false" label="Security" value="Security"/>
+                <element inactive_on_update="false" label="Plugin" value="Plugin"/>
+            </choice>
+        </element>
+        <element choice="1" label="Priority" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="2 - Moderate" sequence="0" value="2 - Moderate"/>
+                <element inactive_on_update="false" label="5 - Planning" sequence="0" value="5 - Planning"/>
+                <element inactive_on_update="false" label="3 - Low" sequence="0" value="3 - Low"/>
+                <element inactive_on_update="false" label="1 - High" sequence="0" value="1 - High"/>
+            </choice>
+        </element>
+        <element label="Full Defect Context" max_length="8000" name="full_defect_context" type="string_full_utf8"/>
         <index name="index">
             <element name="assigned_to"/>
         </index>
