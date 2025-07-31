@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_usecase">
+    <sn_aia_usecase action="DELETE">
+        <applicability_script><![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]></applicability_script>
+        <base_plan>### **Important Guidelines**
+- ✅ **Do NOT** request user confirmation before updating the record.
+- ✅ **Do NOT** display any messages after providing the summary to the user.
+- ✅ **Do NOT** Ask for User inputs at any point of time.
+- ✅ **Do NOT** Modify or alter or remove HTML-like tags from the &lt;final resolution steps&gt; before saving
+
+ALWAYS follow this progression of steps.
+
+## **Step 1: Retrieve Task Details**
+
+- Attempt to retrieve task details from memory.
+- If not found:
+  - Use the **Record Handling Agent** to collect all required record details.
+**Do not proceed unless valid task details are available.**
+---
+
+## **Step 2: Gather Resolution Data**
+-MUST perform below both steps .
+
+-Using the task's **resolution details** and **work notes**:
+
+- Step 2.1 : MUST Use the **Next action recommendation AI agent** to fetch a list of **similar GAIC defects** and **relevant knowledge articles** and **SAVE TO MEMORY**.
+
+- Step 2.2 : MUST Use the **Web research and recommendation AI agent** to gather web information and **SAVE TO MEMORY**. If the Web research and recommendation AI agent exits the process because search is not enabled, you MUST continue to the next step. DO NOT exit the flow
+---
+
+## **Step 3: Consolidate Verified Resolution Steps**
+ 
+From the information gathered:
+ 
+- Identify and select **only the actual steps** provided in the retrieved data.
+- Avoid making assumptions or generating new steps.
+- If you were able to identify actual steps, generate the HTML formatted string &lt;final resolution steps&gt; by merging the selected steps into a single, ordered, non-redundant list, in the following format and save to memory:
+```
+&lt;b&gt;Recommended Resolution Plan:&lt;/b&gt;
+&lt;ul&gt;
+  &lt;li&gt;Step 1&lt;/li&gt;
+  &lt;li&gt;Step 2&lt;/li&gt;
+  &lt;li&gt;Step 3&lt;/li&gt;
+  ...
+&lt;/ul&gt;
+```
+- If you were not able to identify actual steps set &lt;final resolution steps&gt; to this string and save to memory: "I couldn't come up with a plan as I didn't have the required resources. Thank you for using NowAssist" 
+---
+
+#### **4. Document Resolution Steps**
+
+Save the resolution plan to the record's resolution plan field using the **save resolution plan** tool of the **Record management AI agent** with the following inputs:
+- The `resolution_plan` content **must** be exactly the previously generated &lt;final resolution steps&gt;, including all the HTML tags, steps, the and the title 'Recommended Resolution Plan'. Do not modify the previously generated &lt;final resolution steps&gt;. Pass it as it is.
+- The `table_record` is the output of get_record_metadata json object containing table and number
+
+---
+
+#### **4. Final Exit**
+* **Action:** Exit the workflow.
+---</base_plan>
+        <description>This AI Agent is designed to resolve tasks by fetching record details, generating resolution summary steps, and updating comments or task work notes accordingly. It is intended for tasks that require analysis, solving, planning,  or resolution, and can handle tasks with minimal or no details provided.Helps in resolving defects, incidents, cases and tasks.</description>
+        <execution_mode>autopilot</execution_mode>
+        <internal_name>global.x_snc_defect_bucke.Generate GAIC Defect resolution plans</internal_name>
+        <name>Generate GAIC Defect resolution plans</name>
+        <parent/>
+        <record_type>template</record_type>
+        <source_id display_value="Generate resolution plans">62aa1c0f3b1352107bbddb9aa4e45a27</source_id>
+        <strategy display_value="ReActive Planner">b264c470ff1022106c36ffffffffff67</strategy>
+        <sys_class_name>sn_aia_usecase</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 05:58:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a05207e52b032610bdb7f808b891bfd4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Generate GAIC Defect resolution plans</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_usecase_a05207e52b032610bdb7f808b891bfd4</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 06:17:16</sys_updated_on>
+        <team display_value="Generate resolution plans (Copy)">e852c3e52b032610bdb7f808b891bff0</team>
+    </sn_aia_usecase>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</application>
+        <file_path/>
+        <instance_id>a6f5898a33ffd6107c42c7bb9d5c7b62</instance_id>
+        <instance_name>aiagentujjawal3</instance_name>
+        <name>sn_aia_usecase_a05207e52b032610bdb7f808b891bfd4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_aia_usecase"&gt;&lt;sn_aia_usecase action="INSERT_OR_UPDATE"&gt;&lt;applicability_script&gt;&lt;![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]&gt;&lt;/applicability_script&gt;&lt;base_plan&gt;### **Important Guidelines**
+- ✅ **Do NOT** request user confirmation before updating the record.
+- ✅ **Do NOT** display any messages after providing the summary to the user.
+- ✅ **Do NOT** Ask for User inputs at any point of time.
+- ✅ **Do NOT** Modify or alter or remove HTML-like tags from the &amp;lt;final resolution steps&amp;gt; before saving
+
+ALWAYS follow this progression of steps.
+
+## **Step 1: Retrieve Task Details**
+
+- Attempt to retrieve task details from memory.
+- If not found:
+  - Use the **Record Handling Agent** to collect all required record details.
+**Do not proceed unless valid task details are available.**
+---
+
+## **Step 2: Gather Resolution Data**
+-MUST perform below both steps .
+
+-Using the task's **resolution details** and **work notes**:
+
+- Step 2.1 : MUST Use the **Next action recommendation AI agent** to fetch a list of **similar GAIC defects** and **relevant knowledge articles** and **SAVE TO MEMORY**.
+
+- Step 2.2 : MUST Use the **Web research and recommendation AI agent** to gather web information and **SAVE TO MEMORY**. If the Web research and recommendation AI agent exits the process because search is not enabled, you MUST continue to the next step. DO NOT exit the flow
+---
+
+## **Step 3: Consolidate Verified Resolution Steps**
+ 
+From the information gathered:
+ 
+- Identify and select **only the actual steps** provided in the retrieved data.
+- Avoid making assumptions or generating new steps.
+- If you were able to identify actual steps, generate the HTML formatted string &amp;lt;final resolution steps&amp;gt; by merging the selected steps into a single, ordered, non-redundant list, in the following format and save to memory:
+```
+&amp;lt;b&amp;gt;Recommended Resolution Plan:&amp;lt;/b&amp;gt;
+&amp;lt;ul&amp;gt;
+  &amp;lt;li&amp;gt;Step 1&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Step 2&amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt;Step 3&amp;lt;/li&amp;gt;
+  ...
+&amp;lt;/ul&amp;gt;
+```
+- If you were not able to identify actual steps set &amp;lt;final resolution steps&amp;gt; to this string and save to memory: "I couldn't come up with a plan as I didn't have the required resources. Thank you for using NowAssist" 
+---
+
+#### **4. Document Resolution Steps**
+
+Save the resolution plan to the record's resolution plan field using the **save resolution plan** tool of the **Record management AI agent** with the following inputs:
+- The `resolution_plan` content **must** be exactly the previously generated &amp;lt;final resolution steps&amp;gt;, including all the HTML tags, steps, the and the title 'Recommended Resolution Plan'. Do not modify the previously generated &amp;lt;final resolution steps&amp;gt;. Pass it as it is.
+- The `table_record` is the output of get_record_metadata json object containing table and number
+
+---
+
+#### **4. Final Exit**
+* **Action:** Exit the workflow.
+---&lt;/base_plan&gt;&lt;description&gt;This AI Agent is designed to resolve tasks by fetching record details, generating resolution summary steps, and updating comments or task work notes accordingly. It is intended for tasks that require analysis, solving, planning,  or resolution, and can handle tasks with minimal or no details provided.Helps in resolving defects, incidents, cases and tasks.&lt;/description&gt;&lt;execution_mode&gt;autopilot&lt;/execution_mode&gt;&lt;internal_name&gt;global.x_snc_defect_bucke.Generate GAIC Defect resolution plans&lt;/internal_name&gt;&lt;name&gt;Generate GAIC Defect resolution plans&lt;/name&gt;&lt;parent/&gt;&lt;record_type&gt;template&lt;/record_type&gt;&lt;source_id display_value="Generate resolution plans"&gt;62aa1c0f3b1352107bbddb9aa4e45a27&lt;/source_id&gt;&lt;strategy display_value="ReActive Planner"&gt;b264c470ff1022106c36ffffffffff67&lt;/strategy&gt;&lt;sys_class_name&gt;sn_aia_usecase&lt;/sys_class_name&gt;&lt;sys_created_by&gt;alberto.guerra@snc&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-30 05:58:15&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;a05207e52b032610bdb7f808b891bfd4&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Generate GAIC Defect resolution plans&lt;/sys_name&gt;&lt;sys_package display_value="Defect Bucket" source="x_snc_defect_bucke"&gt;5dbab1940fc3221016bd69d530d1b24a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Defect Bucket"&gt;5dbab1940fc3221016bd69d530d1b24a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_aia_usecase_a05207e52b032610bdb7f808b891bfd4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;alberto.guerra@snc&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-30 06:17:16&lt;/sys_updated_on&gt;&lt;team display_value="Generate resolution plans (Copy)"&gt;e852c3e52b032610bdb7f808b891bff0&lt;/team&gt;&lt;/sn_aia_usecase&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1908268553</payload_hash>
+        <record_name>Generate GAIC Defect resolution plans</record_name>
+        <reverted_from/>
+        <source>690d19d12b8326101fddfc886e91bfa1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 06:17:16</sys_created_on>
+        <sys_id>17a6472d2b032610bdb7f808b891bf22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19859fa5ce00000001</sys_recorded_at>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 06:17:16</sys_updated_on>
+        <type>Use case</type>
+        <update_guid>5ba6472d190326106688f7ebcbd86c21</update_guid>
+        <update_guid_history>5ba6472d190326106688f7ebcbd86c21:-1908268553,a45207e510032610364815e1eaa194d6:1142894713</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Generate GAIC Defect resolution plans">13d1eace2b87a610bdb7f808b891bfc0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-31 16:53:25</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_usecase">sn_aia_usecase</sys_db_object>
+        <sys_id>008269ff1f394c68800eadbae1f458c9</sys_id>
+        <sys_metadata>a05207e52b032610bdb7f808b891bfd4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Generate GAIC Defect resolution plans</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_scope_delete display_value="">385cdcb5ab8e4f60953bdcc583c2cac4</sys_scope_delete>
+        <sys_update_name>sn_aia_usecase_a05207e52b032610bdb7f808b891bfd4</sys_update_name>
+        <sys_update_version display_value="sn_aia_usecase_a05207e52b032610bdb7f808b891bfd4">17a6472d2b032610bdb7f808b891bf22</sys_update_version>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-31 16:53:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
