@@ -31,6 +31,7 @@
         <onclick/>
         <order>100</order>
         <script><![CDATA[var inputsPayload = {};
+// gaic_defects is a input of type: glide_record
 inputsPayload['gaic_defects'] = {
   tableName: 'x_snc_defect_bucke_gaic_defects',
   sysId: current.getValue('sys_id'),
@@ -39,42 +40,25 @@ inputsPayload['gaic_defects'] = {
 
 var capabilityId = '192314022b0f6610bdb7f808b891bf9b'; 
 var request = {
-    executionRequests: [{
-        payload: inputsPayload,
-        capabilityId: capabilityId,
-        meta: {
-            skillConfigId: '3d235c022b0f6610bdb7f808b891bffd'
-        }
-    }], 
-    mode: 'sync' 
+	executionRequests: [{
+		payload: inputsPayload,
+		capabilityId: capabilityId,
+		meta: {
+			skillConfigId: '3d235c022b0f6610bdb7f808b891bffd'
+		}
+	}], 
+	mode: 'sync' 
 };
 
 try {
-    var response = sn_one_extend.OneExtendUtil.execute(request) || {}; 
-    var skillResponse = ((response["capabilities"] || {})[capabilityId] || {})["response"];
-
-    if (skillResponse && skillResponse.model_output) {
-        // First decode the outer string
-        var innerJson = JSON.parse(skillResponse.model_output);
-
-        // Extract recommendation if present
-        if (innerJson.resolution_plan_recommendation) {
-            current.setValue('resolution_plan_recommendation', innerJson.resolution_plan_recommendation);
-            current.update(); // Save the change
-            gs.addInfoMessage("Resolution plan recommendation saved to the record.");
-        } else {
-            gs.addInfoMessage("No recommendation found in model output.");
-        }
-    } else {
-        gs.addInfoMessage("No model output returned.");
-    }
+	var response = sn_one_extend.OneExtendUtil.execute(request) || {}; 
+	var skillResponse = ((response["capabilities"] || {})[capabilityId] || {})["response"]; 
+	gs.addInfoMessage(JSON.stringify(skillResponse));
 } catch(e) {
-    gs.error(e);
-    gs.addErrorMessage('Something went wrong while executing skill or parsing response.');
+	gs.error(e);
+	gs.addErrorMessage('Something went wrong while executing skill.');
 }
-
-action.setRedirectURL(current);
-]]></script>
+action.setRedirectURL(current);]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -93,7 +77,7 @@ action.setRedirectURL(current);
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name>sys_ui_action_c2a9dc0a2b0f6610bdb7f808b891bfe1</sys_update_name>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-07-31 07:35:52</sys_updated_on>
+        <sys_updated_on>2025-07-31 10:51:40</sys_updated_on>
         <table>x_snc_defect_bucke_gaic_defects</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

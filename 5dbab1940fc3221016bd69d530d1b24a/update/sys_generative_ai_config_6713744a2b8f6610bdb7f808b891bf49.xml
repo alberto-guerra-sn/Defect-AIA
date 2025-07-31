@@ -9,7 +9,7 @@
         <min_word_count>-1</min_word_count>
         <model>llm_generic_small</model>
         <name>AI-generated prompt</name>
-        <parent/>
+        <parent display_value="OneExtend Capability Definition: Resolution Plan Generator (Now LLM Service - Now LLM Generic)">69235c022b0f6610bdb7f808b891bfd6</parent>
         <prompt>## Role
 You are a resolution plan generator. Your task is to craft clear, effective resolution notes for a software defect using resolution insights from similar fixed defects.
 
@@ -30,35 +30,37 @@ The short description, resolution details and work notes for similar records:  {
 5. Focus on clarity and reusability - assume the person reading this resolution may work on a similar defect in the future.
 
 ## Output
-The output should be a JSON object with the following format:
+The output should be a JSON object with the following format. Return your output as a JSON object, not text. Do not explain it - just output raw JSON:
+- "resolution_plan_recommendation": Actionable steps or insights gathered from related fixed defects
+- "confidence_score": A score of 1-10 indicating confidence in the relevance of the generated plan
 
+example output:
 {
-  "resolution_plan_recommendation": "- Actionable steps or insights gathered from related fixed defects\n- Each bullet point should be on a new line with a '-' prefix",
-  "confidence_score": "A score of 1-10 indicating confidence in the relevance of the generated plan"
+  "resolution_plan_recommendation": "...",
+  "confidence_score": "8"
 }
-
-Note: The output format should be in Markdown style for the resolution plan recommendation and a numerical value for the confidence score.</prompt>
+</prompt>
         <prompt_template_role>user</prompt_template_role>
         <request_tokens>32018</request_tokens>
         <show_in_prompt_library>true</show_in_prompt_library>
         <state>archived</state>
         <sys_class_name>sys_generative_ai_config</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-07-31 06:29:52</sys_created_on>
+        <sys_created_on>2025-07-31 08:49:32</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>69235c022b0f6610bdb7f808b891bfd6</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_id>6713744a2b8f6610bdb7f808b891bf49</sys_id>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>a5235c022b0f6610bdb7f808b891bfbe</sys_name>
         <sys_overrides/>
         <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
-        <sys_update_name>sys_generative_ai_config_69235c022b0f6610bdb7f808b891bfd6</sys_update_name>
+        <sys_update_name>sys_generative_ai_config_6713744a2b8f6610bdb7f808b891bf49</sys_update_name>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-07-31 09:43:41</sys_updated_on>
+        <sys_updated_on>2025-07-31 10:26:22</sys_updated_on>
         <temperature>0.2</temperature>
         <thinking_tokens>0</thinking_tokens>
-        <version>1</version>
+        <version>2</version>
     </sys_generative_ai_config>
 </record_update>

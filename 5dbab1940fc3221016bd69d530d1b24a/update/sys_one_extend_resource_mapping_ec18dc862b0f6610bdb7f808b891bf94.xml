@@ -15,10 +15,7 @@
 })(currentInputs, context);]]></applicability_script>
         <applicability_type/>
         <depends_on_list/>
-        <error_handler_script><![CDATA[(function handleError() {  
-	// customize condition logic here,  
-	return ;
-})();]]></error_handler_script>
+        <error_handler_script/>
         <error_policy/>
         <metadata>{"isCreatedWithSkillDiagram":true}</metadata>
         <parent_capability display_value="Resolution Plan Generator">192314022b0f6610bdb7f808b891bf9b</parent_capability>
@@ -30,14 +27,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ec18dc862b0f6610bdb7f808b891bf94</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>getResolutionDataForDefects</sys_name>
         <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name>sys_one_extend_resource_mapping_ec18dc862b0f6610bdb7f808b891bf94</sys_update_name>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-07-31 06:51:22</sys_updated_on>
+        <sys_updated_on>2025-07-31 08:01:48</sys_updated_on>
     </sys_one_extend_resource_mapping>
     <sys_translated_text action="delete_multiple" query="documentkey=ec18dc862b0f6610bdb7f808b891bf94"/>
 </record_update>
