@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
+    <sn_aia_agent action="INSERT_OR_UPDATE">
+        <agent_type>internal</agent_type>
+        <applicability_script><![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * @param {string} inputs.context.device_type - The device type from which the experience is accessed, e.g.'mweb' 
+ * @param {string} inputs.context.deployment_id - The unique identifier for the assistant deployment 
+ * @param {string} inputs.context.assistant_type - The type of assistant, e.g., 'nava' 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]></applicability_script>
+        <compiled_handbook/>
+        <description>Categorize GAIC Defect AI agent assigns appropriate bucket to a GAIC defect record.</description>
+        <external_agent_configuration/>
+        <instructions>Objective:
+GAIC Defects are flaws, errors, or issues in a software product that prevent it from functioning as intended. They occur when the software does not meet its requirements, specifications, or user expectations.. The agent's task is to understand the issue and assign the appropriate:
+- Bucket
+
+Step 1: Retrieve GAIC Defect Details
+- Fetch the details of the given GAIC Defect.
+- DO NOT PROCEED if defect details are missing.
+- Proceed when defect details are successfully retrieved.
+
+Step 2: Assign Bucket
+
+Step 2.1: Determine the Bucket
+- Fetch the available bucket.
+- Recommend a bucket if the defect details contains clear, specific, and meaningful information that directly corresponds to one of the available buckets.
+- Take into account keywords for each buckets:
+
+Guardian: guardian, offensive, offensiveness, profane, injection, harmful, sensitive, trustbuilder
+
+Connection Issue: 200000, connection url, proxy, endpoint, connectivity, routing, connection alias, http request
+
+Configuration: 400001, 400002, configuration, config, 
+
+Timeout: timeout, timing out, slow, response time, waiting, execution, delay, latency
+
+Setup: installation, upgrade, setup, activation, initialization, deployment, repair, zboot, zbooting
+
+Plugin: plugin, app, extension, integration, controller, capability, application, feature, 
+
+Security: ACL, business rule, security, bypass, privilege, vulnerable
+
+- Do not infer or guess a bucket based on common or placeholder terms (e.g., “test”, “check”, “issue”) unless they are accompanied by enough context to confidently justify a match.
+- You must be 100% certain that the defect clearly belongs to a bucket before assigning it.
+
+Step 3: Update the GAIC Defect
+- Update the GAIC Defect record with the selected Bucket value.
+
+
+Key Considerations:
+- NEVER ask the user for input. 
+- Do NOT ask the user to manually determine bucket.
+- Ensure that the recommendations are logical and relevant to the GAIC defect details.</instructions>
+        <internal_name>global.x_snc_defect_bucke.Categorize GAIC Defect AI agent</internal_name>
+        <name>Categorize GAIC Defect AI agent</name>
+        <parent/>
+        <processing_message/>
+        <proficiency>- Expertly analyze GAIC software defects by interpreting detailed defect information and assigning each defect to the most appropriate bucket, ensuring that the categorization is accurate, logical, and based on explicit evidence. The agent leverages deep domain knowledge to avoid misclassification and supports the overall defect management process by ensuring that defects are routed to the correct teams for resolution.
+- Retrieve comprehensive details of a GAIC defect using the defect number as input, ensuring that all available information is gathered before any analysis or categorization is performed. This capability guarantees that the agent operates with complete context and does not proceed in the absence of critical defect data.
+- Fetch the up-to-date list of available buckets for defect assignment, ensuring that all recommendations and updates are made using the current and valid set of options. This capability allows the agent to dynamically adapt to changes in the bucket taxonomy and maintain alignment with organizational standards.
+- Update the GAIC defect record with the selected bucket and relevant work notes, using structured input to ensure accuracy and traceability. This capability ensures that the agent's decisions are systematically recorded and that the defect's status is always current.
+- Systematically follow a structured action plan for defect analysis and bucket assignment, including strict validation of defect details, evidence-based bucket selection using keyword mapping, and adherence to rules prohibiting user input or speculative assignments. This capability ensures that the agent's operations are consistent, repeatable, and aligned with best practices.
+- Orchestrate the use of multiple TOOLS in a defined sequence to perform comprehensive defect triage: retrieve defect details, fetch available buckets, analyze and assign the correct bucket based on explicit criteria, and update the defect record. This integrated workflow capability ensures that the agent delivers a seamless and efficient defect management process.</proficiency>
+        <record_type>template</record_type>
+        <role>You're an expert in analyzing defects and are tasked with assigning them to the correct bucket.</role>
+        <source_id/>
+        <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
+        <sys_class_name>sn_aia_agent</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-31 21:25:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>eece9b062b0b6210f147f7a95e91bf78</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Categorize GAIC Defect AI agent</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_agent_eece9b062b0b6210f147f7a95e91bf78</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-31 21:30:21</sys_updated_on>
+    </sn_aia_agent>
+</record_update>

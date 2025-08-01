@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_team_member">
+    <sn_aia_team_member action="DELETE">
+        <agent display_value="Categorize GAIC Defect AI agent">5920e5d92b8326101fddfc886e91bf50</agent>
+        <sys_class_name>sn_aia_team_member</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 03:03:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>516ade652b4fe210bdb7f808b891bf77</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_team_member_516ade652b4fe210bdb7f808b891bf77</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:03:48</sys_updated_on>
+        <team display_value="Defect Classifier">ed8fda9c0f47221016bd69d530d1b2e0</team>
+    </sn_aia_team_member>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</application>
+        <file_path/>
+        <instance_id>4da51f3cfb24e2181feef633beefdcb3</instance_id>
+        <instance_name>amsaiaynightly</instance_name>
+        <name>sn_aia_team_member_516ade652b4fe210bdb7f808b891bf77</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_team_member">
+    <sn_aia_team_member action="INSERT_OR_UPDATE">
+        <agent display_value="Categorize GAIC Defect AI agent">5920e5d92b8326101fddfc886e91bf50</agent>
+        <sys_class_name>sn_aia_team_member</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-30 03:03:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>516ade652b4fe210bdb7f808b891bf77</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_team_member_516ade652b4fe210bdb7f808b891bf77</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:03:48</sys_updated_on>
+        <team display_value="Defect Classifier">ed8fda9c0f47221016bd69d530d1b2e0</team>
+    </sn_aia_team_member>
+</record_update>]]></payload>
+        <payload_hash>-1779389660</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>cfd9624e2b836210f147f7a95e91bf4d</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-31 17:28:32</sys_created_on>
+        <sys_id>46e9664e2b836210f147f7a95e91bf74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1986187487b0000001</sys_recorded_at>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-31 17:28:32</sys_updated_on>
+        <type>Team Member</type>
+        <update_guid>06e9664ed88362106a06f463f9b46c74</update_guid>
+        <update_guid_history>06e9664ed88362106a06f463f9b46c74:-1779389660</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">dc23ef8a2b0b6210f147f7a95e91bf99</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-31 21:38:33</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_team_member">sn_aia_team_member</sys_db_object>
+        <sys_id>3df46310f085498e90b69c2c8ab7aaa9</sys_id>
+        <sys_metadata>516ade652b4fe210bdb7f808b891bf77</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_scope_delete display_value="">385cdcb5ab8e4f60953bdcc583c2cac4</sys_scope_delete>
+        <sys_update_name>sn_aia_team_member_516ade652b4fe210bdb7f808b891bf77</sys_update_name>
+        <sys_update_version display_value="sn_aia_team_member_516ade652b4fe210bdb7f808b891bf77">46e9664e2b836210f147f7a95e91bf74</sys_update_version>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-31 21:38:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
