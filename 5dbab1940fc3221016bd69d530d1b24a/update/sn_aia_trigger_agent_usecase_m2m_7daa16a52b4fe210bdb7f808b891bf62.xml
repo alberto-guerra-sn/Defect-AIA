@@ -9,7 +9,7 @@
         <sys_created_on>2025-07-30 03:04:56</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>7daa16a52b4fe210bdb7f808b891bf62</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
@@ -17,7 +17,7 @@
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name>sn_aia_trigger_agent_usecase_m2m_7daa16a52b4fe210bdb7f808b891bf62</sys_update_name>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-07-31 16:49:30</sys_updated_on>
+        <sys_updated_on>2025-08-01 00:00:23</sys_updated_on>
         <trigger_configuration display_value="x_snc_defect_bucke_gaic_defects">31aa92a52b4fe210bdb7f808b891bf86</trigger_configuration>
     </sn_aia_trigger_agent_usecase_m2m>
 </record_update>

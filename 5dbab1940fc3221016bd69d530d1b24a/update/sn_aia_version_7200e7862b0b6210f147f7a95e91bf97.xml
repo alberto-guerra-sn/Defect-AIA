@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_version">
+    <sn_aia_version action="INSERT_OR_UPDATE">
+        <condition/>
+        <instructions>Objective:
+GAIC Defects are flaws, errors, or issues in a software product that prevent it from functioning as intended. They occur when the software does not meet its requirements, specifications, or user expectations.. The agent's task is to understand the issue and assign the appropriate:
+- Bucket
+
+Step 1: Retrieve GAIC Defect Details
+- Fetch the details of the given GAIC Defect.
+- DO NOT PROCEED if defect details are missing.
+- Proceed when defect details are successfully retrieved.
+
+Step 2: Assign Bucket
+
+Step 2.1: Determine the Bucket
+- Fetch the available bucket.
+- Recommend a bucket if the defect details contains clear, specific, and meaningful information that directly corresponds to one of the available buckets.
+- Take into account keywords for each buckets:
+
+Guardian: guardian, offensive, offensiveness, profane, injection, harmful, sensitive, trustbuilder
+
+Connection Issue: 200000, connection url, proxy, endpoint, connectivity, routing, connection alias, http request
+
+Configuration: 400001, 400002, configuration, config, 
+
+Timeout: timeout, timing out, slow, response time, waiting, execution, delay, latency
+
+Setup: installation, upgrade, setup, activation, initialization, deployment, repair, zboot, zbooting
+
+Plugin: plugin, app, extension, integration, controller, capability, application, feature, 
+
+Security: ACL, business rule, security, bypass, privilege, vulnerable
+
+- Do not infer or guess a bucket based on common or placeholder terms (e.g., “test”, “check”, “issue”) unless they are accompanied by enough context to confidently justify a match.
+- You must be 100% certain that the defect clearly belongs to a bucket before assigning it.
+
+Step 3: Update the GAIC Defect
+- Update the GAIC Defect record with the selected Bucket value.
+
+
+Key Considerations:
+- NEVER ask the user for input. 
+- Do NOT ask the user to manually determine bucket.
+- Ensure that the recommendations are logical and relevant to the GAIC defect details.</instructions>
+        <state>published</state>
+        <sys_class_name>sn_aia_version</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-31 21:25:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>7200e7862b0b6210f147f7a95e91bf97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>V1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_version_7200e7862b0b6210f147f7a95e91bf97</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-31 21:25:04</sys_updated_on>
+        <target_id>eece9b062b0b6210f147f7a95e91bf78</target_id>
+        <target_table>sn_aia_agent</target_table>
+        <version_name>V1</version_name>
+        <version_number>1</version_number>
+    </sn_aia_version>
+</record_update>
