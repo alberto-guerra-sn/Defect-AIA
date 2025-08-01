@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_diagram_builder_instance">
+    <sn_diagram_builder_instance action="INSERT_OR_UPDATE">
+        <builder_configuration display_value="Now Assist Skill Kit Diagram Configuration">24fef3e67f8c1210ce7cc46adc8665a9</builder_configuration>
+        <diagram_json>{"start":"start","variables":[],"node_arguments":[],"edge_arguments":[],"nodes":[{"name":"Defect Summary Generator","node_id":"393a329f7fc012103f41c20e1f866555","key":"c342fbd62b4362101fddfc886e91bffc","resourceMappingId":"c342fbd62b4362101fddfc886e91bffc","resourceMapping":{"scope":null,"resourceName":"Defect Summary Generator","condition":"","conditionScript":"(function(currentInputs, context) {\n    /* @param {Object} currentInputs - Inputs provided for the current step.*/\n    /* @param {Object} context - Execution context, which may include:*/\n    /*\t\t\t\t\t\t   - Previous tool outputs/inputs (e.g., context['ToolName.attributeName'] or context.getValue('ToolName.attributeName')).*/\n    /*\t\t\t\t\t\t   - Additional context information (e.g., context.getAllValues()).*/\n    /* @returns {Boolean} - Return 'true' if the condition is met; otherwise 'false'.*/\n    return true;\n})(currentInputs, context);","metadata":{"diagramInstanceId":"8f42fbd62b4362101fddfc886e91bff8"},"active":true,"errorHandlerScript":null,"outgoingResourceEdges":[],"incomingResourceEdges":[],"errorPolicy":null,"parentCapability":"a24237d62b4362101fddfc886e91bf02","resourceCapability":"a24237d62b4362101fddfc886e91bf02","applicabilityTable":"","applicabilityFailedPolicy":"","dependsOnList":[],"mappingId":"c342fbd62b4362101fddfc886e91bffc","applicabilityType":"","applicabilityConditionExpression":"","resourceType":"SKILL"}},{"key":"start","name":"Start","node_id":"6ba9765f7fc012103f41c20e1f866518"},{"key":"end","name":"End","node_id":"901af65f7fc012103f41c20e1f866591"}],"edges":[{"edge_id":"242cb6137f0412103f41c20e1f866546","from":"c342fbd62b4362101fddfc886e91bffc","to":"end","add_button_visible":false},{"edge_id":"242cb6137f0412103f41c20e1f866546","from":"start","to":"c342fbd62b4362101fddfc886e91bffc"}]}</diagram_json>
+        <name>Defect Summary Generator</name>
+        <read_only>false</read_only>
+        <state>draft</state>
+        <sys_class_name>sn_diagram_builder_instance</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-01 17:23:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>8f42fbd62b4362101fddfc886e91bff8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Defect Summary Generator</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_diagram_builder_instance_8f42fbd62b4362101fddfc886e91bff8</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-01 17:23:18</sys_updated_on>
+    </sn_diagram_builder_instance>
+</record_update>

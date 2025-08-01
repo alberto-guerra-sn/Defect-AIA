@@ -7,7 +7,6 @@ GAIC Defects are flaws, errors, or issues in a software product that prevent it 
 
 Step 1: Retrieve GAIC Defect Details
 - Fetch the details of the given GAIC Defect.
-- DO NOT PROCEED if defect details are missing.
 - Proceed when defect details are successfully retrieved.
 
 Step 2: Assign Bucket
@@ -21,7 +20,7 @@ Guardian: guardian, offensive, offensiveness, profane, injection, harmful, sensi
 
 Connection Issue: 200000, connection url, proxy, endpoint, connectivity, routing, connection alias, http request
 
-Configuration: 400001, 400002, configuration, config, 
+Configuration/Operator Error: 400001, 400002, configuration, config, 
 
 Timeout: timeout, timing out, slow, response time, waiting, execution, delay, latency
 
@@ -33,6 +32,7 @@ Security: ACL, business rule, security, bypass, privilege, vulnerable
 
 - Do not infer or guess a bucket based on common or placeholder terms (e.g., “test”, “check”, “issue”) unless they are accompanied by enough context to confidently justify a match.
 - You must be 100% certain that the defect clearly belongs to a bucket before assigning it.
+- If you are unsure of the appropriate bucket, default and assign the bucket as Configuration/Operator Error
 
 Step 3: Update the GAIC Defect
 - Update the GAIC Defect record with the selected Bucket value.
@@ -48,7 +48,7 @@ Key Considerations:
         <sys_created_on>2025-07-31 21:25:04</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>7200e7862b0b6210f147f7a95e91bf97</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>V1</sys_name>
         <sys_overrides/>
         <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
@@ -56,7 +56,7 @@ Key Considerations:
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name>sn_aia_version_7200e7862b0b6210f147f7a95e91bf97</sys_update_name>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-07-31 21:25:04</sys_updated_on>
+        <sys_updated_on>2025-08-01 14:25:16</sys_updated_on>
         <target_id>eece9b062b0b6210f147f7a95e91bf78</target_id>
         <target_table>sn_aia_agent</target_table>
         <version_name>V1</version_name>

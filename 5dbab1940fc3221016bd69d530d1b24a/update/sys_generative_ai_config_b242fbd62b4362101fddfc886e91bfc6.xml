@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_configurations>{"skill_config_id":"8742fbd62b4362101fddfc886e91bfec"}</additional_configurations>
+        <ai_suggested>false</ai_suggested>
+        <definition>3e42fbd62b4362101fddfc886e91bfa1</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <max_tokens>500</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic_small</model>
+        <name>AI-generated prompt</name>
+        <parent/>
+        <prompt>## Role
+You are a software engineer. Your task is to summarize a defect record, highlighting the main issue and actions taken.
+
+## Context
+The case details that need to be summarized are:
+- Short Description:  {{gaic_defects.short_description}} 
+- Steps to reproduce:  {{gaic_defects.steps_to_reproduce}} 
+- Priority:  {{gaic_defects.priority}} 
+- State:  {{gaic_defects.state}} 
+- Engineering Details:  {{gaic_defects.engineering_details}} 
+- Work Notes:  {{gaic_defects.work_notes}} 
+- Resolution Details:  {{gaic_defects.resolution_details}} 
+
+## Instructions
+1. Read through the provided record details.
+2. Identify the main problem or issue of the defect, highlighting the main points discussed.
+3. Create a summary including the main issue or request, any relevant information or context provided, and the actions taken to resolve the issue if any at all have been taken. Be professional and technical with your response.
+
+## Output
+The output should be a brief summary of the case in the following format:
+
+The issue is: "&lt;MAIN_ISSUE&gt;".
+Key actions taken are:
+- "&lt;ACTION_1&gt;"
+- "&lt;ACTION_2&gt;"
+- ...
+Replace &lt;MAIN_ISSUE&gt; with the main issue or problem, and &lt;ACTION_1&gt;, &lt;ACTION_2&gt;, etc. with the actions taken to resolve the issue. The output should be clear, concise, and focused on the most important information.</prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <request_tokens>32018</request_tokens>
+        <show_in_prompt_library>true</show_in_prompt_library>
+        <state>published</state>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-01 17:23:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b242fbd62b4362101fddfc886e91bfc6</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>3e42fbd62b4362101fddfc886e91bfa1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sys_generative_ai_config_b242fbd62b4362101fddfc886e91bfc6</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-01 17:34:27</sys_updated_on>
+        <temperature>0.2</temperature>
+        <thinking_tokens>0</thinking_tokens>
+        <version>1</version>
+    </sys_generative_ai_config>
+</record_update>
