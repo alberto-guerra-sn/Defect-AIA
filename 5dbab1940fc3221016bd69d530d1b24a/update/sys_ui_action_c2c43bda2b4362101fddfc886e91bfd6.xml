@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>classify_defect_uia</action_name>
-        <active>false</active>
+        <action_name/>
+        <active>true</active>
         <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
-        <comments>Button to classify GAIC defects utilizing ai agent.</comments>
-        <condition>gs.hasRole('admin')</condition>
+        <comments/>
+        <condition>new sn_nowassist_admin.NowAssistSkillConfig().isSkillConfigurationActive('8742fbd62b4362101fddfc886e91bfec')</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
-        <form_button_v2>false</form_button_v2>
+        <form_button_v2>true</form_button_v2>
         <form_context_menu>false</form_context_menu>
         <form_link>false</form_link>
         <form_menu_button_v2>false</form_menu_button_v2>
-        <form_style>primary</form_style>
+        <form_style/>
         <format_for_configurable_workspace>false</format_for_configurable_workspace>
         <hint/>
         <isolate_script>false</isolate_script>
-        <list_action>true</list_action>
-        <list_banner_button>true</list_banner_button>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
         <list_button>false</list_button>
         <list_choice>false</list_choice>
         <list_context_menu>false</list_context_menu>
@@ -27,60 +27,59 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>Classify Defects</name>
+        <name>Defect Summary Generator</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[(function() {
-	
-	try {
-		var gr = new GlideRecord('x_snc_defect_bucke_gaic_defects');
-		gr.addNullQuery('bucket');
-		gr.query();
+        <script><![CDATA[var inputsPayload = {};
+// gaic_defects is a input of type: glide_record
+inputsPayload['gaic_defects'] = {
+  tableName: 'x_snc_defect_bucke_gaic_defects',
+  sysId: current.getValue('sys_id'),
+  queryString: ''
+};
 
-		var count = 0;
-
-		while(ge.next());{
-			var inputs = {};
-			inputs['record'] = gr; // GlideRecord of table: x_snc_defect_bucke_gaic_defects 
-
-			// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
-			sn_fd.FlowAPI.getRunner().subflow('x_snc_defect_bucke.gaic_defect_classifier_subflow').inBackground().withInputs(inputs).run();
-
-			count++;
-
+var capabilityId = 'a24237d62b4362101fddfc886e91bf02'; 
+var request = {
+	executionRequests: [{
+		payload: inputsPayload,
+		capabilityId: capabilityId,
+		meta: {
+			skillConfigId: '8742fbd62b4362101fddfc886e91bfec'
 		}
+	}], 
+	mode: 'sync' 
+};
 
-
-		// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
-		//var result = sn_fd.FlowAPI.getRunner().subflow('x_snc_defect_bucke.gaic_defect_classifier_subflow').inForeground().withInputs(inputs).run();
-		//var outputs = result.getOutputs();
-
-		// Current subflow has no outputs defined.		
-	} catch (ex) {
-		var message = ex.getMessage();
-		gs.error(message);
-	}
-	
-})();]]></script>
+try {
+	var response = sn_one_extend.OneExtendUtil.executeSecure(request) || {}; 
+	var skillResponse = ((response["capabilities"] || {})[capabilityId] || {})["response"]; 
+	var cleanedoutput = JSON.parse(skillResponse.replace('Info Message', '')).model_output.trim();
+	current.summary = new Date().toLocaleString() + '\n\n' + ((cleanedoutput));
+	current.update();
+} catch(e) {
+	gs.error(e);
+	gs.addErrorMessage('Something went wrong while executing skill.');
+}
+action.setRedirectURL(current);]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-07-29 16:55:05</sys_created_on>
+        <sys_created_on>2025-08-01 17:34:09</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>03980c692b4366101fddfc886e91bf01</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Classify Defects</sys_name>
+        <sys_id>c2c43bda2b4362101fddfc886e91bfd6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Defect Summary Generator</sys_name>
         <sys_overrides/>
         <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
-        <sys_update_name>sys_ui_action_03980c692b4366101fddfc886e91bf01</sys_update_name>
+        <sys_update_name>sys_ui_action_c2c43bda2b4362101fddfc886e91bfd6</sys_update_name>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-07-29 20:20:05</sys_updated_on>
+        <sys_updated_on>2025-08-01 17:38:38</sys_updated_on>
         <table>x_snc_defect_bucke_gaic_defects</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

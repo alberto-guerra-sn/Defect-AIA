@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_nowassist_skill_config">
+    <sn_nowassist_skill_config action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <description><![CDATA[## Role
+You are a customer service representative. You are optionally given SHORT_DESCRIPTION, DESCRIPTION, PRIORITY, STATE and ACTIVITIES. Your task is to summarize the provided case, highlighting the main issue and actions taken.
+
+## Context
+The case details that need to be summarized are:
+- Short Description: &#39;{<!-- -->{#input_short_description}}&#39;
+- Description: &#39;{<!-- -->{#input_description}}&#39;
+- Priority: &#39;{<!-- -->{#input_priority}}&#39;
+- State: &#39;{<!-- -->{#input_state}}&#39;
+- Activities: &#39;{<!-- -->{#input_activities}}&#39;
+
+## Instructions
+1. Carefully read and understand the provided case details.
+2. Identify the main issue or problem presented in the case.
+3. List the actions taken to resolve the issue, including any attempted solutions.
+4. Combine the main issue and actions taken into a concise summary.
+
+## Output
+The output should be a brief summary of the case in the following format:
+
+The issue is: &#34;&#34;.
+Key actions taken are:
+- &#34;&#34;
+- &#34;&#34;
+- ...
+Replace  with the main issue or problem, and , , etc. with the actions taken to resolve the issue. The output should be clear, concise, and focused on the most important information.
+]]></description>
+        <edited_in_nask>false</edited_in_nask>
+        <in_product_active>false</in_product_active>
+        <in_product_roles/>
+        <internal_name>defect_summary_generator.8742fbd62b4362101fddfc886e91bfec</internal_name>
+        <is_template>false</is_template>
+        <name>Defect Summary Generator</name>
+        <nap_skill_applicability/>
+        <order>100</order>
+        <parent/>
+        <skill_family display_value="GAIC Defects">c8e841a52bc766101fddfc886e91bf3e</skill_family>
+        <skill_id>a24237d62b4362101fddfc886e91bf02</skill_id>
+        <skill_table>sys_one_extend_capability</skill_table>
+        <state>1</state>
+        <success_message/>
+        <sys_class_name>sn_nowassist_skill_config</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-01 17:23:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>8742fbd62b4362101fddfc886e91bfec</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Defect Summary Generator</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_nowassist_skill_config_8742fbd62b4362101fddfc886e91bfec</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-01 17:34:27</sys_updated_on>
+    </sn_nowassist_skill_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=8742fbd62b4362101fddfc886e91bfec"/>
+</record_update>

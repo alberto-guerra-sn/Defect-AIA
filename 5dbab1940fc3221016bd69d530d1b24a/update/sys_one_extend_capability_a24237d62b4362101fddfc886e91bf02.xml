@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_capability">
+    <sys_one_extend_capability action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>## Role
+You are a customer service representative. You are optionally given SHORT_DESCRIPTION, DESCRIPTION, PRIORITY, STATE and ACTIVITIES. Your task is to summarize the provided case, highlighting the main issue and actions taken.
+
+## Context
+The case details that need to be summarized are:
+- Short Description: '{{#input_short_description}}'
+- Description: '{{#input_description}}'
+- Priority: '{{#input_priority}}'
+- State: '{{#input_state}}'
+- Activities: '{{#input_activities}}'
+
+## Instructions
+1. Carefully read and understand the provided case details.
+2. Identify the main issue or problem presented in the case.
+3. List the actions taken to resolve the issue, including any attempted solutions.
+4. Combine the main issue and actions taken into a concise summary.
+
+## Output
+The output should be a brief summary of the case in the following format:
+
+The issue is: "&lt;MAIN_ISSUE&gt;".
+Key actions taken are:
+- "&lt;ACTION_1&gt;"
+- "&lt;ACTION_2&gt;"
+- ...
+Replace &lt;MAIN_ISSUE&gt; with the main issue or problem, and &lt;ACTION_1&gt;, &lt;ACTION_2&gt;, etc. with the actions taken to resolve the issue. The output should be clear, concise, and focused on the most important information.
+</description>
+        <external>true</external>
+        <metadata>{"isGuidedStep":false}</metadata>
+        <name>Defect Summary Generator</name>
+        <short_description/>
+        <sys_class_name>sys_one_extend_capability</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-01 17:23:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a24237d62b4362101fddfc886e91bf02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Defect Summary Generator</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sys_one_extend_capability_a24237d62b4362101fddfc886e91bf02</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-01 17:23:16</sys_updated_on>
+        <type>skill</type>
+    </sys_one_extend_capability>
+    <sys_translated_text action="delete_multiple" query="documentkey=a24237d62b4362101fddfc886e91bf02"/>
+</record_update>
