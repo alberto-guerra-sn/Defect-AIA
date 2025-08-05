@@ -15,7 +15,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>gaicdefectbucketflow</internal_name>
-        <label_cache>[{"name":"3a47942e-62c4-4686-b960-9e49eff9b71d.item","label":"2 - For Each➛GAIC Defects Record","reference":"x_snc_defect_bucke_gaic_defects","reference_display":"GMLD: GAIC Defects","type":"reference","base_type":"reference","usedInstances":{"a1328fb9-cad6-4f89-b3ed-e3336447a977":["gaic_defects"],"1ea0b331-27e2-492b-a722-83cb1dfac2df":["record"],"e30ae3ef-ff82-453f-ae0a-e9dca81e1269":["target_record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"ed41f71b-132b-4329-9a9a-39e898a606cd.Records","label":"1 - Look Up Records➛GAIC Defects Records","reference":"x_snc_defect_bucke_gaic_defects","reference_display":"GMLD: GAIC Defects","type":"records","base_type":"records","usedInstances":{"3a47942e-62c4-4686-b960-9e49eff9b71d":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <label_cache>[{"name":"ed41f71b-132b-4329-9a9a-39e898a606cd.Records","label":"1 - Look Up Records➛GAIC Defects Records","reference":"x_snc_defect_bucke_gaic_defects","reference_display":"GAIC Defects Records","type":"records","base_type":"records","usedInstances":{"3a47942e-62c4-4686-b960-9e49eff9b71d":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3a47942e-62c4-4686-b960-9e49eff9b71d.item","label":"2 - For Each➛GAIC Defects Record","reference":"x_snc_defect_bucke_gaic_defects","reference_display":"GAIC Defects Record","type":"reference","base_type":"reference","usedInstances":{"a1328fb9-cad6-4f89-b3ed-e3336447a977":["gaic_defects"],"1ea0b331-27e2-492b-a722-83cb1dfac2df":["record"],"e30ae3ef-ff82-453f-ae0a-e9dca81e1269":["target_record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
         <master_snapshot>89cd13de2bc36210bdb7f808b891bffc</master_snapshot>
         <master_snapshot_digest/>
         <name>GaicDefectBucketFlow</name>
@@ -28,7 +28,7 @@
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>published</status>
+        <status>draft</status>
         <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2fda01692bc766101fddfc886e91bfe9</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>GaicDefectBucketFlow</sys_name>
         <sys_overrides/>
         <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
@@ -44,7 +44,7 @@
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name>sys_hub_flow_2fda01692bc766101fddfc886e91bfe9</sys_update_name>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-01 18:33:22</sys_updated_on>
+        <sys_updated_on>2025-08-04 15:52:47</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
@@ -134,16 +134,16 @@
         <display_text/>
         <flow display_value="GaicDefectBucketFlow">2fda01692bc766101fddfc886e91bfe9</flow>
         <generation_source/>
-        <name>TRT: Run Once</name>
+        <name>Run Once</name>
         <published_version/>
         <remote_sys_id/>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
         <sys_created_on>2025-08-01 15:53:29</sys_created_on>
         <sys_id>57bd13de2bc36210bdb7f808b891bf4d</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-01 18:33:20</sys_updated_on>
+        <sys_updated_on>2025-08-04 15:52:47</sys_updated_on>
         <trigger_definition display_value="Run Once">0a76e504c32222002841b63b12d3aeac</trigger_definition>
         <trigger_inputs>H4sIAAAAAAAA/3VSTUvsQBD8KzLnNUyy+lhzEx4L76CCiheR0Jnp7DbM15tMVqP43+1J4iKKc+vq7uqqYh7fhIEWjajF7eBOvBMrQS5hdGDux4CM7wxpbDQkbBJZ5AELjksfR1GnOOBKdNHbe7TB8JCoOzA9gz5qjKIupVyJA5gB78b+n2ZCZnBgM3UcXEP55NRnoJLV+ancnMrypCzr9XktJXfVnoyO6ET9+LQSASJvp8z99q1Fmf6igk7pizO1rvhJWW3OyvbPui0rvQbEDRP+sPxdT/rN+ldT+JLQadRHxz9yiQj6xpnxOLHnbOcELLz09IoLVcQO2YXCuXksG009pzrOsNp7UngTErHoCUnQmmVHeTNYdz0b4VpjB4NJD0uyjAw982HImrOKRVJ3t/fPt58Ht+Qmg0vTeAXmWEFKkdohYZ+jR4OWiRoLIZDbNSH6A03LrMUWU3ZFZ/wzH+1p5wpQWXjBEUGxZfzvBD9ApOziiml4+X1y3/wf8t3Zx6K4mU3zwBLKltAs/6lXkUK65AOHzw/4/vQBioe81twCAAA=</trigger_inputs>
         <trigger_outputs/>
@@ -166,13 +166,13 @@
         <sys_created_by>alberto.guerra@snc</sys_created_by>
         <sys_created_on>2025-07-29 21:34:31</sys_created_on>
         <sys_id>3d0f45ed2bc766101fddfc886e91bfa3</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-08-01 18:35:02</sys_updated_on>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-04 15:52:47</sys_updated_on>
         <ui_id>ed41f71b-132b-4329-9a9a-39e898a606cd</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+VX22rjMBD9leBnE+wmTbt9K8l2KfSyNGVhKUXIspyIKrLXknNp6L/v6GLHOE43gRRa9lFz0ZwZnSPLT2uPxd6Fd570gwCHp+dnQdDrBcFg0CM4jKLegERB1I883xN4RiFS4YhTWM4xL/R6iaQgKKYJJQpFBXmhaIJZaZEQGTOZcbz65RJ+XF4PO6PKS6aMxzkV3sXTs+9lOIcyiubexbrh2hcnxxHlEProgDZwq1VWLZHxWdtNPa1zZx1pHmsoge/RpaIipoAhwVxS35thEWOV5qvKklMc3wu+MUyZULCjp4OXkr1C3fNAxyUUuiLU+qolcoOy5mSEFR6rvCCqyF0omaaMUGnnAQPGBVfDus0G3GeKpcKm2LZtdsqLmbiz4/CqDcpzAUshAQTNdKMauWsjGU/TxUOJ8ooJMxPn5CnBvFphpXIWFUrjWXuU0xlshGY4y5iYoCxP58wkA5ZZd8Jh0U14uoCikk1EFxMNvAtzxd0rsI+M+RfOme7iFraBZADEODAE2SOUaZGbUc4R4YU0jhwLaffy3nxPruSQYyk3ncPI0Z9C47ZzcB0jOzSdQnKWqUvYYk5dc2/+XlI5DTaUI6mImUYha3oxElHX4++3Px9/b6uj6T6mPAy2Uh7DOrg2wE4oW7abtg2cUMKjCQX6+EpSgeKfTymHc9+O4B8CIGfvkux0wyeZ5grZWdYUIIpZZHTcoH5lP4zze8ApOX+vWdqJVrsQOsonjPK47dtwpR2Nb8PJ//lt+JSEB0AxsqfHBGfCfOgB6EcpIXj/uv3W4Jmh10YHxoYl2VYC7qi083qwEvaAUyphDLU7jxZPC8Ty7jeUad77pdEJoHc0AfROjiOAddVmNciWmZdvO32aZfyrjsfNeKBgLSF8axPYQTXDQ2uevG0LuHeQgutks57RDs4d+RG4Q5H+R14BU0h19ZDVL1qweELVpnoZFadqgflLm98xDpUHZdr7gAdl/13ZDsKNREEpKKcSDq/+ogyD7RvE2A67PfaAUU7iFi87DxWOVnDuBgGR04k5lvoVcl1ZHb/7R3w3ftqPaAhP2p3yC33r/RK/YMfTwPNfTzbu9oEQAAA=</values>
+        <values>H4sIAAAAAAAA/9VX207jMBD9lSrPUZWQUrq8IS4rHoAVIKQVQpbjOK2F42RtpxcQ/75jO0lL2kLpdnfh0XM9Mz4zce6fPZZ4h94g7QUBDvcHB0EQRUHQ70cEh3Ec9UkcxL3Y8z2BMwqWGsecwnGMeWnOU6QEQQlNKdEoLskjRUPMaokCy4SpguPZXeXw/ej8uHPSaMmI8URS4R3eP/hegSWk0VR6h88tlZ4VFHEcUw5Bbg2KzqWB5G9cwSvn5YpMgvqIhAudy8RgCXyPTjUVCYVUKeaK+l6GRYJ1LmeNRFKcXAk+F4yY0BDRM8ZTxZ4g/CAwdimFsgh1uuaIqk45MRnljNCrQrNcOIkD6pQ5LzNx6QowPaYpLrmuewySUkE8WhjMBkSFKL0Z5ZPrOuEZE7a8SslzgnlzwlpLFpeaKnMXlNMMAqEMFwUTQ1TIfMysM2DJukMOh27K8wkkVWwoupgY4F1oEe6egfzEiu+wZKaKCwgDzgCIcbht5Jqu8lLarowR4aWyComFcrG8F9sr9Ks0KF3VVX3ItQgMFJGs0EfgMKZVKS/+RiTfD+aUILlImMmpFphuya3Pb04vftz+XOZ1W70dsY8XM2+KeqXzqlIqir+SVRQPd0ZxgPufSK5l+fk4/h5rXcHvUJccvEmC/fl9q1xq5Dq3wF1RZrGdtxZpG/l2bD1jlCev1vAGQGvnK0O8Tjxbh70ia2pytPbx3pffx5+SqgAoQa7fTHAm7OcQgO6Gw8Hbi+xbiwf2+ucMtjKsyDKHcUfnnaftN66915q/G4CsHW8AUefWoVwBvN61dfiKutHOqBvtfYy6QJz75wZ907UVDa5fPebqavsnY4/b9sCuBYfw5aGh/vF2OcOP5twzOVuzGX1oOBeZ5TQnawi24zfVmmHz/+Z0j8C1yofcsKIJS4ZUz7PXVkmuJ5g/rtJX7GpmyJb3x++z3puz1w/ncwYzgCRVcFWLD7TB8m4YbL0WzoWmQ9u1TbHVnhd42rluwK1EXO0G1uSoyNzb4SPsX3zXQnjqrR2b0HfaL/Ensi13H34DC5+4yUIPAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=3d0f45ed2bc766101fddfc886e91bfa3"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
@@ -190,13 +190,13 @@
         <sys_created_by>alberto.guerra@snc</sys_created_by>
         <sys_created_on>2025-08-01 15:44:48</sys_created_on>
         <sys_id>58cbdf9a2bc36210bdb7f808b891bfa7</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-08-01 18:35:02</sys_updated_on>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-04 15:52:47</sys_updated_on>
         <ui_id>e30ae3ef-ff82-453f-ae0a-e9dca81e1269</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/71VXU/jMBD8K8jPTZWkaT76dgIhId0dEnC8IBRt7HVqnfOB4wC9qv/91k1aCohTT0I8Zj1ez8zuKHdrpgRbsFTGM5wHMJ/xJAgDf56hLwSilEkRhEXKJqyGCglpjSpLNDlvaqnK3oBVTZ1Tkwl7BN07yCwAyEKYh0UkkZoVokhk6qdFmgWFTGOCCtW1Gla3x9/gS6WFwZot7u4nrAVDdCwatli/OTpWj4YCNUFvBkEnp4eCTi7EUZLtqnWIjiB1OX5/Hxtf74qNEY5oMGH4bLEWSAwl6A4nrIJagG3Mii2s6algEMRlrVd7xFLVlpoxh33u1B96LvV93yElkmiOw+n+Mx+9HcryDCwQk57b3oxQvmwUx26wS6CEXtvTw9oAuGydzuGKhULvbje6r+qfgzVs32A3Sqr0HZHA1il13Ech8nrZPF3tWJ6remvKeKgbDnr/BZasK3rr+KxZr27euDxU3vmMGit6Ma+gbamSt6Z5VNtXiHQ1LTV9TKVunohdp8p6CtwpnNIEYHpO9bNt+RaMcnJ/UBu67J77VauHHi+2mxVFaTpLhBcGMvQiGcReIeexF0dxlsgwCgKUbDNh3ao71dB1L0bRhPKH3skcbBsNygeP3RVuVGu/EalHHL3YTMaARsk/F/pwW8GUaHODnPbuIJXr9QyiJItC9OKQR14Up0Q9i30vwyijRlmRBGKqLFabzfuI/ncEj2C8j+CW8snVjvIHSsawvSz+67xdHdTHyIWfFblZ+DpwFrrfH4TuZjj65OCND35B+OQ1guHLc4XajbHuq2Kbgg9CeTiN17k8nMeXRLOI4ph+F8LjIqb9Bki8LEwzL+I+jwFo62bZJ0bz/i8EMppHPQcAAA==</values>
+        <values>H4sIAAAAAAAA/8VU22rbQBD9lbDPltHNuvgttAQCbQNJmpcQxGh3Vl66umS1SuIa/3tnLdk4KSkmlPZRs3M558wc3W+YEmzJMplEuAhgEfE0CAN/kaMvBKKUaRmEZcZmrIEaKdMaVVVoCt42UlWDAavapqAmM/YEenApUQCQh7AIy1giNStFmcrMz8osD0qZJZQqVN9pWN+dXsFXSguDDVveP8xYB4bgWDRsuXnzZNcdFhpK1NT4huA2FZWfynJfeDvSPPt0TPPsUpwkhINAGf1+eGuEQxrMGL5YbAQSGAm6xxmroRFgW7NmS2sGChgEcdXo9SFjpRpLzZjLfenVT+qc+b7vMiUSa47j6+GzmMQdw3zVKo5XnUM3RiyUeqrhrR7q5ttIyK0FJQza7tdCkaGnftg50A7GhEnerNrn6/3AC9Xs+E2PuuWgD19gSYVysNi7VQ3q9o02Y+TL232hxpomFjV0HUWKzrRPajeFQNfzStPHXOr2mdD1qmrmwB3DOYkJ8wuKf96F78AoR/crtaFiN+57ox4HvNzdQxxnWZQKLwxk6MUySLxSLhIviZM8lWEcBCjZdidt8Tg4UqNIkxzFqCgl9Nyozp4ThCecmG9nk7Xi9I9Hd3xRYCq0hUFOB3Pkp80mgjjN4xC9JOSxFycZAc0T38sxzqlRXqaBmCuL9Xb7u7k+bJ7Dgvf+OYHKwT87LmfXey7vUJycYo4mTWYJ/5ZZovC1VSz0P96xy+349L5lptr/Z5tjoV4753hZ/8Q8ZZwk9HMWHhcJ3SRA6uVhlnsx93kCQAcR5R82z8MvTskKY5kGAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=58cbdf9a2bc36210bdb7f808b891bfa7"/>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=2fda01692bc766101fddfc886e91bfe9"/>
@@ -219,13 +219,13 @@
         <sys_created_by>alberto.guerra@snc</sys_created_by>
         <sys_created_on>2025-07-29 21:34:31</sys_created_on>
         <sys_id>f90f45ed2bc766101fddfc886e91bfa5</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-01 18:33:20</sys_updated_on>
+        <sys_updated_on>2025-08-04 15:52:47</sys_updated_on>
         <ui_id>3a47942e-62c4-4686-b960-9e49eff9b71d</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/51SS2/bMAz+K4POieFH4MW5FSg6FFhXoCt6GQqDluhEmCxpkpzUM/zfR8VOWvS4k81P4vcQOTLTB9sH/2xuvJd7zXa/XldM6ojR/8g0dMh2TAbsPFuxI6g+1uOIYpO1X7NmnRV5s94UebWuoIJ1UeG22kKZllwkT8iNE36aqFVIbxUML//PwA9SCYeLSQuOvAV0bDd+OgqDxVpBg4qEFgbql4LKrBJtlaUVL/KyyNM0326ypiyaLBcFoCjp3qXz28P3292X+yX6p5eIGlS6Kzt9opc8XTF8C6gFklwLyuOKdaAFBOMGtguuJ8AhiEethuuNg9ThKslix5uXf0khS9N4vUVKx6Mi+1DWy6POMD8YyfHRBmn0jARo1NLDjeo7/WMOEceBLfQqXMZBSO+JD210Hr0sxtqfB3N6ugjeSX1OuRwqw0FdKwjByaYP6ONIUGFHRHUH1kq9r60zR3luJi9dsldUJK0yJxKNq5cAj8YTeihI7gi/PcMv4GRM8UA01Dyd09d/+qg751gc13NouuC5kzbcEN0RF3PTa9zdmcnPSyKQS0+CzxG7v2x8PBho1JJ/hE7G/Y5W37HpH9jwWQk7AwAA</values>
+        <values>H4sIAAAAAAAA/51Sy27jMAz8F50Tw4/AjXMrUBToYVugW/SyKAxaohNhZUkryUldw/++VOykRY892RySwxmRIzN9sH3wL+bWe7nXbPfnbcWkjhj9j0xDh2zHZMDOsxU7gupjPI4oNll7kzXrrMib9abIq3UFFayLCrfVFsq05CJ5Rm6c8NNErUJ6q2B4/TkDP0glHC4iLTjSFtCx3fgtFQaLtYIGFQ1aGKhfCgqzSrRVlla8yMsiT9N8u8masmiyXBSAoqS6S+fDYvrbG0R2Ct2Vlz5RRZ6uGL4H1AJpUAvK44p1oAUE4wa2C64nwCGIJ62Ga8VB6kB0LNa+e/lB3FmaxsIWyRHHOXkN6+UhZ5gfjOT4ZIM0ekYCNGrp4Ub1nX6c5ccVYAu9CpcVENJ74kMbNUcVi6T298Gcni8D76U++1uSynBQ1whCcLLpA/q4BlTYEVHdgbVS72vrzFGem0lLl+wVBUmrzImGxnNLgEfhCT0RJPeE353hV3AyuvhFNNQ8nd3X//o4d/axKK5n01TguZM23BLdERdx01u815nJz4chkEtPA18i9nC58pgYaMmSf4VOxv2NUj+x6T8SUHFLLwMAAA==</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=2fda01692bc766101fddfc886e91bfe9"/>

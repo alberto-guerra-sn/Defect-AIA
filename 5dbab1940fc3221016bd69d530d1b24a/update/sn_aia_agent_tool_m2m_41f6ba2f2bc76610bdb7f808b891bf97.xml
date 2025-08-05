@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Defect Bucket Agent (Final)">053436ab2bc76610bdb7f808b891bf79</agent>
+        <description>Used to create the intitial JSON of buckets and defects associated to those buckets. This tool gathers GAIC Defect records that have an empty bucket. It creates categories based on short description patterns of the defects and then outputs a JSON of those defect numbers in the created categories.</description>
+        <display_output>false</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Bulk Category Maker</name>
+        <output_transformation_strategy>paraphrase</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message/>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 10:16:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>41f6ba2f2bc76610bdb7f808b891bf97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bulk Category Maker</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_41f6ba2f2bc76610bdb7f808b891bf97</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 10:16:25</sys_updated_on>
+        <tool display_value="Bulk Category Maker">2ce04aa72bc36610bdb7f808b891bf3d</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+    </sn_aia_agent_tool_m2m>
+</record_update>

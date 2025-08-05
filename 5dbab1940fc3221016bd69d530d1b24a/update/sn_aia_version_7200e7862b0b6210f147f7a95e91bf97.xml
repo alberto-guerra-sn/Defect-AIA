@@ -42,13 +42,13 @@ Key Considerations:
 - NEVER ask the user for input. 
 - Do NOT ask the user to manually determine bucket.
 - Ensure that the recommendations are logical and relevant to the GAIC defect details.</instructions>
-        <state>published</state>
+        <state>withdrawn</state>
         <sys_class_name>sn_aia_version</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
         <sys_created_on>2025-07-31 21:25:04</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>7200e7862b0b6210f147f7a95e91bf97</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>V1</sys_name>
         <sys_overrides/>
         <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
@@ -56,7 +56,7 @@ Key Considerations:
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name>sn_aia_version_7200e7862b0b6210f147f7a95e91bf97</sys_update_name>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-01 14:25:16</sys_updated_on>
+        <sys_updated_on>2025-08-04 17:23:52</sys_updated_on>
         <target_id>eece9b062b0b6210f147f7a95e91bf78</target_id>
         <target_table>sn_aia_agent</target_table>
         <version_name>V1</version_name>

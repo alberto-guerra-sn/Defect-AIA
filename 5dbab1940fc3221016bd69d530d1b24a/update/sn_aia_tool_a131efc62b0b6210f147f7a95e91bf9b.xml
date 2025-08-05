@@ -6,34 +6,46 @@
         <name>Fetch GAIC Defect details</name>
         <record_type>custom</record_type>
         <script><![CDATA[(function(inputs) {
-
+    // Initialize an empty string to store the result
     var result = '';
+    // Extract the GAIC defect number from the inputs
     var number = inputs.gaic_defect_number;
 
+    // Check if the GAIC defect number is null or undefined
     if (gs.nil(number))
+        // Return an error message if no GAIC defect number is provided
         return gs.getMessage('No GAIC Defect number provided.');
 
+    // Create a new GlideRecord object for the 'x_snc_defect_bucke_gaic_defects' table
     var defectGR = new GlideRecord("x_snc_defect_bucke_gaic_defects");
+    // Add a query to find the record with the given number or sys_id
     defectGR.addEncodedQuery('number=' + number + '^ORsys_id=' + number);
+    // Execute the query
     defectGR.query();
 
+    // Check if no record is found
     if (!defectGR.next())
+        // Return an error message if no record is found with the given number
         return gs.getMessage('Cannot find a GAIC defect with the given number.');
 
+    // Append the GAIC defect number to the result string
     result += "GAIC Defect Number: " + defectGR.getValue('number') + "\n\n";
+    // Append the short description to the result string
     result += "Short Description: " + defectGR.getValue('short_description') + "\n\n";
+    // Append the engineering details to the result string
     result += "Engineering Details: " + defectGR.getValue('engineering_details') + "\n\n";
+    // Append the steps to reproduce to the result string
     result += "Steps to reproduce: " + defectGR.getValue('steps_to_reproduce') + "\n\n";
 
+    // Return the final result string
     return result;
-})(inputs);
-]]></script>
+})(inputs);]]></script>
         <sys_class_name>sn_aia_tool</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
         <sys_created_on>2025-07-31 21:30:11</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>a131efc62b0b6210f147f7a95e91bf9b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Fetch GAIC Defect details</sys_name>
         <sys_overrides/>
         <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
@@ -41,7 +53,7 @@
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name>sn_aia_tool_a131efc62b0b6210f147f7a95e91bf9b</sys_update_name>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-01 19:48:35</sys_updated_on>
+        <sys_updated_on>2025-08-04 17:21:21</sys_updated_on>
         <target_document/>
         <target_document_table>sn_aia_tool</target_document_table>
         <type>script</type>

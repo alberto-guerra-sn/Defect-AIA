@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Defect Bucket AIA">3691dbdb2b872610bdb7f808b891bfed</agent>
+        <description>This will return details of a GAIC Defect. GAIC Defect number should be provided as input.</description>
+        <display_output>false</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[{"name":"gaic_defect_number","value":"","description":"The number of the GAIC defect","mandatory":false,"invalidMessage":null,"metadata":{"_MODE_":"slotfill"}}]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Fetch GAIC Defect details</name>
+        <output_transformation_strategy>paraphrase</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message>Fetching GAIC Defect details…</pre_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-04 17:39:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>1dc2935f2b872610bdb7f808b891bfae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Fetch GAIC Defect details</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_1dc2935f2b872610bdb7f808b891bfae</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-04 17:39:28</sys_updated_on>
+        <tool display_value="Fetch GAIC Defect details">d5c2935f2b872610bdb7f808b891bfab</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+    </sn_aia_agent_tool_m2m>
+</record_update>

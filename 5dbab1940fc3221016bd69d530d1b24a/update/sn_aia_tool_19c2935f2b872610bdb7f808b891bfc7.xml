@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Update GAIC Defect with bucket and add work notes.</description>
+        <input_schema>[{"name":"gaic_defect_number","description":"The number of the GAIC defect","mandatory":false},{"name":"updateJSON","description":"A JSON object to update the GAIC Defect record. The JSON should have the following structure: {bucket: {\"recommend\": &lt;recommend&gt;,“recommendFieldValue”: &lt;field_value&gt;}}","mandatory":false}]</input_schema>
+        <name>Update GAIC Defect</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[(function(inputs) {
+    // Parse the input JSON string into a JavaScript object if it's a string
+    var config = inputs.updateJSON;
+    if (typeof config === 'string') {
+        try {
+            config = JSON.parse(config);
+        } catch (e) {
+            // Return error message if JSON parsing fails
+            return {
+                status: "error",
+                message: gs.getMessage("Unable to update defect: {0}", e.message)
+            };
+        }
+    }
+
+    // Check if the bucket property is valid for update
+    if (!checkFieldUpdateProperty(config.bucket)) {
+        // Return message if no update is needed
+        return gs.getMessage("No update needed as bucket recommendation is not determined.");
+    }
+
+    try {
+        // Query the defect record using the provided GAIC defect number
+        var gr = new GlideRecord("x_snc_defect_bucke_gaic_defects");
+        gr.addEncodedQuery('number=' + inputs.gaic_defect_number  + '^ORsys_id=' + inputs.gaic_defect_number);
+        gr.query();
+
+        // Check if the defect record exists
+        if (!gr.next()) {
+            // Return message if no defect is found
+            return {
+                status: "info",
+                message: gs.getMessage("No defect found")
+            };
+        }
+
+        // Get the current bucket value and the new bucket value from the config
+        var currentBucket = gr.getValue("bucket");
+        var bucket = config.bucket;
+
+        // Update the bucket field if the new bucket property is valid for update
+        if (checkFieldUpdateProperty(bucket)) {
+            gr["bucket"] = bucket.recommendFieldValue;
+        }
+
+        // Update the defect record
+        gr.update();
+        // Return success message after updating the defect record
+        return gs.getMessage("Defect record has been updated successfully.");
+    } catch (e) {
+        // Return error message if any exception occurs during the update process
+        return {
+            status: 'error',
+            message: e.message
+        };
+    }
+
+    // Function to check if the bucket property is valid for update
+    function checkFieldUpdateProperty(fieldConfig) {
+        return (fieldConfig && fieldConfig.recommendFieldValue && fieldConfig.recommendFieldValue != 'null' && fieldConfig.recommendFieldValue.toLowerCase().indexOf('not determined') === -1);
+    }
+})(inputs);
+]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-04 17:39:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>19c2935f2b872610bdb7f808b891bfc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update GAIC Defect</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_tool_19c2935f2b872610bdb7f808b891bfc7</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-04 17:39:29</sys_updated_on>
+        <target_document/>
+        <target_document_table>sn_aia_tool</target_document_table>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>
