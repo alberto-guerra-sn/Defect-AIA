@@ -3,8 +3,7 @@
         <active>true</active>
         <business_rule/>
         <channel display_value="Now Assist Panel">b023fcb3537321106167ddeeff7b12a8</channel>
-        <condition table="x_snc_defect_bucke_gaic_defects">sys_created_onONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()^NQbucket=null<item endquery="false" field="sys_created_on" goto="false" newquery="false" operator="ON" or="false" value="Today@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()"/>
-            <item display_value="null" endquery="false" field="bucket" goto="false" newquery="true" operator="=" or="false" value="null"/>
+        <condition table="x_snc_defect_bucke_gaic_defects">sys_created_onONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()<item endquery="false" field="sys_created_on" goto="false" newquery="false" operator="ON" or="false" value="Today@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()"/>
         </condition>
         <description/>
         <enable_discovery>false</enable_discovery>
@@ -28,7 +27,7 @@
         <sys_created_on>2025-07-30 03:04:56</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>31aa92a52b4fe210bdb7f808b891bf86</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>x_snc_defect_bucke_gaic_defects</sys_name>
         <sys_overrides/>
         <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
@@ -36,7 +35,7 @@
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name>sn_aia_trigger_configuration_31aa92a52b4fe210bdb7f808b891bf86</sys_update_name>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-01 17:04:28</sys_updated_on>
+        <sys_updated_on>2025-08-04 16:25:22</sys_updated_on>
         <target_table>x_snc_defect_bucke_gaic_defects</target_table>
         <trigger_flow display_value="GAIC Defects - Use case: Defect Classifier - eeb013da2b836210bdb7f808b891bf13">a2b013da2b836210bdb7f808b891bf18</trigger_flow>
         <trigger_flow_definition_type>record_create</trigger_flow_definition_type>

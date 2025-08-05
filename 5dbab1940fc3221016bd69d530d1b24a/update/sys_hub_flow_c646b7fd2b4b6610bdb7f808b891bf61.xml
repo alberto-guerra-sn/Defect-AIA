@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2266000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=408186000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>27000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -15,7 +15,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>getresolutiondatafordefects</internal_name>
-        <label_cache>[{"name":"e55f7d1c-28a9-46db-9607-06ad0939e688.item.resolution_details","label":"2 - For Each➛GAIC Defects Record➛Resolution Details","reference":"","reference_display":"Resolution Details","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"resolution_details","usedInstances":{"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"]}},{"name":"e55f7d1c-28a9-46db-9607-06ad0939e688.item.work_notes","label":"2 - For Each➛GAIC Defects Record➛Work Notes","reference":"","reference_display":"Work Notes","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"work_notes","usedInstances":{"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"]}},{"name":"e55f7d1c-28a9-46db-9607-06ad0939e688.item.short_description","label":"2 - For Each➛GAIC Defects Record➛Short Description","reference":"","reference_display":"Short Description","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"short_description","usedInstances":{"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"]}},{"name":"e55f7d1c-28a9-46db-9607-06ad0939e688.item.bucket","label":"2 - For Each➛GAIC Defects Record➛Bucket","reference":"","reference_display":"Bucket","type":"choice","base_type":"choice","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"bucket","choices":[{"label":"-- None --","used":false,"reference":false,"image":"","rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"used":false,"label":"Configuration/Operator Error","reference":false,"image":"","rawLabel":"Configuration/Operator Error","selected":false,"missing":false,"value":"Configuration/Operator Error","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"used":false,"label":"Connection Issues","reference":false,"image":"","rawLabel":"Connection Issues","selected":false,"missing":false,"value":"Connection Issues","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"used":false,"label":"Guardian","reference":false,"image":"","rawLabel":"Guardian","selected":false,"missing":false,"value":"Guardian","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"used":false,"label":"Plugin","reference":false,"image":"","rawLabel":"Plugin","selected":false,"missing":false,"value":"Plugin","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"used":false,"label":"Security","reference":false,"image":"","rawLabel":"Security","selected":false,"missing":false,"value":"Security","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"used":false,"label":"Setup","reference":false,"image":"","rawLabel":"Setup","selected":false,"missing":false,"value":"Setup","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"used":false,"label":"Timeout","reference":false,"image":"","rawLabel":"Timeout","selected":false,"missing":false,"value":"Timeout","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}}],"usedInstances":{"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"]}},{"name":"e55f7d1c-28a9-46db-9607-06ad0939e688.item.number","label":"2 - For Each➛GAIC Defects Record➛Number","reference":"","reference_display":"Number","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"number","usedInstances":{"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"]}},{"name":"61fe7d48-3a42-407b-a859-fcd99fe66980.Records","label":"1 - Look Up Records➛GAIC Defects Records","reference":"x_snc_defect_bucke_gaic_defects","reference_display":"GAIC Defects","type":"records","base_type":"records","usedInstances":{"e55f7d1c-28a9-46db-9607-06ad0939e688":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.bucket","label":"Input➛bucket","reference":"","reference_display":"","type":"string","base_type":"string","usedInstances":{"7ef17a2c-189e-4673-a90c-5856b5c943fd":["conditions"],"61fe7d48-3a42-407b-a859-fcd99fe66980":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"eb85082f-8980-4a07-87a8-bb77cdff5a61"}},{"name":"flow_variable.aggr_response","label":"Flow Variables➛aggr_response","type":"string","base_type":"string","usedInstances":{"a0ccd39d-6966-4561-b49f-20224cbe7c33":["aggr_response-0"],"c65aefd0-053f-4814-8ad8-b01f861bf946":["output-0"],"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"],"1c841291-ee66-4515-90bb-9baf4aa33728":["output-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"04c15158-14dd-49e0-9794-8598b0c68ad0"}}]</label_cache>
+        <label_cache>[{"name":"flow_variable.aggr_response","label":"Flow Variables➛aggr_response","type":"string","base_type":"string","usedInstances":{"a0ccd39d-6966-4561-b49f-20224cbe7c33":["aggr_response-0"],"c65aefd0-053f-4814-8ad8-b01f861bf946":["output-0"],"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"],"1c841291-ee66-4515-90bb-9baf4aa33728":["output-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"04c15158-14dd-49e0-9794-8598b0c68ad0"}},{"name":"subflow.bucket","label":"Input➛bucket","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"7ef17a2c-189e-4673-a90c-5856b5c943fd":["conditions"],"61fe7d48-3a42-407b-a859-fcd99fe66980":["conditions"],"a21c61e7-99b0-466d-aa2d-533a741daa21":["conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"eb85082f-8980-4a07-87a8-bb77cdff5a61","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"61fe7d48-3a42-407b-a859-fcd99fe66980.Records","label":"1 - Look Up Records➛GAIC Defects Records","reference":"x_snc_defect_bucke_gaic_defects","reference_display":"GAIC Defects","type":"records","base_type":"records","usedInstances":{"e55f7d1c-28a9-46db-9607-06ad0939e688":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e55f7d1c-28a9-46db-9607-06ad0939e688.item.number","label":"2 - For Each➛GAIC Defects Record➛Number","reference":"","reference_display":"Number","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"number","usedInstances":{"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"]}},{"name":"e55f7d1c-28a9-46db-9607-06ad0939e688.item.bucket","label":"2 - For Each➛GAIC Defects Record➛Bucket","reference":"","reference_display":"Bucket","type":"choice","base_type":"choice","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"bucket","choices":[{"label":"-- None --","rawLabel":"-- None --","selected":false,"missing":false,"image":"","used":false,"reference":false,"value":""},{"rawLabel":"Configuration/Operator Error","selected":false,"label":"Configuration/Operator Error","missing":false,"image":"","used":false,"reference":false,"value":"Configuration/Operator Error","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"rawLabel":"Connection Issues","selected":false,"label":"Connection Issues","missing":false,"image":"","used":false,"reference":false,"value":"Connection Issues","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"rawLabel":"Guardian","selected":false,"label":"Guardian","missing":false,"image":"","used":false,"reference":false,"value":"Guardian","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"rawLabel":"Plugin","selected":false,"label":"Plugin","missing":false,"image":"","used":false,"reference":false,"value":"Plugin","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"rawLabel":"Security","selected":false,"label":"Security","missing":false,"image":"","used":false,"reference":false,"value":"Security","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"rawLabel":"Setup","selected":false,"label":"Setup","missing":false,"image":"","used":false,"reference":false,"value":"Setup","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"rawLabel":"Timeout","selected":false,"label":"Timeout","missing":false,"image":"","used":false,"reference":false,"value":"Timeout","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}}],"usedInstances":{"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"]}},{"name":"e55f7d1c-28a9-46db-9607-06ad0939e688.item.short_description","label":"2 - For Each➛GAIC Defects Record➛Short Description","reference":"","reference_display":"Short Description","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"short_description","usedInstances":{"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"]}},{"name":"e55f7d1c-28a9-46db-9607-06ad0939e688.item.work_notes","label":"2 - For Each➛GAIC Defects Record➛Work Notes","reference":"","reference_display":"Work Notes","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"work_notes","usedInstances":{"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"]}},{"name":"e55f7d1c-28a9-46db-9607-06ad0939e688.item.resolution_details","label":"2 - For Each➛GAIC Defects Record➛Resolution Details","reference":"","reference_display":"Resolution Details","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"resolution_details","usedInstances":{"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"]}}]</label_cache>
         <master_snapshot>53eebf792b8b6610bdb7f808b891bf17</master_snapshot>
         <master_snapshot_digest/>
         <name>getResolutionDataForDefects</name>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c646b7fd2b4b6610bdb7f808b891bf61</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>getResolutionDataForDefects</sys_name>
         <sys_overrides/>
         <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
@@ -44,7 +44,7 @@
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name>sys_hub_flow_c646b7fd2b4b6610bdb7f808b891bf61</sys_update_name>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-07-31 05:01:34</sys_updated_on>
+        <sys_updated_on>2025-08-04 21:46:52</sys_updated_on>
         <type>subflow</type>
         <updation_source/>
         <version>2</version>
@@ -255,20 +255,20 @@
         <sys_created_by>alberto.guerra@snc</sys_created_by>
         <sys_created_on>2025-07-31 04:55:21</sys_created_on>
         <sys_id>818df3392b8b6610bdb7f808b891bfd1</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-07-31 06:52:04</sys_updated_on>
+        <sys_updated_on>2025-08-04 22:06:29</sys_updated_on>
         <ui_id>61fe7d48-3a42-407b-a859-fcd99fe66980</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+VX207jMBD9lSrPUZXQUljeUKuukLhIgHhhWctxnNbCdbK20wtV/33HsZNGbWAbqUigffRc7DMz5zjO89pjsXfhnSf9IMDh6flZEPR6QTAY9AgOo6g3IFEQ9SPP9wSeUYjUOOIUlnPMc7NeIiUIimlCiUZRTl4pmmBWWhRExkxlHK+eXMLPy6thZ1R5yZTxWFLhXTy/+F6GJRyjqfQu1juuQ3FyHFEOoY8O6A5uvcqqJSp81nZdT+vcWkcqYwMl8D261FTEFDAkmCvqezMsYqxTuaoskuL4TvCtYcqEhh09E7xU7A3OPQ9MXEKhKkKtr1oi1yhrTkZY4wctc6Jz6ULJNGWEKtsPaDDOuR7WbTbgLtMsFTbFlm2zU57PxK1th1dtUM4FLLkCEDQzhRrkrozkYZou7kuUYyaKnjgnTwnm1QprLVmUa4Nn7VFOZ7ARmuEsY2KCMpnOWZEMWGbdCYdFN+HpAg5VbCK6mBjgXegr7o7BPirMT1gyU8UNbAPJAIhxYAiyI1RpLotWzhHhuSocEgtl9/I2vqdWasixUtvKoeXoT25w2z64ipFtmkkhkmX6EraYU1fcxj9IKqfBlnIkFTEzKFRNL4VE9K8ckuP1WuWRaUDXWjeb30pjTa13zJbAtz39tN/gmBIr6islNqwX2FS0E9ue7bppAye28Ghigzq+k9zg8K+ntvb6sS34h4jI2YckO93ySaVSI9vLmor2ZdGa5wdAKHl+Z5jZiVbvoXI0TxjlcdM3ZWwcO9+Uk//zm/IlSQ6AYmSnxwRnonggANDPYn/w8RX7Y4dnBb223C9sWJF9DeCOTjtvrZVwAJxSCQ9wdufR4mmAWN73BWV27/rS6ATQO5oAeifHEcC6KrNqZEPPyzehmWYZ/2bi8W48ULCWEG6aBNbqzLDtmSebfQH3Wim4TjbrGb3DuSM/Ht9RpP+ZV8AUUt15yOoXLVg8oXp7ehkVp3qB+WuT3zEOlYMqyvuEh2j/Q9kOwq1EQSlIUgXDq79EQ3ge7d8hoW/N7a6QA7CU7bjBy859BaYRobtGQOl0Usymfo9cVVZH8v4RH4xf9ktaDqtRg+XMvsX/2/GE8PIXLFouAL4QAAA=</values>
+        <values>H4sIAAAAAAAA/+VXbW/aMBD+KyifEUoKpV2/VTCmSi1so6o0da3lOA5YNU5mO7wU8d93jpMQQdoRjUrt9tF3Z/u5u+e5OPdrhwXOhXMedlwXe6fnZ67bbrtut9sm2PP9dpf4rt/xnaYj8IxCpMY+p7CcY56Y9RIpQVBAQ0o08hPyRNEEs9yiIDJgKuZ4dZdt+HJ51Wv0Cy+ZMh5IKpyL+4emE2MJ12gqnYv1jutQnBz7lEPobQZ0B7dexcUSpT5ruy5vawytI5KBgeI2HbrUVAQUMISYK9p0ZlgEWEdyVVgkxcFI8K1hyoSGEx0TvFTsGe49d01cSCErQq2vWKKsUNYc9rHGYy0TohOZhZJpxAhVth5QYJxw3SvbbMAo1iwSdotN2+6OeDITQ1sOpzgg7wtYEgUgaGwSNcizNMLxNFp8z1EOmEhrkjl5RDAvVlhryfxEGzxrh3I6g4PQDMcxExMUy2jO0s2AZdaacFi0Qh4t4FLFJqKFiQHegrri1gDs/dR8hyUzWdzAMbAZADEODEG2hSpKZFrKOSI8UalDYqHsWc6m6aiV6nGs1DZzKDn6lRjctg5ZxsgWzWwhksX6Eo6Y0yy5TfMgqZy6W8qRSATMoFAlvaQS0T8T2Bys1yrxTQFa1rrZPCqNNbXeAVvS4FFSBX0zp0CVNGZcXY2Ho9vPN19vfzwOv9U9bhHJJyQi6NDfHLOv6n8lrWOOo5QL+TjqlclQRZBsMO3ZrqsOyAaTd7TBBHl8pNEEl7+/yVR/1tgS/GHgkLNXSXa65ZOKpEa2lqWJsy/W2jw/AELO85FhZsNfvYQqo3nIKA+qvr8D49j5/p78n9/fd0lyABQg2z0mOBPpYwqAvhX73ddH7KcdnqX02nI/tWFF9jWAGzpqPNdWwgFwciWM4e7GrcVTATGf9ylldmd9bswE0D6aANonxxHAukizKGRFzfP3s+lmHv9s4vFuPFCwtMHbVAms1p1e3TtPNvsCbtdScJls1tN/gXNHfmi/oMjmW46AKWzN7kNWv2jBggnV29vzqCDSC8yfqvwZ41DeqDS9N3i0d16VbdfbShSUguBxCs0rv9o9eB7tzxCvac31RsgBWPJy3OBl43sBphJhNkZA6XSS9qY8R64Ka0byzhEfjO/2S5o3q1KDec8+xL/u8YTw8BtsAvIx6hEAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=818df3392b8b6610bdb7f808b891bfd1"/>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=c646b7fd2b4b6610bdb7f808b891bf61"/>
     <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=c646b7fd2b4b6610bdb7f808b891bf61^sys_idNOT IN418df3392b8b6610bdb7f808b891bfd5,418df3392b8b6610bdb7f808b891bfd6,858df3392b8b6610bdb7f808b891bfd3"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">498df3392b8b6610bdb7f808b891bfd4</block>
+        <block display_value="">7dd1af9f2bc72610bdb7f808b891bff6</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -284,18 +284,18 @@
         <sys_created_by>alberto.guerra@snc</sys_created_by>
         <sys_created_on>2025-07-31 04:55:21</sys_created_on>
         <sys_id>418df3392b8b6610bdb7f808b891bfd5</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-07-31 05:01:30</sys_updated_on>
+        <sys_updated_on>2025-08-04 21:46:50</sys_updated_on>
         <ui_id>fc3b042a-8af0-4b5f-97fe-ef7656006b19</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1XXW/aMBT9K1WeSZQUCAlvnapKlTYqtV33sFaRHd+AVcdObYeWRfnvu04CbEidxNuQ4Akf+5z7zRWNp2pb1dY8qitj+FJ6858vI49Lh+H3xpOkBG/ukeVSZxpMpaQBb+Stiagd3jSFUO/ZmmhOqIDgr3dt+yz9f3ye5aIuKej5RdPAdFrMWJT7lwlJ/UnMqJ/G4cwPY8LCdJxCnCQBt1AGsuM47S91/gr2ODbtOI79sFLaXlyDyTWvLFdyfoyOceyM7dlO8ofSrxcLZcEcpfWOtEw6mhO5B6NE7STROUu4OE5M7+joXUdvWywY46YSZPN0rttp1S1fccE0DINZEY3zaEF78+bgym4qyAShILC8D1ZzuUQ6Z3gahwkrxuP0kiY0jqOQMjorkjChSRrRgkb4bks8nPNPxt8ZQ9hszSjNnE/hyIMPC5IBmi2IMDDySiIZsUpvdogGwu6k2AMrLi2qee7xh+G/UDoJw9C9LAADzKG/3R2zoZt7OF8pnsNdV80esa6nh0tMaikXfRhuDqAgtbDbOUCkNqgHlfPauTH4VGCbvd9vDd5w2QU4XAqVE7E7EYtpoDW2gatKzR8PktMjXw9LAwJKtJiVpKoQySqt1ryzgk6XwVLgIeimFLsVf5oDkrsIA8wmCW4Qv+7gp2GEv6EMkp2575K/1XDrSh9O8mgaTRM/mjDmT1II/XSWTvxkmiY0zOME29Bru9Rmb7ULqk/SkI6szyg+6OflCl1YwxB5++L2QG+9XxZdt33eNeelcWI/PuelcZp1Oy+N89L4j5cGg5wb9OrRuXC7/a/hLjbYOjz/E3Lj4uLZY+1vTTWPh7UMAAA=</values>
+        <values>H4sIAAAAAAAA/+1WXWvbMBT9K0XPsZGbxLHzViiFwpZCm3UPWzGydZ2IyZIryWkz4/++K9tJt0AfCnvYIG/WubpfR+de3BLduLpxdq2vrBUbRZbfniZEKI/hd0sUq4AsCdtsTGbA1lpZIBOyY7LxeNuWUr9kO2YEyyWEf9zruu9q1VQ5mOVF28J8Xi54VASXCUuDWczzII3pIqAx4zSdphAnSSgcVKHqfbz3w1Ybd3ENtjCidkKr5UfiWO+d8TdvH/KrNj8uVtqB/VCsF3TLlHfzQe7Batn4kFicY0J+LJg5umN1vXvXIalc2Fqy/eOZ27/PbbEVkhsYBV4zg7p2YMiyPTG5fQ2ZZDlIfIIHZ4TaoLvgeJrShJfTaXqZJ3kcRzTn+aJMaJInaZSXeYT3Do6n8/LOGPlkCNtDGm24r4lOCLw6UBwwbcmkhQmpmOLMabM/IgYYv1PyDdgK5TAa8ZdfrfiJoRNKqb9ZAjZYwGA9HrNRcQNcbLUo4K5/zQFxXnejEUmt1Gpow2sVStZId9AqIo3FeFD7qn0ZY00lyuzl/pDwRqi+wdEodcHk8cQc0pA3KAP/Ko1Yn5AzIJ9OnwYkVJgxq1hdI5LVRu9EnwWLrsKNxEPYTxKqFVdcyArfYYhssvAG8esefhzH7DOGQWef7osSzw3c+qensyKaR/MkiGacB7MUaJAu0lmQzNMkp0WcoAxJ11ObPTe+qYGkkY5sYBQvDPNyhSXsYOy8e/L7dMg+LN1ebe+r5rx8z8v3v+L2vHzPy/cfXr4cCmGxqrUv4fbw7+sNe5SOKH6H/Lj4ft6w7hfDGdBNRQsAAA==</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">498df3392b8b6610bdb7f808b891bfd5</block>
+        <block display_value="">79d1af9f2bc72610bdb7f808b891bff8</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -311,10 +311,10 @@
         <sys_created_by>alberto.guerra@snc</sys_created_by>
         <sys_created_on>2025-07-31 04:55:21</sys_created_on>
         <sys_id>418df3392b8b6610bdb7f808b891bfd6</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-07-31 05:01:30</sys_updated_on>
+        <sys_updated_on>2025-08-04 21:46:50</sys_updated_on>
         <ui_id>1c841291-ee66-4515-90bb-9baf4aa33728</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/41Ty27bMBD8F55tQY4aW/ItQBEgQFsDjZtLUQhLcSkTpUiGpOy4hv+9S0tyAp9y3NnXzHB5YraPro9hax9CUK1h698npgRbM56XQhZFdcdLvlwuci74SpZ5yctqwSVUbMYMdEiVwwiK96D7BJxOUttDvQevgGvMoG197TE4awKez1QpVHAaji+fbmh2SguPid+fGXPgaXVEz9anm1Q8Oqw1cNQ09zl6ZVpq/6yiqXEzSbqVmMZTHKbB1ovEYjFj+BbRCKRFEnTAGevACIjWH6+IRxAbo9+BnTKRprFU/BbUPxpd5nmeKiWSpAaH7DWsR+MGuNlZ1eDGRWXNgMRk35i0uu/Mj4F/shwl9DpOlhPSB5qHLrFONEZO8nlnDz+nhY/KXASOSW0b0NcIItnA+4ghvUOvtjfmDMi328dAjR1trDtwjpDaebtXly1EustaTUF2OQiB6SYzaJLCjNyE7JHwrxf4ZbyW7zSGmtO6X0a99viUHrus8P4O7vP5qhJy/kUizMsiX8xlVZQFFwu+rFbsfLG2fu2TqMGk0Y56cJQKQuOViw9EYY+j8jPdmTLp2ww3N93tGApsVCDC24Q9fagTRzon1XyEDtb/TVLfsfN/VJqWbZQDAAA=</values>
@@ -322,7 +322,7 @@
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">458df3392b8b6610bdb7f808b891bfd2</block>
+        <block display_value="">71d1af9f2bc72610bdb7f808b891bff4</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -338,10 +338,10 @@
         <sys_created_by>alberto.guerra@snc</sys_created_by>
         <sys_created_on>2025-07-31 04:55:21</sys_created_on>
         <sys_id>858df3392b8b6610bdb7f808b891bfd3</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-07-31 05:01:29</sys_updated_on>
+        <sys_updated_on>2025-08-04 21:46:50</sys_updated_on>
         <ui_id>e55f7d1c-28a9-46db-9607-06ad0939e688</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/51STW/bMAz9Lzonhj9SN86twFCgh61AW/QyFAYt0YkwWVIlOalr+L+Pip106HEnm4/k43siR2b6YPvgX8yd93Kv2e7324pJHTH6H5mGDtmOyYCdZyt2BNXHeBzLrMVbsdmuC9jk601626xhe1OtWy6qqsWyrLZp8oTcOOGniVqF9FbB8Pr/DPwglXC4iLTgSFtAx3bjt1QYLNYKGlQ0aGGgfikozCrRVlla8SIvizxN8+0ma8qiyXJRAIqS6i6dD4vpb28Q2Sl0V176RBV5umL4EVALpEEtKI8r1oEWEIwb2C64ngCHIB61Gq4VB6kD0bFY++HlJ3FnaRoLWyRHHOfkNayXh5xhfjCS46MN0ugZCdCopYcb1Xf61yw/rgBb6FW4rICQ3hMf2qg5qlgktc8Hc3q6DLyX+uxvSSrDQV0jCMHJpg/o4xpQYUdEdQfWSr2vrTNHeW4mLV2yVxQkrTInGhrPLQEehSf0RJDcE/7jDL+Ck9HFT6Kh5unsvn7v49zZx6K4nk1TgedO2nBHdEdcxE1v8V5nJj8fhkAuPQ18idjD5cpjYqAlS/4vdDLuT5T6hU1/AT82fs4vAwAA</values>
@@ -494,7 +494,7 @@
         <description>This subflow is to grab data from fixed defects that will be used to generate resolution plans via Now Assist Skill</description>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>getresolutiondatafordefects</internal_name>
-        <label_cache>[{"name":"e55f7d1c-28a9-46db-9607-06ad0939e688.item.resolution_details","label":"2 - For Each➛GAIC Defects Record➛Resolution Details","reference":"","reference_display":"Resolution Details","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"resolution_details","usedInstances":{"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"]}},{"name":"e55f7d1c-28a9-46db-9607-06ad0939e688.item.work_notes","label":"2 - For Each➛GAIC Defects Record➛Work Notes","reference":"","reference_display":"Work Notes","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"work_notes","usedInstances":{"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"]}},{"name":"e55f7d1c-28a9-46db-9607-06ad0939e688.item.short_description","label":"2 - For Each➛GAIC Defects Record➛Short Description","reference":"","reference_display":"Short Description","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"short_description","usedInstances":{"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"]}},{"name":"e55f7d1c-28a9-46db-9607-06ad0939e688.item.bucket","label":"2 - For Each➛GAIC Defects Record➛Bucket","reference":"","reference_display":"Bucket","type":"choice","base_type":"choice","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"bucket","choices":[{"label":"-- None --","used":false,"reference":false,"image":"","rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"used":false,"label":"Configuration/Operator Error","reference":false,"image":"","rawLabel":"Configuration/Operator Error","selected":false,"missing":false,"value":"Configuration/Operator Error","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"used":false,"label":"Connection Issues","reference":false,"image":"","rawLabel":"Connection Issues","selected":false,"missing":false,"value":"Connection Issues","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"used":false,"label":"Guardian","reference":false,"image":"","rawLabel":"Guardian","selected":false,"missing":false,"value":"Guardian","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"used":false,"label":"Plugin","reference":false,"image":"","rawLabel":"Plugin","selected":false,"missing":false,"value":"Plugin","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"used":false,"label":"Security","reference":false,"image":"","rawLabel":"Security","selected":false,"missing":false,"value":"Security","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"used":false,"label":"Setup","reference":false,"image":"","rawLabel":"Setup","selected":false,"missing":false,"value":"Setup","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"used":false,"label":"Timeout","reference":false,"image":"","rawLabel":"Timeout","selected":false,"missing":false,"value":"Timeout","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}}],"usedInstances":{"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"]}},{"name":"e55f7d1c-28a9-46db-9607-06ad0939e688.item.number","label":"2 - For Each➛GAIC Defects Record➛Number","reference":"","reference_display":"Number","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"number","usedInstances":{"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"]}},{"name":"61fe7d48-3a42-407b-a859-fcd99fe66980.Records","label":"1 - Look Up Records➛GAIC Defects Records","reference":"x_snc_defect_bucke_gaic_defects","reference_display":"GAIC Defects","type":"records","base_type":"records","usedInstances":{"e55f7d1c-28a9-46db-9607-06ad0939e688":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.bucket","label":"Input➛bucket","reference":"","reference_display":"","type":"string","base_type":"string","usedInstances":{"7ef17a2c-189e-4673-a90c-5856b5c943fd":["conditions"],"61fe7d48-3a42-407b-a859-fcd99fe66980":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"eb85082f-8980-4a07-87a8-bb77cdff5a61"}},{"name":"flow_variable.aggr_response","label":"Flow Variables➛aggr_response","type":"string","base_type":"string","usedInstances":{"a0ccd39d-6966-4561-b49f-20224cbe7c33":["aggr_response-0"],"c65aefd0-053f-4814-8ad8-b01f861bf946":["output-0"],"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"],"1c841291-ee66-4515-90bb-9baf4aa33728":["output-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"04c15158-14dd-49e0-9794-8598b0c68ad0"}}]</label_cache>
+        <label_cache>[{"name":"flow_variable.aggr_response","label":"Flow Variables➛aggr_response","type":"string","base_type":"string","usedInstances":{"a0ccd39d-6966-4561-b49f-20224cbe7c33":["aggr_response-0"],"c65aefd0-053f-4814-8ad8-b01f861bf946":["output-0"],"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"],"1c841291-ee66-4515-90bb-9baf4aa33728":["output-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"04c15158-14dd-49e0-9794-8598b0c68ad0"}},{"name":"subflow.bucket","label":"Input➛bucket","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"7ef17a2c-189e-4673-a90c-5856b5c943fd":["conditions"],"61fe7d48-3a42-407b-a859-fcd99fe66980":["conditions"],"a21c61e7-99b0-466d-aa2d-533a741daa21":["conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"eb85082f-8980-4a07-87a8-bb77cdff5a61","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"61fe7d48-3a42-407b-a859-fcd99fe66980.Records","label":"1 - Look Up Records➛GAIC Defects Records","reference":"x_snc_defect_bucke_gaic_defects","reference_display":"GAIC Defects","type":"records","base_type":"records","usedInstances":{"e55f7d1c-28a9-46db-9607-06ad0939e688":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e55f7d1c-28a9-46db-9607-06ad0939e688.item.number","label":"2 - For Each➛GAIC Defects Record➛Number","reference":"","reference_display":"Number","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"number","usedInstances":{"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"]}},{"name":"e55f7d1c-28a9-46db-9607-06ad0939e688.item.bucket","label":"2 - For Each➛GAIC Defects Record➛Bucket","reference":"","reference_display":"Bucket","type":"choice","base_type":"choice","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"bucket","choices":[{"label":"-- None --","rawLabel":"-- None --","selected":false,"missing":false,"image":"","used":false,"reference":false,"value":""},{"rawLabel":"Configuration/Operator Error","selected":false,"label":"Configuration/Operator Error","missing":false,"image":"","used":false,"reference":false,"value":"Configuration/Operator Error","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"rawLabel":"Connection Issues","selected":false,"label":"Connection Issues","missing":false,"image":"","used":false,"reference":false,"value":"Connection Issues","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"rawLabel":"Guardian","selected":false,"label":"Guardian","missing":false,"image":"","used":false,"reference":false,"value":"Guardian","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"rawLabel":"Plugin","selected":false,"label":"Plugin","missing":false,"image":"","used":false,"reference":false,"value":"Plugin","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"rawLabel":"Security","selected":false,"label":"Security","missing":false,"image":"","used":false,"reference":false,"value":"Security","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"rawLabel":"Setup","selected":false,"label":"Setup","missing":false,"image":"","used":false,"reference":false,"value":"Setup","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}},{"rawLabel":"Timeout","selected":false,"label":"Timeout","missing":false,"image":"","used":false,"reference":false,"value":"Timeout","parameters":{"name":"x_snc_defect_bucke_gaic_defects","dependent_values":[""]}}],"usedInstances":{"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"]}},{"name":"e55f7d1c-28a9-46db-9607-06ad0939e688.item.short_description","label":"2 - For Each➛GAIC Defects Record➛Short Description","reference":"","reference_display":"Short Description","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"short_description","usedInstances":{"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"]}},{"name":"e55f7d1c-28a9-46db-9607-06ad0939e688.item.work_notes","label":"2 - For Each➛GAIC Defects Record➛Work Notes","reference":"","reference_display":"Work Notes","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"work_notes","usedInstances":{"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"]}},{"name":"e55f7d1c-28a9-46db-9607-06ad0939e688.item.resolution_details","label":"2 - For Each➛GAIC Defects Record➛Resolution Details","reference":"","reference_display":"Resolution Details","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"resolution_details","usedInstances":{"fc3b042a-8af0-4b5f-97fe-ef7656006b19":["aggr_response-0"]}}]</label_cache>
         <master>true</master>
         <name>getResolutionDataForDefects</name>
         <natlang/>
@@ -511,7 +511,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>53eebf792b8b6610bdb7f808b891bf17</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -519,7 +519,7 @@
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-07-31 05:01:31</sys_updated_on>
+        <sys_updated_on>2025-08-04 21:46:52</sys_updated_on>
         <type>subflow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -729,20 +729,20 @@
         <sys_created_by>alberto.guerra@snc</sys_created_by>
         <sys_created_on>2025-07-31 05:01:33</sys_created_on>
         <sys_id>73eebf792b8b6610bdb7f808b891bf49</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-07-31 05:01:33</sys_updated_on>
+        <sys_updated_on>2025-08-04 21:46:52</sys_updated_on>
         <ui_id>61fe7d48-3a42-407b-a859-fcd99fe66980</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+VX207jMBD9lSrPUZXQUljeUKuukLhIgHhhWctxnNbCdbK20wtV/33HsZNGbWAbqUigffRc7DMz5zjO89pjsXfhnSf9IMDh6flZEPR6QTAY9AgOo6g3IFEQ9SPP9wSeUYjUOOIUlnPMc7NeIiUIimlCiUZRTl4pmmBWWhRExkxlHK+eXMLPy6thZ1R5yZTxWFLhXTy/+F6GJRyjqfQu1juuQ3FyHFEOoY8O6A5uvcqqJSp81nZdT+vcWkcqYwMl8D261FTEFDAkmCvqezMsYqxTuaoskuL4TvCtYcqEhh09E7xU7A3OPQ9MXEKhKkKtr1oi1yhrTkZY4wctc6Jz6ULJNGWEKtsPaDDOuR7WbTbgLtMsFTbFlm2zU57PxK1th1dtUM4FLLkCEDQzhRrkrozkYZou7kuUYyaKnjgnTwnm1QprLVmUa4Nn7VFOZ7ARmuEsY2KCMpnOWZEMWGbdCYdFN+HpAg5VbCK6mBjgXegr7o7BPirMT1gyU8UNbAPJAIhxYAiyI1RpLotWzhHhuSocEgtl9/I2vqdWasixUtvKoeXoT25w2z64ipFtmkkhkmX6EraYU1fcxj9IKqfBlnIkFTEzKFRNL4VE9K8ckuP1WuWRaUDXWjeb30pjTa13zJbAtz39tN/gmBIr6islNqwX2FS0E9ue7bppAye28Ghigzq+k9zg8K+ntvb6sS34h4jI2YckO93ySaVSI9vLmor2ZdGa5wdAKHl+Z5jZiVbvoXI0TxjlcdM3ZWwcO9+Uk//zm/IlSQ6AYmSnxwRnonggANDPYn/w8RX7Y4dnBb223C9sWJF9DeCOTjtvrZVwAJxSCQ9wdufR4mmAWN73BWV27/rS6ATQO5oAeifHEcC6KrNqZEPPyzehmWYZ/2bi8W48ULCWEG6aBNbqzLDtmSebfQH3Wim4TjbrGb3DuSM/Ht9RpP+ZV8AUUt15yOoXLVg8oXp7ehkVp3qB+WuT3zEOlYMqyvuEh2j/Q9kOwq1EQSlIUgXDq79EQ3ge7d8hoW/N7a6QA7CU7bjBy859BaYRobtGQOl0Usymfo9cVVZH8v4RH4xf9ktaDqtRg+XMvsX/2/GE8PIXLFouAL4QAAA=</values>
+        <values>H4sIAAAAAAAA/+VXbW/aMBD+KyifEUoKpV2/VTCmSi1so6o0da3lOA5YNU5mO7wU8d93jpMQQdoRjUrt9tF3Z/u5u+e5OPdrhwXOhXMedlwXe6fnZ67bbrtut9sm2PP9dpf4rt/xnaYj8IxCpMY+p7CcY56Y9RIpQVBAQ0o08hPyRNEEs9yiIDJgKuZ4dZdt+HJ51Wv0Cy+ZMh5IKpyL+4emE2MJ12gqnYv1jutQnBz7lEPobQZ0B7dexcUSpT5ruy5vawytI5KBgeI2HbrUVAQUMISYK9p0ZlgEWEdyVVgkxcFI8K1hyoSGEx0TvFTsGe49d01cSCErQq2vWKKsUNYc9rHGYy0TohOZhZJpxAhVth5QYJxw3SvbbMAo1iwSdotN2+6OeDITQ1sOpzgg7wtYEgUgaGwSNcizNMLxNFp8z1EOmEhrkjl5RDAvVlhryfxEGzxrh3I6g4PQDMcxExMUy2jO0s2AZdaacFi0Qh4t4FLFJqKFiQHegrri1gDs/dR8hyUzWdzAMbAZADEODEG2hSpKZFrKOSI8UalDYqHsWc6m6aiV6nGs1DZzKDn6lRjctg5ZxsgWzWwhksX6Eo6Y0yy5TfMgqZy6W8qRSATMoFAlvaQS0T8T2Bys1yrxTQFa1rrZPCqNNbXeAVvS4FFSBX0zp0CVNGZcXY2Ho9vPN19vfzwOv9U9bhHJJyQi6NDfHLOv6n8lrWOOo5QL+TjqlclQRZBsMO3ZrqsOyAaTd7TBBHl8pNEEl7+/yVR/1tgS/GHgkLNXSXa65ZOKpEa2lqWJsy/W2jw/AELO85FhZsNfvYQqo3nIKA+qvr8D49j5/p78n9/fd0lyABQg2z0mOBPpYwqAvhX73ddH7KcdnqX02nI/tWFF9jWAGzpqPNdWwgFwciWM4e7GrcVTATGf9ylldmd9bswE0D6aANonxxHAukizKGRFzfP3s+lmHv9s4vFuPFCwtMHbVAms1p1e3TtPNvsCbtdScJls1tN/gXNHfmi/oMjmW46AKWzN7kNWv2jBggnV29vzqCDSC8yfqvwZ41DeqDS9N3i0d16VbdfbShSUguBxCs0rv9o9eB7tzxCvac31RsgBWPJy3OBl43sBphJhNkZA6XSS9qY8R64Ka0byzhEfjO/2S5o3q1KDec8+xL/u8YTw8BtsAvIx6hEAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=73eebf792b8b6610bdb7f808b891bf49"/>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=53eebf792b8b6610bdb7f808b891bf17"/>
     <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=53eebf792b8b6610bdb7f808b891bf17^sys_idNOT IN3feebf792b8b6610bdb7f808b891bf46,7feebf792b8b6610bdb7f808b891bf47,f7eebf792b8b6610bdb7f808b891bf45"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">498df3392b8b6610bdb7f808b891bfd4</block>
+        <block display_value="">7dd1af9f2bc72610bdb7f808b891bff6</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -758,18 +758,18 @@
         <sys_created_by>alberto.guerra@snc</sys_created_by>
         <sys_created_on>2025-07-31 05:01:33</sys_created_on>
         <sys_id>3feebf792b8b6610bdb7f808b891bf46</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-07-31 05:01:33</sys_updated_on>
+        <sys_updated_on>2025-08-04 21:46:52</sys_updated_on>
         <ui_id>fc3b042a-8af0-4b5f-97fe-ef7656006b19</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1Xy07jMBT9FeR1EyW0TZPuGBAS0gxIwDCLAUVOfNNaOE7wo9CJ8u9cJ2nLMA+pS1C7io99rs99+aoNqayprdG31YnWfCHJ/OfDiHDpMPxuCGdkTsiISFoCftHFQqUKdF1JDQivqLAOb5pCVM/piipOMwH+b+fa9l56//ndy0tbZqDmR00D02kxY2HuHcc08SYRy7wkCmZeEFEWJOMEojj2uYHSlx3H2f5i80cw+7GzjuPYN8tKmaMz0LniteGVnO9jRzt2ynZsZ/JHpR6PLisDei9bz0hLpaM5I9egK2GdSRRnKBf7GVNbOqrr6G2LCWNc14Ku7w55+1h5y5dcMAVDg9ZUYT8aUGTevNvqGnYcxKwYj5PjLM6iKAwyls2KOIizOAmzIgvRoKAZiL909D8a3axrB2ujuFwM66+DiZsNWCnmJAUjAi8GJAPUUlChYURKKhk1lVpvEQWUXUmxA5Zcmv6xKemL5r/wvjgIAneyAPQvh353u0yHYu7h4owailJsbqwajubLiueg+8gwKKgV5vQt1h+46iqgpxjXBwMbE1HKyz4gZGtg0zuIWI0ioHauOu2DIwWW5vP1RuU5l11Uhk1R5VRsV9Rg7DJrnJ6GWH77Lsw98kegQUCJN6YlrWtE0lpVK97dgqJLfyFw4XedjRWOz7pPc+ehjymg/jniZx18N7T9NzSDZHfdd8mfLFy4IgomeTgNp7EXThjzJgkEXjJLJl48TeIsyKMYS5e0I6LX+lRQrXeBwgylT9a52YdtCFDax9hRuq47QVErGGLRPrhp0us5jJ7P+IQdRs/HzNth9BxGz6cfPQxyrlHnrRN1sfn/4zbWWJY8fwu5pnMe7rD2FW8ywYhJDQAA</values>
+        <values>H4sIAAAAAAAA/+1WUU/bMBD+K8jPTZTQNnX6hkBISBtIwNjDhiInvrTWHDvYTqGL8t93TtKWse0BaU+ob/Fnf+fvPt+d0hLduLpx9l6fWStWiiy/PU6IUB7D75YITpaETIhiFeAXW61MZsDWWllAeMNk4/G2LaV+zjbMCJZLCH8713Xf1XVT5WCWJ20L83m54HERnFKWBrOE50GaRIsgShiP0mkKCaWhcFCFqud49t1aG3dyAbYwonZCq+V74ljPzviB7UN+1ebHybV2YN8V6xlpmfI0H+QWrJaND4niHBPyfcHMno7qenrXoalc2Fqy7cPR2//vbbEWkhsYC71mBuvagSHL9s1WX/jTiPJyOk1Pc5onSRzlPF+UNKI5TeO8zGMMKFkO8i+d8Y+Gcdvaw9YZoVbj+tMY4m4HasO9pGhC4MWB4oBaSiYtTEjFFGdOm+0eMcD4jZIHYC2UG5q2Yi9W/MT7aBRF/mQJmF8Bw+5+mY0FN8DlBXMMpTSFa8x4tFhrUYAdnOFQska689fYcOCmr4CB4nytjmx8iEpdD4aQfYBdfSPSWBQBtU/Vax8TKbE0n293Ki+F6l0ZN6UumNyvmEPv8sZ5PS1pxP0bmwfkD6NBQoU3ZhWra0Sy2uiN6G9B0VW4krgI++7DCsfxGLLCZxjiE7DwEvGLHn4YW/MzhkGyv+6LEk8NXPkiimZFPI/nNIhnnAezFKIgXaSzgM5TmkdFQrF0STchdmvPJbP2YBS+UPbU+DQH20aDssFjT+m77gxFbWD0onv0U3nQcxzhxxH+8bw9jvDjCP/wI5xDISzqvPeirnb/435ji2UpiteQbzqf4QHrfgHNt/vj2QsAAA==</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">498df3392b8b6610bdb7f808b891bfd5</block>
+        <block display_value="">79d1af9f2bc72610bdb7f808b891bff8</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -785,10 +785,10 @@
         <sys_created_by>alberto.guerra@snc</sys_created_by>
         <sys_created_on>2025-07-31 05:01:33</sys_created_on>
         <sys_id>7feebf792b8b6610bdb7f808b891bf47</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-07-31 05:01:33</sys_updated_on>
+        <sys_updated_on>2025-08-04 21:46:52</sys_updated_on>
         <ui_id>1c841291-ee66-4515-90bb-9baf4aa33728</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/41TTW/iMBD9Lz5DFEoLSW9Vq0qVuou0ZXtZraJxPAarjp3aDpRF/Pcd4wRQe+kt8zwf772Z7JntQtsFv7R33quVYbd/9kwJdst4Xgg5nZZXvOCz2STngs9lkRe8KCdcQslGzECDlJlaULwB3UVgv5fabqsNOAVcYwarlasc+tYaj4cDZQrlWw27128X1GulhcPI7++IteBodEDHbomtoQ8D+lmZN+r1Jfm7ajRw1JS6GOR8lhd2bYx9cMqs+vi5L3oZQOtEpDUZMfwIaATSdAna44g1YAQE63YnxCGIhdFnYE1ikoYGPrz6R/OKPM9jpkRSVGN6PYVV72SC5QMEICpdHTqHgxlW1eiTFwIldDrcX2IpYdEGZU0qCXEJfbXVXWN+JifYqcGwOEI6TySwjVIj916IfFnb7a+B5aMyR1f6R21r0KcIAnnHuxD57Fmnlp9sTsgXo1FjQxOrBtqWkKp1dqOOU4h0k600BdnxrATGy86gjgozWgFkj4Q/HOHX/uZ+UBsqjuN+G/Xe4VM8m6LEmyu4ycfzUsjxtUQYF9N8MpbltJhyMeGzcs4OI+Z3/l6D92ejaEPVexdlJtt6g6rkcSypnWrDHZHaYO/FIV6rib9j2szwP5yWVytPEpYRe7rIEzs6VVVfQlvr3qL4M3b4D5sIVyfsAwAA</values>
@@ -796,7 +796,7 @@
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">458df3392b8b6610bdb7f808b891bfd2</block>
+        <block display_value="">71d1af9f2bc72610bdb7f808b891bff4</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -812,10 +812,10 @@
         <sys_created_by>alberto.guerra@snc</sys_created_by>
         <sys_created_on>2025-07-31 05:01:33</sys_created_on>
         <sys_id>f7eebf792b8b6610bdb7f808b891bf45</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-07-31 05:01:33</sys_updated_on>
+        <sys_updated_on>2025-08-04 21:46:52</sys_updated_on>
         <ui_id>e55f7d1c-28a9-46db-9607-06ad0939e688</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/51TXW+jMBD8L34miI8cDXmrWlWqdHeV0qovpypa7CWxzticbZJyiP9+60Bo1cd7gh3vzs4MZmCm823n3Yu5dU4eNNv+eouY1AGj94FpaJBtmfTYOBaxE6gu1MNQpDXeiPVmlcM6W62Tm2oFm2/lquaiLGssinKTxDvkxgo3jjQqpGsV9K//z8CPUgmLs8gWLGnzaNl2+HIkBS1IS1GXaVLyPCvyLEmyzTqtirxKM5EDioIIFVSoqPVxdvfFrO/bUNpJwgx8n2d2C0qPICJLIobvHrVAWl+DchixBrQAb2zPtt52BFgE8aRVv3QcpfZEx0Lvu5N/aWOaJKGxRjLEcTpcyv2c4wTX9+Dhmai57+zcyo9GcnRTFAJr6JS/+4xNDU+tl0ZPIx4qdZ02qmv0zykJthBcPxshnSMR2AajQfrso34+mvPuqvJB6kso86EyHNRSgfdWVp0PegaGChsi2jfQtlIf9q01J3kZJi1NfFBUxLUyZ1oarmgMPAiPKVeIHwi/v8CvYGVw8YNoaHiMmOvdnQLnPrxQiPs/XVAyOZs97KcYwgi3svW3tOCEs9zxLdz6iXvJlEtHEl4C9nj9V8JBTzdI8s/Q2djfQfwHNv4DbCfgvXUDAAA=</values>
@@ -957,23 +957,23 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>c646b7fd2b4b6610bdb7f808b891bf61</sys_id>
         <latest_snapshot>53eebf792b8b6610bdb7f808b891bf17</latest_snapshot>
-        <compiler_build>glide-yokohama-12-18-2024__patch6-07-17-2025_07-21-2025_1847.zip</compiler_build>
+        <compiler_build>glide-yokohama-12-18-2024__patch6-07-17-2025_07-27-2025_1301.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=c646b7fd2b4b6610bdb7f808b891bf61"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=c646b7fd2b4b6610bdb7f808b891bf61^sys_idNOT INc4febf792b8b6610bdb7f808b891bf5f"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"c4febf792b8b6610bdb7f808b891bf5f","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="getResolutionDataForDefects">c646b7fd2b4b6610bdb7f808b891bf61</plan_id>
-        <snapshot>6a38d0c62b0f6610bdb7f808b891bf7b</snapshot>
+        <snapshot>60efc0a72bcb2610bdb7f808b891bfbb</snapshot>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
         <sys_created_on>2025-07-31 05:01:34</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c4febf792b8b6610bdb7f808b891bf5f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-07-31 05:01:34</sys_updated_on>
+        <sys_updated_on>2025-08-04 21:46:52</sys_updated_on>
     </sys_flow_subflow_plan>
 </record_update>

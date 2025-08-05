@@ -7,14 +7,18 @@
         <record_type>custom</record_type>
         <script><![CDATA[(function(inputs) {
 
-    var res = [];
-    var count = 0;
+    var res = []; //empty array to store results
+    var count = 0; //counter for bucket sequence
+
+    //create new GlideRecord of sys_choice table and filter by name(defect table), element(bucket), and active records, and order by sequence
     var defect_dict = new GlideRecord("sys_choice");
     defect_dict.addQuery("name", "x_snc_defect_bucke_gaic_defects");
     defect_dict.addQuery("element", "bucket");
     defect_dict.addQuery("inactive", false);
     defect_dict.orderBy("sequence");
     defect_dict.query();
+
+    //iterate through each record and push string to the result array
     while (defect_dict.next()) {
         count++;
         var label = defect_dict.getValue("label");
@@ -25,7 +29,7 @@
     if (count == 0)
         return gs.getMessage("No available bucket");
     else
-        return res.join(";\n");
+        return res.join(";\n"); //return result array
 })(inputs);
 ]]></script>
         <sys_class_name>sn_aia_tool</sys_class_name>
@@ -33,7 +37,7 @@
         <sys_created_on>2025-07-31 21:30:11</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>7131270a2b0b6210f147f7a95e91bf92</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Choices for buckets</sys_name>
         <sys_overrides/>
         <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
@@ -41,7 +45,7 @@
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name>sn_aia_tool_7131270a2b0b6210f147f7a95e91bf92</sys_update_name>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-01 19:48:35</sys_updated_on>
+        <sys_updated_on>2025-08-04 17:21:21</sys_updated_on>
         <target_document/>
         <target_document_table>sn_aia_tool</target_document_table>
         <type>script</type>

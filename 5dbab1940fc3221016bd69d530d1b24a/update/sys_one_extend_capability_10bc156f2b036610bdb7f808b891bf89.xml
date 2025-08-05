@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_capability">
+    <sys_one_extend_capability action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <external>true</external>
+        <metadata>{}</metadata>
+        <name>0f9411e32b036610bdb7f808b891bfde_BulkSho</name>
+        <short_description/>
+        <sys_class_name>sys_one_extend_capability</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 03:42:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>10bc156f2b036610bdb7f808b891bf89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>0f9411e32b036610bdb7f808b891bfde_BulkSho</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sys_one_extend_capability_10bc156f2b036610bdb7f808b891bf89</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 03:42:04</sys_updated_on>
+        <type>datasource</type>
+    </sys_one_extend_capability>
+    <sys_translated_text action="delete_multiple" query="documentkey=10bc156f2b036610bdb7f808b891bf89"/>
+</record_update>

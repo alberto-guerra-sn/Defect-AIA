@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_version">
+    <sn_aia_version action="INSERT_OR_UPDATE">
+        <condition/>
+        <instructions>1. Parse the input JSON to extract all buckets and their assigned defects.
+2. For each bucket in the JSON, retrieve the list of existing bucket choices from the GAIC Defect table. If there are no choices present than move to the next bucket.
+3. Compare each JSON bucket to the existing bucket choices using a similarity metric.
+4. If a JSON bucket is very similar to an existing bucket, replace the JSON bucket with the existing bucket name.
+5. If no similar existing bucket is found, retain the original JSON bucket name.
+6. Update the JSON structure with the standardized bucket names.
+7. Return the updated JSON as output.</instructions>
+        <state>published</state>
+        <sys_class_name>sn_aia_version</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 06:41:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4ec50e6f2bc36610bdb7f808b891bf71</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>V1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_version_4ec50e6f2bc36610bdb7f808b891bf71</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 09:34:31</sys_updated_on>
+        <target_id>805302eb2bc36610bdb7f808b891bfb8</target_id>
+        <target_table>sn_aia_agent</target_table>
+        <version_name>V1</version_name>
+        <version_number>1</version_number>
+    </sn_aia_version>
+</record_update>

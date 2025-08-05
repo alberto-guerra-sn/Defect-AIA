@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>This script takes in a single new bucket name to create that new bucket choice in the x_snc_defect_bucke_gaic_defects table.</description>
+        <input_schema>[{"name":"bucketName","description":"the string name of the new bucket","mandatory":false}]</input_schema>
+        <name>New Choice Creator</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[(function(inputs) {
+    // Create a new GlideRecord object for the 'sys_choice' table
+    var records = new GlideRecord('sys_choice');
+    // Add a query to filter records by 'name' field
+    records.addQuery('name', 'x_snc_defect_bucke_gaic_defects');
+    // Add a query to filter records by 'element' field
+    records.addQuery('element', 'bucket');
+    // Add a query to filter records by 'value' field
+    records.addQuery('value', inputs.bucketName);
+    // Limit the query results to 1 record
+	records.setLimit(1);
+    // Execute the query
+    records.query();
+    // Check if no record exists with the given bucket name
+    if (!records.next()) {
+        // Create a new GlideRecord object for the 'sys_choice' table
+        var newChoice = new GlideRecord('sys_choice');
+        // Initialize the new record
+        newChoice.initialize();
+        // Set the 'name' field of the new record
+        newChoice.setValue('name', 'x_snc_defect_bucke_gaic_defects');
+        // Set the 'element' field of the new record
+        newChoice.setValue('element', 'bucket');
+        // Set the 'value' field of the new record
+        newChoice.setValue('value', inputs.bucketName);
+        // Set the 'label' field of the new record
+        newChoice.setValue('label', inputs.bucketName);
+        // Insert the new record into the database
+        newChoice.insert();
+    }
+})(inputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 07:13:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>f02d82a72b076610bdb7f808b891bf52</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>New Choice Creator</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_tool_f02d82a72b076610bdb7f808b891bf52</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 07:58:00</sys_updated_on>
+        <target_document/>
+        <target_document_table>sn_aia_tool</target_document_table>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

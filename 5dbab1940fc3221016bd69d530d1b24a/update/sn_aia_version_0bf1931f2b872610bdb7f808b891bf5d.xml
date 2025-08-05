@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_version">
+    <sn_aia_version action="INSERT_OR_UPDATE">
+        <condition/>
+        <instructions>Objective:
+GAIC Defects are flaws, errors, or issues in a software product that prevent it from functioning as intended. They occur when the software does not meet its requirements, specifications, or user expectations. The agent's task is to understand the issue and assign the appropriate:
+- Bucket
+
+Step 1: Retrieve GAIC Defect Details
+- Fetch the details of the given GAIC Defect.
+- Proceed when defect details are successfully retrieved.
+
+Step 2: Assign Bucket
+
+Step 2.1: Determine the Bucket
+- Fetch the available bucket.
+- Recommend a bucket if the defect details contains clear, specific, and meaningful information that directly corresponds to one of the available buckets.
+- Take into account descriptions and keywords for each buckets:
+
+1. ServiceNow Guardian
+Description:
+Issues related to offensive or harmful content detection, including inappropriate language, sensitive data, or violations of trust and safety guidelines. Often tied to content filtering or Guardian protections in ServiceNow.
+Examples:
+Profanity detection errors, harmful prompt blocking, trust violations.
+Keywords: guardian, offensive, offensiveness, profane, injection, harmful, sensitive, trustbuilder
+
+2. Connection Issue
+Description:
+Defects involving failure to establish or maintain communication between systems or services. Typically tied to connectivity, endpoints, proxy issues, or HTTP request problems.
+Examples:
+Broken connection URLs, failed HTTP requests, unreachable endpoints, proxy errors.
+Keywords:
+200000, connection url, proxy, endpoint, connectivity, routing, connection alias, http request
+
+3. Configuration/Operator Error
+Description:
+Defects caused by incorrect configuration settings or user/operator mistakes. Often linked to misconfigured parameters, invalid values, or improper environment setup.
+Examples:
+Wrong system settings, invalid field values, manual missteps, config mismatches.
+Keywords: 400001, 400002, configuration, config, 
+
+4. Timeout
+Description:
+Defects where a process takes too long to complete or exceeds time limits. Usually associated with latency, performance delays, or long-running executions.
+Examples:
+Script timeout, slow API response, delayed workflow execution.
+Keywords:
+timeout, timing out, slow, response time, waiting, execution, delay, latency
+
+5. Setup
+Description:
+Defects encountered during installation, initialization, or deployment of applications or system components. Often includes upgrade failures, setup errors, or activation issues.
+Examples:
+Installation crash, upgrade failure, initialization bug, zboot issues.
+Keywords: 
+installation, upgrade, setup, activation, initialization, deployment, repair, zboot, zbooting
+
+6. Plugin
+Description:
+Issues related to plugins, apps, or extensions in the platform. Typically involves broken integrations, capability mismatches, or controller malfunctions.
+Examples:
+Plugin loading errors, integration failures, capability misbehavior.
+Keywords:
+plugin, app, extension, integration, controller, capability, application, feature, 
+
+7. Security
+Description:
+Defects that pose a risk to system security or data access. Includes privilege issues, ACL violations, or potential vulnerabilities like unauthorized access.
+Examples:
+Access control failures, business rule bypasses, exposed data.
+Keywords: ACL, business rule, security, bypass, privilege, vulnerable
+
+- Do not infer or guess a bucket based on common or placeholder terms (e.g., “test”, “check”, “issue”) unless they are accompanied by enough context to confidently justify a match.
+- You must be 100% certain that the defect clearly belongs to a bucket before assigning it.
+- If you are unsure of the appropriate bucket, default and assign the bucket as Configuration/Operator Error
+
+Step 3: Update the GAIC Defect
+- Update the GAIC Defect record with the selected Bucket value.
+
+
+Key Considerations:
+- NEVER ask the user for input. 
+- Do NOT ask the user to manually determine bucket.
+- Ensure that the recommendations are logical and relevant to the GAIC defect details.</instructions>
+        <state>published</state>
+        <sys_class_name>sn_aia_version</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-04 17:36:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>0bf1931f2b872610bdb7f808b891bf5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>V1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_version_0bf1931f2b872610bdb7f808b891bf5d</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-04 17:36:03</sys_updated_on>
+        <target_id>3691dbdb2b872610bdb7f808b891bfed</target_id>
+        <target_table>sn_aia_agent</target_table>
+        <version_name>V1</version_name>
+        <version_number>1</version_number>
+    </sn_aia_version>
+</record_update>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_usecase">
+    <sn_aia_usecase action="INSERT_OR_UPDATE">
+        <applicability_script><![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * @param {string} inputs.context.device_type - The device type from which the experience is accessed, e.g.'mweb' 
+ * @param {string} inputs.context.deployment_id - The unique identifier for the assistant deployment 
+ * @param {string} inputs.context.assistant_type - The type of assistant, e.g., 'nava' 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]></applicability_script>
+        <base_plan>This agentic workflow specializes in pattern recognition and automated categorization of defect records based on their short descriptions.
+
+1. Create the JSON to begin creating new buckets and designating the defects to those buckets using the "Bucket Categorizer Agent". You must always execute the "Bucket Categorizer Agent" first.
+
+2. Use the "Bucket Mapping Agent" to compare the buckets in the JSON to buckets that are already present in the defect table. If none are present at the time than do not compare until choices are present. You must always execute the "Bucket Mapping Agent" 2nd.
+
+2.1. Retrieve the JSON from step 1 to begin mapping.
+
+2.2. create the new output with any changes to bucket names if they any were changed.
+
+3. Create new buckets and assign the defects to the appropriate bucket choices from the out put of Step 2 using the "Defect Choice Agent". You must always execute the "Defect Choice Agent" last.
+
+Each agent in the workflow must be used in the order stated above anytime this workflow runs.</base_plan>
+        <description>This workflow analyzes the short descriptions of multiple records to identify meaningful patterns and automatically creates relevant categories. It assigns each defect to the most appropriate category, streamlining defect management for ServiceNow users.</description>
+        <execution_mode>copilot</execution_mode>
+        <internal_name>global.x_snc_defect_bucke.Defect Categorization Workflow</internal_name>
+        <name>Defect Categorization Workflow</name>
+        <parent/>
+        <record_type>template</record_type>
+        <source_id/>
+        <strategy display_value="ReActive Planner">b264c470ff1022106c36ffffffffff67</strategy>
+        <sys_class_name>sn_aia_usecase</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 02:24:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5679c5e72bcf2610bdb7f808b891bf80</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Defect Categorization Workflow</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_usecase_5679c5e72bcf2610bdb7f808b891bf80</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 10:00:53</sys_updated_on>
+        <team display_value="Defect Categorization Workflow">37da016b2bcf2610bdb7f808b891bf17</team>
+    </sn_aia_usecase>
+</record_update>

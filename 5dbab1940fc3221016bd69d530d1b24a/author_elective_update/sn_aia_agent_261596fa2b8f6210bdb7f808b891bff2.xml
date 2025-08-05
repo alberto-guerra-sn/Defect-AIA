@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
+    <sn_aia_agent action="DELETE">
+        <agent_type>internal</agent_type>
+        <applicability_script><![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * @param {string} inputs.context.device_type - The device type from which the experience is accessed, e.g.'mweb' 
+ * @param {string} inputs.context.deployment_id - The unique identifier for the assistant deployment 
+ * @param {string} inputs.context.assistant_type - The type of assistant, e.g., 'nava' 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]></applicability_script>
+        <compiled_handbook/>
+        <description>Analyzes lists of software defect records to intelligently group them into relevant categories. Designed for quality assurance teams and software managers seeking to understand defect trends and improve software quality through structured defect categorization.</description>
+        <external_agent_configuration/>
+        <instructions>1. Retrieve the list of software defect records to be analyzed.
+2. For each defect record, extract the full defect context and relevant descriptive fields.
+3. Use the Defect Keyword Tool to analyze each defect record for keyword group matches.
+4. Assign each defect record to the keyword group with the highest match count.
+5. Use the Final Defect Bucket Resolver to finalize the bucket assignment for each defect record.
+6. Compile a summary of defect records grouped by their assigned buckets.
+7. Present the grouped defect summary to the user.</instructions>
+        <internal_name>global.x_snc_defect_bucke.Defect Bucket Agent</internal_name>
+        <name>Defect Bucket Agent</name>
+        <parent/>
+        <processing_message/>
+        <proficiency>- Expertly analyzes software defect records to identify underlying patterns, recurring themes, and trends, and categorizes defects into meaningful buckets. Applies systematic evaluation and data-driven methodologies to streamline defect management and reporting, ensuring that defect data is organized for actionable insights and improved software quality.
+- Follows a structured, multi-step action plan to process software defect records: retrieves records, extracts relevant context and descriptive fields, analyzes for keyword group matches, assigns records to the most relevant keyword group, finalizes bucket assignments, and compiles summaries grouped by defect buckets for user presentation.
+- Utilizes the 'Unfinished Tool-1754179290131' to upload and retrieve software defect records by specifying search profiles, queries, and optional filters such as sources, fields, and conditions. This capability allows the agent to efficiently access and prepare the relevant defect data necessary for subsequent analysis and categorization.</proficiency>
+        <record_type>template</record_type>
+        <role>Responsible for analyzing software defect records, identifying underlying patterns, and categorizing defects into meaningful buckets based on their nature, recurring themes, and observed trends. Acts as an expert quality analyst, applying systematic evaluation and data-driven decision-making to streamline defect management and reporting.</role>
+        <source_id/>
+        <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
+        <sys_class_name>sn_aia_agent</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-03 00:00:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>261596fa2b8f6210bdb7f808b891bff2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Defect Bucket Agent</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_agent_261596fa2b8f6210bdb7f808b891bff2</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-03 00:01:38</sys_updated_on>
+    </sn_aia_agent>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</application>
+        <file_path/>
+        <instance_id>a6f5898a33ffd6107c42c7bb9d5c7b62</instance_id>
+        <instance_name>aiagentujjawal3</instance_name>
+        <name>sn_aia_agent_261596fa2b8f6210bdb7f808b891bff2</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_aia_agent"&gt;&lt;sn_aia_agent action="INSERT_OR_UPDATE"&gt;&lt;agent_type&gt;internal&lt;/agent_type&gt;&lt;applicability_script&gt;&lt;![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * @param {string} inputs.context.device_type - The device type from which the experience is accessed, e.g.'mweb' 
+ * @param {string} inputs.context.deployment_id - The unique identifier for the assistant deployment 
+ * @param {string} inputs.context.assistant_type - The type of assistant, e.g., 'nava' 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]&gt;&lt;/applicability_script&gt;&lt;compiled_handbook/&gt;&lt;description&gt;Analyzes lists of software defect records to intelligently group them into relevant categories. Designed for quality assurance teams and software managers seeking to understand defect trends and improve software quality through structured defect categorization.&lt;/description&gt;&lt;external_agent_configuration/&gt;&lt;instructions&gt;1. Retrieve the list of software defect records to be analyzed.
+2. For each defect record, extract the full defect context and relevant descriptive fields.
+3. Use the Defect Keyword Tool to analyze each defect record for keyword group matches.
+4. Assign each defect record to the keyword group with the highest match count.
+5. Use the Final Defect Bucket Resolver to finalize the bucket assignment for each defect record.
+6. Compile a summary of defect records grouped by their assigned buckets.
+7. Present the grouped defect summary to the user.&lt;/instructions&gt;&lt;internal_name&gt;global.x_snc_defect_bucke.Defect Bucket Agent&lt;/internal_name&gt;&lt;name&gt;Defect Bucket Agent&lt;/name&gt;&lt;parent/&gt;&lt;processing_message/&gt;&lt;proficiency&gt;- Expertly analyzes software defect records to identify underlying patterns, recurring themes, and trends, and categorizes defects into meaningful buckets. Applies systematic evaluation and data-driven methodologies to streamline defect management and reporting, ensuring that defect data is organized for actionable insights and improved software quality.
+- Follows a structured, multi-step action plan to process software defect records: retrieves records, extracts relevant context and descriptive fields, analyzes for keyword group matches, assigns records to the most relevant keyword group, finalizes bucket assignments, and compiles summaries grouped by defect buckets for user presentation.
+- Utilizes the 'Unfinished Tool-1754179290131' to upload and retrieve software defect records by specifying search profiles, queries, and optional filters such as sources, fields, and conditions. This capability allows the agent to efficiently access and prepare the relevant defect data necessary for subsequent analysis and categorization.&lt;/proficiency&gt;&lt;record_type&gt;template&lt;/record_type&gt;&lt;role&gt;Responsible for analyzing software defect records, identifying underlying patterns, and categorizing defects into meaningful buckets based on their nature, recurring themes, and observed trends. Acts as an expert quality analyst, applying systematic evaluation and data-driven decision-making to streamline defect management and reporting.&lt;/role&gt;&lt;source_id/&gt;&lt;strategy display_value="ReAct"&gt;f0bff21f9f13c6108f431597d90a1c74&lt;/strategy&gt;&lt;sys_class_name&gt;sn_aia_agent&lt;/sys_class_name&gt;&lt;sys_created_by&gt;alberto.guerra@snc&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-03 00:00:24&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;261596fa2b8f6210bdb7f808b891bff2&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Defect Bucket Agent&lt;/sys_name&gt;&lt;sys_package display_value="Defect Bucket" source="x_snc_defect_bucke"&gt;5dbab1940fc3221016bd69d530d1b24a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Defect Bucket"&gt;5dbab1940fc3221016bd69d530d1b24a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_aia_agent_261596fa2b8f6210bdb7f808b891bff2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;alberto.guerra@snc&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-03 00:01:38&lt;/sys_updated_on&gt;&lt;/sn_aia_agent&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>98180952</payload_hash>
+        <record_name>Defect Bucket Agent</record_name>
+        <reverted_from/>
+        <source>04754b5a2b436210bdb7f808b891bf0d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-03 00:01:38</sys_created_on>
+        <sys_id>f7071e7e2b8f6210bdb7f808b891bf57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1986d3be3ab0000001</sys_recorded_at>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-03 00:01:38</sys_updated_on>
+        <type>AI Agent</type>
+        <update_guid>ff071e7e358f6210dcaffc7bc607cf56</update_guid>
+        <update_guid_history>ff071e7e358f6210dcaffc7bc607cf56:98180952,88d652fe5ec7e21063f29408aa462873:-1372320954,b5c6967eb78f62109871555b06d04c76:-865785230</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Defect Bucket Agent">f1808bd72b472610bdb7f808b891bfe4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-04 16:19:47</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent">sn_aia_agent</sys_db_object>
+        <sys_id>63c2052bb6434c01b5e2823939df2369</sys_id>
+        <sys_metadata>261596fa2b8f6210bdb7f808b891bff2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Defect Bucket Agent</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_scope_delete display_value="">385cdcb5ab8e4f60953bdcc583c2cac4</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_261596fa2b8f6210bdb7f808b891bff2</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_261596fa2b8f6210bdb7f808b891bff2">f7071e7e2b8f6210bdb7f808b891bf57</sys_update_version>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-04 16:19:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

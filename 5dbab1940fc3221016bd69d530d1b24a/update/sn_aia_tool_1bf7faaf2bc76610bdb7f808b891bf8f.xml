@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Fetch possible choices for bucket</description>
+        <input_schema>[]</input_schema>
+        <name>Choices for buckets</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[(function(inputs) {
+
+    var res = []; //empty array to store results
+    var count = 0; //counter for bucket sequence
+
+    //create new GlideRecord of sys_choice table and filter by name(defect table), element(bucket), and active records, and order by sequence
+    var defect_dict = new GlideRecord("sys_choice");
+    defect_dict.addQuery("name", "x_snc_defect_bucke_gaic_defects");
+    defect_dict.addQuery("element", "bucket");
+    defect_dict.addQuery("inactive", false);
+    defect_dict.orderBy("sequence");
+    defect_dict.query();
+
+    //iterate through each record and push string to the result array
+    while (defect_dict.next()) {
+        count++;
+        var label = defect_dict.getValue("label");
+        var value = defect_dict.getValue("value");
+        res.push(`Bucket ${count}: ${label}, (field_value=${value})`);
+    }
+
+    if (count == 0)
+        return gs.getMessage("No available bucket");
+    else
+        return res.join(";\n"); //return result array
+})(inputs);
+]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 10:20:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>1bf7faaf2bc76610bdb7f808b891bf8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Choices for buckets</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_tool_1bf7faaf2bc76610bdb7f808b891bf8f</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 10:20:57</sys_updated_on>
+        <target_document/>
+        <target_document_table>sn_aia_tool</target_document_table>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>
