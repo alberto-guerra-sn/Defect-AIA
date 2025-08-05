@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
     <sys_generative_ai_config action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <additional_configurations>{"skill_config_id":"3e5c916f2b036610bdb7f808b891bf11"}</additional_configurations>
         <ai_suggested>false</ai_suggested>
         <definition>165c516f2b036610bdb7f808b891bfe2</definition>
@@ -9,18 +9,19 @@
         <min_word_count>-1</min_word_count>
         <model>llm_generic_small</model>
         <name>AI-generated prompt</name>
-        <parent/>
+        <parent display_value="OneExtend Capability Definition: Bulk Category Maker (Now LLM Service - Now LLM Generic)">625c516f2b036610bdb7f808b891bfed</parent>
         <prompt>## Role
 You are a data analysis expert. Your task is to analyze short descriptions from multiple records from the GAIC Defect table, identify meaningful patterns, and group defect records into distinct buckets based on the nature of the issues.
 
 ## Context
 The short descriptions from multiple records from the GAIC Defect table that need to be analyzed are:  {{BulkShortDescriptionSubFlow.output}} 
+Take into account existing buckets before creating new ones:  {{ChoicesSubflow.output}} 
 
 ## Instructions
 1. Read through the provided short descriptions from the GAIC Defect table.
 2. Identify patterns and common themes among the descriptions to determine the nature of the issues.
 3. Create distinct bucket names that accurately reflect the nature of the issues. Keep bucket names to one to two words.
-4. Assign each defect record number to the corresponding bucket based on the nature of the issue.
+4. Assign each defect record number to the corresponding bucket based on the nature of the issue. If an existing bucket is appropriate and the best choice for that defect than use that bucket.
 5. Ensure that each bucket name is unique and clearly describes the type of issue it contains.
 
 ## Output
@@ -40,24 +41,24 @@ Replace "Bucket Name 1", "Bucket Name 2", etc., with the actual bucket names cre
         <prompt_template_role>user</prompt_template_role>
         <request_tokens>32018</request_tokens>
         <show_in_prompt_library>true</show_in_prompt_library>
-        <state>archived</state>
+        <state>published</state>
         <sys_class_name>sys_generative_ai_config</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:40:35</sys_created_on>
+        <sys_created_on>2025-08-05 12:42:26</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>625c516f2b036610bdb7f808b891bfed</sys_id>
+        <sys_id>44689bab2bcfe6101fddfc886e91bf9e</sys_id>
         <sys_mod_count>5</sys_mod_count>
         <sys_name>165c516f2b036610bdb7f808b891bfe2</sys_name>
         <sys_overrides/>
         <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
-        <sys_update_name>sys_generative_ai_config_625c516f2b036610bdb7f808b891bfed</sys_update_name>
+        <sys_update_name>sys_generative_ai_config_44689bab2bcfe6101fddfc886e91bf9e</sys_update_name>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 12:49:36</sys_updated_on>
+        <sys_updated_on>2025-08-05 12:49:37</sys_updated_on>
         <temperature>0.2</temperature>
         <thinking_tokens>0</thinking_tokens>
-        <version>1</version>
+        <version>2</version>
     </sys_generative_ai_config>
 </record_update>

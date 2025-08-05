@@ -18,23 +18,23 @@
 })();]]></error_handler_script>
         <error_policy/>
         <from_resource display_value="BulkShortDescriptionSubFlow">98bc596f2b036610bdb7f808b891bf5e</from_resource>
-        <internal_name>BulkShortDescriptionSubFlow__Bulk Category Maker</internal_name>
+        <internal_name>BulkShortDescriptionSubFlow__ChoicesSubflow</internal_name>
         <name>edge</name>
         <order>0</order>
         <sys_class_name>sys_one_extend_resource_edge</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:42:05</sys_created_on>
+        <sys_created_on>2025-08-05 12:43:19</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>10bc596f2b036610bdb7f808b891bf68</sys_id>
+        <sys_id>059893eb2bcfe6101fddfc886e91bf36</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>edge</sys_name>
         <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
-        <sys_update_name>sys_one_extend_resource_edge_10bc596f2b036610bdb7f808b891bf68</sys_update_name>
+        <sys_update_name>sys_one_extend_resource_edge_059893eb2bcfe6101fddfc886e91bf36</sys_update_name>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 03:42:05</sys_updated_on>
-        <to_resource display_value="Bulk Category Maker">f25c916f2b036610bdb7f808b891bf39</to_resource>
+        <sys_updated_on>2025-08-05 12:43:19</sys_updated_on>
+        <to_resource display_value="ChoicesSubflow">f09853eb2bcfe6101fddfc886e91bfad</to_resource>
     </sys_one_extend_resource_edge>
 </record_update>

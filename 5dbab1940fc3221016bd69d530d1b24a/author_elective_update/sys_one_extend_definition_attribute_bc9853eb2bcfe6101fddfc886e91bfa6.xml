@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_definition_attribute">
+    <sys_one_extend_definition_attribute action="DELETE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <apply_filter>false</apply_filter>
+        <attribute_label/>
+        <capability display_value="d205df672bcfe6101fddfc886e91bf94_Choices">f898dfab2bcfe6101fddfc886e91bf60</capability>
+        <choice_list/>
+        <contains_large_input>false</contains_large_input>
+        <data_type>string</data_type>
+        <default_value/>
+        <definition/>
+        <description/>
+        <group/>
+        <hidden>false</hidden>
+        <info/>
+        <label>sys choices</label>
+        <mandatory>false</mandatory>
+        <name>sys_choices</name>
+        <order>100</order>
+        <schema/>
+        <sys_class_name>sys_one_extend_definition_attribute</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 12:43:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bc9853eb2bcfe6101fddfc886e91bfa6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_choices</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sys_one_extend_definition_attribute_bc9853eb2bcfe6101fddfc886e91bfa6</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 12:43:19</sys_updated_on>
+        <translate>false</translate>
+        <truncate>false</truncate>
+        <type>input</type>
+        <user_query>false</user_query>
+    </sys_one_extend_definition_attribute>
+    <sys_translated_text action="DELETE" query="documentkey=bc9853eb2bcfe6101fddfc886e91bfa6"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</application>
+        <file_path/>
+        <instance_id>a6f5898a33ffd6107c42c7bb9d5c7b62</instance_id>
+        <instance_name>aiagentujjawal3</instance_name>
+        <name>sys_one_extend_definition_attribute_bc9853eb2bcfe6101fddfc886e91bfa6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_definition_attribute"><sys_one_extend_definition_attribute action="INSERT_OR_UPDATE"><active>true</active><advanced>false</advanced><apply_filter>false</apply_filter><attribute_label/><capability display_value="d205df672bcfe6101fddfc886e91bf94_Choices">f898dfab2bcfe6101fddfc886e91bf60</capability><choice_list/><contains_large_input>false</contains_large_input><data_type>string</data_type><default_value/><definition/><description/><group/><hidden>false</hidden><info/><label>sys choices</label><mandatory>false</mandatory><name>sys_choices</name><order>100</order><schema/><sys_class_name>sys_one_extend_definition_attribute</sys_class_name><sys_created_by>alberto.guerra@snc</sys_created_by><sys_created_on>2025-08-05 12:43:19</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>bc9853eb2bcfe6101fddfc886e91bfa6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_choices</sys_name><sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package><sys_policy/><sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope><sys_update_name>sys_one_extend_definition_attribute_bc9853eb2bcfe6101fddfc886e91bfa6</sys_update_name><sys_updated_by>alberto.guerra@snc</sys_updated_by><sys_updated_on>2025-08-05 12:43:19</sys_updated_on><translate>false</translate><truncate>false</truncate><type>input</type><user_query>false</user_query></sys_one_extend_definition_attribute><sys_translated_text action="delete_multiple" query="documentkey=bc9853eb2bcfe6101fddfc886e91bfa6"/></record_update>]]></payload>
+        <payload_hash>2052518759</payload_hash>
+        <record_name>sys_choices</record_name>
+        <reverted_from/>
+        <source>04754b5a2b436210bdb7f808b891bf0d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 12:43:19</sys_created_on>
+        <sys_id>789853eb2bcfe6101fddfc886e91bfaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1987a41f4db0000001</sys_recorded_at>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 12:43:19</sys_updated_on>
+        <type>OneExtend Capability Attribute</type>
+        <update_guid>3c9853eb0dcfe610331b55e391c7bea9</update_guid>
+        <update_guid_history>3c9853eb0dcfe610331b55e391c7bea9:2052518759</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 18:04:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_one_extend_definition_attribute">sys_one_extend_definition_attribute</sys_db_object>
+        <sys_id>8447895c489f4428976666a0dafc28e1</sys_id>
+        <sys_metadata>bc9853eb2bcfe6101fddfc886e91bfa6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_choices</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_scope_delete display_value="">385cdcb5ab8e4f60953bdcc583c2cac4</sys_scope_delete>
+        <sys_update_name>sys_one_extend_definition_attribute_bc9853eb2bcfe6101fddfc886e91bfa6</sys_update_name>
+        <sys_update_version display_value="sys_one_extend_definition_attribute_bc9853eb2bcfe6101fddfc886e91bfa6">789853eb2bcfe6101fddfc886e91bfaa</sys_update_version>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 18:04:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
