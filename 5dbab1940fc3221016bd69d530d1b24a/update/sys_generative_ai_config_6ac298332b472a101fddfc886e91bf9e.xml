@@ -9,18 +9,19 @@
         <min_word_count>-1</min_word_count>
         <model>llm_generic_small</model>
         <name>AI-generated prompt</name>
-        <parent/>
+        <parent display_value="OneExtend Capability Definition: Bulk Category Maker (Now LLM Service - Now LLM Generic)">44689bab2bcfe6101fddfc886e91bf9e</parent>
         <prompt>## Role
-You are a data analysis expert. Your task is to analyze short descriptions from multiple records from the GAIC Defect table, identify meaningful patterns, and group defect records into distinct buckets based on the nature of the issues.
+You are a data analysis expert. Your task is to analyze short descriptions from multiple records, identify meaningful patterns, and group defect records into distinct buckets based on the nature of the issues.
 
 ## Context
-The short descriptions from multiple records from the GAIC Defect table that need to be analyzed are:  {{BulkShortDescriptionSubFlow.output}} 
+The short descriptions from multiple records that need to be analyzed are:  {{BulkShortDescriptionSubFlow.output}} 
+Take into account existing buckets before creating new ones:  {{ChoicesSubflow.output}} 
 
 ## Instructions
-1. Read through the provided short descriptions from the GAIC Defect table.
-2. Identify patterns and common themes among the descriptions to determine the nature of the issues.
-3. Create distinct bucket names that accurately reflect the nature of the issues. Keep bucket names to one to two words.
-4. Assign each defect record number to the corresponding bucket based on the nature of the issue.
+1. Read through the provided short descriptions.
+2. Identify patterns and common themes among the descriptions to determine the nature of the record.
+3. Create distinct bucket names that accurately reflect the nature of the record. Keep bucket names to maximum one word. Be intentional with buckets that are created. Do not map defects to buckets if they have nothing to do with them.
+4. Assign each defect record number to the corresponding bucket based on the nature of the issue. If an existing bucket is appropriate and the best choice for that defect than use that bucket. Defects can only be assigned to one bucket.
 5. Ensure that each bucket name is unique and clearly describes the type of issue it contains.
 
 ## Output
@@ -31,33 +32,32 @@ The output should be a JSON object containing the buckets with their respective 
   "buckets": {
     "Bucket Name 1": ["DEF001", "DEF002"],
     "Bucket Name 2": ["DEF003"],
-    "Bucket Name 3": ["DEF004", "DEF005"]
   }
 }
 ```
 
-Replace "Bucket Name 1", "Bucket Name 2", etc., with the actual bucket names created during the analysis, and replace "DEF001", "DEF002", etc., with the actual defect record numbers assigned to each bucket.</prompt>
+Replace "Bucket Name 1", "Bucket Name 2", etc., with the actual bucket names created during the analysis, and replace "DEF001", "DEF002", etc., with the actual defect record numbers assigned to each bucket</prompt>
         <prompt_template_role>user</prompt_template_role>
         <request_tokens>32018</request_tokens>
-        <show_in_prompt_library>true</show_in_prompt_library>
-        <state>archived</state>
+        <show_in_prompt_library>false</show_in_prompt_library>
+        <state>draft</state>
         <sys_class_name>sys_generative_ai_config</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:40:35</sys_created_on>
+        <sys_created_on>2025-08-05 16:57:40</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>625c516f2b036610bdb7f808b891bfed</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_id>6ac298332b472a101fddfc886e91bf9e</sys_id>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>165c516f2b036610bdb7f808b891bfe2</sys_name>
         <sys_overrides/>
         <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
-        <sys_update_name>sys_generative_ai_config_625c516f2b036610bdb7f808b891bfed</sys_update_name>
+        <sys_update_name>sys_generative_ai_config_6ac298332b472a101fddfc886e91bf9e</sys_update_name>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 12:49:36</sys_updated_on>
+        <sys_updated_on>2025-08-05 18:16:18</sys_updated_on>
         <temperature>0.2</temperature>
         <thinking_tokens>0</thinking_tokens>
-        <version>1</version>
+        <version>3</version>
     </sys_generative_ai_config>
 </record_update>

@@ -54,38 +54,7 @@
         <element label="Number" max_length="255" name="number" type="string_full_utf8"/>
         <element label="Created" max_length="40" name="created" type="glide_date_time"/>
         <element choice="1" label="Bucket" max_length="255" name="bucket" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Upgrade Issue" value="Upgrade Issue"/>
-                <element inactive_on_update="false" label="Error Handling" value="Error Handling"/>
-                <element inactive_on_update="false" label="Performance" value="Performance"/>
-                <element inactive_on_update="false" label="Multilingual Generation" value="Multilingual Generation"/>
-                <element inactive_on_update="false" label="OneExtendServiceImpl" value="OneExtendServiceImpl"/>
-                <element inactive_on_update="false" label="Sync Issue" value="Sync Issue"/>
-                <element inactive_on_update="false" label="Admin Permission" value="Admin Permission"/>
-                <element inactive_on_update="false" label="GenAI Config Issue" value="GenAI Config Issue"/>
-                <element inactive_on_update="false" label="Execution Issue" value="Execution Issue"/>
-                <element inactive_on_update="false" label="ACL Change" value="ACL Change"/>
-                <element inactive_on_update="false" label="Model Issue" value="Model Issue"/>
-                <element inactive_on_update="false" label="Log Creation" value="Log Creation"/>
-                <element inactive_on_update="false" label="Skill Creation" value="Skill Creation"/>
-                <element inactive_on_update="false" label="Record Creation Issue" value="Record Creation Issue"/>
-                <element inactive_on_update="false" label="Data Routing" value="Data Routing"/>
-                <element inactive_on_update="false" label="Slow Query" value="Slow Query"/>
-                <element inactive_on_update="false" label="Model Configuration" value="Model Configuration"/>
-                <element inactive_on_update="false" label="Removal" value="Removal"/>
-                <element inactive_on_update="false" label="Prompt Editor" value="Prompt Editor"/>
-                <element inactive_on_update="false" label="Now LLM" value="Now LLM"/>
-                <element inactive_on_update="false" label="Configuration" value="Configuration"/>
-                <element inactive_on_update="false" label="Security" value="Security"/>
-                <element inactive_on_update="false" label="Script Issue" value="Script Issue"/>
-                <element inactive_on_update="false" label="Connection Issue" value="Connection Issue"/>
-                <element inactive_on_update="false" label="Regex Pattern" value="Regex Pattern"/>
-                <element inactive_on_update="false" label="Installation" value="Installation"/>
-                <element inactive_on_update="false" label="Language Issue" value="Language Issue"/>
-                <element inactive_on_update="false" label="Feature Issue" value="Feature Issue"/>
-                <element inactive_on_update="false" label="Translation Issue" value="Translation Issue"/>
-                <element inactive_on_update="false" label="Prompt Issue" value="Prompt Issue"/>
-            </choice>
+            <choice/>
         </element>
         <index name="index">
             <element name="assigned_to"/>

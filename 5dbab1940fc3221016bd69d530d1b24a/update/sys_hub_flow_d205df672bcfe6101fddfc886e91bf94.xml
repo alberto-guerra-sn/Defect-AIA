@@ -4,21 +4,21 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=34529000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=19589000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>27000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
-        <description>Get the short descriptions of multiple records on the GAIC Defect table</description>
+        <description>This subflow presents all choices in the bucket field</description>
         <display_name_after_preview/>
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
-        <internal_name>bulkshortdescriptionsubflow</internal_name>
-        <label_cache>[{"name":"40e2235f-d08f-4b4b-be5a-42006b9f9f48.item.short_description","label":"2 - For Each➛GAIC Defects Record➛Short Description","reference":"","reference_display":"Short Description","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"short_description","usedInstances":{"11126152-44e0-4659-9707-5e2503fba0ea":["aggr_response-0"]}},{"name":"40e2235f-d08f-4b4b-be5a-42006b9f9f48.item.number","label":"2 - For Each➛GAIC Defects Record➛Number","reference":"","reference_display":"Number","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"number","usedInstances":{"11126152-44e0-4659-9707-5e2503fba0ea":["aggr_response-0"]}},{"name":"flow_variable.aggr_response","label":"Flow Variables➛aggr_response","type":"string","base_type":"string","usedInstances":{"11126152-44e0-4659-9707-5e2503fba0ea":["aggr_response-0"],"a8cba216-eab8-4593-9dcb-88c32ef4925a":["output-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"edc071cb-018e-490c-8bdf-109870fed31f"}},{"name":"332de91f-d0a7-45aa-8833-6d4a3d619a29.Records","label":"1 - Look Up Records➛GAIC Defects Records","reference":"x_snc_defect_bucke_gaic_defects","reference_display":"GAIC Defects","type":"records","base_type":"records","usedInstances":{"40e2235f-d08f-4b4b-be5a-42006b9f9f48":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
-        <master_snapshot>4a3ad9ab2b036610bdb7f808b891bf28</master_snapshot>
+        <internal_name>choicessubflow</internal_name>
+        <label_cache>[{"name":"d412bdc3-016d-4b8e-ab41-3bd68332196c.item.element","label":"2 - For Each➛Choice Record➛Element","reference":"","reference_display":"Element","type":"string","base_type":"string","usedInstances":{"26657371-86b3-453e-9bb0-223ceeed8670":["aggr_response-0"]},"attributes":{}},{"name":"d571a6f3-245d-464a-bb2c-f4a29af33cbb.Records","label":"1 - Look Up Records➛Choice Records","reference":"sys_choice","reference_display":"Choice","type":"records","base_type":"records","usedInstances":{"d412bdc3-016d-4b8e-ab41-3bd68332196c":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d412bdc3-016d-4b8e-ab41-3bd68332196c.item.value","label":"2 - For Each➛Choice Record➛Value","reference":"","reference_display":"Value","type":"string","base_type":"string","usedInstances":{"26657371-86b3-453e-9bb0-223ceeed8670":["aggr_response-0"]},"attributes":{}},{"name":"flow_variable.aggr_response","label":"Flow Variables➛aggr_response","type":"string","base_type":"string","usedInstances":{"26657371-86b3-453e-9bb0-223ceeed8670":["aggr_response-0"],"0c71bf96-2d02-4be5-a4f3-67fa2fef006d":["output-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"25f7196c-e604-4524-af9d-f31a22cba558"}}]</label_cache>
+        <master_snapshot>4d1817ab2bcfe6101fddfc886e91bf2c</master_snapshot>
         <master_snapshot_digest/>
-        <name>BulkShortDescriptionSubFlow</name>
+        <name>ChoicesSubflow</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
@@ -32,46 +32,46 @@
         <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:06:45</sys_created_on>
+        <sys_created_on>2025-08-05 12:27:51</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>0f9411e32b036610bdb7f808b891bfde</sys_id>
-        <sys_mod_count>17</sys_mod_count>
-        <sys_name>BulkShortDescriptionSubFlow</sys_name>
+        <sys_id>d205df672bcfe6101fddfc886e91bf94</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>ChoicesSubflow</sys_name>
         <sys_overrides/>
         <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
-        <sys_update_name>sys_hub_flow_0f9411e32b036610bdb7f808b891bfde</sys_update_name>
+        <sys_update_name>sys_hub_flow_d205df672bcfe6101fddfc886e91bf94</sys_update_name>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 12:42:17</sys_updated_on>
+        <sys_updated_on>2025-08-05 17:54:22</sys_updated_on>
         <type>subflow</type>
         <updation_source/>
         <version>2</version>
     </sys_hub_flow>
-    <sys_translated_text action="delete_multiple" query="documentkey=0f9411e32b036610bdb7f808b891bfde"/>
-    <sys_variable_value action="delete_multiple" query="document_key=0f9411e32b036610bdb7f808b891bfde"/>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_0f9411e32b036610bdb7f808b891bfde^id=0f9411e32b036610bdb7f808b891bfde"/>
-    <sys_hub_flow_stage action="delete_multiple" query="flow=0f9411e32b036610bdb7f808b891bfde"/>
-    <sys_flow_cat_variable_model action="delete_multiple" query="id=0f9411e32b036610bdb7f808b891bfde^sys_idNOT IN8794dde32b036610bdb7f808b891bfc9"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=d205df672bcfe6101fddfc886e91bf94"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d205df672bcfe6101fddfc886e91bf94"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_d205df672bcfe6101fddfc886e91bf94^id=d205df672bcfe6101fddfc886e91bf94"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=d205df672bcfe6101fddfc886e91bf94"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=d205df672bcfe6101fddfc886e91bf94^sys_idNOT IN1a05df672bcfe6101fddfc886e91bf97"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
-        <id>0f9411e32b036610bdb7f808b891bfde</id>
-        <name>BulkShortDescriptionSubFlow</name>
+        <id>d205df672bcfe6101fddfc886e91bf94</id>
+        <name>ChoicesSubflow</name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:06:45</sys_created_on>
-        <sys_id>8794dde32b036610bdb7f808b891bfc9</sys_id>
+        <sys_created_on>2025-08-05 12:27:51</sys_created_on>
+        <sys_id>1a05df672bcfe6101fddfc886e91bf97</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 03:06:45</sys_updated_on>
+        <sys_updated_on>2025-08-05 12:27:51</sys_updated_on>
     </sys_flow_cat_variable_model>
-    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=8794dde32b036610bdb7f808b891bfc9"/>
-    <sys_hub_flow_input action="delete_multiple" query="model=0f9411e32b036610bdb7f808b891bfde^sys_idNOT IN2c3a95ab2b036610bdb7f808b891bf94"/>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=1a05df672bcfe6101fddfc886e91bf97"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=d205df672bcfe6101fddfc886e91bf94^sys_idNOT INe6aedc7b2b872a101fddfc886e91bf45"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=table_name,uiTypeLabel=Table,uiUniqueId=96c837a6-4215-46a8-904b-41b78060c23d</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=table_name,uiTypeLabel=Table,uiUniqueId=cf81aa4d-a5f2-49a7-8c85-51c0af820bb0</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -85,7 +85,7 @@
         <column_label/>
         <comments/>
         <create_roles/>
-        <default_value>x_snc_defect_bucke_gaic_defects</default_value>
+        <default_value>sys_choice</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -95,7 +95,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>gaic_defects</element>
+        <element>sys_choice</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -104,13 +104,13 @@
         <help/>
         <hint/>
         <internal_type display_value="">table_name</internal_type>
-        <label>GAIC Defects</label>
+        <label>sys_choice</label>
         <mandatory>false</mandatory>
         <max_length>80</max_length>
-        <model display_value="BulkShortDescriptionSubFlow">0f9411e32b036610bdb7f808b891bfde</model>
-        <model_id>0f9411e32b036610bdb7f808b891bfde</model_id>
+        <model display_value="ChoicesSubflow">d205df672bcfe6101fddfc886e91bf94</model>
+        <model_id>d205df672bcfe6101fddfc886e91bf94</model_id>
         <model_table>sys_hub_flow</model_table>
-        <name>var__m_sys_hub_flow_input_0f9411e32b036610bdb7f808b891bfde</name>
+        <name>var__m_sys_hub_flow_input_d205df672bcfe6101fddfc886e91bf94</name>
         <next_element/>
         <order>1</order>
         <primary>false</primary>
@@ -128,16 +128,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:31:10</sys_created_on>
-        <sys_id>2c3a95ab2b036610bdb7f808b891bf94</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_created_on>2025-08-05 17:49:32</sys_created_on>
+        <sys_id>e6aedc7b2b872a101fddfc886e91bf45</sys_id>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 12:42:14</sys_updated_on>
+        <sys_updated_on>2025-08-05 17:54:19</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -150,13 +150,13 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2c3a95ab2b036610bdb7f808b891bf94"/>
-    <sys_hub_flow_output action="delete_multiple" query="model=0f9411e32b036610bdb7f808b891bfde^sys_idNOT IN6c3a99ab2b036610bdb7f808b891bf50"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e6aedc7b2b872a101fddfc886e91bf45"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=d205df672bcfe6101fddfc886e91bf94^sys_idNOT INc8a71b6b2bcfe6101fddfc886e91bfbd"/>
     <sys_hub_flow_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=82e2e000-961e-43fe-b610-4e99037d1bf2</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5a33ab0b-d7a3-4da9-be9d-2b53e53a7839</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -193,10 +193,10 @@
         <label>Output</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="BulkShortDescriptionSubFlow">0f9411e32b036610bdb7f808b891bfde</model>
-        <model_id>0f9411e32b036610bdb7f808b891bfde</model_id>
+        <model display_value="ChoicesSubflow">d205df672bcfe6101fddfc886e91bf94</model>
+        <model_id>d205df672bcfe6101fddfc886e91bf94</model_id>
         <model_table>sys_hub_flow</model_table>
-        <name>var__m_sys_hub_flow_output_0f9411e32b036610bdb7f808b891bfde</name>
+        <name>var__m_sys_hub_flow_output_d205df672bcfe6101fddfc886e91bf94</name>
         <next_element/>
         <order>1</order>
         <primary>false</primary>
@@ -214,8 +214,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_output</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:31:10</sys_created_on>
-        <sys_id>6c3a99ab2b036610bdb7f808b891bf50</sys_id>
+        <sys_created_on>2025-08-05 12:39:10</sys_created_on>
+        <sys_id>c8a71b6b2bcfe6101fddfc886e91bfbd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -223,7 +223,7 @@
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 03:31:10</sys_updated_on>
+        <sys_updated_on>2025-08-05 12:39:10</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -236,10 +236,10 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_output>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6c3a99ab2b036610bdb7f808b891bf50"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0f9411e32b036610bdb7f808b891bfde"/>
-    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=0f9411e32b036610bdb7f808b891bfde"/>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=0f9411e32b036610bdb7f808b891bfde^sys_idNOT INa03a99ab2b036610bdb7f808b891bf5b"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c8a71b6b2bcfe6101fddfc886e91bfbd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d205df672bcfe6101fddfc886e91bf94"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=d205df672bcfe6101fddfc886e91bf94"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=d205df672bcfe6101fddfc886e91bf94^sys_idNOT IN10a71b6b2bcfe6101fddfc886e91bfd8"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
@@ -247,33 +247,33 @@
         <comment/>
         <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
         <display_text/>
-        <flow display_value="BulkShortDescriptionSubFlow">0f9411e32b036610bdb7f808b891bfde</flow>
+        <flow display_value="ChoicesSubflow">d205df672bcfe6101fddfc886e91bf94</flow>
         <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:31:10</sys_created_on>
-        <sys_id>a03a99ab2b036610bdb7f808b891bf5b</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_created_on>2025-08-05 12:39:11</sys_created_on>
+        <sys_id>10a71b6b2bcfe6101fddfc886e91bfd8</sys_id>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 12:46:27</sys_updated_on>
-        <ui_id>332de91f-d0a7-45aa-8833-6d4a3d619a29</ui_id>
+        <sys_updated_on>2025-08-05 17:57:12</sys_updated_on>
+        <ui_id>d571a6f3-245d-464a-bb2c-f4a29af33cbb</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+VX207jMBD9lSrPUZWQUljeUKuukLhIgHjZZS3HcVoL18nGTi9U/PuOL0mjNoVWKhJo3+q5eM6Mz3HcXyuPJd6Fd572ggCHp+dnQRBFQdDvRwSHcRz1SRzEvdjzPYGnFCIVjjmF5QzzUq8XSAqCEppSolBckheKxphVFgmRCZM5x8snl/Dz8mrQGdZeMmE8KajwLn49+16OCyijaOFdrDZc++LkOKYcQh8d0A3capnXS2R81nbdTOvcWkdWJBpK4Ht0oahIKGBIMZfU96ZYJFhlxbK2FBQnd4KvDRMmFOzo6eCFZK9Q9zzQcSmFrgi1vnqJ3KCsOR1ihR9UURJVFi6UTDJGqLTzgAHjkqtB02YD7nLFMmFTbNs2O+PlVNzacXj1BtW5gKWUAILmulGN3LWRPkyy+X2FcsSEmYlz8oxgXq+wUgWLS6XxrDzK6RQ2QlOc50yMUV5kM2aSAcu0O+aw6KY8m0NRycaii4kG3oW54u4I7ENjfsIF013cwDaQDIAYB4Yge4QyKwszyhkivJTGUWAh7V7em+/JpRxwLOW6cxg5+ltq3HYOrmNkh6ZTSMFydQlbzKhr7s3fSyqnwZpyJBMJ0yhkQy9GIup3CcnJH6mwovb3iC2AXVtq+Sj8mPIx2Cv5DJrg2xpyQtqyXbdt4IQUHk1I0Md3khIU/3pKOlwbdgQfCIScvUuy0zWfZFYoZGfZUIgop7HR+YYUavthnN8DTsX5O83STrzchdBRPmWUJ23fjpF2bHw7Tv7Pb8eXJDwASpA9PSY4E+YhAEA/SwnB+9ftjw2eGXqtdWBsWJJtJeCOyjqvBythDziVEh6gdufR4mmBWN39hjKb935ldAKIjiaA6OQ4AljVbdaDbJl59fbTp1nFv+p4vBkPFGwkhG9tAjuoZnhozZO3bQFHBym4STbrGe7g3JEfiTsU6X/mFTCBVFcPWf2iOUvGVK2rV1FJpuaYv7T5HeNQdVCmvU94cPbelW0/XEsUlIIKKuHwmi/OKNi+QYztsNtjDxjVJG7wonNf42gF524QEDkdm2NpXiFXtdXxu3fEd+OX/YiG8KTdKb/Qt95v8RfteBp4/gepI0fZoRAAAA==</values>
+        <values>H4sIAAAAAAAA/+VXW0/bMBT+K1WeoyqhpTDepiKkSVwkQLwwsBzHaS1cJ7OdXqj633cc22nWBtZqRQLt0efm71w+5+RxGbA0OAtOs34U4fj49CSKer0oGgx6BMdJ0huQJEr6SRAGAk8oWGqccArHKealOauFQmScM2KEKVMFx4sHpxt6ORkznkoqgrPHpzAosIRYmsrgbLmh2hUMxwnlYHrv0GyA04uiPqJKZ2WXTbfOtVXkMjVQojCgc01FSgFDhrmiYTDBIsU6l4taIilObwRfC8ZMaIgYGOO5Yq9w72lk7DIKWRFqdfURuRJZcXaONb7TsiS6lM7UFlPZeqQ0wyXXw6bMGtwUmuXCuti0rXfOy4m4tuUI6gC+IyApFYCghUnUIHdpZHfjfHbrUV4wUdXEKXlOMK9PWGvJklIbPMuAcjqBQGiCi4KJESpkPmWVM2CZdEccDt2M5zO4VLGR6GJigHehrrh7AfLzSvyAJTNZXEEYcAZAjMOEINtClZeyKuUUEV6qSiGxUDZWsArNGA45VmqdOZQc/SoNblsHlzGyRTMuRLJCf4cQU+qSW4U78eE4Wo8cyUXKDArVIIUrys8SvNOkJC9UPxt7K5gjJQiUI6NEo0qLRph5idrm0b+GOyT9qtw9/YbN5NsK4oi4JbtsC+CIGB+MiJDHV6IiXP75mLg/t2wJ/kIwcvLukB2v50nlUiNbywbDtkmy95zvAMHP+Y2ZzE6yeAuVG/OMUZ62fW8ujGLje3P0f35vPuWQA6AU2e4xwZmolgcA+lHTH73/xH7bmLNqvBorl5FhRbY5gDs677zuzYQd4Hgm3MHdnXuLpwWif+/94vfHW++FjgC9gxGgd3QYAizrNOtCttTc74umm97+1djjTXsYwYZDvGoj2F53xvveebTaJnBvLwY3h81qzt+YuQMvlm8wMvzIJ2AMru4+ZPmLZiwdUb2+3VuluZ5h/tKmdxOHfKOq9D5gSe2/S9tBvKYoMAVJqqB5zS01hvVo+w2JQyve7wnZAYsvxxWed25rMK0I3TMCTKejqjfNd+RHLXVD3j/gwvhpv6S+Wa0c9D37Ev92hyPC02+cSt2zvxAAAA==</values>
     </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a03a99ab2b036610bdb7f808b891bf5b"/>
-    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=0f9411e32b036610bdb7f808b891bfde"/>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=0f9411e32b036610bdb7f808b891bfde^sys_idNOT IN2c3a99ab2b036610bdb7f808b891bf5b,a43a99ab2b036610bdb7f808b891bf5d,e83a99ab2b036610bdb7f808b891bf5c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=10a71b6b2bcfe6101fddfc886e91bfd8"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=d205df672bcfe6101fddfc886e91bf94"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=d205df672bcfe6101fddfc886e91bf94^sys_idNOT IN5ca71b6b2bcfe6101fddfc886e91bfd9,9ca71b6b2bcfe6101fddfc886e91bfdb,d0a71b6b2bcfe6101fddfc886e91bfdb"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">683a99ab2b036610bdb7f808b891bf5b</block>
+        <block display_value="">14a71b6b2bcfe6101fddfc886e91bfd9</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="BulkShortDescriptionSubFlow">0f9411e32b036610bdb7f808b891bfde</flow>
+        <flow display_value="ChoicesSubflow">d205df672bcfe6101fddfc886e91bf94</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
@@ -282,25 +282,25 @@
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:31:10</sys_created_on>
-        <sys_id>2c3a99ab2b036610bdb7f808b891bf5b</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_created_on>2025-08-05 12:39:11</sys_created_on>
+        <sys_id>5ca71b6b2bcfe6101fddfc886e91bfd9</sys_id>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 12:42:14</sys_updated_on>
-        <ui_id>40e2235f-d08f-4b4b-be5a-42006b9f9f48</ui_id>
+        <sys_updated_on>2025-08-05 17:54:20</sys_updated_on>
+        <ui_id>d412bdc3-016d-4b8e-ab41-3bd68332196c</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/51STW/bMAz9Lzonhj8yL86twFCgh65AW/RSFAYt0YlQWVIlOaln+L+Xip1s6HEnm4/k43siR2b6YPvgn82N93Kv2e71bcWkjhj9j0xDh2zHZMDOsxU7gupjPI5FkQussnYtUvi53vwAWG+3RbEuxQYKUWYV5FXyiNw44aeJWoX0VsHw8v8M/CCVcLiItOBIW0DHduO3VBgs1goaVDRoYaB+KSjMKtFWWVrxIi+LPE3z7SZryqLJclEAipLqLp13i+lvbxDZKXRXXvpEFXm6YvgZUAukQS0ojyvWgRYQjBvYLrieAIcgHrQarhUHqQPRsVj76eUf4s7SNBa2SI44zslrWC8POcP8YCTHBxuk0TMSoFFLDzeq7/TvWX5cAbbQq3BZASG9Jz60UXNUsUhqnw7m9HgZeCv12d+SVIaDukYQgpNNH9DHNaDCjojqDqyVel9bZ47y3ExaumSvKEhaZU40NJ5bAjwKT+iJILkl/NcZfgEno4t7oqHm6ey+/ujj3NnHorieTVOB507acEN0R1zETW/xXmcmPx+GQC49DXyO2N3lymNioCVL/i90Mu49Sv2LTV/yYJmELwMAAA==</values>
+        <values>H4sIAAAAAAAA/51STW/bMAz9Lzonhr/qLbkVGAr0sBXoil6GwqAlKhEmS5okJ/UM//dRsZMNPe5k85F8fE/kxOwQ3RDDi70PQR0M2/942zBlEkb/EzPQI9szFbEPbMNOoIcUT5O4+1RAI6ttWd+Jbd3UsO26km9lDeUOZFXxrsuekVsvwjxTq1DBaRhf/5+BH5UWHleRDjxpi+jZfvqQiqPDVkOHmgatDNSvBIXFTshdke94VTZVmefl57romqorSlEBiobqrp2Pq+kPb5DYKfQ3XvokFWW+Yfge0QikQRJ0wA3rwQiI1o9sH/1AgEcQT0aPt4qjMpHoWKp9D+o3cRd5ngolkiOOS/IWtutDLjA/WsXxyUVlzYJE6PTaw60eevNtkZ9WgBIGHa8rIGQIxIcuaU4qVkny+9Gen68DH5S5+FuT2nLQtwhi9KobIoa0BtTYE1Hbg3PKHFrn7UldmklLnx00BZnU9kxD07llwJPwjJ4IsgfCv1zgV/AqufhKNNQ8X9y3v4Y0d/GxKm4X01QQuFcu3hPdCVdx81u614UpLIchkKtAA18S9ni98pQYacmK/wudrf+ZpP7F5j9KgIcXLwMAAA==</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">e03a99ab2b036610bdb7f808b891bf5d</block>
+        <block display_value="">d8a71b6b2bcfe6101fddfc886e91bfdb</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="BulkShortDescriptionSubFlow">0f9411e32b036610bdb7f808b891bfde</flow>
+        <flow display_value="ChoicesSubflow">d205df672bcfe6101fddfc886e91bf94</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -309,51 +309,51 @@
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:31:10</sys_created_on>
-        <sys_id>a43a99ab2b036610bdb7f808b891bf5d</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_created_on>2025-08-05 12:39:11</sys_created_on>
+        <sys_id>9ca71b6b2bcfe6101fddfc886e91bfdb</sys_id>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 12:42:14</sys_updated_on>
-        <ui_id>a8cba216-eab8-4593-9dcb-88c32ef4925a</ui_id>
+        <sys_updated_on>2025-08-05 17:54:20</sys_updated_on>
+        <ui_id>0c71bf96-2d02-4be5-a4f3-67fa2fef006d</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/41TyW7bMBD9F55tQbZTR/ItQBEgQFsDjZtLUQhcRjJRimS42HEF/XuHWpzApxzncZb33gw7YmKwMfiDefBeNprsfndECrIjW76hZUnZmuWb7XaVM8Hu6yIvWFGuWP0lJwuiaQuYObbA+ERVTEDX1cqcqxN1kjIFGW0aVznw1mgPfY+ZQnqr6OXl0wX8KJVwkPj9WRBLHY4O4Miuu3kKFwuVogwU9n0OTuoGyz+raC7cz5JuJab2GPu5sXEisVgtCLwF0AJwUE2VhwVpqRY0GHe5Ig6o2Gv1DhylDtiNpOQ3L/9h6yLP85RZA0riML5ew2oyboT50UgOexuk0SMSkn3To1Gx1T9G/slyqGlUYbYckeixH9jEOtGYONXPR3P+OQ98lHoQOD0qw6m6RjSgDSwG8GkPUR5uzBmRb7fLAAUtTqxaai0ilXXmJIcpSLrNGoVBNhyEgHSTGeVJYYZu0uwR8a8D/DJdy3dsg8Vp3C8tXyM8pWUXa1gDerkstytY3m1qWDLc+fIOyjLf3Avc+Jr0g7XVa0yiRpMmO6rRUUzw3EkbHpDCCSblPd6Z1OnbjDc33+0UCuDSI+FDwp4+5IkLnpPkH6GzcX+T1Hes/w8a+R7JlAMAAA==</values>
+        <values>H4sIAAAAAAAA/41TTW/iMBD9Lz5DFJoFArdKq0qVuou0ZXtZraKxPQlWHdu1HSiL+O87JgmtOPU4b77eex6fmO2i62LY2vsQVGPY+s+JKcnWTJSwnPEFv+OixsUsn9VS1qIsF7ia8ZpLNmEGWqTKfgTFe9BdAk6nWttDtQevgGvMoGl85TE4awKez1QpVXAaji9fbhA7paXHxO/vhDnwtDqiZ+vTTSoeHVYaOGqa+xy9Mg21f1XR2LgZJd1KTOMpDuNg62ViMZswfI9oJNKiGnTACWvBSIjWH6+IR5Aboz+AnTKRprFU/B7UPxpd5nmeKmskSQL77DWsBuN6WOysErhxUVnTIzHZNySt7lrzs+efLMcaOh1HywnpAs1Dl1gnGgOn+nlnD7/GhQ/KXAQOSW0F6GsEkWzgXcSQ3qFT2xtzeuTp9jFQY0sbqxacI6Ry3u7VZQuRbrNGU5BdDkJiuskMRFKYkZuQPRD+/QK/DNfyg8ZQc1r326i3Dh/TY8+hKIDnfCqXUEy/SVhNOa7k9I7PC5wXsCyLFTtfrK3euiSqN2mwo+odpYIgvHLxnijscVB+pjtTJn2b/ubGux1CiUIFIrxN2OOnOnmkc1LiM3Sw/jVJ/cDO/wFj9NP8lAMAAA==</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">283a99ab2b036610bdb7f808b891bf5c</block>
+        <block display_value="">10a71b6b2bcfe6101fddfc886e91bfdb</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="BulkShortDescriptionSubFlow">0f9411e32b036610bdb7f808b891bfde</flow>
+        <flow display_value="ChoicesSubflow">d205df672bcfe6101fddfc886e91bf94</flow>
         <flow_variables_assigned>aggr_response</flow_variables_assigned>
         <generation_source/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>3</order>
         <outputs_assigned/>
-        <parent_ui_id>40e2235f-d08f-4b4b-be5a-42006b9f9f48</parent_ui_id>
+        <parent_ui_id>d412bdc3-016d-4b8e-ab41-3bd68332196c</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:31:10</sys_created_on>
-        <sys_id>e83a99ab2b036610bdb7f808b891bf5c</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_created_on>2025-08-05 12:39:11</sys_created_on>
+        <sys_id>d0a71b6b2bcfe6101fddfc886e91bfdb</sys_id>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 12:42:14</sys_updated_on>
-        <ui_id>11126152-44e0-4659-9707-5e2503fba0ea</ui_id>
+        <sys_updated_on>2025-08-05 17:54:20</sys_updated_on>
+        <ui_id>26657371-86b3-453e-9bb0-223ceeed8670</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1W32vbMBD+V4aeYyOnaWLnrVAKha2FtevLVoxknRIxWXIlOW1m/L/vZDvNFujDHgd5i7779d3dl8MdsW1o2uAf7ZX3amPI+vvzjCgTMfzdEcNqIGvCNhtXOvCNNR7IjOyYbiPedVLb13LHnGJcQ/qXX9//MHdtzcGtP3XdgsJ8fnEpE0FzmSz4giccLlmymFO65IUs5CJPVYA6NUNMjL4GXznVBGXNv6XwW+tCKY7hfY+shfKNZvun/5J8tVVaOJhW1DCHmwngyLo7MYV9A6VmHDT2+BCcMhsMVwJftCjyTMz5nNOL5TKjXPCVzGnO8yLjEgr0OwSebvwDIcRiCPtDGetE5ERnBN4CGAFYVjLtYUZqZgQL1u3fEQdM3Bt9BLbKBMxGovObV78wdU4pjZ4SsMEKRuv7s5xWOsLV1qoK7oeZjUiIi52MVre1uRvbiGIAyVodDmJApPWYD5rIOtKYOMmHrX39eih4o8zQ4GTUtmL6/cUCjoG3AXzcSqseT4YzIp9PVwMaaqxY1qxpECkbZ3dqqIKk63Sj8ZEOUkVN4J80ZVXsMMVpsvQG8esBfpp0/AXTYHAs982olxZu4+pBVHSVVTyhWQ7JoqBVknMhk4wW+YpKEBeZJP0w2vKljU2NQ5rGUY4TRYdRlVdIYQdT5/1zvAhj9fFsDGr7WDXn83E+H+fzcT4fx/MhoFIeWT1GCreH749o2KN0VPUn9Grdz9jPEet/A1LEIaPJCAAA</values>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9LzptQGzYjuMmuRUYChTYVmDtelkLQx90IkyWXElOmhn+76NsJ90C9NhbbuYjxUc+knBHTOub1rsHc+2c3Giy/vU8I1IHDL87omkNZE3oZmNLC64x2gGZkR1VbcC7rlJmX+6olZQpiP+L6/sn/anrRJ5mTPB5lKSFiHK2hIiyPI3mTBTL+TxLVwWPpYc6HrL2/WckENI1ih4eP5qHb6USFqbGG2qxXw+WrLszlz80UCrKQGE5995KvcHnUqC1yulVygqWMV5BkSZpJUTFl8sCVimrRIpxx4fnOr4jbyBD2B1pjBWhpmRG4NWDFoC0FVUOZqSmWlBv7OGEWKDiTqs3YCu1x2wkBL86+QdTL5MkCZEVYIMcRu/JLCf1R5hvjeRw13hp9Ij4MIPJaVRb6+9jG2FuUNFW+ePcEGkd5oMmVB3KmGqq7rdm/+NIeCP10ODkVIZTdbKoRxlY68GFqbTy4UycEfl6PhpQUCNjWdOmQaRsrNnJgQWLruONQiMetkpAWP2Y8tBhjGrS+AbxLwP8OK3cN0yDjwPdTy1fWrgNo88W1VXYqwiKJI/yRZZHtFqJqJqnNMs4o4vFkvSDtOVLG5oaRZrkKEdFMcBxKxt/jSXsYOq8fw53NrKPxzhs2/tbcznKy1FejvLjj1IAlw6reggl3B7/lcFxwNWR/F9ob+zv0M8b1v8FelrmJHUHAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
-    <sys_hub_pill_compound action="delete_multiple" query="attached_to=0f9411e32b036610bdb7f808b891bfde"/>
-    <sys_hub_flow_variable action="delete_multiple" query="model=0f9411e32b036610bdb7f808b891bfde^sys_idNOT IN09981d2b2b036610bdb7f808b891bfe9"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=d205df672bcfe6101fddfc886e91bf94"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=d205df672bcfe6101fddfc886e91bf94^sys_idNOT IN94a71b6b2bcfe6101fddfc886e91bfd1"/>
     <sys_hub_flow_variable action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=edc071cb-018e-490c-8bdf-109870fed31f</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=25f7196c-e604-4524-af9d-f31a22cba558</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -389,10 +389,10 @@
         <label>aggr_response</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="BulkShortDescriptionSubFlow">0f9411e32b036610bdb7f808b891bfde</model>
-        <model_id>0f9411e32b036610bdb7f808b891bfde</model_id>
+        <model display_value="ChoicesSubflow">d205df672bcfe6101fddfc886e91bf94</model>
+        <model_id>d205df672bcfe6101fddfc886e91bf94</model_id>
         <model_table>sys_hub_flow</model_table>
-        <name>var__m_sys_hub_flow_variable_0f9411e32b036610bdb7f808b891bfde</name>
+        <name>var__m_sys_hub_flow_variable_d205df672bcfe6101fddfc886e91bf94</name>
         <next_element/>
         <order>0</order>
         <primary>false</primary>
@@ -410,8 +410,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_variable</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:24:06</sys_created_on>
-        <sys_id>09981d2b2b036610bdb7f808b891bfe9</sys_id>
+        <sys_created_on>2025-08-05 12:39:11</sys_created_on>
+        <sys_id>94a71b6b2bcfe6101fddfc886e91bfd1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -419,7 +419,7 @@
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 03:24:06</sys_updated_on>
+        <sys_updated_on>2025-08-05 12:39:11</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -433,17 +433,17 @@
         <xml_view>false</xml_view>
     </sys_hub_flow_variable>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>gaic_defects</element>
+        <element>sys_choice</element>
         <help/>
         <hint/>
-        <label>GAIC Defects</label>
+        <label>sys_choice</label>
         <language>en</language>
-        <name>var__m_sys_hub_flow_input_0f9411e32b036610bdb7f808b891bfde</name>
+        <name>var__m_sys_hub_flow_input_d205df672bcfe6101fddfc886e91bf94</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:31:10</sys_created_on>
-        <sys_id>a03a99ab2b036610bdb7f808b891bf4a</sys_id>
+        <sys_created_on>2025-08-05 17:49:32</sys_created_on>
+        <sys_id>eeae18bb2b872a101fddfc886e91bf60</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
@@ -451,23 +451,23 @@
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 03:31:10</sys_updated_on>
+        <sys_updated_on>2025-08-05 17:49:32</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_0f9411e32b036610bdb7f808b891bfde"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_d205df672bcfe6101fddfc886e91bf94"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>output</element>
         <help/>
         <hint/>
         <label>Output</label>
         <language>en</language>
-        <name>var__m_sys_hub_flow_output_0f9411e32b036610bdb7f808b891bfde</name>
+        <name>var__m_sys_hub_flow_output_d205df672bcfe6101fddfc886e91bf94</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:31:10</sys_created_on>
-        <sys_id>a43a99ab2b036610bdb7f808b891bf53</sys_id>
+        <sys_created_on>2025-08-05 12:39:11</sys_created_on>
+        <sys_id>9ca71b6b2bcfe6101fddfc886e91bfc0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
@@ -475,11 +475,11 @@
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 03:31:10</sys_updated_on>
+        <sys_updated_on>2025-08-05 12:39:11</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_0f9411e32b036610bdb7f808b891bfde"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_d205df672bcfe6101fddfc886e91bf94"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
@@ -491,15 +491,15 @@
         <category/>
         <copied_from/>
         <copied_from_name/>
-        <description>Get the short descriptions of multiple records on the GAIC Defect table</description>
+        <description>This subflow presents all choices in the bucket field</description>
         <flow_priority>MEDIUM</flow_priority>
-        <internal_name>bulkshortdescriptionsubflow</internal_name>
-        <label_cache>[{"name":"40e2235f-d08f-4b4b-be5a-42006b9f9f48.item.short_description","label":"2 - For Each➛GAIC Defects Record➛Short Description","reference":"","reference_display":"Short Description","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"short_description","usedInstances":{"11126152-44e0-4659-9707-5e2503fba0ea":["aggr_response-0"]}},{"name":"40e2235f-d08f-4b4b-be5a-42006b9f9f48.item.number","label":"2 - For Each➛GAIC Defects Record➛Number","reference":"","reference_display":"Number","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_snc_defect_bucke_gaic_defects","column_name":"number","usedInstances":{"11126152-44e0-4659-9707-5e2503fba0ea":["aggr_response-0"]}},{"name":"flow_variable.aggr_response","label":"Flow Variables➛aggr_response","type":"string","base_type":"string","usedInstances":{"11126152-44e0-4659-9707-5e2503fba0ea":["aggr_response-0"],"a8cba216-eab8-4593-9dcb-88c32ef4925a":["output-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"edc071cb-018e-490c-8bdf-109870fed31f"}},{"name":"332de91f-d0a7-45aa-8833-6d4a3d619a29.Records","label":"1 - Look Up Records➛GAIC Defects Records","reference":"x_snc_defect_bucke_gaic_defects","reference_display":"GAIC Defects","type":"records","base_type":"records","usedInstances":{"40e2235f-d08f-4b4b-be5a-42006b9f9f48":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <internal_name>choicessubflow</internal_name>
+        <label_cache>[{"name":"d412bdc3-016d-4b8e-ab41-3bd68332196c.item.element","label":"2 - For Each➛Choice Record➛Element","reference":"","reference_display":"Element","type":"string","base_type":"string","usedInstances":{"26657371-86b3-453e-9bb0-223ceeed8670":["aggr_response-0"]},"attributes":{}},{"name":"d571a6f3-245d-464a-bb2c-f4a29af33cbb.Records","label":"1 - Look Up Records➛Choice Records","reference":"sys_choice","reference_display":"Choice","type":"records","base_type":"records","usedInstances":{"d412bdc3-016d-4b8e-ab41-3bd68332196c":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d412bdc3-016d-4b8e-ab41-3bd68332196c.item.value","label":"2 - For Each➛Choice Record➛Value","reference":"","reference_display":"Value","type":"string","base_type":"string","usedInstances":{"26657371-86b3-453e-9bb0-223ceeed8670":["aggr_response-0"]},"attributes":{}},{"name":"flow_variable.aggr_response","label":"Flow Variables➛aggr_response","type":"string","base_type":"string","usedInstances":{"26657371-86b3-453e-9bb0-223ceeed8670":["aggr_response-0"],"0c71bf96-2d02-4be5-a4f3-67fa2fef006d":["output-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"25f7196c-e604-4524-af9d-f31a22cba558"}}]</label_cache>
         <master>true</master>
-        <name>BulkShortDescriptionSubFlow</name>
+        <name>ChoicesSubflow</name>
         <natlang/>
         <outputs/>
-        <parent_flow display_value="BulkShortDescriptionSubFlow">0f9411e32b036610bdb7f808b891bfde</parent_flow>
+        <parent_flow display_value="ChoicesSubflow">d205df672bcfe6101fddfc886e91bf94</parent_flow>
         <remote_trigger_id/>
         <run_as>user</run_as>
         <run_with_roles/>
@@ -507,11 +507,11 @@
         <status>published</status>
         <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:31:16</sys_created_on>
+        <sys_created_on>2025-08-05 12:41:09</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>4a3ad9ab2b036610bdb7f808b891bf28</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_id>4d1817ab2bcfe6101fddfc886e91bf2c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -519,33 +519,33 @@
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 12:42:16</sys_updated_on>
+        <sys_updated_on>2025-08-05 17:54:22</sys_updated_on>
         <type>subflow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
-    <sys_translated_text action="delete_multiple" query="documentkey=4a3ad9ab2b036610bdb7f808b891bf28"/>
-    <sys_variable_value action="delete_multiple" query="document_key=4a3ad9ab2b036610bdb7f808b891bf28"/>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_4a3ad9ab2b036610bdb7f808b891bf28^id=4a3ad9ab2b036610bdb7f808b891bf28"/>
-    <sys_hub_flow_stage action="delete_multiple" query="flow=4a3ad9ab2b036610bdb7f808b891bf28"/>
-    <sys_flow_cat_variable_model action="delete_multiple" query="id=4a3ad9ab2b036610bdb7f808b891bf28^sys_idNOT INce3ad9ab2b036610bdb7f808b891bf28"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=4d1817ab2bcfe6101fddfc886e91bf2c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4d1817ab2bcfe6101fddfc886e91bf2c"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_4d1817ab2bcfe6101fddfc886e91bf2c^id=4d1817ab2bcfe6101fddfc886e91bf2c"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=4d1817ab2bcfe6101fddfc886e91bf2c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=4d1817ab2bcfe6101fddfc886e91bf2c^sys_idNOT INc11817ab2bcfe6101fddfc886e91bf2d"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
-        <id>4a3ad9ab2b036610bdb7f808b891bf28</id>
-        <name>BulkShortDescriptionSubFlow</name>
+        <id>4d1817ab2bcfe6101fddfc886e91bf2c</id>
+        <name>ChoicesSubflow</name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:31:16</sys_created_on>
-        <sys_id>ce3ad9ab2b036610bdb7f808b891bf28</sys_id>
+        <sys_created_on>2025-08-05 12:41:09</sys_created_on>
+        <sys_id>c11817ab2bcfe6101fddfc886e91bf2d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 03:31:16</sys_updated_on>
+        <sys_updated_on>2025-08-05 12:41:09</sys_updated_on>
     </sys_flow_cat_variable_model>
-    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=ce3ad9ab2b036610bdb7f808b891bf28"/>
-    <sys_hub_flow_input action="delete_multiple" query="model=4a3ad9ab2b036610bdb7f808b891bf28^sys_idNOT IN4e3ad9ab2b036610bdb7f808b891bf29"/>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=c11817ab2bcfe6101fddfc886e91bf2d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=4d1817ab2bcfe6101fddfc886e91bf2c^sys_idNOT IN30cfd03f2b872a101fddfc886e91bfe5"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=table_name,uiTypeLabel=Table,uiUniqueId=96c837a6-4215-46a8-904b-41b78060c23d</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=table_name,uiTypeLabel=Table,uiUniqueId=cf81aa4d-a5f2-49a7-8c85-51c0af820bb0</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -559,7 +559,7 @@
         <column_label/>
         <comments/>
         <create_roles/>
-        <default_value>x_snc_defect_bucke_gaic_defects</default_value>
+        <default_value>sys_choice</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -569,7 +569,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>gaic_defects</element>
+        <element>sys_choice</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -578,13 +578,13 @@
         <help/>
         <hint/>
         <internal_type display_value="">table_name</internal_type>
-        <label>GAIC Defects</label>
+        <label>sys_choice</label>
         <mandatory>false</mandatory>
         <max_length>80</max_length>
-        <model display_value="BulkShortDescriptionSubFlow">4a3ad9ab2b036610bdb7f808b891bf28</model>
-        <model_id>4a3ad9ab2b036610bdb7f808b891bf28</model_id>
+        <model display_value="ChoicesSubflow">4d1817ab2bcfe6101fddfc886e91bf2c</model>
+        <model_id>4d1817ab2bcfe6101fddfc886e91bf2c</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
-        <name>var__m_sys_hub_flow_input_4a3ad9ab2b036610bdb7f808b891bf28</name>
+        <name>var__m_sys_hub_flow_input_4d1817ab2bcfe6101fddfc886e91bf2c</name>
         <next_element/>
         <order>1</order>
         <primary>false</primary>
@@ -602,16 +602,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:31:16</sys_created_on>
-        <sys_id>4e3ad9ab2b036610bdb7f808b891bf29</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_created_on>2025-08-05 17:54:21</sys_created_on>
+        <sys_id>30cfd03f2b872a101fddfc886e91bfe5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 12:42:16</sys_updated_on>
+        <sys_updated_on>2025-08-05 17:54:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -624,13 +624,13 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4e3ad9ab2b036610bdb7f808b891bf29"/>
-    <sys_hub_flow_output action="delete_multiple" query="model=4a3ad9ab2b036610bdb7f808b891bf28^sys_idNOT IN8e3ad9ab2b036610bdb7f808b891bf39"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=30cfd03f2b872a101fddfc886e91bfe5"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=4d1817ab2bcfe6101fddfc886e91bf2c^sys_idNOT IN011817ab2bcfe6101fddfc886e91bf57"/>
     <sys_hub_flow_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=82e2e000-961e-43fe-b610-4e99037d1bf2</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5a33ab0b-d7a3-4da9-be9d-2b53e53a7839</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -667,10 +667,10 @@
         <label>Output</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="BulkShortDescriptionSubFlow">4a3ad9ab2b036610bdb7f808b891bf28</model>
-        <model_id>4a3ad9ab2b036610bdb7f808b891bf28</model_id>
+        <model display_value="ChoicesSubflow">4d1817ab2bcfe6101fddfc886e91bf2c</model>
+        <model_id>4d1817ab2bcfe6101fddfc886e91bf2c</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
-        <name>var__m_sys_hub_flow_output_4a3ad9ab2b036610bdb7f808b891bf28</name>
+        <name>var__m_sys_hub_flow_output_4d1817ab2bcfe6101fddfc886e91bf2c</name>
         <next_element/>
         <order>1</order>
         <primary>false</primary>
@@ -688,8 +688,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_output</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:31:16</sys_created_on>
-        <sys_id>8e3ad9ab2b036610bdb7f808b891bf39</sys_id>
+        <sys_created_on>2025-08-05 12:41:09</sys_created_on>
+        <sys_id>011817ab2bcfe6101fddfc886e91bf57</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -697,7 +697,7 @@
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 03:31:16</sys_updated_on>
+        <sys_updated_on>2025-08-05 12:41:09</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -710,10 +710,10 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_output>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8e3ad9ab2b036610bdb7f808b891bf39"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4a3ad9ab2b036610bdb7f808b891bf28"/>
-    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=4a3ad9ab2b036610bdb7f808b891bf28"/>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=4a3ad9ab2b036610bdb7f808b891bf28^sys_idNOT IN4a3ad9ab2b036610bdb7f808b891bf4e"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=011817ab2bcfe6101fddfc886e91bf57"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4d1817ab2bcfe6101fddfc886e91bf2c"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=4d1817ab2bcfe6101fddfc886e91bf2c"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=4d1817ab2bcfe6101fddfc886e91bf2c^sys_idNOT INd91817ab2bcfe6101fddfc886e91bf6b"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
@@ -721,33 +721,33 @@
         <comment/>
         <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
         <display_text/>
-        <flow display_value="BulkShortDescriptionSubFlow">4a3ad9ab2b036610bdb7f808b891bf28</flow>
+        <flow display_value="ChoicesSubflow">4d1817ab2bcfe6101fddfc886e91bf2c</flow>
         <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:31:16</sys_created_on>
-        <sys_id>4a3ad9ab2b036610bdb7f808b891bf4e</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_created_on>2025-08-05 12:41:10</sys_created_on>
+        <sys_id>d91817ab2bcfe6101fddfc886e91bf6b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 12:42:16</sys_updated_on>
-        <ui_id>332de91f-d0a7-45aa-8833-6d4a3d619a29</ui_id>
+        <sys_updated_on>2025-08-05 17:54:22</sys_updated_on>
+        <ui_id>d571a6f3-245d-464a-bb2c-f4a29af33cbb</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+VX207jMBD9lSrPUZWQUljeUKuukLhIgHjZZS3HcVoL18nGTi9U/PuOL0mjNoVWKhJo3+q5eM6Mz3HcXyuPJd6Fd572ggCHp+dnQRBFQdDvRwSHcRz1SRzEvdjzPYGnFCIVjjmF5QzzUq8XSAqCEppSolBckheKxphVFgmRCZM5x8snl/Dz8mrQGdZeMmE8KajwLn49+16OCyijaOFdrDZc++LkOKYcQh8d0A3capnXS2R81nbdTOvcWkdWJBpK4Ht0oahIKGBIMZfU96ZYJFhlxbK2FBQnd4KvDRMmFOzo6eCFZK9Q9zzQcSmFrgi1vnqJ3KCsOR1ihR9UURJVFi6UTDJGqLTzgAHjkqtB02YD7nLFMmFTbNs2O+PlVNzacXj1BtW5gKWUAILmulGN3LWRPkyy+X2FcsSEmYlz8oxgXq+wUgWLS6XxrDzK6RQ2QlOc50yMUV5kM2aSAcu0O+aw6KY8m0NRycaii4kG3oW54u4I7ENjfsIF013cwDaQDIAYB4Yge4QyKwszyhkivJTGUWAh7V7em+/JpRxwLOW6cxg5+ltq3HYOrmNkh6ZTSMFydQlbzKhr7s3fSyqnwZpyJBMJ0yhkQy9GIup3CcnJH6mwovb3iC2AXVtq+Sj8mPIx2Cv5DJrg2xpyQtqyXbdt4IQUHk1I0Md3khIU/3pKOlwbdgQfCIScvUuy0zWfZFYoZGfZUIgop7HR+YYUavthnN8DTsX5O83STrzchdBRPmWUJ23fjpF2bHw7Tv7Pb8eXJDwASpA9PSY4E+YhAEA/SwnB+9ftjw2eGXqtdWBsWJJtJeCOyjqvBythDziVEh6gdufR4mmBWN39hjKb935ldAKIjiaA6OQ4AljVbdaDbJl59fbTp1nFv+p4vBkPFGwkhG9tAjuoZnhozZO3bQFHBym4STbrGe7g3JEfiTsU6X/mFTCBVFcPWf2iOUvGVK2rV1FJpuaYv7T5HeNQdVCmvU94cPbelW0/XEsUlIIKKuHwmi/OKNi+QYztsNtjDxjVJG7wonNf42gF524QEDkdm2NpXiFXtdXxu3fEd+OX/YiG8KTdKb/Qt95v8RfteBp4/gepI0fZoRAAAA==</values>
+        <values>H4sIAAAAAAAA/+VXW0/bMBT+K1WeoyqhpTDepiKkSVwkQLwwsBzHaS1cJ7OdXqj633cc22nWBtZqRQLt0efm71w+5+RxGbA0OAtOs34U4fj49CSKer0oGgx6BMdJ0huQJEr6SRAGAk8oWGqccArHKealOauFQmScM2KEKVMFx4sHpxt6ORkznkoqgrPHpzAosIRYmsrgbLmh2hUMxwnlYHrv0GyA04uiPqJKZ2WXTbfOtVXkMjVQojCgc01FSgFDhrmiYTDBIsU6l4taIilObwRfC8ZMaIgYGOO5Yq9w72lk7DIKWRFqdfURuRJZcXaONb7TsiS6lM7UFlPZeqQ0wyXXw6bMGtwUmuXCuti0rXfOy4m4tuUI6gC+IyApFYCghUnUIHdpZHfjfHbrUV4wUdXEKXlOMK9PWGvJklIbPMuAcjqBQGiCi4KJESpkPmWVM2CZdEccDt2M5zO4VLGR6GJigHehrrh7AfLzSvyAJTNZXEEYcAZAjMOEINtClZeyKuUUEV6qSiGxUDZWsArNGA45VmqdOZQc/SoNblsHlzGyRTMuRLJCf4cQU+qSW4U78eE4Wo8cyUXKDArVIIUrys8SvNOkJC9UPxt7K5gjJQiUI6NEo0qLRph5idrm0b+GOyT9qtw9/YbN5NsK4oi4JbtsC+CIGB+MiJDHV6IiXP75mLg/t2wJ/kIwcvLukB2v50nlUiNbywbDtkmy95zvAMHP+Y2ZzE6yeAuVG/OMUZ62fW8ujGLje3P0f35vPuWQA6AU2e4xwZmolgcA+lHTH73/xH7bmLNqvBorl5FhRbY5gDs677zuzYQd4Hgm3MHdnXuLpwWif+/94vfHW++FjgC9gxGgd3QYAizrNOtCttTc74umm97+1djjTXsYwYZDvGoj2F53xvveebTaJnBvLwY3h81qzt+YuQMvlm8wMvzIJ2AMru4+ZPmLZiwdUb2+3VuluZ5h/tKmdxOHfKOq9D5gSe2/S9tBvKYoMAVJqqB5zS01hvVo+w2JQyve7wnZAYsvxxWed25rMK0I3TMCTKejqjfNd+RHLXVD3j/gwvhpv6S+Wa0c9D37Ev92hyPC02+cSt2zvxAAAA==</values>
     </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4a3ad9ab2b036610bdb7f808b891bf4e"/>
-    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=4a3ad9ab2b036610bdb7f808b891bf28"/>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=4a3ad9ab2b036610bdb7f808b891bf28^sys_idNOT IN463ad9ab2b036610bdb7f808b891bf4d,4a3ad9ab2b036610bdb7f808b891bf4b,4a3ad9ab2b036610bdb7f808b891bf4c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d91817ab2bcfe6101fddfc886e91bf6b"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=4d1817ab2bcfe6101fddfc886e91bf2c"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=4d1817ab2bcfe6101fddfc886e91bf2c^sys_idNOT INd51817ab2bcfe6101fddfc886e91bf6a,d91817ab2bcfe6101fddfc886e91bf68,d91817ab2bcfe6101fddfc886e91bf69"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">e03a99ab2b036610bdb7f808b891bf5d</block>
+        <block display_value="">d8a71b6b2bcfe6101fddfc886e91bfdb</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="BulkShortDescriptionSubFlow">4a3ad9ab2b036610bdb7f808b891bf28</flow>
+        <flow display_value="ChoicesSubflow">4d1817ab2bcfe6101fddfc886e91bf2c</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -756,25 +756,25 @@
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:31:16</sys_created_on>
-        <sys_id>463ad9ab2b036610bdb7f808b891bf4d</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_created_on>2025-08-05 12:41:09</sys_created_on>
+        <sys_id>d51817ab2bcfe6101fddfc886e91bf6a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 12:42:16</sys_updated_on>
-        <ui_id>a8cba216-eab8-4593-9dcb-88c32ef4925a</ui_id>
+        <sys_updated_on>2025-08-05 17:54:22</sys_updated_on>
+        <ui_id>0c71bf96-2d02-4be5-a4f3-67fa2fef006d</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/41TTW/iMBD9Lz5DFKClhFvVqlKltkhbtpfVKprEE7Dq2K4/oCziv+8YJ4DaS2+Z5/l4781kz3TwJni31LfOiZVi8z97Jjibs2k9gaKAalzlk+l0lFe8umlm+ayaFaOquc7ZgClokTJTC4o3IEME9vtG6m25ASugkpjBamVLi85o5fBwoEwunJGwe/txQb0WkluM/P4OmAFLoz1aNie2ij4UyCeh3qnXt+SfqpFQoaTURS/nqzy/MzF23gq16uKnrui1B7XlkdZowPDTo+JI0xuQDgesBcXBa7s7IRaBL5Q8A2sSkzS08OnEP5o3y/M8ZjZIimpMr6ew7JxMcHMPHohKqH2w2JuhRY0uecGxgSD93SWWEhbGC61SiY9L6Kq1DK16SU6wU4N+cYQERyTQRKmReyekeV3r7a+e5YNQR1e6R6lrkKcIPHlXBR/57FkQyy82J+Sb0SixpYllC8YQUhqrN+I4hUi32UpSkB3PimO87AzqqDCjFUD2QPj9EX7rbu6Z2lBxHPdbiY+Aj/FsZmMcIy1gWExHOLyaNDis6HqGV1gU+eSG0+2M2WHA3M7dSXDubBRtqPwIUWayrTOoTB7HktoK42+J1AY7Lw7xWlX8HdNm+v/htLxaOJKwjNjjRR7f0amK+hLaavsexZ+xw39SAPew7AMAAA==</values>
+        <values>H4sIAAAAAAAA/41TyW7bMBD9F55twY7i9RYkCBAgrYHGzaUohCE5solQpMLFjmv43zs05QXJJTfN4yzvvRntmY2hjcEv7Z33amXY/M+eKcnmTExhMuRjfsNFjePhYFhLWYvpdIyzIa+5ZD1moEHKzC0o3oCOCdjva2231QacAq6xgNXKVQ59a43Hw4EypfKtht3rtwvEWmnpMPH722MtOBod0LE5sTX0YUA/K/NGvb4kf1eNBo6aUhcnOZ/lhV2bYh+cMqsufu6KXk6gdTLRGvYYfgQ0Eml6DdpjjzVgJATrdmfEIciF0RdgTWKyhgY+vPpH86aDwSBl1kiKBObXc1h1Tma4foAARCWKEB2ezLBKoM9eSKwh6nB/jeWERRuUNbkkpCV01VbHxvzMTrBzg9PiCImeSGCbpCbunZD6ZW23v04sH5U5utI9aitAnyMI5B2PIfHZs6iWn2zOyBejUWNDE6sG2paQqnV2o45TiHRTrDQFxfGsJKbLLkAkhQWtAIpHwh+O8Gt3cz+oDRWncb+Neo/4lM5mBGUJfMD7cgJl/1bCrM9xJvs3fFTiqITJtJyxQ4/5nb/X4P3FKNpQ9R6TzGxbZ1CVPU4lwqk23BGpDXZeHNK1mvQ75s2c/ofz8oTyJGGZsKerPLmjU1XiGtpa95bEX7DDf+H3LPLsAwAA</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">683a99ab2b036610bdb7f808b891bf5b</block>
+        <block display_value="">14a71b6b2bcfe6101fddfc886e91bfd9</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="BulkShortDescriptionSubFlow">4a3ad9ab2b036610bdb7f808b891bf28</flow>
+        <flow display_value="ChoicesSubflow">4d1817ab2bcfe6101fddfc886e91bf2c</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
@@ -783,51 +783,51 @@
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:31:16</sys_created_on>
-        <sys_id>4a3ad9ab2b036610bdb7f808b891bf4b</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_created_on>2025-08-05 12:41:09</sys_created_on>
+        <sys_id>d91817ab2bcfe6101fddfc886e91bf68</sys_id>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 12:42:16</sys_updated_on>
-        <ui_id>40e2235f-d08f-4b4b-be5a-42006b9f9f48</ui_id>
+        <sys_updated_on>2025-08-05 17:54:22</sys_updated_on>
+        <ui_id>d412bdc3-016d-4b8e-ab41-3bd68332196c</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/51TXW+jMBD8L34miI8cF/JWtapU6e4qpVVfTlW02EtinbE52yTlEP/91oHQqo99gh3vzs4MZmCm823n3bO5cU4eNNv+fo2Y1AGj94FpaJBtmfTYOBaxE6gu1MOQ55nAMq1XIoHvq/U3gNVmk+erQqwhF0VaQlbGO+TGCjeONCqkaxX0L19n4EephMVZZAuWtHm0bDt8OpKCFqSlqMs0KXmeFXmWJNlmnVZFXqWZyAFFQYQKKlTU+jC7+2TW920o7SRhBn7MM7sFpUcQkSURwzePWiCtr0E5jFgDWoA3tmdbbzsCLIJ41KpfOo5Se6JjoffNyX+0MU2S0FgjGeI4HS7lfs5xgus78PBE1Nx3dm7lRyM5uikKgTV0yt9+xKaGx9ZLo6cRD5W6ThvVNfrXlARbCK6fjZDOkQhsg9EgffZRPx3NeXdVeS/1JZT5UBkOaqnAeyurzgc9A0OFDRHtG2hbqQ/71pqTvAyTliY+KCriWpkzLQ1XNAYehMeUK8T3hN9d4BewMrj4STQ0PEbM9e5WgXPvXijE/d8uKJmczR72UwxhhFvZ+htacMJZ7vgabv3EvWTKpSMJzwF7uP4r4aCnGyT5R+hs7J8g/h0b/wOn5hSUdQMAAA==</values>
+        <values>H4sIAAAAAAAA/51TXU/jMBD8L35Oo3wRrn1DICSkO5AK4uWEqo3ttNY5ds52WnJR/vutazcgHnlKdrw7OzNxJqIH1w/Ovugba8Vekc3vt4QI5TF8n4iCjpMNEY53liTkCHLw9TSxq+sc6rZcFdUVW1V1BaumKeiqraBYQ1uWtGnSLafaMDvPOMqE7SWMr99noAchmeFRZA8GtTluyGb6ciQYLsjXrF3n2ZqWRV0WWVb8qPKmLpu8YCVwViOhhIZLbH2I7r6YdWPvSxMkROBnnNkuKD68iCJLCH93XDGO61uQliekA8XAaTOSjTMDAoYDe1JyXDoOQjmkI7733Yp/uDHPMt/YcjREeThcyl3MMcDtHTh4RmrqBhNb6UELym2IgvEWBuluP2Oh4al3Qqsw4qCRl2kth049hiTIQnD5bIgMFkXw3hv10qOP9vmgT9uLynuhzqHEQ6kpyKUC54xoBuf1TIRL3iHRroO+F2q/640+ivMwaunSvcQibaU+4VJ/RVOgXniKuUJ6j/jdGX4FI7yLX0iDw3NC7GhvJVj74QVD3P0dvJLgLHrYhRj8CDWidze44Mij3PnN3/rAvWRKhUUJLx57uPwr/mDEGyToZ+ikzR8v/gOb/wPG4khGdQMAAA==</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">283a99ab2b036610bdb7f808b891bf5c</block>
+        <block display_value="">10a71b6b2bcfe6101fddfc886e91bfdb</block>
         <comment/>
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="BulkShortDescriptionSubFlow">4a3ad9ab2b036610bdb7f808b891bf28</flow>
+        <flow display_value="ChoicesSubflow">4d1817ab2bcfe6101fddfc886e91bf2c</flow>
         <flow_variables_assigned>aggr_response</flow_variables_assigned>
         <generation_source/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>3</order>
         <outputs_assigned/>
-        <parent_ui_id>40e2235f-d08f-4b4b-be5a-42006b9f9f48</parent_ui_id>
+        <parent_ui_id>d412bdc3-016d-4b8e-ab41-3bd68332196c</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:31:16</sys_created_on>
-        <sys_id>4a3ad9ab2b036610bdb7f808b891bf4c</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_created_on>2025-08-05 12:41:09</sys_created_on>
+        <sys_id>d91817ab2bcfe6101fddfc886e91bf69</sys_id>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 12:42:16</sys_updated_on>
-        <ui_id>11126152-44e0-4659-9707-5e2503fba0ea</ui_id>
+        <sys_updated_on>2025-08-05 17:54:22</sys_updated_on>
+        <ui_id>26657371-86b3-453e-9bb0-223ceeed8670</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1WwU7cMBD9lcrnTeQsCyR7QyAkpBakQrm0KLLj8a5Vxw62s7CN8u8dJ9ldSttDb23FzX72jN+8eRmlI7YNTRv8nT3zXq0MWX5+mBFlIobrjihBloTMiGE14IqtVq504BtrPCC8YbqNeNdJbZ/KDXOKcQ3pD/f6/ou5bmsObvmu6xYU5vOjY5kImstkwRc84XDMksWc0hNeyEIu8lQFqFMzxMToC/CVU01Q1vxZCr+2LpTiEN73yFoo32i2vf8nyVdrpYWDqVUNc9iZAI4su1dHQ+toUeSZmPM5p0cnJxnlgp/KnOY8LzIuocCEmnHQv+jtb1oetk2EfXDKrKb9+ynF7Q60TkRKdEbgOYARgFwk0x5mpGZGsGDddo84YOLG6AOwViaMtqvZs1ff8L2cUhpvSsD6KhhP99ty6ugIywsWGFJpq9C66Wq1tqoCPyojQLJWh/OX2HjhZtB5DAnRDFO01W1trkdByD7BzkCItB5JQBNLjdynQuTt2j593LG8VGZQZTrUtmJ6v2MBteNtiHw60qq7VzKPyE9Cg4YaXyxr1jSIlI2zGzW8gqTrdKVxkw72Rh/hB56yKlaYYgtYeon4xQDfT97/gGkwOD73yajHFq6iiUBU9DSreEKzHJJFQask50ImGS3yUypBHGWS9DPit/5cM+8PQmGHysc2ljnKNglUjhrHkMHbZ0hqA5MW/UOcKyOftyH0d5J/G0JvQ+i/H0ICKuWR510kdbX7J4oHW7Slql5CT9Z9jRUesP47pIjLPV0JAAA=</values>
+        <values>H4sIAAAAAAAA/+1VwW7bMAz9F502IDZsx3GT3IoWBQpsK7B2vWyFQUtUIkyWXElOmhn+90mxk3TddtxlyM18pMjHRxLuiG5d0zr7oC+tFStFll+fJkSogPnvjghGloRMiIIa/ResVqY0aButLHp4A7INeNdxqbflBoyASmL8S1zff1Pvuo7laVYxOo2StGBRXs0xgipPo2nFivl0mqWLgsbCYR3vs/b9e1+ACdtI2D3+6zp0LSQzOArQgPH9OjRk2b1x7QVZ5HCRVkWVVZRjkSYpZ4zT+bzARVpxlvqEEiqUf1DsL0K6XRNg64xQq9H+MKa4P4DasEApmRB8cagYei4cpMUJqUExcNrsjohBYHdKnoC1UG4YZg0vVvzw9eZJkoRIjr4/ioP3aJaj+APMr8GBp9JS15oxlK61oGgHZRhyaKW7eo0NAXeNE1oNT1yY2/hay7ZWnwZByDHBYdYeaa0ngU1oNXAfG+H3a739fGB5I9ReldEpNQV5tMB57arWBT4dacXDG5kH5DehUWLtK5Y1NI1HysbojdhX8aTreCW9Ee83kWE4mxho6DD2I4D4xuPXe/hxXNOPPo1/HMp9UeK5xduwRNmMX4RdjLBI8iifZXkEfMEiPk0hy2gFs9mc9BNid/ZKgrUnofyEyuc2tDnINgpUDhqHJ9SIxl16UhscteifwrUOfM6nfT7t82n/V6fNkArreT4EUreH/3dw7PxaCvoa2mrzPXR4wvqfCmvrhQkIAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
-    <sys_hub_pill_compound action="delete_multiple" query="attached_to=4a3ad9ab2b036610bdb7f808b891bf28"/>
-    <sys_hub_flow_variable action="delete_multiple" query="model=4a3ad9ab2b036610bdb7f808b891bf28^sys_idNOT IN063ad9ab2b036610bdb7f808b891bf46"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=4d1817ab2bcfe6101fddfc886e91bf2c"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=4d1817ab2bcfe6101fddfc886e91bf2c^sys_idNOT IN951817ab2bcfe6101fddfc886e91bf63"/>
     <sys_hub_flow_variable action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=edc071cb-018e-490c-8bdf-109870fed31f</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=25f7196c-e604-4524-af9d-f31a22cba558</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -863,10 +863,10 @@
         <label>aggr_response</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="BulkShortDescriptionSubFlow">4a3ad9ab2b036610bdb7f808b891bf28</model>
-        <model_id>4a3ad9ab2b036610bdb7f808b891bf28</model_id>
+        <model display_value="ChoicesSubflow">4d1817ab2bcfe6101fddfc886e91bf2c</model>
+        <model_id>4d1817ab2bcfe6101fddfc886e91bf2c</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
-        <name>var__m_sys_hub_flow_variable_4a3ad9ab2b036610bdb7f808b891bf28</name>
+        <name>var__m_sys_hub_flow_variable_4d1817ab2bcfe6101fddfc886e91bf2c</name>
         <next_element/>
         <order>0</order>
         <primary>false</primary>
@@ -884,8 +884,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_variable</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:31:16</sys_created_on>
-        <sys_id>063ad9ab2b036610bdb7f808b891bf46</sys_id>
+        <sys_created_on>2025-08-05 12:41:09</sys_created_on>
+        <sys_id>951817ab2bcfe6101fddfc886e91bf63</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -893,7 +893,7 @@
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 03:31:16</sys_updated_on>
+        <sys_updated_on>2025-08-05 12:41:09</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -907,17 +907,17 @@
         <xml_view>false</xml_view>
     </sys_hub_flow_variable>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>gaic_defects</element>
+        <element>sys_choice</element>
         <help/>
         <hint/>
-        <label>GAIC Defects</label>
+        <label>sys_choice</label>
         <language>en</language>
-        <name>var__m_sys_hub_flow_input_4a3ad9ab2b036610bdb7f808b891bf28</name>
+        <name>var__m_sys_hub_flow_input_4d1817ab2bcfe6101fddfc886e91bf2c</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:31:16</sys_created_on>
-        <sys_id>8e3ad9ab2b036610bdb7f808b891bf35</sys_id>
+        <sys_created_on>2025-08-05 17:54:21</sys_created_on>
+        <sys_id>c9cfd03f2b872a101fddfc886e91bff1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
@@ -925,23 +925,23 @@
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 03:31:16</sys_updated_on>
+        <sys_updated_on>2025-08-05 17:54:21</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_4a3ad9ab2b036610bdb7f808b891bf28"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_4d1817ab2bcfe6101fddfc886e91bf2c"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>output</element>
         <help/>
         <hint/>
         <label>Output</label>
         <language>en</language>
-        <name>var__m_sys_hub_flow_output_4a3ad9ab2b036610bdb7f808b891bf28</name>
+        <name>var__m_sys_hub_flow_output_4d1817ab2bcfe6101fddfc886e91bf2c</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:31:16</sys_created_on>
-        <sys_id>863ad9ab2b036610bdb7f808b891bf3e</sys_id>
+        <sys_created_on>2025-08-05 12:41:09</sys_created_on>
+        <sys_id>091817ab2bcfe6101fddfc886e91bf5b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
@@ -949,31 +949,31 @@
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
         <sys_update_name/>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 03:31:16</sys_updated_on>
+        <sys_updated_on>2025-08-05 12:41:09</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_4a3ad9ab2b036610bdb7f808b891bf28"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_4d1817ab2bcfe6101fddfc886e91bf2c"/>
     <sys_hub_flow action="UPDATE">
-        <sys_id>0f9411e32b036610bdb7f808b891bfde</sys_id>
-        <latest_snapshot>4a3ad9ab2b036610bdb7f808b891bf28</latest_snapshot>
+        <sys_id>d205df672bcfe6101fddfc886e91bf94</sys_id>
+        <latest_snapshot>4d1817ab2bcfe6101fddfc886e91bf2c</latest_snapshot>
         <compiler_build>glide-yokohama-12-18-2024__patch6-07-17-2025_07-27-2025_1301.zip</compiler_build>
     </sys_hub_flow>
-    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=0f9411e32b036610bdb7f808b891bfde"/>
-    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=0f9411e32b036610bdb7f808b891bfde^sys_idNOT IN963ad9ab2b036610bdb7f808b891bf58"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=d205df672bcfe6101fddfc886e91bf94"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=d205df672bcfe6101fddfc886e91bf94^sys_idNOT IN551817ab2bcfe6101fddfc886e91bf75"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"963ad9ab2b036610bdb7f808b891bf58","name":"plan","plan_signature":null}}</plan>
-        <plan_id display_value="BulkShortDescriptionSubFlow">0f9411e32b036610bdb7f808b891bfde</plan_id>
-        <snapshot>a249932f2bcfe6101fddfc886e91bf92</snapshot>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"551817ab2bcfe6101fddfc886e91bf75","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="ChoicesSubflow">d205df672bcfe6101fddfc886e91bf94</plan_id>
+        <snapshot>6a60a07f2b872a101fddfc886e91bf66</snapshot>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-05 03:31:17</sys_created_on>
+        <sys_created_on>2025-08-05 12:41:10</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>963ad9ab2b036610bdb7f808b891bf58</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_id>551817ab2bcfe6101fddfc886e91bf75</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
-        <sys_updated_on>2025-08-05 12:42:17</sys_updated_on>
+        <sys_updated_on>2025-08-05 17:54:22</sys_updated_on>
     </sys_flow_subflow_plan>
 </record_update>
