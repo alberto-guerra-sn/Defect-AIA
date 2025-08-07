@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Defect Classifier Agent">8da6feb40f4b621016bd69d530d1b26b</agent>
+        <description>This subflow is the final resolver. Determines what the final bucket will be based on the output if any of the Defect Keyword Tool and the Classify Defect via GenAI tool.</description>
+        <display_output>false</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Final Defect Bucket Resolver</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message>Resolving final bucket...</pre_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 17:10:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>57e80f490f0b221016bd69d530d1b28e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Final Defect Bucket Resolver</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_57e80f490f0b221016bd69d530d1b28e</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 17:10:08</sys_updated_on>
+        <tool display_value="Final Defect Bucket Resolver">9be847490f0b221016bd69d530d1b259</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+    </sn_aia_agent_tool_m2m>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</application>
+        <file_path/>
+        <instance_id>a6f5898a33ffd6107c42c7bb9d5c7b62</instance_id>
+        <instance_name>aiagentujjawal3</instance_name>
+        <name>sn_aia_agent_tool_m2m_57e80f490f0b221016bd69d530d1b28e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Defect Classifier Agent">8da6feb40f4b621016bd69d530d1b26b</agent>
+        <description>This subflow is the final resolver. Determines what the final bucket will be based on the output if any of the Defect Keyword Tool and the Classify Defect via GenAI tool.</description>
+        <display_output>false</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Final Defect Bucket Resolver</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message>Resolving final bucket...</pre_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-28 17:10:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>57e80f490f0b221016bd69d530d1b28e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Final Defect Bucket Resolver</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_57e80f490f0b221016bd69d530d1b28e</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 17:10:08</sys_updated_on>
+        <tool display_value="Final Defect Bucket Resolver">9be847490f0b221016bd69d530d1b259</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+    </sn_aia_agent_tool_m2m>
+</record_update>]]></payload>
+        <payload_hash>-1402582520</payload_hash>
+        <record_name>Final Defect Bucket Resolver</record_name>
+        <reverted_from/>
+        <source>1bd48fd62b436210bdb7f808b891bff3</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-01 14:05:01</sys_created_on>
+        <sys_id>e2e4c31a2b436210bdb7f808b891bfb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19865f34fcd0000001</sys_recorded_at>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-01 14:05:01</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>a2e4c31aca43621010526d53c6168bb3</update_guid>
+        <update_guid_history>a2e4c31aca43621010526d53c6168bb3:-1402582520</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Final Defect Bucket Resolver">f5a6c5f72b8b2a101fddfc886e91bffb</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 20:44:15</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>74b17c86794f43e494c11651f7aa73e4</sys_id>
+        <sys_metadata>57e80f490f0b221016bd69d530d1b28e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Final Defect Bucket Resolver</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_scope_delete display_value="">385cdcb5ab8e4f60953bdcc583c2cac4</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_57e80f490f0b221016bd69d530d1b28e</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_57e80f490f0b221016bd69d530d1b28e">e2e4c31a2b436210bdb7f808b891bfb3</sys_update_version>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:44:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

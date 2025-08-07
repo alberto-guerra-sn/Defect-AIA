@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
+    <sn_aia_agent action="DELETE">
+        <agent_type>internal</agent_type>
+        <applicability_script><![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]></applicability_script>
+        <compiled_handbook/>
+        <description>Classifies defects into one of 8 predefined categories using keyword-based logic and AI fallback.</description>
+        <external_agent_configuration/>
+        <instructions>use the full_defect_context field from the defects table as input.
+
+Step 1. Run the Keyword Classifier Script Tool
+  1.1. Scan full_defect_context for matching keywords per group
+  1.2. Count number of keyword hits per group
+  1.3. Identify the group with the highest number of keyword matches
+  1.4. if at least one keyword matches (i.e. bestScore &gt; 0), sets keyword_bucket to that group
+  1.5. Otherwise, leave keyword_bucket blank
+Output: keyword_bucket -&gt; best-matching group based on keywords (or ' ' if no match)
+Step 2. Run AI Classifier (Generic Prompt Tool)
+  2.1. If keyword bucket was blank, uses GenAI prompt to classify the defect into one of the 8 groups based on the full_context
+  2.2. Uses the defined prompt with LLM
+  2.3. LLM returns the best-fitting group
+Output: prompt_bucket -&gt; group name as suggested by GenAI
+Step 3: Run Final Resolver (Script Tool)
+  3.1. Checks which bucket to use as final result
+  3.2. If the keyword_bucket is not empty uses that, else use the prompt_bucket
+  3.3. If both are empty, default to "Configuration/Operator Error" Bucket choice.
+Output: bucket -&gt; final group classification (to be written to record)</instructions>
+        <internal_name>global.x_snc_defect_bucke.Defect Classifier Agent</internal_name>
+        <name>Defect Classifier Agent</name>
+        <parent/>
+        <processing_message/>
+        <proficiency/>
+        <record_type>template</record_type>
+        <role>Automatically classify software defect into one of 8 pre-defined groups based on the full context. It uses both keyword-based logic and a fall back AI prompt to handle ambiguous cases.</role>
+        <source_id/>
+        <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
+        <sys_class_name>sn_aia_agent</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-07-27 21:13:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>8da6feb40f4b621016bd69d530d1b26b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Defect Classifier Agent</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_agent_8da6feb40f4b621016bd69d530d1b26b</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-07-28 18:11:35</sys_updated_on>
+    </sn_aia_agent>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</application>
+        <file_path/>
+        <instance_id>a6f5898a33ffd6107c42c7bb9d5c7b62</instance_id>
+        <instance_name>aiagentujjawal3</instance_name>
+        <name>sn_aia_agent_8da6feb40f4b621016bd69d530d1b26b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_aia_agent"&gt;
+    &lt;sn_aia_agent action="INSERT_OR_UPDATE"&gt;
+        &lt;agent_type&gt;internal&lt;/agent_type&gt;
+        &lt;applicability_script&gt;&lt;![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]&gt;&lt;/applicability_script&gt;
+        &lt;compiled_handbook/&gt;
+        &lt;description&gt;Classifies defects into one of 8 predefined categories using keyword-based logic and AI fallback.&lt;/description&gt;
+        &lt;external_agent_configuration/&gt;
+        &lt;instructions&gt;use the full_defect_context field from the defects table as input.
+
+Step 1. Run the Keyword Classifier Script Tool
+  1.1. Scan full_defect_context for matching keywords per group
+  1.2. Count number of keyword hits per group
+  1.3. Identify the group with the highest number of keyword matches
+  1.4. if at least one keyword matches (i.e. bestScore &amp;gt; 0), sets keyword_bucket to that group
+  1.5. Otherwise, leave keyword_bucket blank
+Output: keyword_bucket -&amp;gt; best-matching group based on keywords (or ' ' if no match)
+Step 2. Run AI Classifier (Generic Prompt Tool)
+  2.1. If keyword bucket was blank, uses GenAI prompt to classify the defect into one of the 8 groups based on the full_context
+  2.2. Uses the defined prompt with LLM
+  2.3. LLM returns the best-fitting group
+Output: prompt_bucket -&amp;gt; group name as suggested by GenAI
+Step 3: Run Final Resolver (Script Tool)
+  3.1. Checks which bucket to use as final result
+  3.2. If the keyword_bucket is not empty uses that, else use the prompt_bucket
+  3.3. If both are empty, default to "Configuration/Operator Error" Bucket choice.
+Output: bucket -&amp;gt; final group classification (to be written to record)&lt;/instructions&gt;
+        &lt;internal_name&gt;global.x_snc_defect_bucke.Defect Classifier Agent&lt;/internal_name&gt;
+        &lt;name&gt;Defect Classifier Agent&lt;/name&gt;
+        &lt;parent/&gt;
+        &lt;processing_message/&gt;
+        &lt;proficiency/&gt;
+        &lt;record_type&gt;template&lt;/record_type&gt;
+        &lt;role&gt;Automatically classify software defect into one of 8 pre-defined groups based on the full context. It uses both keyword-based logic and a fall back AI prompt to handle ambiguous cases.&lt;/role&gt;
+        &lt;source_id/&gt;
+        &lt;strategy display_value="ReAct"&gt;f0bff21f9f13c6108f431597d90a1c74&lt;/strategy&gt;
+        &lt;sys_class_name&gt;sn_aia_agent&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;alberto.guerra@snc&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-07-27 21:13:25&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_id&gt;8da6feb40f4b621016bd69d530d1b26b&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_name&gt;Defect Classifier Agent&lt;/sys_name&gt;
+        &lt;sys_package display_value="Defect Bucket" source="x_snc_defect_bucke"&gt;5dbab1940fc3221016bd69d530d1b24a&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Defect Bucket"&gt;5dbab1940fc3221016bd69d530d1b24a&lt;/sys_scope&gt;
+        &lt;sys_update_name&gt;sn_aia_agent_8da6feb40f4b621016bd69d530d1b26b&lt;/sys_update_name&gt;
+        &lt;sys_updated_by&gt;alberto.guerra@snc&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-07-28 18:11:35&lt;/sys_updated_on&gt;
+    &lt;/sn_aia_agent&gt;
+&lt;/record_update&gt;</payload>
+        <payload_hash>183412259</payload_hash>
+        <record_name>Defect Classifier Agent</record_name>
+        <reverted_from/>
+        <source>1bd48fd62b436210bdb7f808b891bff3</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-01 14:05:00</sys_created_on>
+        <sys_id>d2e4c31a2b436210bdb7f808b891bf92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19865f34e3d0000001</sys_recorded_at>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-01 14:05:00</sys_updated_on>
+        <type>AI Agent</type>
+        <update_guid>92e4c31a924362105bee24e7f2ad8f92</update_guid>
+        <update_guid_history>92e4c31a924362105bee24e7f2ad8f92:183412259</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Defect Classifier Agent">7da6c5f72b8b2a101fddfc886e91bff8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 20:44:15</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent">sn_aia_agent</sys_db_object>
+        <sys_id>0884c469ab0348a380684709ef0f4699</sys_id>
+        <sys_metadata>8da6feb40f4b621016bd69d530d1b26b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Defect Classifier Agent</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_scope_delete display_value="">385cdcb5ab8e4f60953bdcc583c2cac4</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_8da6feb40f4b621016bd69d530d1b26b</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_8da6feb40f4b621016bd69d530d1b26b">d2e4c31a2b436210bdb7f808b891bf92</sys_update_version>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:44:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

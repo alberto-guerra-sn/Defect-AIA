@@ -54,7 +54,17 @@
         <element label="Number" max_length="255" name="number" type="string_full_utf8"/>
         <element label="Created" max_length="40" name="created" type="glide_date_time"/>
         <element choice="1" label="Bucket" max_length="255" name="bucket" type="choice">
-            <choice/>
+            <choice>
+                <element inactive_on_update="false" label="Guardian" value="Guardian"/>
+                <element inactive_on_update="false" label="Connection Issues" value="Connection Issue"/>
+                <element inactive_on_update="false" label="Language" value="Language"/>
+                <element inactive_on_update="false" label="Security" value="Security"/>
+                <element inactive_on_update="false" label="Integrations" value="Integrations"/>
+                <element inactive_on_update="false" label="Setup" value="Setup"/>
+                <element inactive_on_update="false" label="Configuration/Operator Error" value="Configuration/Operator Error"/>
+                <element inactive_on_update="false" label="Timeout" value="Timeout"/>
+                <element inactive_on_update="false" label="Plugin" value="Plugin"/>
+            </choice>
         </element>
         <index name="index">
             <element name="assigned_to"/>

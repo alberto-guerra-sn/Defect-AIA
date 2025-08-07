@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Bucket Categorizer Agent">aafa056b2bcf2610bdb7f808b891bfd8</agent>
+        <description>This tool gathers GAIC Defect records that have an empty cluster. It creates categories based on short description patterns of the defects and then outputs a JSON of those defect numbers in the created categories.</description>
+        <display_output>false</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Bulk Category Generator</name>
+        <output_transformation_strategy>abstract_summary</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message/>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 06:20:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>bce0c22b2bc36610bdb7f808b891bf64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bulk Category Generator</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_bce0c22b2bc36610bdb7f808b891bf64</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 06:20:12</sys_updated_on>
+        <tool display_value="Bulk Category Maker">2ce04aa72bc36610bdb7f808b891bf3d</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</application>
+        <file_path/>
+        <instance_id>a6f5898a33ffd6107c42c7bb9d5c7b62</instance_id>
+        <instance_name>aiagentujjawal3</instance_name>
+        <name>sn_aia_agent_tool_m2m_bce0c22b2bc36610bdb7f808b891bf64</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Bucket Categorizer Agent">aafa056b2bcf2610bdb7f808b891bfd8</agent><description>This tool gathers GAIC Defect records that have an empty cluster. It creates categories based on short description patterns of the defects and then outputs a JSON of those defect numbers in the created categories.</description><display_output>false</display_output><document_status/><execution_mode>autopilot</execution_mode><inputs>[]</inputs><max_auto_executions>10</max_auto_executions><name>Bulk Category Generator</name><output_transformation_strategy>abstract_summary</output_transformation_strategy><post_processing_script/><pre_message/><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>alberto.guerra@snc</sys_created_by><sys_created_on>2025-08-05 06:20:12</sys_created_on><sys_domain>global</sys_domain><sys_id>bce0c22b2bc36610bdb7f808b891bf64</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Bulk Category Generator</sys_name><sys_overrides/><sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package><sys_policy/><sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_bce0c22b2bc36610bdb7f808b891bf64</sys_update_name><sys_updated_by>alberto.guerra@snc</sys_updated_by><sys_updated_on>2025-08-05 06:20:12</sys_updated_on><tool display_value="Bulk Category Maker">2ce04aa72bc36610bdb7f808b891bf3d</tool><tool_attributes>{}</tool_attributes><transformation_instructions/></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>-1157996006</payload_hash>
+        <record_name>Bulk Category Generator</record_name>
+        <reverted_from/>
+        <source>04754b5a2b436210bdb7f808b891bf0d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 06:20:12</sys_created_on>
+        <sys_id>f8e0c22b2bc36610bdb7f808b891bf69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19878e3342d0000001</sys_recorded_at>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 06:20:12</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>bce0c22ba9c366104ec2cc1cb37cd968</update_guid>
+        <update_guid_history>bce0c22ba9c366104ec2cc1cb37cd968:-1157996006</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Bulk Category Generator">26a649f72b8b2a101fddfc886e91bf27</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 20:44:18</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>732732af0fe4440c91bd1a09c8709410</sys_id>
+        <sys_metadata>bce0c22b2bc36610bdb7f808b891bf64</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bulk Category Generator</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_scope_delete display_value="">385cdcb5ab8e4f60953bdcc583c2cac4</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_bce0c22b2bc36610bdb7f808b891bf64</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_bce0c22b2bc36610bdb7f808b891bf64">f8e0c22b2bc36610bdb7f808b891bf69</sys_update_version>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:44:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

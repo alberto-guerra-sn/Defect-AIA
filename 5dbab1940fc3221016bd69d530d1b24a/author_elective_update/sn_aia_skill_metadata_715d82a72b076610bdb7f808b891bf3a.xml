@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_skill_metadata">
+    <sn_aia_skill_metadata action="DELETE">
+        <description>Automates the process of updating and maintaining bucket choices for defects in the GAIC Defect table. Designed for administrators or process owners who need to efficiently manage defect categorization and ensure each defect is assigned to the correct bucket without duplicating existing choices.</description>
+        <document_id>31aac2272b076610bdb7f808b891bf4d</document_id>
+        <document_table>sn_aia_agent</document_table>
+        <internal_name>global.x_snc_defect_bucke.Defect Choice Agent</internal_name>
+        <name>Defect Choice Agent</name>
+        <sys_class_name>sn_aia_skill_metadata</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 07:14:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>715d82a72b076610bdb7f808b891bf3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Defect Choice Agent</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_skill_metadata_715d82a72b076610bdb7f808b891bf3a</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 07:14:37</sys_updated_on>
+    </sn_aia_skill_metadata>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</application>
+        <file_path/>
+        <instance_id>a6f5898a33ffd6107c42c7bb9d5c7b62</instance_id>
+        <instance_name>aiagentujjawal3</instance_name>
+        <name>sn_aia_skill_metadata_715d82a72b076610bdb7f808b891bf3a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_skill_metadata"><sn_aia_skill_metadata action="INSERT_OR_UPDATE"><description>Automates the process of updating and maintaining bucket choices for defects in the GAIC Defect table. Designed for administrators or process owners who need to efficiently manage defect categorization and ensure each defect is assigned to the correct bucket without duplicating existing choices.</description><document_id>31aac2272b076610bdb7f808b891bf4d</document_id><document_table>sn_aia_agent</document_table><internal_name>global.x_snc_defect_bucke.Defect Choice Agent</internal_name><name>Defect Choice Agent</name><sys_class_name>sn_aia_skill_metadata</sys_class_name><sys_created_by>alberto.guerra@snc</sys_created_by><sys_created_on>2025-08-05 07:14:37</sys_created_on><sys_domain>global</sys_domain><sys_id>715d82a72b076610bdb7f808b891bf3a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Defect Choice Agent</sys_name><sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package><sys_policy/><sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope><sys_update_name>sn_aia_skill_metadata_715d82a72b076610bdb7f808b891bf3a</sys_update_name><sys_updated_by>alberto.guerra@snc</sys_updated_by><sys_updated_on>2025-08-05 07:14:37</sys_updated_on></sn_aia_skill_metadata></record_update>]]></payload>
+        <payload_hash>315681912</payload_hash>
+        <record_name>Defect Choice Agent</record_name>
+        <reverted_from/>
+        <source>04754b5a2b436210bdb7f808b891bf0d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 07:14:37</sys_created_on>
+        <sys_id>795d82a72b076610bdb7f808b891bf3c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198791505d40000001</sys_recorded_at>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 07:14:37</sys_updated_on>
+        <type>AI Agent Skill MetaData</type>
+        <update_guid>3d5d82a7460766104d4f050b02fbca3b</update_guid>
+        <update_guid_history>3d5d82a7460766104d4f050b02fbca3b:315681912</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Defect Choice Agent">d5a6c5f72b8b2a101fddfc886e91bfa7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 20:44:14</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_skill_metadata">sn_aia_skill_metadata</sys_db_object>
+        <sys_id>1a892c9cde93431790ffcff0ea396059</sys_id>
+        <sys_metadata>715d82a72b076610bdb7f808b891bf3a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Defect Choice Agent</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_scope_delete display_value="">385cdcb5ab8e4f60953bdcc583c2cac4</sys_scope_delete>
+        <sys_update_name>sn_aia_skill_metadata_715d82a72b076610bdb7f808b891bf3a</sys_update_name>
+        <sys_update_version display_value="sn_aia_skill_metadata_715d82a72b076610bdb7f808b891bf3a">795d82a72b076610bdb7f808b891bf3c</sys_update_version>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:44:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
