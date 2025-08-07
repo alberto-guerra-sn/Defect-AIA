@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
+    <sn_aia_agent action="DELETE">
+        <agent_type>internal</agent_type>
+        <applicability_script><![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * @param {string} inputs.context.device_type - The device type from which the experience is accessed, e.g.'mweb' 
+ * @param {string} inputs.context.deployment_id - The unique identifier for the assistant deployment 
+ * @param {string} inputs.context.assistant_type - The type of assistant, e.g., 'nava' 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]></applicability_script>
+        <compiled_handbook/>
+        <description>Automates the process of updating and maintaining bucket choices for defects in the GAIC Defect table. Designed for administrators or process owners who need to efficiently manage defect categorization and ensure each defect is assigned to the correct bucket without duplicating existing choices.</description>
+        <external_agent_configuration/>
+        <instructions>1. Parse the input JSON to extract bucket names and their associated defect numbers.
+2. Fetch the current list of bucket choices from the x_snc_defect_bucke_gaic_defects table.
+3. For each bucket name in the input JSON, check if it already exists in the current choices.
+4. If a bucket name does not exist, create a new choice for that bucket in the table.
+5. For each defect number in the input JSON, assign the defect to its corresponding bucket using the Update GAIC Defect tool.</instructions>
+        <internal_name>global.x_snc_defect_bucke.Defect Choice Agent</internal_name>
+        <name>Defect Choice Agent</name>
+        <parent/>
+        <processing_message/>
+        <proficiency>- Expertly manages the lifecycle of bucket choices in the x_snc_defect_bucke_gaic_defects table by parsing input JSON, verifying the existence of bucket choices, creating new buckets as needed, and assigning defects to their respective buckets. Ensures high accuracy and prevents duplication, maintaining a reliable mapping between defects and buckets.
+- Capable of creating new bucket choices in the x_snc_defect_bucke_gaic_defects table by utilizing the 'New Choice Creator' tool, which accepts a bucket name as input. This allows the agent to dynamically expand the set of available buckets, ensuring that all required buckets are present for defect assignment.
+- Proficient in updating GAIC defect records with their assigned buckets using the 'Update GAIC Defect' tool. This involves specifying the defect number and providing a structured JSON object to ensure that each defect is accurately linked to its designated bucket.
+- Adept at orchestrating a multi-step process that involves parsing input JSON, verifying and creating bucket choices as needed, and subsequently assigning defects to the correct buckets. This integrated workflow leverages both the 'New Choice Creator' and 'Update GAIC Defect' tools to deliver seamless and accurate defect management.</proficiency>
+        <record_type>template</record_type>
+        <role>Responsible for managing bucket choices in the x_snc_defect_bucke_gaic_defects table by processing input JSON, verifying existing choices, creating new bucket choices as needed, and assigning defects to their respective buckets. Acts with precision to prevent duplication and maintain accurate defect-to-bucket assignments.</role>
+        <source_id/>
+        <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
+        <sys_class_name>sn_aia_agent</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 07:09:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>31aac2272b076610bdb7f808b891bf4d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Defect Choice Agent</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_agent_31aac2272b076610bdb7f808b891bf4d</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 09:15:23</sys_updated_on>
+    </sn_aia_agent>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</application>
+        <file_path/>
+        <instance_id>a6f5898a33ffd6107c42c7bb9d5c7b62</instance_id>
+        <instance_name>aiagentujjawal3</instance_name>
+        <name>sn_aia_agent_31aac2272b076610bdb7f808b891bf4d</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_aia_agent"&gt;&lt;sn_aia_agent action="INSERT_OR_UPDATE"&gt;&lt;agent_type&gt;internal&lt;/agent_type&gt;&lt;applicability_script&gt;&lt;![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * @param {string} inputs.context.device_type - The device type from which the experience is accessed, e.g.'mweb' 
+ * @param {string} inputs.context.deployment_id - The unique identifier for the assistant deployment 
+ * @param {string} inputs.context.assistant_type - The type of assistant, e.g., 'nava' 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]&gt;&lt;/applicability_script&gt;&lt;compiled_handbook/&gt;&lt;description&gt;Automates the process of updating and maintaining bucket choices for defects in the GAIC Defect table. Designed for administrators or process owners who need to efficiently manage defect categorization and ensure each defect is assigned to the correct bucket without duplicating existing choices.&lt;/description&gt;&lt;external_agent_configuration/&gt;&lt;instructions&gt;1. Parse the input JSON to extract bucket names and their associated defect numbers.
+2. Fetch the current list of bucket choices from the x_snc_defect_bucke_gaic_defects table.
+3. For each bucket name in the input JSON, check if it already exists in the current choices.
+4. If a bucket name does not exist, create a new choice for that bucket in the table.
+5. For each defect number in the input JSON, assign the defect to its corresponding bucket using the Update GAIC Defect tool.&lt;/instructions&gt;&lt;internal_name&gt;global.x_snc_defect_bucke.Defect Choice Agent&lt;/internal_name&gt;&lt;name&gt;Defect Choice Agent&lt;/name&gt;&lt;parent/&gt;&lt;processing_message/&gt;&lt;proficiency&gt;- Expertly manages the lifecycle of bucket choices in the x_snc_defect_bucke_gaic_defects table by parsing input JSON, verifying the existence of bucket choices, creating new buckets as needed, and assigning defects to their respective buckets. Ensures high accuracy and prevents duplication, maintaining a reliable mapping between defects and buckets.
+- Capable of creating new bucket choices in the x_snc_defect_bucke_gaic_defects table by utilizing the 'New Choice Creator' tool, which accepts a bucket name as input. This allows the agent to dynamically expand the set of available buckets, ensuring that all required buckets are present for defect assignment.
+- Proficient in updating GAIC defect records with their assigned buckets using the 'Update GAIC Defect' tool. This involves specifying the defect number and providing a structured JSON object to ensure that each defect is accurately linked to its designated bucket.
+- Adept at orchestrating a multi-step process that involves parsing input JSON, verifying and creating bucket choices as needed, and subsequently assigning defects to the correct buckets. This integrated workflow leverages both the 'New Choice Creator' and 'Update GAIC Defect' tools to deliver seamless and accurate defect management.&lt;/proficiency&gt;&lt;record_type&gt;template&lt;/record_type&gt;&lt;role&gt;Responsible for managing bucket choices in the x_snc_defect_bucke_gaic_defects table by processing input JSON, verifying existing choices, creating new bucket choices as needed, and assigning defects to their respective buckets. Acts with precision to prevent duplication and maintain accurate defect-to-bucket assignments.&lt;/role&gt;&lt;source_id/&gt;&lt;strategy display_value="ReAct"&gt;f0bff21f9f13c6108f431597d90a1c74&lt;/strategy&gt;&lt;sys_class_name&gt;sn_aia_agent&lt;/sys_class_name&gt;&lt;sys_created_by&gt;alberto.guerra@snc&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-05 07:09:07&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;31aac2272b076610bdb7f808b891bf4d&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Defect Choice Agent&lt;/sys_name&gt;&lt;sys_package display_value="Defect Bucket" source="x_snc_defect_bucke"&gt;5dbab1940fc3221016bd69d530d1b24a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Defect Bucket"&gt;5dbab1940fc3221016bd69d530d1b24a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_aia_agent_31aac2272b076610bdb7f808b891bf4d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;alberto.guerra@snc&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-05 09:15:23&lt;/sys_updated_on&gt;&lt;/sn_aia_agent&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>502902614</payload_hash>
+        <record_name>Defect Choice Agent</record_name>
+        <reverted_from/>
+        <source>04754b5a2b436210bdb7f808b891bf0d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 09:15:23</sys_created_on>
+        <sys_id>7af8e2ab2b876610bdb7f808b891bf3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198798395d40000001</sys_recorded_at>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 09:15:23</sys_updated_on>
+        <type>AI Agent</type>
+        <update_guid>72f8e2abcd876610bd798269e6128b3d</update_guid>
+        <update_guid_history>72f8e2abcd876610bd798269e6128b3d:502902614,424d86e7bc076610560c7ef6db1bff8c:1769899078,312d06e7e307661092da5500c5b6b20a:-1221167569,431cca23c84be6102f22503615c6f709:477670226,d91c062783076610f5a1887f03f7874d:902302956</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Defect Choice Agent">65a6c5f72b8b2a101fddfc886e91bfac</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 20:44:14</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent">sn_aia_agent</sys_db_object>
+        <sys_id>26299a5fde444ce0a8656e9000cee400</sys_id>
+        <sys_metadata>31aac2272b076610bdb7f808b891bf4d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Defect Choice Agent</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_scope_delete display_value="">385cdcb5ab8e4f60953bdcc583c2cac4</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_31aac2272b076610bdb7f808b891bf4d</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_31aac2272b076610bdb7f808b891bf4d">7af8e2ab2b876610bdb7f808b891bf3d</sys_update_version>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:44:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

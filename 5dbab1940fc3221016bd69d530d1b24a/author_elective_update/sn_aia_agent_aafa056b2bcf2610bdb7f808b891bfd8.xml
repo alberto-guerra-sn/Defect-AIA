@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
+    <sn_aia_agent action="DELETE">
+        <agent_type>internal</agent_type>
+        <applicability_script><![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * @param {string} inputs.context.device_type - The device type from which the experience is accessed, e.g.'mweb' 
+ * @param {string} inputs.context.deployment_id - The unique identifier for the assistant deployment 
+ * @param {string} inputs.context.assistant_type - The type of assistant, e.g., 'nava' 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]></applicability_script>
+        <compiled_handbook/>
+        <description>Automatically categorizes records by analyzing their short descriptions, generating new bucket categories as needed, and assigning records to the most relevant existing or newly created buckets. Designed for users managing large volumes of uncategorized data who require automated, pattern-based categorization.</description>
+        <external_agent_configuration/>
+        <instructions>1. Fetch all records that do not have a value in the bucket field.
+2. Retrieve the short descriptions for each uncategorized record.
+3. Analyze the short descriptions to identify meaningful patterns or clusters.
+4. Fetch the current list of available bucket choices.
+5. For each identified pattern, check if a matching bucket already exists.
+6. If a matching bucket does not exist for a pattern, create a new bucket choice.
+7. Assign each record to the most relevant existing or newly created bucket based on its short description.
+8. Update the bucket field for each processed record with the assigned bucket value.</instructions>
+        <internal_name>global.x_snc_defect_bucke.Bucket Categorizer Agent</internal_name>
+        <name>Bucket Categorizer Agent</name>
+        <parent/>
+        <processing_message/>
+        <proficiency>- Expert in analyzing uncategorized records by examining their short descriptions, identifying meaningful patterns or clusters, and determining the most appropriate bucket assignment. Capable of generating new bucket choices only when necessary, ensuring that records are consistently and efficiently categorized while maintaining data integrity and minimizing unnecessary category proliferation.
+- Proficient in executing a systematic categorization workflow, including fetching uncategorized records, retrieving and analyzing short descriptions, comparing patterns against existing bucket choices, creating new buckets when needed, assigning records to the most relevant buckets, and updating the bucket field for each record. This ensures a repeatable, auditable, and efficient categorization process.
+- Able to utilize the 'Bulk Category Generator' TOOL to efficiently gather GAIC Defect records lacking cluster assignments, analyze their short description patterns, and generate new categories as needed. The agent can output structured JSON data mapping defect numbers to their assigned categories, streamlining the categorization of large record sets and supporting further automation or integration with other systems.</proficiency>
+        <record_type>template</record_type>
+        <role>Responsible for analyzing uncategorized records by examining their short descriptions, identifying meaningful patterns, and generating new category choices for the bucket field. The agent assigns records to existing buckets when appropriate and only creates new buckets when no suitable category exists. It maintains data consistency and optimizes categorization efficiency.</role>
+        <source_id/>
+        <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
+        <sys_class_name>sn_aia_agent</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 02:34:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>aafa056b2bcf2610bdb7f808b891bfd8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Bucket Categorizer Agent</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sn_aia_agent_aafa056b2bcf2610bdb7f808b891bfd8</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 06:20:20</sys_updated_on>
+    </sn_aia_agent>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</application>
+        <file_path/>
+        <instance_id>a6f5898a33ffd6107c42c7bb9d5c7b62</instance_id>
+        <instance_name>aiagentujjawal3</instance_name>
+        <name>sn_aia_agent_aafa056b2bcf2610bdb7f808b891bfd8</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_aia_agent"&gt;&lt;sn_aia_agent action="INSERT_OR_UPDATE"&gt;&lt;agent_type&gt;internal&lt;/agent_type&gt;&lt;applicability_script&gt;&lt;![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * @param {string} inputs.context.device_type - The device type from which the experience is accessed, e.g.'mweb' 
+ * @param {string} inputs.context.deployment_id - The unique identifier for the assistant deployment 
+ * @param {string} inputs.context.assistant_type - The type of assistant, e.g., 'nava' 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]&gt;&lt;/applicability_script&gt;&lt;compiled_handbook/&gt;&lt;description&gt;Automatically categorizes records by analyzing their short descriptions, generating new bucket categories as needed, and assigning records to the most relevant existing or newly created buckets. Designed for users managing large volumes of uncategorized data who require automated, pattern-based categorization.&lt;/description&gt;&lt;external_agent_configuration/&gt;&lt;instructions&gt;1. Fetch all records that do not have a value in the bucket field.
+2. Retrieve the short descriptions for each uncategorized record.
+3. Analyze the short descriptions to identify meaningful patterns or clusters.
+4. Fetch the current list of available bucket choices.
+5. For each identified pattern, check if a matching bucket already exists.
+6. If a matching bucket does not exist for a pattern, create a new bucket choice.
+7. Assign each record to the most relevant existing or newly created bucket based on its short description.
+8. Update the bucket field for each processed record with the assigned bucket value.&lt;/instructions&gt;&lt;internal_name&gt;global.x_snc_defect_bucke.Bucket Categorizer Agent&lt;/internal_name&gt;&lt;name&gt;Bucket Categorizer Agent&lt;/name&gt;&lt;parent/&gt;&lt;processing_message/&gt;&lt;proficiency&gt;- Expert in analyzing uncategorized records by examining their short descriptions, identifying meaningful patterns or clusters, and determining the most appropriate bucket assignment. Capable of generating new bucket choices only when necessary, ensuring that records are consistently and efficiently categorized while maintaining data integrity and minimizing unnecessary category proliferation.
+- Proficient in executing a systematic categorization workflow, including fetching uncategorized records, retrieving and analyzing short descriptions, comparing patterns against existing bucket choices, creating new buckets when needed, assigning records to the most relevant buckets, and updating the bucket field for each record. This ensures a repeatable, auditable, and efficient categorization process.
+- Able to utilize the 'Bulk Category Generator' TOOL to efficiently gather GAIC Defect records lacking cluster assignments, analyze their short description patterns, and generate new categories as needed. The agent can output structured JSON data mapping defect numbers to their assigned categories, streamlining the categorization of large record sets and supporting further automation or integration with other systems.&lt;/proficiency&gt;&lt;record_type&gt;template&lt;/record_type&gt;&lt;role&gt;Responsible for analyzing uncategorized records by examining their short descriptions, identifying meaningful patterns, and generating new category choices for the bucket field. The agent assigns records to existing buckets when appropriate and only creates new buckets when no suitable category exists. It maintains data consistency and optimizes categorization efficiency.&lt;/role&gt;&lt;source_id/&gt;&lt;strategy display_value="ReAct"&gt;f0bff21f9f13c6108f431597d90a1c74&lt;/strategy&gt;&lt;sys_class_name&gt;sn_aia_agent&lt;/sys_class_name&gt;&lt;sys_created_by&gt;alberto.guerra@snc&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-05 02:34:29&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;aafa056b2bcf2610bdb7f808b891bfd8&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Bucket Categorizer Agent&lt;/sys_name&gt;&lt;sys_package display_value="Defect Bucket" source="x_snc_defect_bucke"&gt;5dbab1940fc3221016bd69d530d1b24a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Defect Bucket"&gt;5dbab1940fc3221016bd69d530d1b24a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_aia_agent_aafa056b2bcf2610bdb7f808b891bfd8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;alberto.guerra@snc&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-05 06:20:20&lt;/sys_updated_on&gt;&lt;/sn_aia_agent&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-589544856</payload_hash>
+        <record_name>Bucket Categorizer Agent</record_name>
+        <reverted_from/>
+        <source>04754b5a2b436210bdb7f808b891bf0d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 06:20:20</sys_created_on>
+        <sys_id>76e0062b2bc36610bdb7f808b891bf0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19878e353c20000001</sys_recorded_at>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 06:20:20</sys_updated_on>
+        <type>AI Agent</type>
+        <update_guid>7ee0062b1dc366109769bc856716fa0b</update_guid>
+        <update_guid_history>7ee0062b1dc366109769bc856716fa0b:-589544856,444d0deb6acf2610f161d316a28284ba:1505391477,1a3d456b2fcf2610a5ee0a8f9c3d6765:1664274441</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Bucket Categorizer Agent">6aa649f72b8b2a101fddfc886e91bf24</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 20:44:18</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent">sn_aia_agent</sys_db_object>
+        <sys_id>41c7889369fb4f73a02d3312772642e1</sys_id>
+        <sys_metadata>aafa056b2bcf2610bdb7f808b891bfd8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bucket Categorizer Agent</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_scope_delete display_value="">385cdcb5ab8e4f60953bdcc583c2cac4</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_aafa056b2bcf2610bdb7f808b891bfd8</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_aafa056b2bcf2610bdb7f808b891bfd8">76e0062b2bc36610bdb7f808b891bf0c</sys_update_version>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:44:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

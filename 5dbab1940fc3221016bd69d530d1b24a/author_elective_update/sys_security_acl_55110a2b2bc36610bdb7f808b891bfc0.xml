@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing>Existing</local_or_existing>
+        <name>global.x_snc_defect_bucke.Bucket Categorizer Agent</name>
+        <operation display_value="execute">execute</operation>
+        <script/>
+        <security_attribute display_value="UserIsAuthenticated">239bdf0c47d23110ba46ff58936d4330</security_attribute>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 06:21:03</sys_created_on>
+        <sys_id>55110a2b2bc36610bdb7f808b891bfc0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>global.x_snc_defect_bucke.Bucket Categorizer Agent</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_update_name>sys_security_acl_55110a2b2bc36610bdb7f808b891bfc0</sys_update_name>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 06:21:04</sys_updated_on>
+        <type display_value="gen_ai_agent">fc55e9f79f8222109570e67e8a0a1c34</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</application>
+        <file_path/>
+        <instance_id>a6f5898a33ffd6107c42c7bb9d5c7b62</instance_id>
+        <instance_name>aiagentujjawal3</instance_name>
+        <name>sys_security_acl_55110a2b2bc36610bdb7f808b891bfc0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>global.x_snc_defect_bucke.Bucket Categorizer Agent</name><operation display_value="execute">execute</operation><script/><security_attribute display_value="UserIsAuthenticated">239bdf0c47d23110ba46ff58936d4330</security_attribute><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>alberto.guerra@snc</sys_created_by><sys_created_on>2025-08-05 06:21:03</sys_created_on><sys_id>55110a2b2bc36610bdb7f808b891bfc0</sys_id><sys_mod_count>1</sys_mod_count><sys_name>global.x_snc_defect_bucke.Bucket Categorizer Agent</sys_name><sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package><sys_policy/><sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope><sys_update_name>sys_security_acl_55110a2b2bc36610bdb7f808b891bfc0</sys_update_name><sys_updated_by>alberto.guerra@snc</sys_updated_by><sys_updated_on>2025-08-05 06:21:04</sys_updated_on><type display_value="gen_ai_agent">fc55e9f79f8222109570e67e8a0a1c34</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>753172067</payload_hash>
+        <record_name>global.x_snc_defect_bucke.Bucket Categorizer Agent</record_name>
+        <reverted_from/>
+        <source>04754b5a2b436210bdb7f808b891bf0d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 06:21:04</sys_created_on>
+        <sys_id>15114a2b2bc36610bdb7f808b891bf37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19878e3fd760000001</sys_recorded_at>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 06:21:04</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>d9114a2bc7c366107affdcccb71d0936</update_guid>
+        <update_guid_history>d9114a2bc7c366107affdcccb71d0936:753172067,d5110a2b78c366101a8b9e5395bbcbc2:2047732792</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>alberto.guerra@snc</sys_created_by>
+        <sys_created_on>2025-08-05 20:44:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>b7c282a466cb44b29f9914347389d2b1</sys_id>
+        <sys_metadata>55110a2b2bc36610bdb7f808b891bfc0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>global.x_snc_defect_bucke.Bucket Categorizer Agent</sys_name>
+        <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
+        <sys_parent display_value="global">2f6f4330d00322105590fd9a5a77e7b4</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
+        <sys_scope_delete display_value="">385cdcb5ab8e4f60953bdcc583c2cac4</sys_scope_delete>
+        <sys_update_name>sys_security_acl_55110a2b2bc36610bdb7f808b891bfc0</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_55110a2b2bc36610bdb7f808b891bfc0">15114a2b2bc36610bdb7f808b891bf37</sys_update_version>
+        <sys_updated_by>alberto.guerra@snc</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:44:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

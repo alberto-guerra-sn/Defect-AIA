@@ -2,7 +2,7 @@
     <sn_aia_version action="INSERT_OR_UPDATE">
         <condition/>
         <instructions>Objective:
-GAIC Defects are flaws, errors, or issues in a software product that prevent it from functioning as intended. They occur when the software does not meet its requirements, specifications, or user expectations. The agent's task is to understand the issue and assign the appropriate:
+GAIC Defects are flaws, errors, or issues in a software product that prevent it from functioning as intended. They occur when the software does not meet its requirements, specifications, or user expectations.. The agent's task is to understand the issue and assign the appropriate:
 - Bucket
 
 Step 1: Retrieve GAIC Defect Details
@@ -69,22 +69,6 @@ Examples:
 Access control failures, business rule bypasses, exposed data.
 Keywords: ACL, business rule, security, bypass, privilege, vulnerable
 
-8. Language
-Description:
-Defects related to adapting software for different languages and regions. This may involve issues with translating content, displaying regional data correctly, or managing locale-specific settings.
-Examples: 
-Translation errors in a multilingual interface
-Keywords: 
-localization, internationalization, translation, multilingual, regional, language
-
-9. Integrations
-Description: 
-Issues arising from the interaction and integration between the software and other external systems or services. This can include failed data exchanges, incompatible systems, or broken communication paths.
-Examples: 
-API endpoint failures causing integration disruption, third-party service authentication errors, data synchronization problems with cloud services.
-Keywords: 
-integration, API, third-party, interoperability, sync, connectivity, handshake, interface, endpoint, authentication
-
 - Do not infer or guess a bucket based on common or placeholder terms (e.g., “test”, “check”, “issue”) unless they are accompanied by enough context to confidently justify a match.
 - You must be 100% certain that the defect clearly belongs to a bucket before assigning it.
 - If you are unsure of the appropriate bucket, default and assign the bucket as Configuration/Operator Error
@@ -97,24 +81,24 @@ Key Considerations:
 - NEVER ask the user for input. 
 - Do NOT ask the user to manually determine bucket.
 - Ensure that the recommendations are logical and relevant to the GAIC defect details.</instructions>
-        <state>published</state>
+        <state>withdrawn</state>
         <sys_class_name>sn_aia_version</sys_class_name>
         <sys_created_by>alberto.guerra@snc</sys_created_by>
-        <sys_created_on>2025-08-04 17:36:03</sys_created_on>
+        <sys_created_on>2025-08-05 20:52:14</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_id>0bf1931f2b872610bdb7f808b891bf5d</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>V1</sys_name>
+        <sys_id>6a788dbb2b8b2a101fddfc886e91bf14</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>V2</sys_name>
         <sys_overrides/>
         <sys_package display_value="Defect Bucket" source="x_snc_defect_bucke">5dbab1940fc3221016bd69d530d1b24a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Defect Bucket">5dbab1940fc3221016bd69d530d1b24a</sys_scope>
-        <sys_update_name>sn_aia_version_0bf1931f2b872610bdb7f808b891bf5d</sys_update_name>
+        <sys_update_name>sn_aia_version_6a788dbb2b8b2a101fddfc886e91bf14</sys_update_name>
         <sys_updated_by>alberto.guerra@snc</sys_updated_by>
         <sys_updated_on>2025-08-06 17:13:46</sys_updated_on>
         <target_id>3691dbdb2b872610bdb7f808b891bfed</target_id>
         <target_table>sn_aia_agent</target_table>
-        <version_name>V1</version_name>
-        <version_number>1</version_number>
+        <version_name>V2</version_name>
+        <version_number>2</version_number>
     </sn_aia_version>
 </record_update>
